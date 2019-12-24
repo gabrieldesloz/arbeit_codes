@@ -1,0 +1,154 @@
+
+library ieee;
+use IEEE.STD_LOGIC_1164.all;
+use ieee.math_real.all;
+use ieee.numeric_std.all;
+
+
+entity EJ_SERIAL_TX is
+  port (
+    CLK_1us_i   : in  std_logic;  -- 10 MHz / 100 ns maximum resolution                        
+    RESET_i 	 : in  std_logic;
+    DATA_i       : in  std_logic_vector(63 downto 0);  
+    TX_DATA_o    : out std_logic;
+    TX_D_VALID_o : out std_logic;
+    TX_D_Latch_o : out std_logic
+    );
+
+end EJ_SERIAL_TX;
+
+
+architecture Behavioral of EJ_SERIAL_TX is
+
+  type FSM_1 is (st_IDLE, st_1sT_PULSE, st_WAIT_0, st_WAIT_1, st_SEND, st_END_LATCH);
+  signal state_reg, state_next                                   : FSM_1;
+
+
+  constant N_CHANNELS                    : natural := 64; 
+  constant DELAY_FRAMES                  : natural := 10; -- clock cycles between frames
+  constant DATA_COUNT_bits               : natural := integer(ceil(log2(real(N_CHANNELS))));
+  
+  signal TX_DATA_o_reg, TX_DATA_o_next: 													        std_logic; 	
+  signal TX_D_VALID_o_reg, TX_D_VALID_o_next: 													    std_logic; 	
+  signal TX_D_Latch_reg, TX_D_Latch_next: 													        std_logic; 	
+  signal eject_count_reg, eject_count_next:												            unsigned(DATA_COUNT_bits-1 downto 0);
+  signal DATA_i_reg: 																			    std_logic_vector(N_CHANNELS-1 downto 0);	
+
+
+begin
+
+	TX_DATA_o 	  	<= TX_DATA_o_reg;
+	TX_D_VALID_o 	<= TX_D_VALID_o_reg;
+	TX_D_Latch_o 	<= TX_D_Latch_reg;
+	
+	
+  registers : process (CLK_1us_i, RESET_i)  -- 1MHz
+  begin
+    
+	if (RESET_i = '1') then
+
+      state_reg                                   <= st_IDLE;
+	  TX_DATA_o_reg							      <= '0';
+	  TX_D_VALID_o_reg		                      <= '0';
+	  TX_D_Latch_reg		                      <= '0';
+	  DATA_i_reg                                  <= (others => '0');	 
+	  eject_count_reg                             <= (others => '0');
+      
+	
+	elsif falling_edge(CLK_1us_i) then
+	
+      state_reg                                   <= state_next;
+      TX_DATA_o_reg							      <= TX_DATA_o_next;
+	  TX_D_VALID_o_reg		                      <= TX_D_VALID_o_next;
+	  TX_D_Latch_reg		                      <= TX_D_Latch_next; 
+	  DATA_i_reg                                  <= DATA_i;	
+	  eject_count_reg 							  <= eject_count_next;	
+	  
+    end if;
+  end process registers;
+
+
+
+  fsm : process(DATA_i_reg, state_reg, TX_DATA_o_reg, TX_D_VALID_o_reg, TX_D_Latch_reg, eject_count_reg)
+
+  begin
+
+    --DEFAULT
+ 
+	state_next          <= state_reg;
+	TX_DATA_o_next 		<= TX_DATA_o_reg;
+	TX_D_VALID_o_next 	<= TX_D_VALID_o_reg;
+    TX_D_Latch_next     <= TX_D_Latch_reg;
+	eject_count_next    <= eject_count_reg;
+
+    case state_reg is
+
+      when st_IDLE =>
+                                      
+		TX_D_Latch_next 	<= '0';	  
+		TX_DATA_o_next 		<= '0';
+		TX_D_VALID_o_next 	<= '0';	   
+		state_next 			<= st_1sT_PULSE;
+      
+	  when st_1sT_PULSE =>
+
+        TX_D_Latch_next <= '1';
+		state_next <= st_WAIT_0;
+	  
+	   when st_WAIT_0 =>
+	   
+	    TX_D_Latch_next <= '0';
+		state_next <= st_WAIT_1;
+		
+	   
+	   when st_WAIT_1 =>
+	    
+		TX_D_Latch_next <= '0';
+		state_next 			<= st_SEND;
+		eject_count_next 	<= (others => '0');
+		
+		
+	    when st_SEND =>
+	    
+		TX_D_Latch_next 		<= '0';		
+		TX_DATA_o_next 			<= DATA_i_reg(to_integer(eject_count_reg));
+		TX_D_VALID_o_next 		<= '1';
+		
+		
+		if eject_count_reg = N_CHANNELS-1 then 			
+			state_next <= st_END_LATCH; 
+			eject_count_next <= (others => '0');
+		else
+			eject_count_next <= eject_count_reg + 1;
+			state_next <= st_SEND; 
+		end if;
+		
+	  
+	  when st_END_LATCH =>
+	    
+		TX_DATA_o_next <='0';
+		TX_D_VALID_o_next <= '0';
+		TX_D_Latch_next <= '0';
+		
+		if eject_count_reg = DELAY_FRAMES-1 then 			
+			state_next <= st_1sT_PULSE;	
+		else
+			eject_count_next <= eject_count_reg + 1;
+			state_next <= st_END_LATCH; 
+		end if;
+	
+	
+
+      when others =>
+		state_next <= st_IDLE;
+
+    end case;
+
+  end process fsm;
+
+
+
+end Behavioral;
+
+
+

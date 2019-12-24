@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jan 28 15:15:46 2014
+Quartus II 32-bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : quartus_test
+Top-level Entity Name : adder_ovf
+Family : Cyclone IV E
+Device : EP4CE75F23C7
+Timing Models : Final
+Total logic elements : 278 / 75,408 ( < 1 % )
+    Total combinational functions : 192 / 75,408 ( < 1 % )
+    Dedicated logic registers : 136 / 75,408 ( < 1 % )
+Total registers : 136
+Total pins : 197 / 293 ( 67 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,810,880 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 400 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

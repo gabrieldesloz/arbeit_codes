@@ -1,0 +1,2 @@
+verilog work ../../clkblock.v
+verilog work ../example_design/clkblock_exdes.v

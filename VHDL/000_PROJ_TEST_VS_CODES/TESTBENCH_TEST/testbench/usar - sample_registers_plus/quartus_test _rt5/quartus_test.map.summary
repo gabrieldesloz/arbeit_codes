@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jul 04 11:22:37 2013
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Full Version
+Revision Name : quartus_test
+Top-level Entity Name : phase_sum
+Family : Cyclone IV E
+Total logic elements : 149
+    Total combinational functions : 35
+    Dedicated logic registers : 131
+Total registers : 131
+Total pins : 330
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,1201 @@
+TimeQuest Timing Analyzer report for parallel_mult
+Fri Aug 02 16:14:14 2013
+Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Slow Model Fmax Summary
+  7. Slow Model Setup Summary
+  8. Slow Model Hold Summary
+  9. Slow Model Recovery Summary
+ 10. Slow Model Removal Summary
+ 11. Slow Model Minimum Pulse Width Summary
+ 12. Slow Model Setup: 'sysclk'
+ 13. Slow Model Hold: 'sysclk'
+ 14. Slow Model Minimum Pulse Width: 'sysclk'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Fast Model Setup Summary
+ 20. Fast Model Hold Summary
+ 21. Fast Model Recovery Summary
+ 22. Fast Model Removal Summary
+ 23. Fast Model Minimum Pulse Width Summary
+ 24. Fast Model Setup: 'sysclk'
+ 25. Fast Model Hold: 'sysclk'
+ 26. Fast Model Minimum Pulse Width: 'sysclk'
+ 27. Setup Times
+ 28. Hold Times
+ 29. Clock to Output Times
+ 30. Minimum Clock to Output Times
+ 31. Multicorner Timing Analysis Summary
+ 32. Setup Times
+ 33. Hold Times
+ 34. Clock to Output Times
+ 35. Minimum Clock to Output Times
+ 36. Setup Transfers
+ 37. Hold Transfers
+ 38. Report TCCS
+ 39. Report RSKM
+ 40. Unconstrained Paths
+ 41. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                      ;
++--------------------+---------------------------------------------------+
+; Quartus II Version ; Version 12.1 Build 177 11/07/2012 SJ Full Version ;
+; Revision Name      ; parallel_mult                                     ;
+; Device Family      ; Cyclone II                                        ;
+; Device Name        ; EP2C5T144C6                                       ;
+; Timing Models      ; Final                                             ;
+; Delay Model        ; Combined                                          ;
+; Rise/Fall Delays   ; Unavailable                                       ;
++--------------------+---------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 3           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-3 processors         ; < 0.1%      ;
+;     4 processors           ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; SDC File List                                                                                      ;
++----------------------------------------------------------------+--------+--------------------------+
+; SDC File Path                                                  ; Status ; Read at                  ;
++----------------------------------------------------------------+--------+--------------------------+
+; //hercules/gdl/nützliche Codes/parallel_mult/parallel_mult.sdc ; OK     ; Fri Aug 02 16:14:07 2013 ;
++----------------------------------------------------------------+--------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                             ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets    ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; sysclk     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { sysclk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                   ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 489.48 MHz ; 420.17 MHz      ; sysclk     ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------+
+; Slow Model Setup Summary        ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; sysclk ; -1.043 ; -18.285       ;
++--------+--------+---------------+
+
+
++--------------------------------+
+; Slow Model Hold Summary        ;
++--------+-------+---------------+
+; Clock  ; Slack ; End Point TNS ;
++--------+-------+---------------+
+; sysclk ; 0.391 ; 0.000         ;
++--------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++--------+--------+----------------------+
+; Clock  ; Slack  ; End Point TNS        ;
++--------+--------+----------------------+
+; sysclk ; -1.380 ; -43.380              ;
++--------+--------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'sysclk'                                                                                                 ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; -1.043 ; state_reg.DONE_ST    ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.079      ;
+; -1.042 ; state_reg.DONE_ST    ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.078      ;
+; -1.039 ; state_reg.DONE_ST    ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.075      ;
+; -1.039 ; state_reg.DONE_ST    ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.075      ;
+; -1.038 ; state_reg.DONE_ST    ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.074      ;
+; -1.006 ; state_reg.ADD_PARC_2 ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.042      ;
+; -1.005 ; state_reg.ADD_PARC_2 ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.041      ;
+; -1.002 ; state_reg.ADD_PARC_2 ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.038      ;
+; -1.002 ; state_reg.ADD_PARC_2 ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.038      ;
+; -1.001 ; state_reg.ADD_PARC_2 ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 2.037      ;
+; -0.930 ; state_reg.MULT_PARC  ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.966      ;
+; -0.929 ; state_reg.MULT_PARC  ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.965      ;
+; -0.926 ; state_reg.MULT_PARC  ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.962      ;
+; -0.926 ; state_reg.MULT_PARC  ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.962      ;
+; -0.925 ; state_reg.MULT_PARC  ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.961      ;
+; -0.874 ; state_reg.LOAD       ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.910      ;
+; -0.873 ; state_reg.LOAD       ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.909      ;
+; -0.870 ; state_reg.LOAD       ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.906      ;
+; -0.870 ; state_reg.LOAD       ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.906      ;
+; -0.869 ; state_reg.LOAD       ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.905      ;
+; -0.681 ; state_reg.ADD_PARC_1 ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.717      ;
+; -0.680 ; state_reg.ADD_PARC_1 ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.716      ;
+; -0.677 ; state_reg.ADD_PARC_1 ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.713      ;
+; -0.677 ; state_reg.ADD_PARC_1 ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.713      ;
+; -0.676 ; state_reg.ADD_PARC_1 ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.712      ;
+; -0.613 ; state_reg.DONE_ST    ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.649      ;
+; -0.576 ; state_reg.ADD_PARC_2 ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.612      ;
+; -0.500 ; state_reg.MULT_PARC  ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.536      ;
+; -0.473 ; state_reg.IDLE       ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.509      ;
+; -0.472 ; state_reg.IDLE       ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.508      ;
+; -0.469 ; state_reg.IDLE       ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.505      ;
+; -0.469 ; state_reg.IDLE       ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.505      ;
+; -0.468 ; state_reg.IDLE       ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.504      ;
+; -0.444 ; state_reg.LOAD       ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.480      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p2_1_reg[0]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p1_2_reg[0]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p1_1_reg[2]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p2_1_reg[1]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p1_2_reg[1]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p1_1_reg[3]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p2_2_reg[0]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p2_1_reg[2]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p1_2_reg[2]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p1_2_reg[3]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p2_2_reg[1]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p2_1_reg[3]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p2_2_reg[2]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p2_2_reg[3]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p1_1_reg[0]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.398 ; state_reg.MULT_PARC  ; div_p1_1_reg[1]      ; sysclk       ; sysclk      ; 1.000        ; -0.015     ; 1.419      ;
+; -0.387 ; state_reg.ADD_PARC_2 ; add_p2_reg[2]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.423      ;
+; -0.387 ; state_reg.ADD_PARC_2 ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.423      ;
+; -0.387 ; state_reg.ADD_PARC_2 ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.423      ;
+; -0.387 ; state_reg.ADD_PARC_2 ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.423      ;
+; -0.387 ; state_reg.ADD_PARC_2 ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.423      ;
+; -0.387 ; state_reg.ADD_PARC_2 ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.423      ;
+; -0.387 ; state_reg.ADD_PARC_2 ; add_p2_reg[0]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.423      ;
+; -0.387 ; state_reg.ADD_PARC_2 ; add_p2_reg[1]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.423      ;
+; -0.362 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[0]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.398      ;
+; -0.362 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[2]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.398      ;
+; -0.362 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.398      ;
+; -0.362 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.398      ;
+; -0.362 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.398      ;
+; -0.255 ; state_reg.ADD_PARC_1 ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.291      ;
+; -0.171 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[1]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.207      ;
+; -0.171 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[2]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.207      ;
+; -0.171 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.207      ;
+; -0.171 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.207      ;
+; -0.171 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.207      ;
+; -0.171 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[0]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.207      ;
+; -0.171 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[1]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.207      ;
+; -0.043 ; state_reg.IDLE       ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 1.079      ;
+; 17.805 ; div_p1_2_reg[1]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 2.246      ;
+; 17.876 ; div_p1_2_reg[1]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 2.175      ;
+; 17.944 ; div_p1_1_reg[2]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 2.107      ;
+; 17.960 ; div_p2_1_reg[2]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 2.091      ;
+; 17.985 ; div_p1_2_reg[0]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 2.066      ;
+; 18.001 ; add_p1_p1_reg[2]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 2.035      ;
+; 18.015 ; div_p1_1_reg[2]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 2.036      ;
+; 18.025 ; div_p1_1_reg[3]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 2.026      ;
+; 18.031 ; div_p2_1_reg[2]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 2.020      ;
+; 18.056 ; div_p1_2_reg[0]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 1.995      ;
+; 18.068 ; add_p1_p2_reg[1]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.968      ;
+; 18.072 ; add_p1_p1_reg[2]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.964      ;
+; 18.086 ; div_p1_1_reg[2]      ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 1.965      ;
+; 18.096 ; div_p1_1_reg[3]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 1.955      ;
+; 18.102 ; div_p2_1_reg[2]      ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 1.949      ;
+; 18.125 ; div_p1_2_reg[2]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 1.926      ;
+; 18.127 ; div_p1_2_reg[0]      ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 1.924      ;
+; 18.139 ; add_p1_p2_reg[1]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.897      ;
+; 18.143 ; add_p1_p1_reg[2]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.893      ;
+; 18.145 ; add_p1_p1_reg[4]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.891      ;
+; 18.149 ; add_p1_p2_reg[2]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.887      ;
+; 18.210 ; add_p1_p2_reg[1]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.826      ;
+; 18.216 ; add_p1_p1_reg[4]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.820      ;
+; 18.220 ; add_p1_p2_reg[2]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.816      ;
+; 18.227 ; add_p1_p2_reg[0]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.809      ;
+; 18.251 ; div_p2_2_reg[0]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.015      ; 1.800      ;
+; 18.258 ; add_p1_p1_reg[3]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.778      ;
+; 18.261 ; add_p1_p2_reg[3]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 1.775      ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'sysclk'                                                                                                 ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; state_reg.IDLE       ; state_reg.IDLE       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.657      ;
+; 0.687 ; div_p2_2_reg[3]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 0.968      ;
+; 0.700 ; add_p1_p1_reg[0]     ; add_p2_reg[0]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.966      ;
+; 0.718 ; div_p1_1_reg[1]      ; add_p1_p1_reg[1]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 0.999      ;
+; 0.729 ; div_p1_1_reg[0]      ; add_p1_p1_reg[0]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.010      ;
+; 0.734 ; div_p2_1_reg[1]      ; add_p1_p2_reg[1]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.015      ;
+; 0.743 ; add_p1_p2_reg[5]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.009      ;
+; 0.767 ; state_reg.IDLE       ; state_reg.LOAD       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.033      ;
+; 0.787 ; add_p1_p1_reg[5]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.053      ;
+; 0.788 ; add_p1_p2_reg[0]     ; add_p2_reg[2]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.054      ;
+; 0.813 ; state_reg.IDLE       ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.079      ;
+; 0.825 ; add_p1_p1_reg[3]     ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.091      ;
+; 0.868 ; state_reg.MULT_PARC  ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.134      ;
+; 0.940 ; state_reg.ADD_PARC_2 ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.206      ;
+; 0.941 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[1]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.207      ;
+; 0.941 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.207      ;
+; 0.941 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.207      ;
+; 0.941 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.207      ;
+; 0.941 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.207      ;
+; 0.941 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[0]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.207      ;
+; 0.941 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[1]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.207      ;
+; 0.958 ; div_p2_2_reg[1]      ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.239      ;
+; 0.972 ; state_reg.DONE_ST    ; state_reg.IDLE       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.238      ;
+; 0.975 ; add_p1_p1_reg[1]     ; add_p2_reg[1]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.241      ;
+; 0.984 ; div_p2_1_reg[0]      ; add_p1_p2_reg[0]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.265      ;
+; 0.989 ; div_p1_2_reg[3]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.270      ;
+; 0.994 ; div_p2_2_reg[0]      ; add_p1_p2_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.275      ;
+; 0.995 ; div_p2_2_reg[2]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.276      ;
+; 1.004 ; add_p1_p2_reg[2]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.270      ;
+; 1.007 ; add_p1_p1_reg[4]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.273      ;
+; 1.010 ; add_p1_p1_reg[2]     ; add_p2_reg[2]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.276      ;
+; 1.014 ; add_p1_p2_reg[1]     ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.280      ;
+; 1.017 ; state_reg.LOAD       ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.283      ;
+; 1.024 ; div_p2_1_reg[3]      ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.305      ;
+; 1.025 ; state_reg.ADD_PARC_1 ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.291      ;
+; 1.050 ; add_p1_p2_reg[4]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.316      ;
+; 1.052 ; add_p1_p2_reg[3]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.318      ;
+; 1.072 ; state_reg.DONE_ST    ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.338      ;
+; 1.097 ; state_reg.MULT_PARC  ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.363      ;
+; 1.132 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[0]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.398      ;
+; 1.132 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.398      ;
+; 1.132 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.398      ;
+; 1.132 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.398      ;
+; 1.132 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.398      ;
+; 1.157 ; state_reg.ADD_PARC_2 ; add_p2_reg[2]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.423      ;
+; 1.157 ; state_reg.ADD_PARC_2 ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.423      ;
+; 1.157 ; state_reg.ADD_PARC_2 ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.423      ;
+; 1.157 ; state_reg.ADD_PARC_2 ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.423      ;
+; 1.157 ; state_reg.ADD_PARC_2 ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.423      ;
+; 1.157 ; state_reg.ADD_PARC_2 ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.423      ;
+; 1.157 ; state_reg.ADD_PARC_2 ; add_p2_reg[0]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.423      ;
+; 1.157 ; state_reg.ADD_PARC_2 ; add_p2_reg[1]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.423      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p2_1_reg[0]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p1_2_reg[0]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p1_1_reg[2]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p2_1_reg[1]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p1_2_reg[1]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p1_1_reg[3]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p2_2_reg[0]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p2_1_reg[2]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p1_2_reg[2]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p1_2_reg[3]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p2_2_reg[1]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p2_1_reg[3]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p2_2_reg[2]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p2_2_reg[3]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p1_1_reg[0]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.168 ; state_reg.MULT_PARC  ; div_p1_1_reg[1]      ; sysclk       ; sysclk      ; 0.000        ; -0.015     ; 1.419      ;
+; 1.171 ; add_p1_p2_reg[0]     ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.437      ;
+; 1.174 ; add_p1_p1_reg[5]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.440      ;
+; 1.207 ; state_reg.LOAD       ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.473      ;
+; 1.211 ; add_p1_p1_reg[3]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.477      ;
+; 1.226 ; state_reg.ADD_PARC_2 ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.492      ;
+; 1.238 ; state_reg.IDLE       ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.504      ;
+; 1.239 ; state_reg.IDLE       ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.505      ;
+; 1.242 ; add_p1_p2_reg[0]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.508      ;
+; 1.243 ; state_reg.IDLE       ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.509      ;
+; 1.245 ; add_p1_p1_reg[5]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.511      ;
+; 1.260 ; div_p1_2_reg[0]      ; add_p1_p1_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.541      ;
+; 1.262 ; div_p1_2_reg[2]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.543      ;
+; 1.281 ; div_p2_1_reg[2]      ; add_p1_p2_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.562      ;
+; 1.288 ; div_p1_1_reg[3]      ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.569      ;
+; 1.297 ; div_p1_1_reg[2]      ; add_p1_p1_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.578      ;
+; 1.345 ; div_p2_2_reg[1]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.626      ;
+; 1.365 ; state_reg.ADD_PARC_2 ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.631      ;
+; 1.366 ; state_reg.ADD_PARC_2 ; state_reg.LOAD       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.632      ;
+; 1.366 ; state_reg.ADD_PARC_2 ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.632      ;
+; 1.369 ; state_reg.ADD_PARC_2 ; state_reg.IDLE       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.635      ;
+; 1.370 ; add_p1_p1_reg[3]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.636      ;
+; 1.377 ; div_p2_2_reg[0]      ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.658      ;
+; 1.378 ; div_p2_2_reg[2]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.659      ;
+; 1.397 ; add_p1_p1_reg[2]     ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.663      ;
+; 1.401 ; add_p1_p2_reg[1]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.667      ;
+; 1.401 ; add_p1_p2_reg[0]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.667      ;
+; 1.410 ; div_p2_1_reg[3]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.691      ;
+; 1.416 ; div_p2_2_reg[1]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.015      ; 1.697      ;
+; 1.436 ; add_p1_p2_reg[4]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.702      ;
+; 1.438 ; add_p1_p2_reg[3]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.704      ;
+; 1.441 ; add_p1_p1_reg[3]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.707      ;
+; 1.446 ; state_reg.ADD_PARC_1 ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 1.712      ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'sysclk'                                                               ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; sysclk ; Rise       ; sysclk               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_1_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_1_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_1_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_1_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_1_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_1_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_1_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_1_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_2_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_2_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_2_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_2_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_2_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_2_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_2_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_2_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_1_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_1_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_1_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_1_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_1_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_1_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_1_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_1_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_2_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_2_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_2_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_2_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_2_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_2_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_2_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_2_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.ADD_PARC_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.ADD_PARC_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.ADD_PARC_2 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.ADD_PARC_2 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.DONE_ST    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.DONE_ST    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.IDLE       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.IDLE       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.LOAD       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.LOAD       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.MULT_PARC  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.MULT_PARC  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[0]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[0]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[1]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[1]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[2]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[2]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[3]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[3]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[4]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[4]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[5]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[5]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[0]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[0]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[1]|clk ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; a[*]      ; sysclk     ; 4.276 ; 4.276 ; Rise       ; sysclk          ;
+;  a[0]     ; sysclk     ; 4.276 ; 4.276 ; Rise       ; sysclk          ;
+;  a[1]     ; sysclk     ; 3.727 ; 3.727 ; Rise       ; sysclk          ;
+;  a[2]     ; sysclk     ; 3.735 ; 3.735 ; Rise       ; sysclk          ;
+;  a[3]     ; sysclk     ; 0.294 ; 0.294 ; Rise       ; sysclk          ;
+; b[*]      ; sysclk     ; 4.620 ; 4.620 ; Rise       ; sysclk          ;
+;  b[0]     ; sysclk     ; 4.620 ; 4.620 ; Rise       ; sysclk          ;
+;  b[1]     ; sysclk     ; 4.236 ; 4.236 ; Rise       ; sysclk          ;
+;  b[2]     ; sysclk     ; 4.321 ; 4.321 ; Rise       ; sysclk          ;
+;  b[3]     ; sysclk     ; 0.618 ; 0.618 ; Rise       ; sysclk          ;
+; start     ; sysclk     ; 4.283 ; 4.283 ; Rise       ; sysclk          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; a[*]      ; sysclk     ; -0.051 ; -0.051 ; Rise       ; sysclk          ;
+;  a[0]     ; sysclk     ; -3.898 ; -3.898 ; Rise       ; sysclk          ;
+;  a[1]     ; sysclk     ; -3.479 ; -3.479 ; Rise       ; sysclk          ;
+;  a[2]     ; sysclk     ; -3.492 ; -3.492 ; Rise       ; sysclk          ;
+;  a[3]     ; sysclk     ; -0.051 ; -0.051 ; Rise       ; sysclk          ;
+; b[*]      ; sysclk     ; -0.353 ; -0.353 ; Rise       ; sysclk          ;
+;  b[0]     ; sysclk     ; -4.350 ; -4.350 ; Rise       ; sysclk          ;
+;  b[1]     ; sysclk     ; -3.740 ; -3.740 ; Rise       ; sysclk          ;
+;  b[2]     ; sysclk     ; -3.818 ; -3.818 ; Rise       ; sysclk          ;
+;  b[3]     ; sysclk     ; -0.353 ; -0.353 ; Rise       ; sysclk          ;
+; start     ; sysclk     ; -4.050 ; -4.050 ; Rise       ; sysclk          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; c[*]      ; sysclk     ; 6.542 ; 6.542 ; Rise       ; sysclk          ;
+;  c[0]     ; sysclk     ; 6.510 ; 6.510 ; Rise       ; sysclk          ;
+;  c[1]     ; sysclk     ; 6.530 ; 6.530 ; Rise       ; sysclk          ;
+;  c[2]     ; sysclk     ; 6.294 ; 6.294 ; Rise       ; sysclk          ;
+;  c[3]     ; sysclk     ; 6.542 ; 6.542 ; Rise       ; sysclk          ;
+;  c[4]     ; sysclk     ; 6.359 ; 6.359 ; Rise       ; sysclk          ;
+;  c[5]     ; sysclk     ; 6.521 ; 6.521 ; Rise       ; sysclk          ;
+;  c[6]     ; sysclk     ; 6.294 ; 6.294 ; Rise       ; sysclk          ;
+;  c[7]     ; sysclk     ; 6.267 ; 6.267 ; Rise       ; sysclk          ;
+; done      ; sysclk     ; 6.074 ; 6.074 ; Rise       ; sysclk          ;
+; ready     ; sysclk     ; 6.072 ; 6.072 ; Rise       ; sysclk          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; c[*]      ; sysclk     ; 6.267 ; 6.267 ; Rise       ; sysclk          ;
+;  c[0]     ; sysclk     ; 6.510 ; 6.510 ; Rise       ; sysclk          ;
+;  c[1]     ; sysclk     ; 6.530 ; 6.530 ; Rise       ; sysclk          ;
+;  c[2]     ; sysclk     ; 6.294 ; 6.294 ; Rise       ; sysclk          ;
+;  c[3]     ; sysclk     ; 6.542 ; 6.542 ; Rise       ; sysclk          ;
+;  c[4]     ; sysclk     ; 6.359 ; 6.359 ; Rise       ; sysclk          ;
+;  c[5]     ; sysclk     ; 6.521 ; 6.521 ; Rise       ; sysclk          ;
+;  c[6]     ; sysclk     ; 6.294 ; 6.294 ; Rise       ; sysclk          ;
+;  c[7]     ; sysclk     ; 6.267 ; 6.267 ; Rise       ; sysclk          ;
+; done      ; sysclk     ; 6.074 ; 6.074 ; Rise       ; sysclk          ;
+; ready     ; sysclk     ; 6.072 ; 6.072 ; Rise       ; sysclk          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++--------+-------+---------------+
+; Clock  ; Slack ; End Point TNS ;
++--------+-------+---------------+
+; sysclk ; 0.091 ; 0.000         ;
++--------+-------+---------------+
+
+
++--------------------------------+
+; Fast Model Hold Summary        ;
++--------+-------+---------------+
+; Clock  ; Slack ; End Point TNS ;
++--------+-------+---------------+
+; sysclk ; 0.215 ; 0.000         ;
++--------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++--------+--------+----------------------+
+; Clock  ; Slack  ; End Point TNS        ;
++--------+--------+----------------------+
+; sysclk ; -1.380 ; -43.380              ;
++--------+--------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'sysclk'                                                                                                 ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.091  ; state_reg.DONE_ST    ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.941      ;
+; 0.092  ; state_reg.DONE_ST    ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.940      ;
+; 0.095  ; state_reg.DONE_ST    ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.937      ;
+; 0.095  ; state_reg.DONE_ST    ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.937      ;
+; 0.096  ; state_reg.DONE_ST    ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.936      ;
+; 0.104  ; state_reg.ADD_PARC_2 ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.928      ;
+; 0.105  ; state_reg.ADD_PARC_2 ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.927      ;
+; 0.108  ; state_reg.ADD_PARC_2 ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.924      ;
+; 0.108  ; state_reg.ADD_PARC_2 ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.924      ;
+; 0.109  ; state_reg.ADD_PARC_2 ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.923      ;
+; 0.135  ; state_reg.MULT_PARC  ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.897      ;
+; 0.136  ; state_reg.MULT_PARC  ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.896      ;
+; 0.139  ; state_reg.MULT_PARC  ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.893      ;
+; 0.139  ; state_reg.MULT_PARC  ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.893      ;
+; 0.140  ; state_reg.MULT_PARC  ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.892      ;
+; 0.157  ; state_reg.LOAD       ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.875      ;
+; 0.158  ; state_reg.LOAD       ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.874      ;
+; 0.161  ; state_reg.LOAD       ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.871      ;
+; 0.161  ; state_reg.LOAD       ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.871      ;
+; 0.162  ; state_reg.LOAD       ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.870      ;
+; 0.224  ; state_reg.ADD_PARC_1 ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.808      ;
+; 0.225  ; state_reg.ADD_PARC_1 ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.807      ;
+; 0.228  ; state_reg.ADD_PARC_1 ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.804      ;
+; 0.228  ; state_reg.ADD_PARC_1 ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.804      ;
+; 0.229  ; state_reg.ADD_PARC_1 ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.803      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p2_1_reg[0]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p1_2_reg[0]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p1_1_reg[2]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p2_1_reg[1]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p1_2_reg[1]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p1_1_reg[3]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p2_2_reg[0]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p2_1_reg[2]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p1_2_reg[2]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p1_2_reg[3]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p2_2_reg[1]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p2_1_reg[3]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p2_2_reg[2]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p2_2_reg[3]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p1_1_reg[0]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.257  ; state_reg.MULT_PARC  ; div_p1_1_reg[1]      ; sysclk       ; sysclk      ; 1.000        ; -0.013     ; 0.762      ;
+; 0.266  ; state_reg.ADD_PARC_2 ; add_p2_reg[2]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.766      ;
+; 0.266  ; state_reg.ADD_PARC_2 ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.766      ;
+; 0.266  ; state_reg.ADD_PARC_2 ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.766      ;
+; 0.266  ; state_reg.ADD_PARC_2 ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.766      ;
+; 0.266  ; state_reg.ADD_PARC_2 ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.766      ;
+; 0.266  ; state_reg.ADD_PARC_2 ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.766      ;
+; 0.266  ; state_reg.ADD_PARC_2 ; add_p2_reg[0]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.766      ;
+; 0.266  ; state_reg.ADD_PARC_2 ; add_p2_reg[1]        ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.766      ;
+; 0.275  ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[0]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.757      ;
+; 0.275  ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[2]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.757      ;
+; 0.275  ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.757      ;
+; 0.275  ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.757      ;
+; 0.275  ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.757      ;
+; 0.279  ; state_reg.DONE_ST    ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.753      ;
+; 0.292  ; state_reg.ADD_PARC_2 ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.740      ;
+; 0.323  ; state_reg.MULT_PARC  ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.709      ;
+; 0.327  ; state_reg.IDLE       ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.705      ;
+; 0.328  ; state_reg.IDLE       ; state_reg.IDLE       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.704      ;
+; 0.331  ; state_reg.IDLE       ; state_reg.LOAD       ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.701      ;
+; 0.331  ; state_reg.IDLE       ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.701      ;
+; 0.332  ; state_reg.IDLE       ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.700      ;
+; 0.345  ; state_reg.LOAD       ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.687      ;
+; 0.367  ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[1]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.665      ;
+; 0.367  ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[2]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.665      ;
+; 0.367  ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.665      ;
+; 0.367  ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.665      ;
+; 0.367  ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.665      ;
+; 0.367  ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[0]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.665      ;
+; 0.367  ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[1]     ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.665      ;
+; 0.402  ; state_reg.ADD_PARC_1 ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.630      ;
+; 0.511  ; state_reg.IDLE       ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 1.000        ; 0.000      ; 0.521      ;
+; 19.026 ; div_p1_2_reg[1]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 1.019      ;
+; 19.061 ; div_p1_2_reg[1]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.984      ;
+; 19.084 ; div_p1_1_reg[2]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.961      ;
+; 19.089 ; add_p1_p1_reg[2]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.943      ;
+; 19.094 ; div_p2_1_reg[2]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.951      ;
+; 19.098 ; div_p1_2_reg[0]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.947      ;
+; 19.115 ; add_p1_p2_reg[1]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.917      ;
+; 19.119 ; div_p1_1_reg[2]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.926      ;
+; 19.124 ; add_p1_p1_reg[2]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.908      ;
+; 19.128 ; div_p1_1_reg[3]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.917      ;
+; 19.129 ; div_p2_1_reg[2]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.916      ;
+; 19.133 ; div_p1_2_reg[0]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.912      ;
+; 19.150 ; add_p1_p2_reg[1]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.882      ;
+; 19.154 ; div_p1_1_reg[2]      ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.891      ;
+; 19.159 ; add_p1_p1_reg[2]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.873      ;
+; 19.162 ; add_p1_p2_reg[2]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.870      ;
+; 19.163 ; div_p1_1_reg[3]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.882      ;
+; 19.164 ; div_p2_1_reg[2]      ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.881      ;
+; 19.166 ; add_p1_p1_reg[4]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.866      ;
+; 19.168 ; div_p1_2_reg[0]      ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.877      ;
+; 19.170 ; div_p1_2_reg[2]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.875      ;
+; 19.185 ; add_p1_p2_reg[1]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.847      ;
+; 19.189 ; add_p1_p2_reg[0]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.843      ;
+; 19.197 ; add_p1_p2_reg[2]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.835      ;
+; 19.199 ; div_p1_2_reg[1]      ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 20.000       ; 0.013      ; 0.846      ;
+; 19.201 ; add_p1_p1_reg[4]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.831      ;
+; 19.209 ; add_p1_p1_reg[3]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.823      ;
+; 19.224 ; add_p1_p2_reg[0]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 20.000       ; 0.000      ; 0.808      ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'sysclk'                                                                                                 ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; state_reg.IDLE       ; state_reg.IDLE       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.367      ;
+; 0.322 ; div_p2_2_reg[3]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.487      ;
+; 0.326 ; div_p1_1_reg[1]      ; add_p1_p1_reg[1]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.491      ;
+; 0.335 ; div_p1_1_reg[0]      ; add_p1_p1_reg[0]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.500      ;
+; 0.335 ; add_p1_p1_reg[0]     ; add_p2_reg[0]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.487      ;
+; 0.337 ; div_p2_1_reg[1]      ; add_p1_p2_reg[1]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.502      ;
+; 0.345 ; add_p1_p2_reg[5]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.497      ;
+; 0.355 ; add_p1_p1_reg[5]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.507      ;
+; 0.357 ; add_p1_p2_reg[0]     ; add_p2_reg[2]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.509      ;
+; 0.367 ; add_p1_p1_reg[3]     ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.519      ;
+; 0.369 ; state_reg.IDLE       ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.521      ;
+; 0.370 ; state_reg.IDLE       ; state_reg.LOAD       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.522      ;
+; 0.416 ; state_reg.ADD_PARC_2 ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.568      ;
+; 0.417 ; state_reg.MULT_PARC  ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.569      ;
+; 0.439 ; div_p2_2_reg[1]      ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.604      ;
+; 0.446 ; div_p2_2_reg[2]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.611      ;
+; 0.446 ; add_p1_p1_reg[1]     ; add_p2_reg[1]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.598      ;
+; 0.447 ; div_p2_2_reg[0]      ; add_p1_p2_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.612      ;
+; 0.450 ; add_p1_p1_reg[4]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.602      ;
+; 0.452 ; add_p1_p1_reg[2]     ; add_p2_reg[2]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.604      ;
+; 0.453 ; div_p2_1_reg[0]      ; add_p1_p2_reg[0]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.618      ;
+; 0.455 ; div_p2_1_reg[3]      ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.620      ;
+; 0.455 ; add_p1_p2_reg[2]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.607      ;
+; 0.456 ; div_p1_2_reg[3]      ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.621      ;
+; 0.462 ; state_reg.DONE_ST    ; state_reg.IDLE       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.614      ;
+; 0.463 ; add_p1_p2_reg[1]     ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.615      ;
+; 0.468 ; state_reg.DONE_ST    ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.620      ;
+; 0.474 ; state_reg.LOAD       ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.626      ;
+; 0.474 ; add_p1_p2_reg[4]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.626      ;
+; 0.475 ; add_p1_p2_reg[3]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.627      ;
+; 0.478 ; state_reg.ADD_PARC_1 ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.630      ;
+; 0.484 ; state_reg.MULT_PARC  ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.636      ;
+; 0.492 ; add_p1_p2_reg[0]     ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.644      ;
+; 0.493 ; add_p1_p1_reg[5]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.645      ;
+; 0.507 ; add_p1_p1_reg[3]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.659      ;
+; 0.513 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[1]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.665      ;
+; 0.513 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.665      ;
+; 0.513 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.665      ;
+; 0.513 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.665      ;
+; 0.513 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.665      ;
+; 0.513 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[0]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.665      ;
+; 0.513 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[1]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.665      ;
+; 0.520 ; state_reg.LOAD       ; state_reg.ADD_PARC_2 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.672      ;
+; 0.527 ; add_p1_p2_reg[0]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.679      ;
+; 0.528 ; add_p1_p1_reg[5]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.680      ;
+; 0.548 ; state_reg.IDLE       ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.700      ;
+; 0.549 ; state_reg.IDLE       ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.701      ;
+; 0.553 ; state_reg.IDLE       ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.705      ;
+; 0.568 ; state_reg.ADD_PARC_2 ; state_reg.DONE_ST    ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.720      ;
+; 0.572 ; div_p1_2_reg[2]      ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.737      ;
+; 0.576 ; div_p2_1_reg[2]      ; add_p1_p2_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.741      ;
+; 0.577 ; div_p1_2_reg[0]      ; add_p1_p1_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.742      ;
+; 0.577 ; div_p1_1_reg[3]      ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.742      ;
+; 0.577 ; div_p2_2_reg[1]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.742      ;
+; 0.582 ; div_p2_2_reg[0]      ; add_p1_p2_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.747      ;
+; 0.584 ; div_p2_2_reg[2]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.749      ;
+; 0.586 ; div_p1_1_reg[2]      ; add_p1_p1_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.751      ;
+; 0.592 ; add_p1_p1_reg[2]     ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.744      ;
+; 0.595 ; div_p2_1_reg[3]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.760      ;
+; 0.599 ; state_reg.ADD_PARC_2 ; state_reg.ADD_PARC_1 ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.751      ;
+; 0.600 ; state_reg.ADD_PARC_2 ; state_reg.LOAD       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.752      ;
+; 0.600 ; state_reg.ADD_PARC_2 ; state_reg.MULT_PARC  ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.752      ;
+; 0.601 ; add_p1_p1_reg[3]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.753      ;
+; 0.601 ; add_p1_p2_reg[1]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.753      ;
+; 0.603 ; state_reg.ADD_PARC_2 ; state_reg.IDLE       ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.755      ;
+; 0.605 ; state_reg.ADD_PARC_1 ; add_p1_p2_reg[0]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.757      ;
+; 0.605 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[2]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.757      ;
+; 0.605 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[3]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.757      ;
+; 0.605 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.757      ;
+; 0.605 ; state_reg.ADD_PARC_1 ; add_p1_p1_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.757      ;
+; 0.612 ; div_p2_2_reg[1]      ; add_p1_p2_reg[5]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.777      ;
+; 0.614 ; state_reg.ADD_PARC_2 ; add_p2_reg[2]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.614 ; state_reg.ADD_PARC_2 ; add_p2_reg[3]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.614 ; state_reg.ADD_PARC_2 ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.614 ; state_reg.ADD_PARC_2 ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.614 ; state_reg.ADD_PARC_2 ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.614 ; state_reg.ADD_PARC_2 ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.614 ; state_reg.ADD_PARC_2 ; add_p2_reg[0]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.614 ; state_reg.ADD_PARC_2 ; add_p2_reg[1]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.614 ; add_p1_p2_reg[4]     ; add_p2_reg[7]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.766      ;
+; 0.615 ; add_p1_p2_reg[3]     ; add_p2_reg[6]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.767      ;
+; 0.617 ; div_p2_2_reg[0]      ; add_p1_p2_reg[4]     ; sysclk       ; sysclk      ; 0.000        ; 0.013      ; 0.782      ;
+; 0.621 ; add_p1_p2_reg[0]     ; add_p2_reg[5]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.773      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p2_1_reg[0]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p1_2_reg[0]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p1_1_reg[2]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p2_1_reg[1]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p1_2_reg[1]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p1_1_reg[3]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p2_2_reg[0]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p2_1_reg[2]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p1_2_reg[2]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p1_2_reg[3]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p2_2_reg[1]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p2_1_reg[3]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p2_2_reg[2]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p2_2_reg[3]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p1_1_reg[0]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.623 ; state_reg.MULT_PARC  ; div_p1_1_reg[1]      ; sysclk       ; sysclk      ; 0.000        ; -0.013     ; 0.762      ;
+; 0.627 ; add_p1_p1_reg[2]     ; add_p2_reg[4]        ; sysclk       ; sysclk      ; 0.000        ; 0.000      ; 0.779      ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'sysclk'                                                               ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; sysclk ; Rise       ; sysclk               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[0]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; add_p2_reg[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p2_reg[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_1_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_1_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_1_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_1_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_1_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_1_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_1_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_1_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_2_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_2_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_2_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_2_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_2_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_2_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p1_2_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p1_2_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_1_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_1_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_1_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_1_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_1_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_1_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_1_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_1_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_2_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_2_reg[0]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_2_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_2_reg[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_2_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_2_reg[2]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; div_p2_2_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; div_p2_2_reg[3]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.ADD_PARC_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.ADD_PARC_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.ADD_PARC_2 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.ADD_PARC_2 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.DONE_ST    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.DONE_ST    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.IDLE       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.IDLE       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.LOAD       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.LOAD       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; sysclk ; Rise       ; state_reg.MULT_PARC  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; sysclk ; Rise       ; state_reg.MULT_PARC  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[0]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[0]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[1]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[1]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[2]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[2]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[3]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[3]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[4]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[4]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p1_reg[5]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p1_reg[5]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[0]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sysclk ; Rise       ; add_p1_p2_reg[0]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sysclk ; Rise       ; add_p1_p2_reg[1]|clk ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; a[*]      ; sysclk     ; 2.353  ; 2.353  ; Rise       ; sysclk          ;
+;  a[0]     ; sysclk     ; 2.353  ; 2.353  ; Rise       ; sysclk          ;
+;  a[1]     ; sysclk     ; 2.088  ; 2.088  ; Rise       ; sysclk          ;
+;  a[2]     ; sysclk     ; 2.093  ; 2.093  ; Rise       ; sysclk          ;
+;  a[3]     ; sysclk     ; -0.081 ; -0.081 ; Rise       ; sysclk          ;
+; b[*]      ; sysclk     ; 2.514  ; 2.514  ; Rise       ; sysclk          ;
+;  b[0]     ; sysclk     ; 2.514  ; 2.514  ; Rise       ; sysclk          ;
+;  b[1]     ; sysclk     ; 2.284  ; 2.284  ; Rise       ; sysclk          ;
+;  b[2]     ; sysclk     ; 2.344  ; 2.344  ; Rise       ; sysclk          ;
+;  b[3]     ; sysclk     ; 0.071  ; 0.071  ; Rise       ; sysclk          ;
+; start     ; sysclk     ; 2.310  ; 2.310  ; Rise       ; sysclk          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; a[*]      ; sysclk     ; 0.214  ; 0.214  ; Rise       ; sysclk          ;
+;  a[0]     ; sysclk     ; -2.183 ; -2.183 ; Rise       ; sysclk          ;
+;  a[1]     ; sysclk     ; -1.927 ; -1.927 ; Rise       ; sysclk          ;
+;  a[2]     ; sysclk     ; -1.938 ; -1.938 ; Rise       ; sysclk          ;
+;  a[3]     ; sysclk     ; 0.214  ; 0.214  ; Rise       ; sysclk          ;
+; b[*]      ; sysclk     ; 0.058  ; 0.058  ; Rise       ; sysclk          ;
+;  b[0]     ; sysclk     ; -2.382 ; -2.382 ; Rise       ; sysclk          ;
+;  b[1]     ; sysclk     ; -2.039 ; -2.039 ; Rise       ; sysclk          ;
+;  b[2]     ; sysclk     ; -2.103 ; -2.103 ; Rise       ; sysclk          ;
+;  b[3]     ; sysclk     ; 0.058  ; 0.058  ; Rise       ; sysclk          ;
+; start     ; sysclk     ; -2.185 ; -2.185 ; Rise       ; sysclk          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; c[*]      ; sysclk     ; 3.662 ; 3.662 ; Rise       ; sysclk          ;
+;  c[0]     ; sysclk     ; 3.639 ; 3.639 ; Rise       ; sysclk          ;
+;  c[1]     ; sysclk     ; 3.658 ; 3.658 ; Rise       ; sysclk          ;
+;  c[2]     ; sysclk     ; 3.547 ; 3.547 ; Rise       ; sysclk          ;
+;  c[3]     ; sysclk     ; 3.662 ; 3.662 ; Rise       ; sysclk          ;
+;  c[4]     ; sysclk     ; 3.586 ; 3.586 ; Rise       ; sysclk          ;
+;  c[5]     ; sysclk     ; 3.650 ; 3.650 ; Rise       ; sysclk          ;
+;  c[6]     ; sysclk     ; 3.546 ; 3.546 ; Rise       ; sysclk          ;
+;  c[7]     ; sysclk     ; 3.520 ; 3.520 ; Rise       ; sysclk          ;
+; done      ; sysclk     ; 3.438 ; 3.438 ; Rise       ; sysclk          ;
+; ready     ; sysclk     ; 3.437 ; 3.437 ; Rise       ; sysclk          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; c[*]      ; sysclk     ; 3.520 ; 3.520 ; Rise       ; sysclk          ;
+;  c[0]     ; sysclk     ; 3.639 ; 3.639 ; Rise       ; sysclk          ;
+;  c[1]     ; sysclk     ; 3.658 ; 3.658 ; Rise       ; sysclk          ;
+;  c[2]     ; sysclk     ; 3.547 ; 3.547 ; Rise       ; sysclk          ;
+;  c[3]     ; sysclk     ; 3.662 ; 3.662 ; Rise       ; sysclk          ;
+;  c[4]     ; sysclk     ; 3.586 ; 3.586 ; Rise       ; sysclk          ;
+;  c[5]     ; sysclk     ; 3.650 ; 3.650 ; Rise       ; sysclk          ;
+;  c[6]     ; sysclk     ; 3.546 ; 3.546 ; Rise       ; sysclk          ;
+;  c[7]     ; sysclk     ; 3.520 ; 3.520 ; Rise       ; sysclk          ;
+; done      ; sysclk     ; 3.438 ; 3.438 ; Rise       ; sysclk          ;
+; ready     ; sysclk     ; 3.437 ; 3.437 ; Rise       ; sysclk          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -1.043  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  sysclk          ; -1.043  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -18.285 ; 0.0   ; 0.0      ; 0.0     ; -43.38              ;
+;  sysclk          ; -18.285 ; 0.000 ; N/A      ; N/A     ; -43.380             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; a[*]      ; sysclk     ; 4.276 ; 4.276 ; Rise       ; sysclk          ;
+;  a[0]     ; sysclk     ; 4.276 ; 4.276 ; Rise       ; sysclk          ;
+;  a[1]     ; sysclk     ; 3.727 ; 3.727 ; Rise       ; sysclk          ;
+;  a[2]     ; sysclk     ; 3.735 ; 3.735 ; Rise       ; sysclk          ;
+;  a[3]     ; sysclk     ; 0.294 ; 0.294 ; Rise       ; sysclk          ;
+; b[*]      ; sysclk     ; 4.620 ; 4.620 ; Rise       ; sysclk          ;
+;  b[0]     ; sysclk     ; 4.620 ; 4.620 ; Rise       ; sysclk          ;
+;  b[1]     ; sysclk     ; 4.236 ; 4.236 ; Rise       ; sysclk          ;
+;  b[2]     ; sysclk     ; 4.321 ; 4.321 ; Rise       ; sysclk          ;
+;  b[3]     ; sysclk     ; 0.618 ; 0.618 ; Rise       ; sysclk          ;
+; start     ; sysclk     ; 4.283 ; 4.283 ; Rise       ; sysclk          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; a[*]      ; sysclk     ; 0.214  ; 0.214  ; Rise       ; sysclk          ;
+;  a[0]     ; sysclk     ; -2.183 ; -2.183 ; Rise       ; sysclk          ;
+;  a[1]     ; sysclk     ; -1.927 ; -1.927 ; Rise       ; sysclk          ;
+;  a[2]     ; sysclk     ; -1.938 ; -1.938 ; Rise       ; sysclk          ;
+;  a[3]     ; sysclk     ; 0.214  ; 0.214  ; Rise       ; sysclk          ;
+; b[*]      ; sysclk     ; 0.058  ; 0.058  ; Rise       ; sysclk          ;
+;  b[0]     ; sysclk     ; -2.382 ; -2.382 ; Rise       ; sysclk          ;
+;  b[1]     ; sysclk     ; -2.039 ; -2.039 ; Rise       ; sysclk          ;
+;  b[2]     ; sysclk     ; -2.103 ; -2.103 ; Rise       ; sysclk          ;
+;  b[3]     ; sysclk     ; 0.058  ; 0.058  ; Rise       ; sysclk          ;
+; start     ; sysclk     ; -2.185 ; -2.185 ; Rise       ; sysclk          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; c[*]      ; sysclk     ; 6.542 ; 6.542 ; Rise       ; sysclk          ;
+;  c[0]     ; sysclk     ; 6.510 ; 6.510 ; Rise       ; sysclk          ;
+;  c[1]     ; sysclk     ; 6.530 ; 6.530 ; Rise       ; sysclk          ;
+;  c[2]     ; sysclk     ; 6.294 ; 6.294 ; Rise       ; sysclk          ;
+;  c[3]     ; sysclk     ; 6.542 ; 6.542 ; Rise       ; sysclk          ;
+;  c[4]     ; sysclk     ; 6.359 ; 6.359 ; Rise       ; sysclk          ;
+;  c[5]     ; sysclk     ; 6.521 ; 6.521 ; Rise       ; sysclk          ;
+;  c[6]     ; sysclk     ; 6.294 ; 6.294 ; Rise       ; sysclk          ;
+;  c[7]     ; sysclk     ; 6.267 ; 6.267 ; Rise       ; sysclk          ;
+; done      ; sysclk     ; 6.074 ; 6.074 ; Rise       ; sysclk          ;
+; ready     ; sysclk     ; 6.072 ; 6.072 ; Rise       ; sysclk          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; c[*]      ; sysclk     ; 3.520 ; 3.520 ; Rise       ; sysclk          ;
+;  c[0]     ; sysclk     ; 3.639 ; 3.639 ; Rise       ; sysclk          ;
+;  c[1]     ; sysclk     ; 3.658 ; 3.658 ; Rise       ; sysclk          ;
+;  c[2]     ; sysclk     ; 3.547 ; 3.547 ; Rise       ; sysclk          ;
+;  c[3]     ; sysclk     ; 3.662 ; 3.662 ; Rise       ; sysclk          ;
+;  c[4]     ; sysclk     ; 3.586 ; 3.586 ; Rise       ; sysclk          ;
+;  c[5]     ; sysclk     ; 3.650 ; 3.650 ; Rise       ; sysclk          ;
+;  c[6]     ; sysclk     ; 3.546 ; 3.546 ; Rise       ; sysclk          ;
+;  c[7]     ; sysclk     ; 3.520 ; 3.520 ; Rise       ; sysclk          ;
+; done      ; sysclk     ; 3.438 ; 3.438 ; Rise       ; sysclk          ;
+; ready     ; sysclk     ; 3.437 ; 3.437 ; Rise       ; sysclk          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; sysclk     ; sysclk   ; 181      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; sysclk     ; sysclk   ; 181      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 100   ; 100  ;
+; Unconstrained Output Ports      ; 10    ; 10   ;
+; Unconstrained Output Port Paths ; 10    ; 10   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
+    Info: Processing started: Fri Aug 02 16:14:01 2013
+Info: Command: quartus_sta parallel_mult -c parallel_mult
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (332104): Reading SDC File: '//hercules/gdl/nützliche Codes/parallel_mult/parallel_mult.sdc'
+Warning (332153): Family doesn't support jitter analysis.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name sysclk sysclk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.043
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.043       -18.285 sysclk 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 sysclk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -43.380 sysclk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.091
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.091         0.000 sysclk 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 sysclk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -43.380 sysclk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 322 megabytes
+    Info: Processing ended: Fri Aug 02 16:14:14 2013
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:02
+
+

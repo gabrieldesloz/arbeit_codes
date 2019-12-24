@@ -1,0 +1,117 @@
+= MU320: Descrição do Módulo Sample Register = 
+
+Versão:[[Wikinfo(version)]] [[Wikinfo(changed_ts)]]
+[[PageOutline(2-3, Índice, inline)]]
+----
+
+== Descrição do Módulo ==
+
+=== Geral ===
+
+Esse módulo é responsável pela aquisição das amostras analógicas vindas do sistema de aquisição e disponibilização das mesmas para o sistema operacional.
+
+O mesmo módulo é usado para as amostrar de proteção e monitoração, sendo selecionado a função via registrador. Para proteção é usada 1 amostra a cada 5 e para proteção 1 amostra a cada 16. O total fica em 16 amostras por ciclo nas duas configurações.
+
+Ao ter uma amostra disponível para o sistema operacional é então enviado um sinal de interrupção para o sistema ler os registradores.
+
+O módulo tem um contador de amostras de 64 bits, onde é sinalizado no bit mais significativo se ocorreu um sinal de pps antes da amostra.
+
+
+== Interface com o SO ==
+
+=== Descrição dos Registradores === 
+
+|| '''Endereço''' || '''Registrador (32 bits)'''  || '''Descrição''' ||
+|| '''00h''' || Control || Registrador de Controle || 
+|| '''04h''' || Status || Registrador de Status || 
+|| '''08h''' || Samples || Amostra 0 ||
+|| '''0Ch''' || Samples || Amostra 1 ||
+|| '''10h''' || Samples || Amostra 2 ||
+|| '''14h''' || Samples || Amostra 3 ||
+|| '''18h''' || Samples || Amostra 4 ||
+|| '''1Ch''' || Samples || Amostra 5 ||
+|| '''20h''' || Samples || Amostra 6 ||
+|| '''24h''' || Samples || Amostra 7 ||
+|| '''28h''' || Samples || Amostra 8 ||
+|| '''2Ch''' || Samples || Amostra 9 ||
+|| '''30h''' || Samples || Amostra 10 ||
+|| '''34h''' || Samples || Amostra 11 ||
+|| '''38h''' || Samples || Amostra 12 ||
+|| '''3Ch''' || Samples || Amostra 13 ||
+|| '''40h''' || Samples || Amostra 14 ||
+|| '''44h''' || Samples || Amostra 15 ||
+|| '''48h''' || Sample Count Low || Contador de amostragens, range menos significativo ||
+|| '''4Ch''' || Sample Count High || Contador de amostragens, range mais significativo ||
+
+
+
+
+=== Status ===
+
+|| '''bit''' || '''31''' || '''30''' || '''29''' || '''28''' || '''27''' || '''26''' || '''25''' || '''24''' || '''23''' || '''22''' || '''21''' || '''20''' || '''19''' || '''18''' || '''17''' || '''16''' ||'''15''' || '''14''' || '''13''' || '''12''' || '''11''' || '''10''' || '''9''' || '''8''' || '''7''' || '''6''' || '''5''' || '''4''' || '''3''' || '''2''' || '''1''' || '''0''' ||
+||  || || || || || || || || || || || || || || || || |||| || || || || || || || || || || || || || IRQ Flag Cleaner || IRQ Flag ||
+
+'''IRQ Flag''' É a flag que sinaliza que ocorreu um pedido de interrupção por parte do módulo.
+
+'''IRQ Flag Cleaner''' quando escrito 1 apaga a flag de interrupção, esse bit quando lido sempre retorna o valor 0.
+
+
+=== Control ===
+
+|| '''bit''' || '''31''' || '''30''' || '''29''' || '''28''' || '''27''' || '''26''' || '''25''' || '''24''' || '''23''' || '''22''' || '''21''' || '''20''' || '''19''' || '''18''' || '''17''' || '''16''' ||'''15''' || '''14''' || '''13''' || '''12''' || '''11''' || '''10''' || '''9''' || '''8''' || '''7''' || '''6''' || '''5''' || '''4''' || '''3''' || '''2''' || '''1''' || '''0''' ||
+|| || || || || || || || || || || || || || || || || || || |||| || || || || || || || ||  || ||Samples || Sync || Enable ||
+
+'''Enable''' quando em 1 habilita o funcionamento do módulo, na primeira ativação o módulo espera pelo sinal de PPS para inciar a aquisição de forma sincronizada. Quando em 0 desabilita o módulo
+
+'''Sync''' quando em 1 sinaliza para o módulo esperar o sinal de PPS antes de fazer a primeira aquisição, em 0 o módulo opera sem sincronização nenhuma.
+
+'''Samples''' quando em 0 faz o módulo trabalhar com pacotes de proteção amostrando 1 a cada 5 entradas. Quando em 1 faz o módulo trabalhar com pacotes de monitoração amostrando 1 a cada 16 entradas.
+
+=== Sample Count High ===
+
+|| '''bit''' || '''31''' || '''30''' || '''29''' || '''28''' || '''27''' || '''26''' || '''25''' || '''24''' || '''23''' || '''22''' || '''21''' || '''20''' || '''19''' || '''18''' || '''17''' || '''16''' ||'''15''' || '''14''' || '''13''' || '''12''' || '''11''' || '''10''' || '''9''' || '''8''' || '''7''' || '''6''' || '''5''' || '''4''' || '''3''' || '''2''' || '''1''' || '''0''' ||
+|| PPS || || || || || || || || || || || || || || || || || || |||| || || || || || || || ||  || || || || ||
+
+'''PPS''' Sinaliza se ocorreu o sinal de pps antes da amostra
+
+
+== Interface no VHDL ==
+
+=== Sinais do Sistema ===
+
+|| '''Sinal''' || '''in/out''' || '''Tamanho(bits)''' || '''Descrição''' ||
+|| reset_n || in || 1 || Reset signal     ||
+|| coe_clk  || in || 1 || Clock do sistema ||
+
+
+=== Barramento Avalon MM ===
+
+|| '''Sinal''' || '''in/out''' || '''Tamanho(bits)''' || '''Descrição''' ||
+|| clk || in || 1 || Entrada de clk do barramento ||
+|| avs_address || in || 5 || Barramento de endereços ||
+|| avs_writedata || in || 32 || Barramento de dados a serem escritos no módulo ||
+|| avs_write || in || 1 || Sinal que habilita a escrita no momento desejado ||
+|| avs_readdata || out || 32 || Barramento de dados a serem lidos no módulo ||
+|| avs_read || out || 1 || Sinal que habilita a leitura no momento desejado ||
+|| avs_chipselect || in || 1 || Sinal para selecionar o módulo e fazer com que sejam possíveis operações nele pelo barramento Avalon MM ||
+
+
+=== Barramento Gateware ===
+
+|| '''Sinal''' || '''in/out''' || '''Tamanho(bits)''' || '''Descrição''' ||
+|| coe_data_available_i || in || 1 || Sinalização de que existe um dado novo na entrada ||
+|| coe_data_i || in || 512 || Entrada de dados já calibrados e transformados em primário ||
+|| coe_pps_edge_i || in || 1 || Entrada de PPS para sincronização da primeira amostra ||
+
+== Consumo de Lógica e Tempo ==
+
+=== Lógica ===
+
+Toda a análise de consumo de lógica interna do FPGA de cada módulo foi feita compilando o módulo em específico como entidade top do projeto e usando os valores resultantes da etapa de Análise e Sintese.
+
+|| '''LC Combinational''' || '''LC Registers''' || '''Memory Bits''' || '''DSP 9x9''' || '''DSP 18x18''' ||
+|| 1642 || 1264 || 0 || 0 || 0 ||
+
+=== Tempo ===
+
+Por esse módulo somente amostrar os dados da entrada e armazenar em uma memória posteriormente acessada pelo sistema operacional não existe tempo a ser analisado para execução do módulo.

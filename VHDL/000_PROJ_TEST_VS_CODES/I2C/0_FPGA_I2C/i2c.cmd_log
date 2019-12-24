@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn __projnav/i2c.xst -ofn i2c.syr
+xst -intstyle ise -ifn __projnav/i2c.xst -ofn i2c.syr
+xst -intstyle ise -ifn __projnav/i2c.xst -ofn i2c.syr
+xst -intstyle ise -ifn __projnav/i2c.xst -ofn i2c.syr
+xst -intstyle ise -ifn __projnav/i2c.xst -ofn i2c.syr
+xst -intstyle ise -ifn __projnav/i2c.xst -ofn i2c.syr
+xst -intstyle ise -ifn __projnav/i2c.xst -ofn i2c.syr
+ngdbuild -intstyle ise -dd "c:\sanmak\0_fpga_i2c/_ngo" -nt timestamp -uc i2c.ucf  -p xc3s200-ft256-4 i2c.ngc i2c.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o i2c_map.ncd i2c.ngd i2c.pcf
+par -w -intstyle ise -ol std -t 1 i2c_map.ncd i2c.ncd i2c.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml i2c i2c.ncd -o i2c.twr i2c.pcf
+bitgen -intstyle ise -f i2c.ut i2c.ncd
+xst -ise "C:/SANMAK/0_FPGA_I2C/0_FPGA_I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+xst -ise "C:/SANMAK/0_FPGA_I2C/0_FPGA_I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr
+xst -ise "C:/SANMAK/0_FPGA_I2C/0_FPGA_I2C.ise" -intstyle ise -ifn I2C.xst -ofn I2C.syr

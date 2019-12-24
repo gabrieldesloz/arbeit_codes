@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc_reflect_final_15_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc_reflect_final_14_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_13_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_12_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_11_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_10_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_9_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_8_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_7_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_6_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_5_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_4_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_3_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_2_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_1_BRB2&gt; &lt;i_MEAN_16K/s_acc_reflect_final_0_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc_transluc_wmean_29_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc_transluc_wmean_28_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_27_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_26_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_25_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_24_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_23_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_22_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_21_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_20_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_19_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_18_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_17_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_16_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_15_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_14_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_13_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_12_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_11_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_10_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_9_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_8_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_7_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_6_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_5_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_4_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_3_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_2_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_1_BRB0&gt; &lt;i_MEAN_16K/s_acc_transluc_wmean_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2b_transluc_wmean_29_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2b_transluc_wmean_28_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_27_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_26_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_25_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_24_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_23_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_22_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_21_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_20_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_19_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_18_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_17_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_16_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_15_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_14_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_13_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_12_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_11_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_10_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_9_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_8_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_7_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_6_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_5_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_4_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_3_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_2_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_1_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_transluc_wmean_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_accb_transluc_final_15_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_accb_transluc_final_14_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_13_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_12_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_11_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_10_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_9_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_8_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_7_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_6_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_5_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_4_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_3_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_2_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_1_BRB4&gt; &lt;i_MEAN_16K/s_accb_transluc_final_0_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_accb_transluc_final_15_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_accb_transluc_final_14_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_13_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_12_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_11_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_10_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_9_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_8_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_7_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_6_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_5_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_4_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_3_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_2_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_1_BRB2&gt; &lt;i_MEAN_16K/s_accb_transluc_final_0_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rqpaca_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rqpacb_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_accb_reflect_final_15_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_accb_reflect_final_14_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_13_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_12_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_11_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_10_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_9_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_8_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_7_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_6_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_5_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_4_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_3_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_2_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_1_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_final_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">extellipeva_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extellipevb_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rqpaca_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rqpacb_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">extclr_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_extclr_bckgnd_gain_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">extclr_BRB3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_extclr_bckgnd_gain_BRB3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">extclr_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_extclr_bckgnd_gain_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2b_transluc_final_15_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2b_transluc_final_14_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_13_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_12_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_11_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_10_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_9_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_8_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_7_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_6_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_5_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_4_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_3_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_2_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_1_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_0_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">extclrd_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extclrf_BRB0&gt; &lt;extclrag_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clkbd</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sortst_24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_accb_transluc_wmean_29_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_accb_transluc_wmean_28_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_27_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_26_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_25_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_24_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_23_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_22_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_21_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_20_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_19_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_18_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_17_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_16_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_15_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_14_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_13_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_12_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_11_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_10_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_9_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_8_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_7_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_6_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_5_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_4_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_3_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_2_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_1_BRB0&gt; &lt;i_MEAN_16K/s_accb_transluc_wmean_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc_reflect_wmean_29_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc_reflect_wmean_28_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_27_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_26_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_25_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_24_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_23_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_22_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_21_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_20_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_19_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_18_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_17_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_16_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_15_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_14_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_13_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_12_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_11_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_10_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_9_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_8_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_7_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_6_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_5_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_4_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_3_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_2_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_1_BRB0&gt; &lt;i_MEAN_16K/s_acc_reflect_wmean_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2_transluc_final_15_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2_transluc_final_14_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_13_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_12_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_11_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_10_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_9_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_8_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_7_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_6_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_5_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_4_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_3_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_2_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_1_BRB2&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_0_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2_transluc_wmean_29_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2_transluc_wmean_28_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_27_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_26_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_25_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_24_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_23_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_22_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_21_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_20_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_19_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_18_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_17_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_16_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_15_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_14_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_13_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_12_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_11_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_10_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_9_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_8_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_7_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_6_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_5_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_4_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_3_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_2_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_1_BRB0&gt; &lt;i_MEAN_16K/s_acc2_transluc_wmean_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2b_reflect_wmean_29_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2b_reflect_wmean_28_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_27_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_26_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_25_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_24_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_23_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_22_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_21_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_20_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_19_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_18_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_17_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_16_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_15_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_14_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_13_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_12_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_11_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_10_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_9_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_8_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_7_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_6_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_5_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_4_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_3_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_2_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_1_BRB0&gt; &lt;i_MEAN_16K/s_acc2b_reflect_wmean_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s_fifoline_last_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;fifolinew_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc_transluc_final_15_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc_transluc_final_14_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_13_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_12_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_11_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_10_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_9_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_8_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_7_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_6_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_5_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_4_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_3_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_2_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_1_BRB4&gt; &lt;i_MEAN_16K/s_acc_transluc_final_0_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2_reflect_final_15_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2_reflect_final_14_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_13_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_12_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_11_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_10_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_9_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_8_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_7_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_6_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_5_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_4_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_3_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_2_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_1_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">wdefena</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wdefenb&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2_reflect_wmean_29_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2_reflect_wmean_28_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_27_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_26_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_25_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_24_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_23_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_22_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_21_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_20_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_19_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_18_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_17_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_16_BRB1&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_15_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_14_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_13_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_12_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_11_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_10_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_9_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_8_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_7_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_6_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_5_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_4_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_3_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_2_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_1_BRB0&gt; &lt;i_MEAN_16K/s_acc2_reflect_wmean_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_accb_reflect_final_15_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_accb_reflect_final_14_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_13_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_12_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_11_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_10_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_9_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_8_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_7_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_6_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_5_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_4_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_3_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_2_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_1_BRB2&gt; &lt;i_MEAN_16K/s_accb_reflect_final_0_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rqpaca_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rqpacb_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2_transluc_final_15_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2_transluc_final_14_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_13_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_12_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_11_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_10_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_9_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_8_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_7_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_6_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_5_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_4_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_3_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_2_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_1_BRB4&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_0_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clrellib</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ellclkb&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2b_reflect_final_15_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2b_reflect_final_14_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_13_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_12_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_11_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_10_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_9_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_8_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_7_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_6_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_5_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_4_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_3_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_2_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_1_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_accb_reflect_final_15_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_accb_reflect_final_14_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_13_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_12_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_11_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_10_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_9_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_8_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_7_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_6_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_5_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_4_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_3_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_2_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_1_BRB4&gt; &lt;i_MEAN_16K/s_accb_reflect_final_0_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2_reflect_final_15_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2_reflect_final_14_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_13_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_12_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_11_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_10_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_9_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_8_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_7_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_6_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_5_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_4_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_3_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_2_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_1_BRB4&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_0_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc_transluc_final_15_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc_transluc_final_14_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_13_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_12_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_11_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_10_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_9_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_8_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_7_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_6_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_5_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_4_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_3_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_2_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_1_BRB1&gt; &lt;i_MEAN_16K/s_acc_transluc_final_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_8&gt; &lt;s_ramdata_5_8&gt; &lt;s_ramdata_6_8&gt; &lt;s_ramdata_7_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_accb_reflect_wmean_29_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_accb_reflect_wmean_28_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_27_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_26_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_25_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_24_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_23_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_22_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_21_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_20_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_19_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_18_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_17_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_16_BRB1&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_15_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_14_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_13_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_12_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_11_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_10_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_9_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_8_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_7_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_6_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_5_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_4_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_3_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_2_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_1_BRB0&gt; &lt;i_MEAN_16K/s_accb_reflect_wmean_0_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_9&gt; &lt;s_ramdata_5_9&gt; &lt;s_ramdata_6_9&gt; &lt;s_ramdata_7_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">clrellia</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ellclka&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_10&gt; &lt;s_ramdata_5_10&gt; &lt;s_ramdata_6_10&gt; &lt;s_ramdata_7_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_11&gt; &lt;s_ramdata_5_11&gt; &lt;s_ramdata_6_11&gt; &lt;s_ramdata_7_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_12&gt; &lt;s_ramdata_5_12&gt; &lt;s_ramdata_6_12&gt; &lt;s_ramdata_7_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_13&gt; &lt;s_ramdata_5_13&gt; &lt;s_ramdata_6_13&gt; &lt;s_ramdata_7_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_14&gt; &lt;s_ramdata_5_14&gt; &lt;s_ramdata_6_14&gt; &lt;s_ramdata_7_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_15&gt; &lt;s_ramdata_5_15&gt; &lt;s_ramdata_6_15&gt; &lt;s_ramdata_7_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">exteventd_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;exteventf_BRB0&gt; &lt;exteventag_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc_reflect_final_15_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc_reflect_final_14_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_13_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_12_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_11_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_10_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_9_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_8_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_7_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_6_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_5_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_4_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_3_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_2_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_1_BRB4&gt; &lt;i_MEAN_16K/s_acc_reflect_final_0_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rqpaca_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rqpacb_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rqpaca_BRB5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rqpacb_BRB5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rqpaca_BRB3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rqpacb_BRB3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2b_reflect_final_15_BRB4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2b_reflect_final_14_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_13_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_12_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_11_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_10_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_9_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_8_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_7_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_6_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_5_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_4_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_3_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_2_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_1_BRB4&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_0_BRB4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2b_reflect_final_15_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2b_reflect_final_14_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_13_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_12_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_11_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_10_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_9_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_8_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_7_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_6_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_5_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_4_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_3_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_2_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_1_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_reflect_final_0_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_0&gt; &lt;s_ramdata_5_0&gt; &lt;s_ramdata_6_0&gt; &lt;s_ramdata_7_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_1&gt; &lt;s_ramdata_5_1&gt; &lt;s_ramdata_6_1&gt; &lt;s_ramdata_7_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_2&gt; &lt;s_ramdata_5_2&gt; &lt;s_ramdata_6_2&gt; &lt;s_ramdata_7_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_3&gt; &lt;s_ramdata_5_3&gt; &lt;s_ramdata_6_3&gt; &lt;s_ramdata_7_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_4&gt; &lt;s_ramdata_5_4&gt; &lt;s_ramdata_6_4&gt; &lt;s_ramdata_7_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_5&gt; &lt;s_ramdata_5_5&gt; &lt;s_ramdata_6_5&gt; &lt;s_ramdata_7_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_ramdata_3_6&gt; &lt;s_ramdata_5_6&gt; &lt;s_ramdata_6_6&gt; &lt;s_ramdata_7_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc_transluc_final_15_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc_transluc_final_14_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_13_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_12_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_11_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_10_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_9_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_8_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_7_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_6_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_5_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_4_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_3_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_2_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_1_BRB2&gt; &lt;i_MEAN_16K/s_acc_transluc_final_0_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2b_transluc_final_15_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2b_transluc_final_14_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_13_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_12_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_11_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_10_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_9_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_8_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_7_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_6_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_5_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_4_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_3_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_2_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_1_BRB1&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/s_rd_ptr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/Madd_s_CH_IS1_xor&lt;1&gt;11_FRB&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc_reflect_final_15_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc_reflect_final_14_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_13_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_12_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_11_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_10_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_9_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_8_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_7_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_6_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_5_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_4_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_3_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_2_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_1_BRB1&gt; &lt;i_MEAN_16K/s_acc_reflect_final_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2b_transluc_final_15_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2b_transluc_final_14_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_13_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_12_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_11_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_10_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_9_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_8_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_7_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_6_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_5_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_4_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_3_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_2_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_1_BRB2&gt; &lt;i_MEAN_16K/s_acc2b_transluc_final_0_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">extclr_BRB0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_extclr_bckgnd_gain_BRB0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2_reflect_final_15_BRB2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2_reflect_final_14_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_13_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_12_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_11_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_10_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_9_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_8_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_7_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_6_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_5_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_4_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_3_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_2_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_1_BRB2&gt; &lt;i_MEAN_16K/s_acc2_reflect_final_0_BRB2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_accb_transluc_final_15_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_accb_transluc_final_14_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_13_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_12_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_11_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_10_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_9_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_8_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_7_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_6_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_5_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_4_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_3_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_2_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_1_BRB1&gt; &lt;i_MEAN_16K/s_accb_transluc_final_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">i_MEAN_16K/s_acc2_transluc_final_15_BRB1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">MAIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_MEAN_16K/s_acc2_transluc_final_14_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_13_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_12_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_11_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_10_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_9_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_8_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_7_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_6_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_5_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_4_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_3_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_2_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_1_BRB1&gt; &lt;i_MEAN_16K/s_acc2_transluc_final_0_BRB1&gt; </arg>
+</msg>
+
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">LDATA_15_IOBUF/N2</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">99</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">LDATA_15_IOBUF/N3,
+LDATA_14_IOBUF/N2,
+LDATA_14_IOBUF/N3,
+LDATA_13_IOBUF/N2,
+LDATA_13_IOBUF/N3</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;8&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;7&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;5&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;3&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;2&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;1&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">L_RX</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;8&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;7&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;5&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;3&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;2&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;1&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">L_RX</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;8&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;7&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;5&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;3&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;2&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;1&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">L_RX</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;8&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;7&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;5&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;3&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;2&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;1&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">L_RX</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;8&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;8&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;7&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;7&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;5&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;5&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;3&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;3&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;2&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;2&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;1&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">TEST&lt;1&gt;</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">L_RX</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">L_RX</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC2_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_OEB</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="MapLib" num="23" delta="old" >Short on signal <arg fmt="%s" index="1">ADC1_CLK1</arg> detected.
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_7</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_7 can not use TFF because the clock signal does not agree with register s_sram_input_data_10.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_6</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_6 can not use TFF because the clock signal does not agree with register s_sram_input_data_11.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_5</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_5 can not use TFF because the clock signal does not agree with register s_sram_input_data_12.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_4</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_4 can not use TFF because the clock signal does not agree with register s_sram_input_data_13.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_3</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_3 can not use TFF because the clock signal does not agree with register s_sram_input_data_14.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_2</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_2 can not use TFF because the clock signal does not agree with register s_sram_input_data_15.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_17</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_17 can not use TFF because the clock signal does not agree with register s_sram_input_data_0.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_16</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_16 can not use TFF because the clock signal does not agree with register s_sram_input_data_1.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_15</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_15 can not use TFF because the clock signal does not agree with register s_sram_input_data_2.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_14</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_14 can not use TFF because the clock signal does not agree with register s_sram_input_data_3.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_13</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_13 can not use TFF because the clock signal does not agree with register s_sram_input_data_4.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_12</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_12 can not use TFF because the clock signal does not agree with register s_sram_input_data_5.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_11</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_11 can not use TFF because the clock signal does not agree with register s_sram_input_data_6.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_10</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_10 can not use TFF because the clock signal does not agree with register s_sram_input_data_7.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_9</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_9 can not use TFF because the clock signal does not agree with register s_sram_input_data_8.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2549" delta="old" >The register &quot;<arg fmt="%s" index="1">s_writing_sram_8</arg>&quot; has the property IOB=TRUE, but was not packed into the OLOGIC component. <arg fmt="%z" index="2">The register s_writing_sram_8 can not use TFF because the clock signal does not agree with register s_sram_input_data_9.</arg>
+</msg>
+
+<msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+</msg>
+
+<msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">1.140</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">1.140</arg> to <arg fmt="%0.3f" index="3">1.260</arg> Volts)
+</msg>
+
+<msg type="warning" file="Timing" num="3159" delta="old" >The DCM, <arg fmt="%s" index="1">DCM_CLKGEN_inst</arg>, has the attribute DFS_OSCILLATOR_MODE not set to PHASE_FREQ_LOCK. No phase relationship exists between the input clock and CLKFX or CLKFX180 outputs of this DCM. Data paths between these clock domains must be constrained using FROM/TO constraints.
+</msg>
+
+<msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+</msg>
+
+<msg type="warning" file="Place" num="1206" delta="old" >This design contains a global buffer instance, &lt;<arg fmt="%s" index="1">BUFG_1u</arg>&gt;, driving the net, &lt;<arg fmt="%s" index="2">ADC2_SCLK_OBUF</arg>&gt;, that is driving the following (first <arg fmt="%d" index="3">30</arg>) non-clock load pins off chip.
+<arg fmt="%s" index="4">&lt; PIN: ADC1_SCLK.O; &gt;
+&lt; PIN: ADC2_SCLK.O; &gt;
+</arg>This design practice, in Spartan-6, can lead to an unroutable situation due to limitations in the global routing. If the design does route there may be excessive delay or skew on this net. It is recommended to use a Clock Forwarding technique to create a reliable and repeatable low skew solution: instantiate an ODDR2 component; tie the .D0 pin to Logic1; tie the .D1 pin to Logic0; tie the clock net to be forwarded to .C0; tie the inverted clock to .C1. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN &lt;<arg fmt="%s" index="5">BUFG_1u</arg>.<arg fmt="%s" index="6">O</arg>&gt; allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN.
+</msg>
+
+<msg type="warning" file="Place" num="1137" delta="new" >This design is not guaranteed to be routable! This design contains a global buffer instance, &lt;<arg fmt="%s" index="1">BUFG_1u</arg>&gt;, driving the net, &lt;<arg fmt="%s" index="2">ADC2_SCLK_OBUF</arg>&gt;, that is driving the following (first <arg fmt="%d" index="3">30</arg>) non-clock load pins.
+<arg fmt="%s" index="4">&lt; PIN: lut9559_421.A4; &gt;
+&lt; PIN: ADC1_SCLK.O; &gt;
+&lt; PIN: ADC2_SCLK.O; &gt;
+</arg>This is not a recommended design practice in Spartan-6 due to limitations in the global routing that may cause excessive delay, skew or unroutable situations.  It is recommended to only use a BUFG resource to drive clock loads. Please pay extra attention to the timing and routing of this path to ensure the design goals are met. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN &lt;<arg fmt="%s" index="5">BUFG_1u</arg>.<arg fmt="%s" index="6">O</arg>&gt; allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN.
+</msg>
+
+<msg type="warning" file="Place" num="1109" delta="old" >A clock IOB / BUFGMUX clock component pair have been found that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock IOB component &lt;<arg fmt="%s" index="1">RSINC2</arg>&gt; is placed at site &lt;<arg fmt="%s" index="2">E11</arg>&gt;. The corresponding BUFG component &lt;<arg fmt="%s" index="3">RSINC2_IBUF_BUFG</arg>&gt; is placed at site &lt;<arg fmt="%s" index="4">BUFGMUX_X2Y2</arg>&gt;. There is only a select set of IOBs that can use the fast path to the Clocker buffer, and they are not being used. You may want to analyze why this problem exists and correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN &lt;<arg fmt="%s" index="5">RSINC2.PAD</arg>&gt; allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+</msg>
+
+<msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9856_642</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut27150_6820</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9864_648</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9804_603</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9892_669</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9616_462</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9612_459</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9660_495</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9608_456</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9604_453</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">chopvalve</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9600_450</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9596_447</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9824_618</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut27001_6755</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut27006_6757</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9430_371</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9744_558</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9740_555</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9736_552</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9732_549</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9872_654</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9720_540</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9860_645</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9728_546</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9868_651</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9724_543</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9716_537</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9684_513</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9712_534</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9852_639</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9708_531</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9592_444</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9848_636</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9844_633</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9840_630</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9836_627</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9676_507</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9760_570</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9628_471</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9704_528</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut27011_6759</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut27159_6823</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9700_525</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9696_522</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9664_498</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut26992_6753</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9588_441</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9692_519</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9656_492</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9620_465</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9688_516</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9652_489</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9624_468</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9680_510</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9648_486</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9644_483</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9672_504</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9640_480</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9832_624</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9668_501</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9636_477</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9828_621</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9792_594</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9632_474</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9820_615</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9788_591</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9816_612</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9784_588</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9752_564</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9812_609</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9780_585</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9748_561</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9808_606</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9776_582</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9772_579</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9800_600</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9768_576</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9796_597</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9756_567</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9764_573</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9888_666</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut32533_8213</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut27020_6761</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut27204_6834</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9584_438</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">s_reading_sram_int</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9876_657</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9880_660</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut9884_663</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut16050_2819</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut16193_2828</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_O</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">EN_BACK_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">CCD_SI1_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">CCD_SI2_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">CCD_SI3_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">CCD_SI4_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">CCD_CLK1_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">CCD_CLK2_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">CCD_CLK3_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">CCD_CLK4_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">EJA_CK_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">EJB_CK_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">EJA_TX_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">EJB_TX_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ADC1_CLK2_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ADC2_CLK2_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ADC1_SCLK_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ADC2_SCLK_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TSINC1_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TSINC2_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">FLEDA_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">FLEDB_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">FLEDD_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ADC1_SLOAD_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;10&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;11&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">FLEDc_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;12&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;13&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;14&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;15&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;16&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;17&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ADC1_CLK_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ADC2_CLK_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">ADC2_SLOAD_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">LED1_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">LED2_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;0&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;1&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;2&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;3&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;4&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;5&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;6&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;7&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;8&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MADDR&lt;9&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">RLEDA_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">RLEDB_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">RLEDC_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">RLEDD_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MCS_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MOE_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">FPGA_BUSYCOM_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">MWR_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;0&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;4&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;6&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;10&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;11&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;12&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;9&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;13&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;14&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLUP</arg> on an active net. <arg fmt="%s" index="2">PULLUP</arg> of comp <arg fmt="%s" index="3">TEST&lt;15&gt;_PULLUP</arg> is set but the tri state is not configured. 
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="2410" delta="old" >This design is using one or more 9K Block RAMs (RAMB8BWER).  9K Block RAM initialization data, both user defined and default, may be incorrect and should not be used.  For more information, please reference Xilinx Answer Record 39999.
+</msg>
+
+</messages>
+

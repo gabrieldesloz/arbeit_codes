@@ -1,0 +1,3 @@
+vhdtdtfi -prj shift_reg -o M:/vhdl/0009_00257/shift_reg/chipscope.vhi -module chipscope -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work chipscope_icon.vhd -lib work chipscope_ila.vhd -lib work chipscope.vhd 
+vhdtdtfi -prj shift_reg -o M:/vhdl/0009_00257/shift_reg/chipscope.vhi -module chipscope -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work chipscope_icon.vhd -lib work chipscope_ila.vhd -lib work chipscope.vhd 
+vhdtdtfi -prj shift_reg -o M:/vhdl/0009_00257/shift_reg/chipscope.vhi -module chipscope -template C:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work chipscope_icon.vhd -lib work chipscope_ila.vhd -lib work chipscope.vhd 

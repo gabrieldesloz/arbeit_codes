@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/s10169/Desktop/VHDL/testes/testes/MEM_DEF_CNT_DIST.xst" -ofn "C:/Users/s10169/Desktop/VHDL/testes/testes/MEM_DEF_CNT_DIST.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx25-ftg256-3 MEM_DEF_CNT_DIST.ngc MEM_DEF_CNT_DIST.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MEM_DEF_CNT_DIST_map.ncd MEM_DEF_CNT_DIST.ngd MEM_DEF_CNT_DIST.pcf 

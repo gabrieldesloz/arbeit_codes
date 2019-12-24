@@ -1,0 +1,750 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.30 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.30 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: I2C.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "I2C.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "I2C"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : I2C
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : I2C.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/SANMAK/0_FPGA_I2C/RS232.vhd" in Library work.
+Entity <rs232> compiled.
+Entity <rs232> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/SANMAK/0_FPGA_I2C/I2C_A.vhd" in Library work.
+Architecture behavioral of Entity i2c_a is up to date.
+Compiling vhdl file "C:/SANMAK/0_FPGA_I2C/I2C.vhd" in Library work.
+Entity <i2c> compiled.
+Entity <i2c> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <I2C> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RS232> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <I2C_A> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <I2C> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "CLKFX_MULTIPLY =  2" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "CLKIN_PERIOD =  0.0000000000000000" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_inst> in unit <I2C>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_inst> in unit <I2C>.
+INFO:Xst:2679 - Register <dataA> in unit <I2C> has a constant value of 10010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <dataB> in unit <I2C> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <ti2c> in unit <I2C> has a constant value of 11 during circuit operation. The register is replaced by logic.
+Entity <I2C> analyzed. Unit <I2C> generated.
+
+Analyzing Entity <RS232> in library <work> (Architecture <behavioral>).
+Entity <RS232> analyzed. Unit <RS232> generated.
+
+Analyzing Entity <I2C_A> in library <work> (Architecture <behavioral>).
+Entity <I2C_A> analyzed. Unit <I2C_A> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <RS232>.
+    Related source file is "C:/SANMAK/0_FPGA_I2C/RS232.vhd".
+WARNING:Xst:646 - Signal <rxbin<0>> is assigned but never used.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+    Found 1-bit register for signal <TX232>.
+    Found 1-bit register for signal <RXrdy>.
+    Found 8-bit register for signal <RXDATA>.
+    Found 1-bit register for signal <bdck>.
+    Found 9-bit adder for signal <bdck$addsub0000> created at line 63.
+    Found 9-bit comparator greater for signal <bdck$cmp_gt0000> created at line 64.
+    Found 1-bit register for signal <bdref>.
+    Found 1-bit register for signal <notx>.
+    Found 4-bit comparator greater for signal <notx$cmp_gt0000> created at line 126.
+    Found 4-bit up counter for signal <rcc>.
+    Found 1-bit xor2 for signal <rcc$xor0000> created at line 99.
+    Found 8-bit register for signal <rxbin<8:1>>.
+    Found 4-bit adder for signal <RXDATA$add0000> created at line 102.
+    Found 1-bit register for signal <stfall>.
+    Found 4-bit up counter for signal <tcc>.
+    Found 1-bit register for signal <tsrx>.
+    Found 4-bit comparator less for signal <TX232$cmp_lt0000> created at line 141.
+    Found 1-bit register for signal <waitbyte>.
+    Found 9-bit up counter for signal <zzzz>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <RS232> synthesized.
+
+
+Synthesizing Unit <I2C_A>.
+    Related source file is "C:/SANMAK/0_FPGA_I2C/I2C_A.vhd".
+INFO:Xst:1799 - State 101001 is never reached in FSM <m>.
+INFO:Xst:1799 - State 101000 is never reached in FSM <m>.
+INFO:Xst:1799 - State 101010 is never reached in FSM <m>.
+INFO:Xst:1799 - State 101011 is never reached in FSM <m>.
+INFO:Xst:1799 - State 101100 is never reached in FSM <m>.
+INFO:Xst:1799 - State 101101 is never reached in FSM <m>.
+INFO:Xst:1799 - State 101110 is never reached in FSM <m>.
+INFO:Xst:1799 - State 101111 is never reached in FSM <m>.
+INFO:Xst:1799 - State 110000 is never reached in FSM <m>.
+INFO:Xst:1799 - State 110001 is never reached in FSM <m>.
+INFO:Xst:1799 - State 110010 is never reached in FSM <m>.
+INFO:Xst:1799 - State 110011 is never reached in FSM <m>.
+    Found finite state machine <FSM_0> for signal <m>.
+    -----------------------------------------------------------------------
+    | States             | 39                                             |
+    | Transitions        | 45                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 39                                             |
+    | Clock              | CLK1 (falling_edge)                            |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000000                                         |
+    | Power Up State     | 000000                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+    Found 8x1-bit ROM for signal <DATAA$mux0000> created at line 69.
+    Found 8-bit register for signal <DATARA>.
+    Found 8-bit register for signal <DATARB>.
+    Found 1-bit tristate buffer for signal <SDA>.
+    Found 1-bit register for signal <SCL>.
+    Found 1-bit register for signal <I2Cbusy>.
+    Found 1-bit 8-to-1 multiplexer for signal <DATAWA$mux0000> created at line 115.
+    Found 1-bit 8-to-1 multiplexer for signal <DATAWB$mux0000> created at line 123.
+    Found 3-bit register for signal <i>.
+    Found 3-bit subtractor for signal <m$sub0000> created at line 71.
+    Found 1-bit register for signal <Mtridata_SDA> created at line 61.
+    Found 1-bit register for signal <Mtrien_SDA> created at line 61.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <I2C_A> synthesized.
+
+
+Synthesizing Unit <I2C>.
+    Related source file is "C:/SANMAK/0_FPGA_I2C/I2C.vhd".
+WARNING:Xst:653 - Signal <TXgo> is used but never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <TXDATA> is used but never assigned. Tied to value 00000000.
+WARNING:Xst:646 - Signal <TXbusy> is assigned but never used.
+WARNING:Xst:646 - Signal <clk2x> is assigned but never used.
+WARNING:Xst:646 - Signal <RXDATA> is assigned but never used.
+WARNING:Xst:646 - Signal <dataRB> is assigned but never used.
+WARNING:Xst:653 - Signal <dataWA> is used but never assigned. Tied to value 00000000.
+WARNING:Xst:653 - Signal <dataWB> is used but never assigned. Tied to value 00000000.
+    Found finite state machine <FSM_1> for signal <x>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk1 (rising_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000000                                         |
+    | Power Up State     | 000000                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <LEDS>.
+    Found 1-bit register for signal <clk1u>.
+    Found 9-bit up counter for signal <dv0>.
+    Found 9-bit adder for signal <dv0$addsub0000> created at line 141.
+    Found 1-bit register for signal <sti2c>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <I2C> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x1-bit ROM                                           : 1
+# Adders/Subtractors                                   : 4
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Counters                                             : 4
+ 4-bit up counter                                      : 2
+ 9-bit up counter                                      : 2
+# Registers                                            : 41
+ 1-bit register                                        : 38
+ 3-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 3
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 2
+ 1-bit 8-to-1 multiplexer                              : 2
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <x> on signal <x[1:2]> with gray encoding.
+--------------------
+ State  | Encoding
+--------------------
+ 000000 | 00
+ 000001 | 01
+ 000010 | 11
+ 000011 | 10
+--------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <i2c_comp/m> on signal <m[1:39]> with speed1 encoding.
+---------------------------------------------------
+ State  | Encoding
+---------------------------------------------------
+ 000000 | 001000000000000000000000000000000000000
+ 000001 | 000100000000000000000000000000000000000
+ 000010 | 000010000000000000000000000000000000000
+ 000011 | 000001000000000000000000000000000000000
+ 000100 | 000000100000000000000000000000000000000
+ 000101 | 000000010000000000000000000000000000000
+ 000110 | 000000001000000000000000000000000000000
+ 000111 | 000000000100000000000000000000000000000
+ 001000 | 000000000010000000000000000000000000000
+ 001001 | 000000000001000000000000000000000000000
+ 001010 | 000000000000100000000000000000000000000
+ 001011 | 000000000000010000000000000000000000000
+ 001100 | 000000000000001000000000000000000000000
+ 001101 | 000000000000000100000000000000000000000
+ 001110 | 000000000000000010000000000000000000000
+ 001111 | 000000000000000000100000000000000000000
+ 010000 | 000000000000000000001000000000000000000
+ 010001 | 000000000000000000000010000000000000000
+ 010010 | 000000000000000000000000100000000000000
+ 010011 | 000000000000000000000000001000000000000
+ 010100 | 000000000000000001000000000000000000000
+ 010101 | 000000000000000000010000000000000000000
+ 010110 | 000000000000000000000100000000000000000
+ 010111 | 000000000000000000000001000000000000000
+ 011000 | 000000000000000000000000010000000000000
+ 011001 | 000000000000000000000000000010000000000
+ 011010 | 010000000000000000000000000000000000000
+ 011011 | 000000000000000000000000000000100000000
+ 011100 | 000000000000000000000000000000001000000
+ 011101 | 000000000000000000000000000000000010000
+ 011110 | 000000000000000000000000000100000000000
+ 011111 | 000000000000000000000000000001000000000
+ 100000 | 100000000000000000000000000000000000000
+ 100001 | 000000000000000000000000000000010000000
+ 100010 | 000000000000000000000000000000000100000
+ 100011 | 000000000000000000000000000000000001000
+ 100100 | 000000000000000000000000000000000000100
+ 100101 | 000000000000000000000000000000000000010
+ 100110 | 000000000000000000000000000000000000001
+ 101000 | unreached
+ 101001 | unreached
+ 101010 | unreached
+ 101011 | unreached
+ 101100 | unreached
+ 101101 | unreached
+ 101110 | unreached
+ 101111 | unreached
+ 110000 | unreached
+ 110001 | unreached
+ 110010 | unreached
+ 110011 | unreached
+---------------------------------------------------
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx92i.
+INFO:Xst:2506 - Unit <I2C_A> : In order to maximize performance and save block RAM resources, the small ROM <Mrom_DATAA_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+WARNING:Xst:1710 - FF/Latch  <notx> (without init value) has a constant value of 1 in block <rs232cmp>.
+WARNING:Xst:2677 - Node <rxbin_8> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <rxbin_2> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <rxbin_1> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <rxbin_3> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <rxbin_4> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <rxbin_5> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <rxbin_6> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <rxbin_7> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXrdy> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXDATA_0> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXDATA_1> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXDATA_2> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXDATA_3> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXDATA_4> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXDATA_5> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXDATA_6> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <RXDATA_7> of sequential type is unconnected in block <rs232cmp>.
+WARNING:Xst:2677 - Node <DATARB_2> of sequential type is unconnected in block <i2c_comp>.
+WARNING:Xst:2677 - Node <DATARB_0> of sequential type is unconnected in block <i2c_comp>.
+WARNING:Xst:2677 - Node <DATARB_1> of sequential type is unconnected in block <i2c_comp>.
+WARNING:Xst:2677 - Node <DATARB_3> of sequential type is unconnected in block <i2c_comp>.
+WARNING:Xst:2677 - Node <DATARB_4> of sequential type is unconnected in block <i2c_comp>.
+WARNING:Xst:2677 - Node <DATARB_7> of sequential type is unconnected in block <i2c_comp>.
+WARNING:Xst:2677 - Node <DATARB_5> of sequential type is unconnected in block <i2c_comp>.
+WARNING:Xst:2677 - Node <DATARB_6> of sequential type is unconnected in block <i2c_comp>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 8x1-bit ROM                                           : 1
+# Adders/Subtractors                                   : 4
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Counters                                             : 4
+ 4-bit up counter                                      : 2
+ 9-bit up counter                                      : 2
+# Registers                                            : 98
+ Flip-Flops                                            : 98
+# Comparators                                          : 3
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 9-bit comparator greater                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch  <notx> (without init value) has a constant value of 1 in block <RS232>.
+WARNING:Xst:2677 - Node <i2c_comp/DATARB_6> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <i2c_comp/DATARB_5> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <i2c_comp/DATARB_7> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <i2c_comp/DATARB_4> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <i2c_comp/DATARB_3> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <i2c_comp/DATARB_1> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <i2c_comp/DATARB_0> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <i2c_comp/DATARB_2> of sequential type is unconnected in block <I2C>.
+
+Optimizing unit <I2C> ...
+
+Optimizing unit <RS232> ...
+WARNING:Xst:2677 - Node <rs232cmp/rcc_3> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rcc_2> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rcc_1> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rcc_0> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXDATA_7> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXDATA_6> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXDATA_5> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXDATA_4> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXDATA_3> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXDATA_2> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXDATA_1> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXDATA_0> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/RXrdy> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rxbin_7> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rxbin_6> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rxbin_5> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rxbin_4> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rxbin_3> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rxbin_1> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/waitbyte> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rxbin_2> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/rxbin_8> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/stfall> of sequential type is unconnected in block <I2C>.
+WARNING:Xst:2677 - Node <rs232cmp/tsrx> of sequential type is unconnected in block <I2C>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block I2C, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : I2C.ngr
+Top Level Output File Name         : I2C
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 135
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 16
+#      LUT2                        : 4
+#      LUT2_L                      : 5
+#      LUT3                        : 25
+#      LUT3_D                      : 3
+#      LUT4                        : 32
+#      LUT4_L                      : 8
+#      MUXCY                       : 16
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 91
+#      FDC                         : 2
+#      FDC_1                       : 39
+#      FDCE                        : 5
+#      FDE                         : 10
+#      FDE_1                       : 11
+#      FDP_1                       : 2
+#      FDPE_1                      : 2
+#      FDR                         : 19
+#      FDRE_1                      : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 15
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      IOBUF                       : 1
+#      OBUF                        : 12
+# DCMs                             : 1
+#      DCM                         : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      67  out of   1920     3%  
+ Number of Slice Flip Flops:            91  out of   3840     2%  
+ Number of 4 input LUTs:               100  out of   3840     2%  
+ Number of IOs:                         16
+ Number of bonded IOBs:                 15  out of    173     8%  
+ Number of GCLKs:                        2  out of      8    25%  
+ Number of DCMs:                         1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK50                              | DCM_inst:CLK0          | 20    |
+clk1u                              | BUFG                   | 65    |
+rs232cmp/bdck                      | NONE(rs232cmp/tcc_0)   | 6     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 45    |
+TEMP_VCC_OBUF(XST_VCC:P)           | NONE(rs232cmp/tcc_0)   | 5     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.478ns (Maximum Frequency: 133.726MHz)
+   Minimum input arrival time before clock: 6.717ns
+   Maximum output required time after clock: 7.408ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK50'
+  Clock period: 6.901ns (frequency: 144.907MHz)
+  Total number of paths / destination ports: 372 / 40
+-------------------------------------------------------------------------
+Delay:               6.901ns (Levels of Logic = 3)
+  Source:            rs232cmp/zzzz_4 (FF)
+  Destination:       rs232cmp/zzzz_8 (FF)
+  Source Clock:      CLK50 rising
+  Destination Clock: CLK50 rising
+
+  Data Path: rs232cmp/zzzz_4 to rs232cmp/zzzz_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.720   1.246  rs232cmp/zzzz_4 (rs232cmp/zzzz_4)
+     LUT4:I0->O            1   0.551   0.996  rs232cmp/bdck_cmp_gt0000122 (rs232cmp/bdck_cmp_gt00001_map10)
+     LUT4_L:I1->LO         1   0.551   0.126  rs232cmp/bdck_cmp_gt0000158 (rs232cmp/bdck_cmp_gt00001_map20)
+     LUT4:I3->O           10   0.551   1.134  rs232cmp/bdck_cmp_gt00001111 (rs232cmp/bdck_cmp_gt0000)
+     FDR:R                     1.026          rs232cmp/zzzz_0
+    ----------------------------------------
+    Total                      6.901ns (3.399ns logic, 3.502ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk1u'
+  Clock period: 6.269ns (frequency: 159.515MHz)
+  Total number of paths / destination ports: 268 / 77
+-------------------------------------------------------------------------
+Delay:               6.269ns (Levels of Logic = 4)
+  Source:            i2c_comp/m_FFd6 (FF)
+  Destination:       i2c_comp/Mtrien_SDA (FF)
+  Source Clock:      clk1u falling
+  Destination Clock: clk1u falling
+
+  Data Path: i2c_comp/m_FFd6 to i2c_comp/Mtrien_SDA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            8   0.720   1.278  i2c_comp/m_FFd6 (i2c_comp/m_FFd6)
+     LUT3:I1->O            1   0.551   0.869  i2c_comp/Mtrien_SDA_mux000065 (i2c_comp/Mtrien_SDA_mux0000_map24)
+     LUT4:I2->O            1   0.551   0.827  i2c_comp/Mtrien_SDA_mux000083 (i2c_comp/Mtrien_SDA_mux0000_map27)
+     LUT4_L:I3->LO         1   0.551   0.168  i2c_comp/Mtrien_SDA_mux0000158_SW0 (N376)
+     LUT4:I2->O            1   0.551   0.000  i2c_comp/Mtrien_SDA_mux0000158 (i2c_comp/Mtrien_SDA_mux0000)
+     FDPE_1:D                  0.203          i2c_comp/Mtrien_SDA
+    ----------------------------------------
+    Total                      6.269ns (3.127ns logic, 3.142ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'rs232cmp/bdck'
+  Clock period: 7.478ns (frequency: 133.726MHz)
+  Total number of paths / destination ports: 34 / 11
+-------------------------------------------------------------------------
+Delay:               3.739ns (Levels of Logic = 1)
+  Source:            rs232cmp/bdref (FF)
+  Destination:       rs232cmp/tcc_3 (FF)
+  Source Clock:      rs232cmp/bdck rising
+  Destination Clock: rs232cmp/bdck falling
+
+  Data Path: rs232cmp/bdref to rs232cmp/tcc_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   0.945  rs232cmp/bdref (rs232cmp/bdref)
+     LUT3:I2->O            5   0.551   0.921  rs232cmp/TX232_and00001 (rs232cmp/TX232_and0000)
+     FDPE_1:CE                 0.602          rs232cmp/TX232
+    ----------------------------------------
+    Total                      3.739ns (1.873ns logic, 1.866ns route)
+                                       (50.1% logic, 49.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk1u'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              6.717ns (Levels of Logic = 3)
+  Source:            RST (PAD)
+  Destination:       i2c_comp/DATARA_0 (FF)
+  Destination Clock: clk1u falling
+
+  Data Path: RST to i2c_comp/DATARA_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            49   0.821   2.145  RST_IBUF (RST_IBUF)
+     LUT3_D:I1->O          3   0.551   1.246  i2c_comp/DATARA_0_and000011 (N5)
+     LUT3:I0->O            1   0.551   0.801  i2c_comp/DATARA_0_and00001 (i2c_comp/DATARA_0_and0000)
+     FDE_1:CE                  0.602          i2c_comp/DATARA_0
+    ----------------------------------------
+    Total                      6.717ns (2.525ns logic, 4.192ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk1u'
+  Total number of paths / destination ports: 11 / 10
+-------------------------------------------------------------------------
+Offset:              7.408ns (Levels of Logic = 1)
+  Source:            i2c_comp/Mtrien_SDA (FF)
+  Destination:       SDA (PAD)
+  Source Clock:      clk1u falling
+
+  Data Path: i2c_comp/Mtrien_SDA to SDA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE_1:C->Q           1   0.720   0.801  i2c_comp/Mtrien_SDA (i2c_comp/Mtrien_SDA)
+     IOBUF:T->IO               5.887          SDA_IOBUF (SDA)
+    ----------------------------------------
+    Total                      7.408ns (6.607ns logic, 0.801ns route)
+                                       (89.2% logic, 10.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'rs232cmp/bdck'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 1)
+  Source:            rs232cmp/TX232 (FF)
+  Destination:       tx232 (PAD)
+  Source Clock:      rs232cmp/bdck falling
+
+  Data Path: rs232cmp/TX232 to tx232
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE_1:C->Q           2   0.720   0.877  rs232cmp/TX232 (rs232cmp/TX232)
+     OBUF:I->O                 5.644          tx232_OBUF (tx232)
+    ----------------------------------------
+    Total                      7.241ns (6.364ns logic, 0.877ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+CPU : 12.09 / 12.44 s | Elapsed : 12.00 / 12.00 s
+ 
+--> 
+
+Total memory usage is 147376 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   71 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

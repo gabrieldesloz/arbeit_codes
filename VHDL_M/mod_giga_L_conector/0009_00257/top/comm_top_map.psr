@@ -1,0 +1,46 @@
+Release 14.1 Physical Synthesis Report P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : OFF
+    Retiming                        : OFF
+    Equivalent Register Removal     : OFF
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : ON
+    Register Duplication            : ON
+
+---- Intelligent clock gating       : OFF
+
+---- Target Parameters
+Target Device                       : 3s200tq144-4
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+   Number of registers added by Replication                  | 1               
+   Number of LUTs added by Replication                       | 1               
+
+   Overall change in number of design objects                | +2               
+
+
+---- Details
+
+New or modified components                             | Optimization             | Objective           
+-------------------------------------------------------|--------------------------|----------------------
+EJ_SERIAL_MASTER_1/s_received_data_0_and00001_REPLICA_0| Replication              | Fanout Optimization
+reset_generator_1/state_reg_FSM_FFd1_REPLICA_1         | Replication              | Fanout Optimization
+
+   Flops added for Enable Generation                       
+-------------------------

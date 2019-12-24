@@ -1,0 +1,16 @@
+Storage Target: SPI Flash Single FPGA
+32M
+FF
+Untitled
+C:/Users/s10169/Desktop
+
+MCS
+No
+MCS
+No
+itled
+M:\projects\L\BICHRO_32\FPGA_BOARD
+
+MCS
+No
+o

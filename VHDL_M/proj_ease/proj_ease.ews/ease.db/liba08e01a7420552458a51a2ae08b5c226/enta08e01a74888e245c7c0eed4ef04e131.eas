@@ -1,0 +1,224 @@
+(DATABASE_VERSION 19)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "enta08e01a74888e245c7c0eed4ef04e131")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlfa08e01a73888e245c7c0eed4af04e131")
+      (PROPERTY "HDL_FILENAME" "M:/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora - v2 .vhd")
+      (PROPERTY "IMPORTED_LAST" "1412335748")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 3")
+      (PROPERTY "STAMP_TIME" "Fri Oct 03 08:29:08 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.1")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1412335712")
+    )
+    (HDL_IDENT
+      (NAME "EJ_SERIAL_SLAVE")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2048 640)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "s10169")
+      (CREATED 1412335748 "Fri Oct 03 08:29:08 2014")
+      (MODIFIED 1412335748 "Fri Oct 03 08:29:08 2014")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "packa08e01a79468e245c7c0eed41e04e131")
+        (LIBRARY "ieee")
+        (NAME "std_logic_arith")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "packa08e01a79468e245c7c0eed42e04e131")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "packa08e01a79468e245c7c0eed4fd04e131")
+        (LIBRARY "work")
+        (NAME "my_types_pkg")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a74888e245c7c0eed4ff04e131")
+      (HDL_IDENT
+        (NAME "DATA_RX_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "DATA_RX_i")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a74888e245c7c0eed40014e131")
+      (HDL_IDENT
+        (NAME "SEND_DATA_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "input_array")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "SEND_DATA_i")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a74888e245c7c0eed41014e131")
+      (HDL_IDENT
+        (NAME "SYNC_CLK_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "SYNC_CLK_i")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a74888e245c7c0eed42014e131")
+      (HDL_IDENT
+        (NAME "RST_i")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RST_i")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a74888e245c7c0eed43014e131")
+      (HDL_IDENT
+        (NAME "RECEIVED_DATA_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "input_array")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2008 88 2088 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RECEIVED_DATA_o")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a74888e245c7c0eed44014e131")
+      (HDL_IDENT
+        (NAME "DATA_TX_o")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2008 216 2088 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "DATA_TX_o")
+      )
+    )
+    (ARCH_DECLARATION 2 "archa08e01a74888e245c7c0eed45014e131" "Behavioral")
+  )
+  (ARCH_DEFINITION
+    (OBID "archa08e01a74888e245c7c0eed45014e131")
+    (HDL_IDENT
+      (NAME "Behavioral")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filea08e01a74888e245c7c0eed46014e131")
+        (NAME "Behavioral.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'Behavioral' of entity 'EJ_SERIAL_SLAVE'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     DATA_RX_i       : in     std_logic;"
+               "--     SEND_DATA_i     : in     input_array;"
+               "--     SYNC_CLK_i      : in     std_logic;"
+               "--     RST_i           : in     std_logic;"
+               "--     RECEIVED_DATA_o : out    input_array;"
+               "--     DATA_TX_o       : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture Behavioral of EJ_SERIAL_SLAVE is"
+               ""
+               "begin"
+               ""
+               "end architecture Behavioral ; -- of EJ_SERIAL_SLAVE"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

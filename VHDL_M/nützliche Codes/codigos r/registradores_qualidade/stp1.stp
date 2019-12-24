@@ -1,0 +1,400 @@
+<session sof_file="">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <multi attribute="column width" size="23" value="34,34,185,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,107,78"/>
+    <single attribute="active instance" value="0"/>
+    <multi attribute="frame size" size="2" value="1920,1058"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="jtag widget size" size="2" value="334,120"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2014/02/25 14:27:05  #0">
+      <clock name="clock_100mhz" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="2048" trigger_in_enable="yes" trigger_in_node="synchronization:synchronization_2|pps" trigger_in_tap_mode="classic" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][0]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][10]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][11]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][12]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][13]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][14]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][15]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][16]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][17]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][18]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][19]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][1]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][20]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][21]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][22]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][23]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][24]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][25]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][26]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][27]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][28]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][29]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][2]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][30]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][31]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][3]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][4]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][5]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][6]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][7]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][8]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][9]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][0]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][10]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][11]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][12]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][13]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][14]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][15]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][16]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][17]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][18]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][19]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][1]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][20]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][21]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][22]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][23]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][24]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][25]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][26]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][27]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][28]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][29]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][2]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][30]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][31]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][3]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][4]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][5]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][6]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][7]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][8]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][9]" tap_mode="classic" type="register"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][0]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][10]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][11]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][12]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][13]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][14]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][15]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][16]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][17]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][18]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][19]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][1]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][20]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][21]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][22]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][23]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][24]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][25]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][26]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][27]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][28]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][29]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][2]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][30]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][31]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][3]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][4]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][5]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][6]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][7]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][8]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][9]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][0]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][10]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][11]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][12]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][13]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][14]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][15]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][16]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][17]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][18]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][19]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][1]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][20]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][21]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][22]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][23]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][24]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][25]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][26]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][27]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][28]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][29]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][2]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][30]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][31]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][3]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][4]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][5]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][6]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][7]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][8]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][9]" tap_mode="classic" type="register"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][0]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][10]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][11]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][12]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][13]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][14]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][15]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][16]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][17]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][18]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][19]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][1]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][20]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][21]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][22]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][23]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][24]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][25]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][26]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][27]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][28]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][29]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][2]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][30]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][31]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][3]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][4]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][5]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][6]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][7]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][8]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][9]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][0]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][10]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][11]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][12]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][13]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][14]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][15]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][16]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][17]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][18]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][19]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][1]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][20]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][21]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][22]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][23]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][24]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][25]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][26]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][27]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][28]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][29]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][2]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][30]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][31]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][3]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][4]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][5]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][6]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][7]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][8]" tap_mode="classic" type="register"/>
+          <wire name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][9]" tap_mode="classic" type="register"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0]" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][31]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][30]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][29]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][28]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][27]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][26]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][25]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][24]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][23]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][22]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][21]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][20]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][19]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][18]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][17]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][16]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][15]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][14]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][13]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][12]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][11]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][10]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][9]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][8]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][7]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][6]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][5]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][4]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][3]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][2]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][1]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7]" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][31]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][30]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][29]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][28]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][27]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][26]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][25]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][24]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][23]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][22]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][21]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][20]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][19]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][18]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][17]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][16]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][15]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][14]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][13]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][12]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][11]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][10]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][9]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][8]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][7]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][6]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][5]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][4]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][3]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][2]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][1]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][0]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0]" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][31]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][30]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][29]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][28]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][27]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][26]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][25]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][24]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][23]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][22]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][21]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][20]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][19]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][18]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][17]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][16]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][15]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][14]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][13]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][12]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][11]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][10]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][9]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][8]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][7]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][6]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][5]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][4]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][3]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][2]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][1]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_0|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[0][0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7]" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][31]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][30]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][29]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][28]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][27]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][26]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][25]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][24]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][23]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][22]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][21]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][20]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][19]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][18]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][17]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][16]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][15]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][14]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][13]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][12]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][11]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][10]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][9]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][8]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][7]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][6]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][5]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][4]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][3]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][2]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][1]"/>
+            <net is_signal_inverted="no" name="mu320_cpu:u0|quality_top:quality_top_1|gate_soft_interface:gate_soft_interface_1|BUFFER_REGS[7][0]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2014/02/25 14:27:05  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="rising edge" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>0000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>0000000000000000000000000000000000000000000000000000000000000000</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+</session>

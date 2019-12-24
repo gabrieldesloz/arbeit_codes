@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o M:\vhdl\mod_giga_L_conector_v2\0009_00257//top -x xcf02s -u 00000000 M:/vhdl/mod_giga_L_conector_v2/0009_00257/top/comm_top.bit 
+
+PROM \\smkn33\s10169\vhdl\mod_giga_L_conector_v2\0009_00257\top.prm map: Wed Oct 01 14:30:07 2014
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          256K
+PROM start    0000:0000
+PROM end      0003:ffff
+PROM checksum 0200a98e
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0001:ff87     Oct 01 14:27:06 2014 M:/vhdl/mod_giga_L_conector_v2/0009_00257/top/comm_top.bit

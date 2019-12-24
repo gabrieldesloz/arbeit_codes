@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "M:/vhdl/0009_00257/shift_reg/p_random_32_tb_isim_beh.exe" -prj "M:/vhdl/0009_00257/shift_reg/p_random_32_tb_beh.prj" "work.p_random_32_tb" 

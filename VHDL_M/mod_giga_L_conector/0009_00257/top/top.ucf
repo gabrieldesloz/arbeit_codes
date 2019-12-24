@@ -1,0 +1,39 @@
+
+
+# PlanAhead Generated physical constraints 
+
+NET "CLK_i" LOC = P55;
+
+
+
+NET "EATX_i" LOC = P57; 		#IO2 -- rx in serial  --- LEDS ----
+
+NET "EARX_o" LOC = P141; 		#L01 -- sclk out ---
+ 
+NET "EBRX_o" LOC = P140; 		#L02 -- data out tx --
+
+NET "clk_60MHz_o"  LOC = P128; 	#L09 
+
+
+
+NET "debug_o[3]"  LOC = P137; 		#L03 
+NET "debug_o[2]"  LOC = P135; 		#L04 
+NET "debug_o[1]"  LOC = P132; 		#L05 
+NET "debug_o[0]"  LOC = P131; 		#L06 
+
+
+
+#NET DATA_RX_serial_i LOC = P60;  #IO04    --- IO ---- 
+#NET SYNC_CLK_serial_i LOC = P68; #IO06  NET "EARX_o" LOC = P141; 		#IO3 -- sclk out 
+#NET DATA_TX_serial_o LOC = P70;  #IO08
+
+
+NET DATA_RX_serial_i LOC = P13;  #08    LCD D1  
+NET SYNC_CLK_serial_i LOC = P8; #12   	LCD D5
+NET DATA_TX_serial_o LOC = P10; #11 	LCD D4 
+
+
+
+NET "SYNC_CLK_serial_i" CLOCK_DEDICATED_ROUTE = FALSE; 
+NET "DATA_RX_serial_i" CLOCK_DEDICATED_ROUTE = FALSE;
+

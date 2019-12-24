@@ -1,0 +1,194 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\14.0\modelsim_ase\win32aloem
+Eejection_detector
+Z1 w1429898135
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\altera\14.0\modelsim_ase\win32aloem
+Z6 8M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/ejection_detector.vhd
+Z7 FM:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/ejection_detector.vhd
+l0
+L5
+VPbGHSVUoW5@A8WC=jz0BR2
+Z8 OV;C;10.1e;51
+32
+Z9 !s108 1429898428.135000
+Z10 !s90 -reportprogress|300|-work|work|-O0|M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/ejection_detector.vhd|
+Z11 !s107 M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/ejection_detector.vhd|
+Z12 o-work work -O0
+Z13 tExplicit 1
+!s100 `M8oEjElR5Pf:[ZAPUVV53
+!i10b 1
+Aarq
+Z14 DEx4 work 14 pos_edge_mealy 0 22 zej>=<]Wc=k;BDM`9=oR]1
+Z15 DEx4 work 14 neg_edge_mealy 0 22 A695LVXPJiED^a9QCLBFh3
+R2
+R3
+R4
+Z16 DEx4 work 17 ejection_detector 0 22 PbGHSVUoW5@A8WC=jz0BR2
+l44
+L19
+V?`Z1E>Pbo>Boz_iAJ2`7M3
+!s100 13:iFodeW<]MeGbgQGh:93
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!i10b 1
+Eneg_edge_mealy
+Z17 w1365609846
+R3
+R4
+R5
+Z18 8M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/neg_edge_mealy.vhd
+Z19 FM:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/neg_edge_mealy.vhd
+l0
+L3
+VA695LVXPJiED^a9QCLBFh3
+R8
+32
+Z20 !s108 1429893591.427000
+Z21 !s90 -reportprogress|300|-work|work|M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/neg_edge_mealy.vhd|
+Z22 !s107 M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/neg_edge_mealy.vhd|
+R12
+R13
+!s100 fhR];a64^;S5hblE6OAA@1
+!i10b 1
+Amealy_arch
+R3
+R4
+R15
+l18
+L11
+VJ=iYEPlYE>jFjbOl8Ig;o0
+R8
+32
+R20
+R21
+R22
+R12
+R13
+!s100 V4V[SMioj63TXM3zz6SYI2
+!i10b 1
+Epos_edge_mealy
+Z23 w1386261572
+R3
+R4
+R5
+Z24 8M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/pos_edge_mealy.vhd
+Z25 FM:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/pos_edge_mealy.vhd
+l0
+L3
+Vzej>=<]Wc=k;BDM`9=oR]1
+R8
+32
+Z26 !s108 1429893593.731000
+Z27 !s90 -reportprogress|300|-work|work|M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/pos_edge_mealy.vhd|
+Z28 !s107 M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/pos_edge_mealy.vhd|
+R12
+R13
+!s100 C_J2Cdm89LzLSV7;61<d60
+!i10b 1
+Amealy_arch
+R3
+R4
+R14
+l19
+L11
+VbC9RL@nNojTXOX5]:]26^3
+R8
+32
+R26
+R27
+R28
+R12
+R13
+!s100 d0^8:EKcAQ]6kUM?BQE1_2
+!i10b 1
+Etb_testejet
+Z29 w1429898331
+Z30 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z31 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+R3
+R4
+R5
+Z32 8M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/TB_TESTEJET.vhd
+Z33 FM:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/TB_TESTEJET.vhd
+l0
+L37
+V0_Jl9eMlg>YkFAU2a9JWc2
+!s100 SSFLPhYTgg2Y;g`@9QZ:G2
+R8
+32
+!i10b 1
+Z34 !s108 1429898432.386000
+Z35 !s90 -reportprogress|300|-work|work|-O0|M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/TB_TESTEJET.vhd|
+Z36 !s107 M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/TB_TESTEJET.vhd|
+R12
+R13
+Abehavior
+R2
+R16
+R30
+R31
+R3
+R4
+Z37 DEx4 work 11 tb_testejet 0 22 0_Jl9eMlg>YkFAU2a9JWc2
+l78
+L40
+VfS1^@SM=W>BZoAAQn7^IN1
+!s100 f;TL@aaQ[BkXgKQ<A>S8X0
+R8
+32
+!i10b 1
+R34
+R35
+R36
+R12
+R13
+Etestejet
+Z38 w1338495504
+R30
+R31
+R3
+R4
+R5
+Z39 8M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/TESTEJET.vhd
+Z40 FM:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/TESTEJET.vhd
+l0
+L35
+V0<5dXQk]0A?k?]DH4^Pz]2
+R8
+32
+Z41 !s108 1429876840.912000
+Z42 !s90 -reportprogress|300|-work|work|M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/TESTEJET.vhd|
+Z43 !s107 M:/projetos/VHDL/work/eject_board_test_10_11_12_13/TEST_RIG_FPGA_2/eject_detect/TESTEJET.vhd|
+R12
+R13
+!s100 7W>lTT`CkESbDQUaNV6YC0
+!i10b 1
+Abehavioral
+R30
+R31
+R3
+R4
+DEx4 work 8 testejet 0 22 0<5dXQk]0A?k?]DH4^Pz]2
+l71
+L51
+VfI@BlZfUI?>OlPzXOSVOo2
+R8
+32
+R41
+R42
+R43
+R12
+R13
+!s100 ZB_Z<N;XT213SC_cXOPXz3
+!i10b 1

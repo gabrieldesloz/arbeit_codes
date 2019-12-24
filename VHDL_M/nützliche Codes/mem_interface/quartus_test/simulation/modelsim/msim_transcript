@@ -1,0 +1,62 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do quartus_test_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {quartus_test_7_1200mv_85c_slow.vho}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity adder_ovf
+# -- Compiling architecture structure of adder_ovf
+# 
+# vcom -93 -work work {C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adder_ovf_tb
+# -- Compiling architecture arch of adder_ovf_tb
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Loading entity adder_ovf
+# ** Error: C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd(68): (vcom-1484) Unknown formal identifier "N".
+# 
+# ** Error: (vcom-11) Could not find work.reset_generator.
+# 
+# ** Error: C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd(115): (vcom-1195) Cannot find expanded name "work.reset_generator".
+# 
+# ** Error: C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd(115): Unknown expanded name.
+# ** Error: C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd(73): (vcom-1272) Length of formal "val_1_i" is 32; length of actual is 8.
+# 
+# ** Error: C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd(74): (vcom-1272) Length of formal "val_2_i" is 32; length of actual is 8.
+# 
+# ** Error: C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd(75): (vcom-1272) Length of formal "val_3_i" is 32; length of actual is 8.
+# 
+# ** Error: C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd(76): (vcom-1272) Length of formal "val_o" is 32; length of actual is 8.
+# 
+# ** Error: C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd(124): VHDL Compiler exiting
+# ** Error: c:/altera/12.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./quartus_test_run_msim_gate_vhdl.do line 10
+# c:/altera/12.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/gdl/Desktop/registradores_qualidade/quartus_test/../adder_ovf_tb.vhd}"

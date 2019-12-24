@@ -1,0 +1,45 @@
+<CONFIGURATION>
+  <sections>
+    <section name="FileEncoding">
+      <key type="string" value="ISO-Latin1" name="InternalEncoding"/>
+      <key type="string" value="ISO-Latin1" name="ExternalEncoding"/>
+    </section>
+    <section name="ObjectSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="TextSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="HTML">
+      <key type="bool" value="false" name="StartBrowser"/>
+    </section>
+    <section name="DiagramGridVisible">
+      <key type="bool" value="false" name="diaga08e01a7420552458a51a2ae18b5c226"/>
+      <key type="bool" value="false" name="liba08e01a7420552458a51a2ae08b5c226_diaga08e01a7420552458a51a2ae18b5c226"/>
+    </section>
+    <section name="Markers">
+      <key type="string" value="work:Toplevel:&lt;Internal>" name="CurrentPath"/>
+    </section>
+    <section name="Browser">
+      <key type="string" value="work.test" name="DetailView"/>
+    </section>
+    <section name="DatabaseView">
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="0" name="offset_y"/>
+    </section>
+    <section name="FileView">
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="0" name="offset_y"/>
+    </section>
+    <section name="HierarchicalView">
+      <key type="int" value="0" name="offset_x"/>
+      <key type="int" value="0" name="offset_y"/>
+    </section>
+    <section name="DiagramGridFactor">
+      <key type="int" value="0" name="liba08e01a7420552458a51a2ae08b5c226_diaga08e01a7420552458a51a2ae18b5c226"/>
+      <key type="int" value="0" name="diaga08e01a7420552458a51a2ae18b5c226"/>
+    </section>
+  </sections>
+</CONFIGURATION>

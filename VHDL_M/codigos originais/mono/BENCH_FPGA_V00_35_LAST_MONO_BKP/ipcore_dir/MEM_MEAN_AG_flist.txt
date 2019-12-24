@@ -1,0 +1,16 @@
+# Output products list for <MEM_MEAN_AG>
+MEM_MEAN_AG.asy
+MEM_MEAN_AG.gise
+MEM_MEAN_AG.ngc
+MEM_MEAN_AG.sym
+MEM_MEAN_AG.vhd
+MEM_MEAN_AG.vho
+MEM_MEAN_AG.xco
+MEM_MEAN_AG.xise
+MEM_MEAN_AG\doc\blk_mem_gen_ds512.pdf
+MEM_MEAN_AG\doc\blk_mem_gen_v6_1_vinfo.html
+MEM_MEAN_AG_flist.txt
+MEM_MEAN_AG_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

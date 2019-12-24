@@ -1,0 +1,16 @@
+
+State Machine - |divider_mux|state_reg
+Name state_reg.WAIT_READY state_reg.LOAD_DIV state_reg.IDLE 
+state_reg.IDLE 0 0 0 
+state_reg.LOAD_DIV 0 1 1 
+state_reg.WAIT_READY 1 0 1 
+
+State Machine - |divider_mux|divider:divider_1|state_reg
+Name state_reg.DONE_ST state_reg.FIX_SIGN state_reg.CHECK state_reg.SUBT state_reg.MULT state_reg.LOAD state_reg.IDLE 
+state_reg.IDLE 0 0 0 0 0 0 0 
+state_reg.LOAD 0 0 0 0 0 1 1 
+state_reg.MULT 0 0 0 0 1 0 1 
+state_reg.SUBT 0 0 0 1 0 0 1 
+state_reg.CHECK 0 0 1 0 0 0 1 
+state_reg.FIX_SIGN 0 1 0 0 0 0 1 
+state_reg.DONE_ST 1 0 0 0 0 0 1 

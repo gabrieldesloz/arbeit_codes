@@ -1,0 +1,184 @@
+-------------------------------------------------------------------------------
+-- Title      : Reason Tecnologia S.A. - Merging Unit - MU320
+-- Project    : MU320
+-------------------------------------------------------------------------------
+-- File       : quality.vhd
+-- Author     : 
+-- Company    : Reason Tecnologia S.A.
+-- Created    : 2012-08-07
+-- Last update: 2014-02-04
+-- Standard   : VHDL'87
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2012 Reason Tecnologia S.A.
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2012-08-07  1.0              Created
+-------------------------------------------------------------------------------
+
+
+
+
+--Registrador/memoria de acesso comum a 8 registradores de 32 bits
+--linux precisa ler/escrever nestes registradores
+--gateware precisa escrever nestes registradores 
+--junção através de um "or" - fora do componente
+--ver o que significa cada posição de bit - ok 
+--será "empacotado" em cada SV um vetor de 32 bits com a informação de qualidade
+--a interface enviara um wait request para não haver escrita nem leitura simultaneamente
+--memoria dual ram
+--estabelecer um controlador ...:
+--não pode ler durante a escrita em um mesmo endereço
+--entradas e saídas
+-- 1 leitura /1 escrita
+-- waitrequest = '1' quando em reset
+-- maquina de estados que inicia com o acesso do linux sobre os registradores
+-- propriedades do componente -- tcl
+-- Read-during-write on port A or B returns newly written data
+-- Read-during-write on port A and B returns unknown data.
+-- endereço de leitura e escrita das duas portas não pode ser o mesmo
+
+
+-- mem interface: memoria com acesso por dois clock domains, que impede o acesso
+-- a ambos os clock domains
+-- acesso entre as duas memorias necessita de no minimo dois periodos de clock 
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity dual_clock_ram is
+
+  generic (
+    D_WIDTH : natural := 32;
+    A_WIDTH : natural := 4
+    );
+
+  port (
+
+
+    -- interface nios -- slow -- a 
+    sysclk          : in  std_logic;
+    reset_n         : in  std_logic;
+    avs_chipselect  : in  std_logic;
+    avs_address     : in  std_logic_vector(A_WIDTH-1 downto 0);
+    avs_write       : in  std_logic;
+    avs_read        : in  std_logic;
+    avs_writedata   : in  std_logic_vector(D_WIDTH-1 downto 0);
+    avs_waitrequest : out std_logic;
+
+    -- interface gateware - fast - b
+    coe_sysclk           : in  std_logic;
+    coe_gate_address     : in  std_logic_vector(A_WIDTH-1 downto 0);
+    coe_gate_write       : in  std_logic;
+    coe_gate_read        : in  std_logic;
+    coe_gate_writedata   : in  std_logic_vector(A_WIDTH-1 downto 0);
+    coe_gate_waitrequest : out std_logic
+
+    );
+
+
+end quality;
+
+architecture rtl of gate_nios_interface is
+
+  -- type
+  -- attribute
+  -- constants
+  -- signals
+  -- procedures
+  -- functions
+  -- alias
+
+  type STATE_TYPE is ();
+  signal state_next, state_reg         : STATE_TYPE;
+  attribute syn_encoding               : string;
+  attribute syn_encoding of STATE_TYPE : type is "safe";
+
+
+begin  -- quality_rtl
+
+
+  we_a_next <= '1' when (avs_chipselect = '1' and avs_write = '1') else '0';
+
+
+
+
+  true_dual_port_ram_dual_clock_1 :
+    entity work.true_dual_port_ram_dual_clock
+
+      generic map (
+        DATA_WIDTH => D_WITH,
+        ADDR_WIDTH => A_WIDTH)
+      port map (
+        clk_a  => sysclk,
+        clk_b  => clk_b,
+        addr_a => avs_address_reg,
+        addr_b => coe_gate_address_reg,
+        data_a => data_a_reg,
+        data_b => data_b_reg,
+        we_a   => we_a_reg,
+        we_b   => we_b_reg,
+        q_a    => q_a_next,
+        q_b    => q_b_next);
+
+
+  -- entidade clock_sync -- sincronizar o sinal de leitura do clock mais lento
+
+  -- se leitura porta a é no mesmo endereço de escrita porta b, impedir leitura
+  -- porta a com wait_request
+
+  -- se leitura porta b é no mesmo endereço de escrita porta a, impedir leitura
+  -- porta b 
+
+
+  
+  
+  slow_regs : process (sysclk, reset_n)
+  begin
+    if reset_n = '0' then
+
+    elsif rising_edge(sysclk) then
+
+    end if;
+  end process;
+
+
+
+  fast_regs : process (coe_sysclk, reset_n)
+  begin
+    if reset_n = '0' then
+
+    elsif rising_edge(sysclk) then.
+
+    end if;
+  end process;
+
+
+  process (avs_read)
+  begin
+    --read_address_next <= manter o endereço se o endereço de leitura for o
+    --mesmo de escrita e se estiver ocorrendo a escrita 
+    --
+    
+    we_b_next <= '0';
+    if avs_read = '1' and (coe_gate_write = '1') and (chip_select = '1') and (avs_address = coe_gate_address)) then
+      we_b_next <= '0';
+      coe_gate_waitrequest <= '1';
+    else      
+      if (coe_gate_write = '1' and chip_select = '1')  then
+        we_b_next <= '1';
+      end if;      
+    end if;  
+
+  end process;
+
+
+
+end quality_rtl;
+
+
+-- configurations

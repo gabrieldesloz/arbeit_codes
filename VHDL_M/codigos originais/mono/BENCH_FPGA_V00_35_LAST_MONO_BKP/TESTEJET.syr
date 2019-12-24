@@ -1,0 +1,585 @@
+Release 13.3 - xst O.76xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Reading design: TESTEJET.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TESTEJET.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TESTEJET"
+Output Format                      : NGC
+Target Device                      : xc6slx25-3-ftg256
+
+---- Source Options
+Top Module Name                    : TESTEJET
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : Yes
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Optimize Instantiated Primitives   : YES
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : No
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "F:\Projetos\VHDL\FPGA_V040\TESTEJET.vhd" into library work
+Parsing entity <TESTEJET>.
+Parsing architecture <Behavioral> of entity <testejet>.
+Parsing VHDL file "F:\Projetos\VHDL\FPGA_V040\ipcore_dir\clkblock\example_design\clkblock_exdes.vhd" into library work
+Parsing entity <clkblock_exdes>.
+Parsing architecture <xilinx> of entity <clkblock_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <TESTEJET> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "F:\Projetos\VHDL\FPGA_V040\TESTEJET.vhd" Line 50: Net <s_tejet_dwell[9]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TESTEJET>.
+    Related source file is "f:/projetos/vhdl/fpga_v040/testejet.vhd".
+WARNING:Xst:653 - Signal <s_tejet_dwell> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <s_delay_end>.
+    Found 2-bit register for signal <x>.
+    Found 32-bit register for signal <s_tjet_activate>.
+    Found 32-bit register for signal <s_tjet_chop>.
+    Found 11-bit register for signal <v_dwell>.
+    Found 6-bit register for signal <v_delay>.
+    Found 18-bit register for signal <pulso>.
+    Found 1-bit register for signal <s_dwell_end>.
+    Found finite state machine <FSM_0> for signal <x>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | c1us (rising_edge)                             |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Recovery State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 18-bit adder for signal <pulso[17]_GND_5_o_add_6_OUT> created at line 78.
+    Found 11-bit adder for signal <v_dwell[10]_GND_5_o_add_20_OUT> created at line 115.
+    Found 6-bit adder for signal <v_delay[5]_GND_5_o_add_23_OUT> created at line 119.
+    Found 18-bit 4-to-1 multiplexer for signal <x[1]_pulso[17]_wide_mux_10_OUT> created at line 64.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 101 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <TESTEJET> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 11-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 7
+ 1-bit register                                        : 2
+ 11-bit register                                       : 1
+ 18-bit register                                       : 1
+ 32-bit register                                       : 2
+ 6-bit register                                        : 1
+# Multiplexers                                         : 10
+ 1-bit 2-to-1 multiplexer                              : 2
+ 11-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+ 18-bit 4-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 3
+ 6-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <TESTEJET>.
+The following registers are absorbed into counter <v_dwell>: 1 register on signal <v_dwell>.
+Unit <TESTEJET> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 18-bit adder                                          : 1
+ 6-bit adder                                           : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 90
+ Flip-Flops                                            : 90
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 2
+ 18-bit 2-to-1 multiplexer                             : 1
+ 18-bit 4-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 3
+ 6-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <x[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+
+Optimizing unit <TESTEJET> ...
+WARNING:Xst:1293 - FF/Latch <v_dwell_0> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_1> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_2> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_3> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_4> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_5> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_6> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_7> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_8> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_9> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <v_dwell_10> has a constant value of 0 in block <TESTEJET>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TESTEJET, actual ratio is 1.
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <TESTEJET> :
+	Register(s) pulso_15 has(ve) been backward balanced into : pulso_15_BRB0 pulso_15_BRB3.
+	Register(s) pulso_16 has(ve) been backward balanced into : pulso_16_BRB0 .
+	Register(s) pulso_17 has(ve) been backward balanced into : pulso_17_BRB0 pulso_17_BRB1.
+	Register(s) s_delay_end has(ve) been backward balanced into : s_delay_end_BRB0 s_delay_end_BRB1 s_delay_end_BRB2 s_delay_end_BRB3 s_delay_end_BRB4 s_delay_end_BRB6 s_delay_end_BRB8 s_delay_end_BRB9 s_delay_end_BRB10 s_delay_end_BRB11 s_delay_end_BRB12 s_delay_end_BRB13 s_delay_end_BRB14.
+	Register(s) s_tjet_activate_0 has(ve) been backward balanced into : s_tjet_activate_0_BRB1 s_tjet_activate_0_BRB2 s_tjet_activate_0_BRB3 s_tjet_activate_0_BRB4 s_tjet_activate_0_BRB5 s_tjet_activate_0_BRB6 s_tjet_activate_0_BRB7 s_tjet_activate_0_BRB8 s_tjet_activate_0_BRB10 s_tjet_activate_0_BRB11 s_tjet_activate_0_BRB12 s_tjet_activate_0_BRB13 s_tjet_activate_0_BRB14 s_tjet_activate_0_BRB15.
+	Register(s) s_tjet_activate_1 has(ve) been backward balanced into : s_tjet_activate_1_BRB2 s_tjet_activate_1_BRB4.
+	Register(s) s_tjet_activate_10 has(ve) been backward balanced into : s_tjet_activate_10_BRB2 s_tjet_activate_10_BRB4.
+	Register(s) s_tjet_activate_11 has(ve) been backward balanced into : s_tjet_activate_11_BRB2 s_tjet_activate_11_BRB4.
+	Register(s) s_tjet_activate_12 has(ve) been backward balanced into : s_tjet_activate_12_BRB2 s_tjet_activate_12_BRB4.
+	Register(s) s_tjet_activate_13 has(ve) been backward balanced into : s_tjet_activate_13_BRB2 s_tjet_activate_13_BRB4.
+	Register(s) s_tjet_activate_14 has(ve) been backward balanced into : s_tjet_activate_14_BRB2 s_tjet_activate_14_BRB4.
+	Register(s) s_tjet_activate_15 has(ve) been backward balanced into : s_tjet_activate_15_BRB2 s_tjet_activate_15_BRB4.
+	Register(s) s_tjet_activate_16 has(ve) been backward balanced into : s_tjet_activate_16_BRB2 s_tjet_activate_16_BRB4.
+	Register(s) s_tjet_activate_17 has(ve) been backward balanced into : s_tjet_activate_17_BRB2 s_tjet_activate_17_BRB4.
+	Register(s) s_tjet_activate_18 has(ve) been backward balanced into : s_tjet_activate_18_BRB2 s_tjet_activate_18_BRB4.
+	Register(s) s_tjet_activate_19 has(ve) been backward balanced into : s_tjet_activate_19_BRB2 s_tjet_activate_19_BRB4.
+	Register(s) s_tjet_activate_2 has(ve) been backward balanced into : s_tjet_activate_2_BRB2 s_tjet_activate_2_BRB4.
+	Register(s) s_tjet_activate_20 has(ve) been backward balanced into : s_tjet_activate_20_BRB2 s_tjet_activate_20_BRB4.
+	Register(s) s_tjet_activate_21 has(ve) been backward balanced into : s_tjet_activate_21_BRB2 s_tjet_activate_21_BRB4.
+	Register(s) s_tjet_activate_22 has(ve) been backward balanced into : s_tjet_activate_22_BRB2 s_tjet_activate_22_BRB4.
+	Register(s) s_tjet_activate_23 has(ve) been backward balanced into : s_tjet_activate_23_BRB2 s_tjet_activate_23_BRB4.
+	Register(s) s_tjet_activate_24 has(ve) been backward balanced into : s_tjet_activate_24_BRB2 s_tjet_activate_24_BRB4.
+	Register(s) s_tjet_activate_25 has(ve) been backward balanced into : s_tjet_activate_25_BRB2 s_tjet_activate_25_BRB4.
+	Register(s) s_tjet_activate_26 has(ve) been backward balanced into : s_tjet_activate_26_BRB2 s_tjet_activate_26_BRB4.
+	Register(s) s_tjet_activate_27 has(ve) been backward balanced into : s_tjet_activate_27_BRB2 s_tjet_activate_27_BRB4.
+	Register(s) s_tjet_activate_28 has(ve) been backward balanced into : s_tjet_activate_28_BRB2 s_tjet_activate_28_BRB4.
+	Register(s) s_tjet_activate_29 has(ve) been backward balanced into : s_tjet_activate_29_BRB2 s_tjet_activate_29_BRB4.
+	Register(s) s_tjet_activate_3 has(ve) been backward balanced into : s_tjet_activate_3_BRB2 s_tjet_activate_3_BRB4.
+	Register(s) s_tjet_activate_30 has(ve) been backward balanced into : s_tjet_activate_30_BRB2 s_tjet_activate_30_BRB4.
+	Register(s) s_tjet_activate_31 has(ve) been backward balanced into : s_tjet_activate_31_BRB2 s_tjet_activate_31_BRB4.
+	Register(s) s_tjet_activate_4 has(ve) been backward balanced into : s_tjet_activate_4_BRB2 s_tjet_activate_4_BRB4.
+	Register(s) s_tjet_activate_5 has(ve) been backward balanced into : s_tjet_activate_5_BRB2 s_tjet_activate_5_BRB4.
+	Register(s) s_tjet_activate_6 has(ve) been backward balanced into : s_tjet_activate_6_BRB2 s_tjet_activate_6_BRB4.
+	Register(s) s_tjet_activate_7 has(ve) been backward balanced into : s_tjet_activate_7_BRB2 s_tjet_activate_7_BRB4.
+	Register(s) s_tjet_activate_8 has(ve) been backward balanced into : s_tjet_activate_8_BRB2 s_tjet_activate_8_BRB4.
+	Register(s) s_tjet_activate_9 has(ve) been backward balanced into : s_tjet_activate_9_BRB2 s_tjet_activate_9_BRB4.
+	Register(s) v_delay_1 has(ve) been backward balanced into : v_delay_1_BRB1 v_delay_1_BRB2 .
+	Register(s) v_delay_2 has(ve) been backward balanced into : v_delay_2_BRB1 .
+	Register(s) v_delay_3 has(ve) been backward balanced into : v_delay_3_BRB0 v_delay_3_BRB1 v_delay_3_BRB2 v_delay_3_BRB3.
+	Register(s) v_delay_4 has(ve) been backward balanced into : v_delay_4_BRB1 .
+	Register(s) x_FSM_FFd1 has(ve) been backward balanced into : x_FSM_FFd1_BRB0 x_FSM_FFd1_BRB1 x_FSM_FFd1_BRB2 x_FSM_FFd1_BRB4 x_FSM_FFd1_BRB5 x_FSM_FFd1_BRB6 x_FSM_FFd1_BRB7 x_FSM_FFd1_BRB8 x_FSM_FFd1_BRB9 x_FSM_FFd1_BRB10 x_FSM_FFd1_BRB11.
+Unit <TESTEJET> processed.
+FlipFlop s_tjet_activate_0_BRB1 has been replicated 1 time(s)
+FlipFlop s_tjet_activate_0_BRB3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 166
+ Flip-Flops                                            : 166
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TESTEJET.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 198
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 16
+#      LUT2                        : 35
+#      LUT3                        : 2
+#      LUT4                        : 20
+#      LUT5                        : 39
+#      LUT6                        : 47
+#      MUXCY                       : 17
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 166
+#      FD                          : 63
+#      FDC                         : 58
+#      FDCE                        : 43
+#      FDP                         : 2
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 66
+#      IBUF                        : 34
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25ftg256-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             166  out of  30064     0%  
+ Number of Slice LUTs:                  160  out of  15032     1%  
+    Number used as Logic:               160  out of  15032     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    179
+   Number with an unused Flip Flop:      13  out of    179     7%  
+   Number with an unused LUT:            19  out of    179    10%  
+   Number of fully used LUT-FF pairs:   147  out of    179    82%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          68
+ Number of bonded IOBs:                  68  out of    186    36%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clkz                               | BUFGP                  | 43    |
+c1us                               | BUFGP                  | 123   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.794ns (Maximum Frequency: 263.560MHz)
+   Minimum input arrival time before clock: 3.537ns
+   Maximum output required time after clock: 7.561ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkz'
+  Clock period: 2.932ns (frequency: 341.035MHz)
+  Total number of paths / destination ports: 98 / 10
+-------------------------------------------------------------------------
+Delay:               2.932ns (Levels of Logic = 2)
+  Source:            v_delay_3_BRB0 (FF)
+  Destination:       v_delay_5 (FF)
+  Source Clock:      clkz rising
+  Destination Clock: clkz rising
+
+  Data Path: v_delay_3_BRB0 to v_delay_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   1.079  v_delay_3_BRB0 (v_delay_3_BRB0)
+     LUT6:I0->O            3   0.203   0.898  PWR_5_o_v_delay[5]_equal_19_o<5>11 (Madd_v_delay[5]_GND_5_o_add_23_OUT_cy<2>)
+     LUT5:I1->O            1   0.203   0.000  Mmux_GND_5_o_v_delay[5]_mux_27_OUT61 (GND_5_o_v_delay[5]_mux_27_OUT<5>)
+     FDC:D                     0.102          v_delay_5
+    ----------------------------------------
+    Total                      2.932ns (0.955ns logic, 1.977ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c1us'
+  Clock period: 3.794ns (frequency: 263.560MHz)
+  Total number of paths / destination ports: 1707 / 100
+-------------------------------------------------------------------------
+Delay:               3.794ns (Levels of Logic = 2)
+  Source:            x_FSM_FFd1_BRB1 (FF)
+  Destination:       s_delay_end_BRB1 (FF)
+  Source Clock:      c1us rising
+  Destination Clock: c1us rising
+
+  Data Path: x_FSM_FFd1_BRB1 to s_delay_end_BRB1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.447   1.028  x_FSM_FFd1_BRB1 (x_FSM_FFd1_BRB1)
+     LUT5:I0->O            1   0.203   0.684  x_FSM_FFd1-In13_SW2 (N226)
+     LUT5:I3->O           12   0.203   0.908  _n0089_inv1 (_n0089_inv)
+     FDCE:CE                   0.322          s_delay_end_BRB1
+    ----------------------------------------
+    Total                      3.794ns (1.175ns logic, 2.619ns route)
+                                       (31.0% logic, 69.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkz'
+  Total number of paths / destination ports: 100 / 68
+-------------------------------------------------------------------------
+Offset:              3.537ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       s_tjet_chop_0 (FF)
+  Destination Clock: clkz rising
+
+  Data Path: reset to s_tjet_chop_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           103   1.222   1.885  reset_IBUF (reset_IBUF)
+     FDCE:CLR                  0.430          s_tjet_chop_0
+    ----------------------------------------
+    Total                      3.537ns (1.652ns logic, 1.885ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c1us'
+  Total number of paths / destination ports: 99 / 99
+-------------------------------------------------------------------------
+Offset:              3.537ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       pulso_0 (FF)
+  Destination Clock: c1us rising
+
+  Data Path: reset to pulso_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           103   1.222   1.885  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.430          pulso_0
+    ----------------------------------------
+    Total                      3.537ns (1.652ns logic, 1.885ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c1us'
+  Total number of paths / destination ports: 480 / 32
+-------------------------------------------------------------------------
+Offset:              7.561ns (Levels of Logic = 4)
+  Source:            s_tjet_activate_0_BRB15 (FF)
+  Destination:       tjet<31> (PAD)
+  Source Clock:      c1us rising
+
+  Data Path: s_tjet_activate_0_BRB15 to tjet<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.944  s_tjet_activate_0_BRB15 (s_tjet_activate_0_BRB15)
+     LUT6:I0->O            3   0.203   0.755  _n0103_inv11_SW0 (N205)
+     LUT6:I4->O           32   0.203   1.656  _n0103_inv11 (N20)
+     LUT6:I0->O            1   0.203   0.579  tjet<31>1 (tjet_31_OBUF)
+     OBUF:I->O                 2.571          tjet_31_OBUF (tjet<31>)
+    ----------------------------------------
+    Total                      7.561ns (3.627ns logic, 3.934ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkz'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.382ns (Levels of Logic = 2)
+  Source:            s_tjet_chop_31 (FF)
+  Destination:       tjet<31> (PAD)
+  Source Clock:      clkz rising
+
+  Data Path: s_tjet_chop_31 to tjet<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.447   0.580  s_tjet_chop_31 (s_tjet_chop_31)
+     LUT6:I5->O            1   0.205   0.579  tjet<31>1 (tjet_31_OBUF)
+     OBUF:I->O                 2.571          tjet_31_OBUF (tjet<31>)
+    ----------------------------------------
+    Total                      4.382ns (3.223ns logic, 1.159ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock c1us
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c1us           |    3.794|         |         |         |
+clkz           |    3.317|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c1us           |    5.729|         |         |         |
+clkz           |    2.932|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.09 secs
+ 
+--> 
+
+Total memory usage is 268916 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

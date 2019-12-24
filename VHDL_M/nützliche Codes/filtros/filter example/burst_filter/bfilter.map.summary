@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Dec 11 16:11:15 2012
+Quartus II 32-bit Version : 11.1 Build 173 11/01/2011 SJ Full Version
+Revision Name : bfilter
+Top-level Entity Name : bfilter
+Family : Cyclone III
+Total logic elements : 559
+    Total combinational functions : 318
+    Dedicated logic registers : 302
+Total registers : 302
+Total pins : 516
+Total virtual pins : 0
+Total memory bits : 512
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

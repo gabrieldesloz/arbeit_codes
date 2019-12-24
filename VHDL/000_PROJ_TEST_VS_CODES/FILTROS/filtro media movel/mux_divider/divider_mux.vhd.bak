@@ -1,0 +1,210 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-------------------------------------------------------------------------------
+-- verificar estrutura criada por codigo
+-- colocar design guidelins
+-- regs in/out
+-- funções fora da maquina de estado
+-- inferir elementos arquitetura
+-- iniciar regs em zero
+-- case multiplexador
+-- utilizar design assistant
+-- design guidelines
+-- if end if, if end if
+-- divisao por clock enable
+-- tempo propagaçao memorias maior
+-- blocos recomendados curso altera
+-- maquinas de estado safe
+-- operações com parenteses
+-- if a and b and c then
+-- usar dont care para os caso default
+-------------------------------------------------------------------------------
+
+
+entity divider_mux is
+  generic (
+
+    N_CHANNELS_ANA : natural;
+    N_BITS_ADC     : natural
+
+    );
+
+  port (
+
+    sysclk        : in  std_logic;
+    n_reset       : in  std_logic;
+    d_ana_i       : in  std_logic_vector((N_CHANNELS_ANA*N_BITS_ADC - 1) downto 0);
+    d_ana_proc_o  : out std_logic_vector(((N_CHANNELS_ANA/2)*N_BITS_ADC - 1) downto 0);
+    ready_data_i  : in  std_logic;
+    start_div_i   : in  std_logic;
+    end_div_mux_o : out std_logic
+
+    );
+
+
+end entity divider_mux;
+
+architecture rd_RTL of divider_mux is
+
+  type STATE_TYPE is (IDLE, LOAD_DIV, WAIT_READY);
+
+  attribute syn_encoding               : string;
+  attribute syn_encoding of STATE_TYPE : type is "safe";
+
+  signal state_reg, state_next : STATE_TYPE;
+
+
+  type MEMORY is array (integer range <>) of std_logic_vector(N_BITS_ADC-1 downto 0);
+  signal D_ANA_I_ARRAY : MEMORY(N_CHANNELS_ANA-1 downto 0);
+  signal D_ANA_O_ARRAY : MEMORY((N_CHANNELS_ANA/2)-1 downto 0);
+
+
+  signal quo_int                               : std_logic_vector(N_BITS_ADC-1 downto 0);
+  signal num_addr_ptr_reg, num_addr_ptr_next   : integer range 0 to N_CHANNELS_ANA-1;
+  signal den_addr_ptr_reg, den_addr_ptr_next   : integer range 0 to N_CHANNELS_ANA-1;
+  signal quo_addr_ptr_reg, quo_addr_ptr_next   : integer range 0 to N_CHANNELS_ANA-1;
+  signal rema_addr_ptr_reg, rema_addr_ptr_next : integer range 0 to N_CHANNELS_ANA-1;
+
+  signal start_div : std_logic;
+  signal ready_div : std_logic;
+
+  signal d_ana_i_array_den_int : std_logic_vector(N_BITS_ADC-1 downto 0);
+  signal d_ana_i_array_num_int : std_logic_vector(N_BITS_ADC-1 downto 0);
+  
+begin
+
+
+  registers : process (n_reset, sysclk)
+  begin
+    if (n_reset = '0') then
+      state_reg <= IDLE;
+
+      for i in 0 to N_CHANNELS_ANA-1 loop
+        for j in 0 to N_BITS_ADC-1 loop
+          D_ANA_I_ARRAY(i)(j) <= '0';
+        end loop;  -- j
+      end loop;  -- i
+
+
+      for i in 0 to N_CHANNELS_ANA-1 loop
+        for j in 0 to N_BITS_ADC-1 loop
+          D_ANA_O_ARRAY(0)(0) <= '0';
+        end loop;  -- j
+      end loop;  -- i  
+      
+      
+    elsif rising_edge (sysclk) then
+
+      for i in 0 to N_CHANNELS_ANA-1 loop
+        for j in 0 to N_BITS_ADC-1 loop
+          D_ANA_I_ARRAY(i)(j) <= d_ana_i(((i)*N_BITS_ADC)+j);
+        end loop;  -- j
+      end loop;  -- i
+
+      D_ANA_O_ARRAY(quo_addr_ptr_reg) <= quo_int;
+
+      state_reg <= state_next;
+    end if;
+  end process;
+
+
+
+
+  divider_1 : entity work.divider
+    generic map (
+      SIGN => '1',
+      N    => N_BITS_ADC,
+      D    => N_BITS_ADC)
+    port map (
+      sysclk  => sysclk,
+      n_reset => n_reset,
+      start   => start_div,
+      num     => d_ana_i_array_num_int,
+      den     => d_ana_i_array_den_int,
+      quo     => quo_int,
+      rema    => open,
+      ready   => ready_div,
+      done    => open
+      );
+
+
+  d_ana_i_array_den_int <= D_ANA_I_ARRAY(den_addr_ptr_reg);
+  d_ana_i_array_num_int <= D_ANA_I_ARRAY(num_addr_ptr_reg);
+
+
+  main_state_machine :
+
+  process(
+    start_div_i,
+    ready_div,
+    state_reg,
+    num_addr_ptr_reg,
+    den_addr_ptr_reg,
+    quo_addr_ptr_reg)
+
+    is
+
+  begin  -- process state_machine
+
+    end_div_mux_o     <= '0';
+    state_next        <= state_reg;
+    num_addr_ptr_next <= num_addr_ptr_reg;
+    den_addr_ptr_next <= den_addr_ptr_reg;
+    quo_addr_ptr_next <= quo_addr_ptr_reg;
+    start_div         <= '0';
+
+    case state_reg is
+
+      when IDLE =>
+
+        if start_div_i = '1' then
+          state_next        <= LOAD_DIV;
+          num_addr_ptr_next <= 0;
+          den_addr_ptr_next <= 1;
+          quo_addr_ptr_next <= 0;
+
+        end if;
+        
+      when LOAD_DIV =>
+
+        start_div  <= '1';
+        state_next <= WAIT_READY;
+        
+
+      when WAIT_READY =>
+
+        if (ready_div = '1') and (quo_addr_ptr_reg = (N_CHANNELS_ANA/2)-1) then
+          state_next    <= IDLE;
+          end_div_mux_o <= '1';
+        end if;
+
+        if (ready_div = '1') then
+          num_addr_ptr_next <= num_addr_ptr_reg + 2;
+          den_addr_ptr_next <= den_addr_ptr_reg + 2;
+          quo_addr_ptr_next <= quo_addr_ptr_reg + 1;
+          state_next        <= LOAD_DIV;
+        end if;
+
+      when others =>
+        state_next <= IDLE;
+    end case;
+    
+  end process main_state_machine;
+
+
+  -- matriz --> vetor output
+  output_process : process(D_ANA_O_ARRAY)
+  begin
+    for i in 0 to N_CHANNELS_ANA-1 loop
+      for j in 0 to N_BITS_ADC-1 loop
+        d_ana_proc_o(((i)*N_BITS_ADC)+j) <= D_ANA_O_ARRAY(i)(j);
+      end loop;  -- j
+    end loop;  -- i    
+  end process;
+
+  
+end architecture;
+

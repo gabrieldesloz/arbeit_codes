@@ -1,0 +1,282 @@
+(DATABASE_VERSION 19)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "enta08e01a75b5552458a51a2ae2ab5c226")
+    (PROPERTIES
+      (PROPERTY "HDL_FILENAME" "M:/vhdl/proj_ease/proj_ease.ews/ease.tmp/dff.vhd")
+      (PROPERTY "IMPORTED_LAST" "1411732917")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 3")
+      (PROPERTY "STAMP_TIME" "Fri Sep 26 09:01:57 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.1")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1411732917")
+    )
+    (HDL_IDENT
+      (NAME "dflipflop")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1152 896)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "S10169")
+      (CREATED 1411732917 "Fri Sep 26 09:01:57 2014")
+      (MODIFIED 1411732917 "Fri Sep 26 09:01:57 2014")
+    )
+    (PORT
+      (OBID "eprta08e01a75b5552458a51a2ae3ab5c226")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a75b5552458a51a2ae4ab5c226")
+      (HDL_IDENT
+        (NAME "reset")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a75b5552458a51a2ae5ab5c226")
+      (HDL_IDENT
+        (NAME "set")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "set")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a75b5552458a51a2ae6ab5c226")
+      (HDL_IDENT
+        (NAME "ce")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ce")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a75b5552458a51a2ae7ab5c226")
+      (HDL_IDENT
+        (NAME "load")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "load")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a75b5552458a51a2ae8ab5c226")
+      (HDL_IDENT
+        (NAME "d")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "d(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a75b5552458a51a2ae9ab5c226")
+      (HDL_IDENT
+        (NAME "q")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 1112 88 1192 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1088 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "q(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprta08e01a75b5552458a51a2aeaab5c226")
+      (HDL_IDENT
+        (NAME "nq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 1112 216 1192 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1088 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "nq(15:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "archa08e01a75b5552458a51a2aebab5c226" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "archa08e01a75b5552458a51a2aebab5c226")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filea08e01a75b5552458a51a2aecab5c226")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'dflipflop'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk   : in     std_logic;"
+               "--     reset : in     std_logic;"
+               "--     set   : in     std_logic;"
+               "--     ce    : in     std_logic;"
+               "--     load  : in     std_logic;"
+               "--     d     : in     std_logic_vector(15 downto 0);"
+               "--     q     : out    std_logic_vector(15 downto 0);"
+               "--     nq    : out    std_logic_vector(15 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               "architecture rtl of dflipflop is"
+               ""
+               "  signal reg_int : std_logic_vector(15 downto 0);"
+               ""
+               "begin"
+               "  "
+               "  process(clk)"
+               "  begin"
+               "    "
+               "    if rising_edge(clk) then"
+               "      if ce = '1' then"
+               "        if set = '1' then"
+               "          reg_int <= (others => '1');"
+               "        elsif reset = '1' then"
+               "          reg_int <= (others => '0');"
+               "        elsif load = '1' then"
+               "          reg_int <= d;"
+               "        end if;"
+               "      end if;"
+               "    end if;"
+               "  "
+               "  end process;"
+               "  "
+               "  q <= reg_int;"
+               "  nq <= not reg_int;"
+               "  "
+               ""
+               "end architecture rtl ; -- of dflipflop"
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

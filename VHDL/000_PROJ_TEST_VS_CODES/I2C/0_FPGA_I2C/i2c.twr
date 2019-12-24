@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+Release 7.1.04i Trace H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -ise c:\sanmak\0_fpga_i2c\0_FPGA_I2C.ise -intstyle
+ise -e 3 -l 3 -s 4 -xml i2c i2c.ncd -o i2c.twr i2c.pcf
+
+
+Design file:              i2c.ncd
+Physical constraint file: i2c.pcf
+Device,speed:             xc3s200,-4 (PRODUCTION 1.37 2005-07-22)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK50
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK50          |    7.489|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Analysis completed Mon Sep 01 16:10:22 2008
+--------------------------------------------------------------------------------
+
+
+
+Peak Memory Usage: 81 MB

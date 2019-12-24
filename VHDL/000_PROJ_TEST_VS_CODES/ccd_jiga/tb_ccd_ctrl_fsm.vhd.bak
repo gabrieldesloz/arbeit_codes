@@ -1,0 +1,130 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+
+-------------------------------------------------------------------------------
+
+entity tb_ccd_ctrl is
+
+
+end tb_ccd_ctrl;
+
+-------------------------------------------------------------------------------
+
+architecture generic_tb_rtl of tb_ccd_ctrl is
+
+
+  -- component ports
+  -- clock -- 56.25MHz
+  constant CLK_AQ_PERIOD : time := 18 ns;
+
+-- uut signals
+
+  signal clkaq					    : std_logic			    := '0';
+  signal reset					    : std_logic			    := '0';
+  signal sincin_i				    : std_logic			    := '0';
+  signal clrsinc_o				    : std_logic			    := '0';
+  signal CCD_CLK1_o				    : std_logic			    := '0';
+  signal CCD_CLK2_o				    : std_logic			    := '0';
+  signal CCD_CLK3_o				    : std_logic			    := '0';
+  signal CCD_CLK4_o				    : std_logic			    := '0';
+  signal CCD_SI1_o, CCD_SI2_o, CCD_SI3_o, CCD_SI4_o : std_logic			    := '0';
+  signal pix_o					    : std_logic_vector (7 downto 0) := (others => '0');
+
+  signal reset_start, reset_int : std_logic := '0';
+
+
+  
+
+  
+begin
+
+  -- uut
+
+  ccd_ctrl_fsm_1 : entity work.ccd_ctrl_fsm
+    port map (
+      clkaq	 => clkaq,		-- [std_logic]
+      reset	 => reset,		-- [std_logic]
+      sincin_i	 => sincin_i,		-- [std_logic]
+      clrsinc_o	 => clrsinc_o,		-- [std_logic]
+      CCD_CLK1_o => CCD_CLK1_o,		-- [std_logic]
+      CCD_CLK2_o => CCD_CLK2_o,		-- [std_logic]
+      CCD_CLK3_o => CCD_CLK3_o,		-- [std_logic]
+      CCD_CLK4_o => CCD_CLK4_o,		-- [std_logic]
+      CCD_SI1_o	 => CCD_SI1_o,		-- [std_logic]
+      CCD_SI2_o	 => CCD_SI2_o,		-- [std_logic]
+      CCD_SI3_o	 => CCD_SI3_o,		-- [std_logic]
+      CCD_SI4_o	 => CCD_SI4_o,		-- [std_logic]
+      pix_o	 => pix_o);		-- [std_logic_vector (7 downto 0)]
+
+
+
+
+
+
+  -------------------------------------------------------------------------------
+-- random stimulus
+-------------------------------------------------------------------------------
+
+
+
+  random_p : process
+    variable seed1, seed2 : positive;
+    variable r		  : real;
+    variable int_rand	  : integer;
+  begin
+    uniform(seed1, seed2, r);
+    int_rand := integer(trunc(r*3.0));
+    wait for CLK_AQ_PERIOD;
+  end process;
+
+  
+
+  -- reset
+  reset <= reset_int or reset_start;
+
+
+  -- clock generation  
+  clkaq <= not clkaq after CLK_AQ_PERIOD/2;
+
+  -- initial reset generation
+  reset_n_proc : process
+  begin
+    reset_start <= '1';
+    wait for 10*CLK_AQ_PERIOD;
+    reset_start <= '0';
+    wait for 50_000 ms;
+  end process;
+
+
+  -- continuous reset generation
+  reset_iny : process
+  begin
+    reset_int <= '0';
+    wait for (10 ms - 2*CLK_AQ_PERIOD);
+    wait until clkaq = '1';
+    reset_int <= '1';
+    wait for (2*CLK_AQ_PERIOD);
+  end process;
+
+
+
+-- sincin stimulus
+  sincin_stim : process
+  begin
+    wait until clkaq = '1';
+    sincin_i <= '0';
+    wait for 30*CLK_AQ_PERIOD;
+    sincin_i <= '1';
+    wait for 35*CLK_AQ_PERIOD;
+    sincin_i <= '0';
+    wait for 10 ms;
+  end process;
+
+  
+
+end generic_tb_rtl;
+
+

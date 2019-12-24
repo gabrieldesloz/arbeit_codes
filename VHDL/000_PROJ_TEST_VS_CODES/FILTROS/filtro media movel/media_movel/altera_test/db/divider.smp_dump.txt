@@ -1,0 +1,8 @@
+
+State Machine - |circular_buffer|state_reg
+Name state_reg.READ_ST state_reg.WAIT_READ state_reg.WRITE_ST state_reg.DECODE_REQ state_reg.START_RST 
+state_reg.START_RST 0 0 0 0 0 
+state_reg.DECODE_REQ 0 0 0 1 1 
+state_reg.WRITE_ST 0 0 1 0 1 
+state_reg.WAIT_READ 0 1 0 0 1 
+state_reg.READ_ST 1 0 0 0 1 

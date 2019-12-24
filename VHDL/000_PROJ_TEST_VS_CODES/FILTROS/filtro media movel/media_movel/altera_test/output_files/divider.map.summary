@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Aug 27 14:26:21 2013
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : divider
+Top-level Entity Name : circular_buffer
+Family : Cyclone IV E
+Total logic elements : 116
+    Total combinational functions : 52
+    Dedicated logic registers : 92
+Total registers : 92
+Total pins : 70
+Total virtual pins : 0
+Total memory bits : 4,096
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

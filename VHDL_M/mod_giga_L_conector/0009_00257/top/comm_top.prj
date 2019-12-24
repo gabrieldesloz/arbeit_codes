@@ -1,0 +1,6 @@
+vhdl work "../../testing/packet_detect.vhd"
+vhdl work "../../testing/EJ_SERIAL_MASTER_jiga.vhd"
+vhdl work "../../testing/mux.vhd"
+vhdl work "../../testing/EJ_SERIAL_SLAVE_ejetora.vhd"
+vhdl work "reset_generator.vhd"
+vhdl work "../../testing/comm_top.vhd"

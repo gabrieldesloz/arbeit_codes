@@ -1,0 +1,14 @@
+
+run
+-ifmt VHDL
+-ent MEM_PMAX_top 
+-p xc6slx16-ftg256-2
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn MEM_PMAX_top 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain

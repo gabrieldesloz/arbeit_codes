@@ -1,0 +1,43 @@
+Release 14.1 - par P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Fri Aug 08 15:56:58 2014
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 31 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   CH1_IBUF
+   CONF<1>_IBUF
+   CONF<3>_IBUF
+   CONF<5>_IBUF
+   F_C_IBUF
+   F_D_IBUF
+   F_Q_IBUF
+   F_S_IBUF
+   LADDR<1>_IBUF
+   LADDR<2>_IBUF
+   LADDR<3>_IBUF
+   LADDR<4>_IBUF
+   LFRAME_IBUF
+   L_IO<0>_IBUF
+   L_IO<1>_IBUF
+   L_TX_IBUF
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_O
+   i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_O
+
+

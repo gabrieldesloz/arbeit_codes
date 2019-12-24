@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="divider">
+		<CBX_INST_ENTRY INSTANCE_NAME="|circular_buffer|altsyncram:m_freq_buffer_rtl_0" CBX_FILE_NAME="altsyncram_od81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,2155 @@
+Release 14.1 Map P.15xf (nt64)
+Xilinx Mapping Report File for Design 'MAIN_VHDL'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off
+-c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+Target Device  : xc3s200
+Target Package : tq144
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Wed Mar 26 10:15:06 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   47
+Logic Utilization:
+  Number of Slice Flip Flops:           688 out of   3,840   17%
+  Number of 4 input LUTs:             1,022 out of   3,840   26%
+Logic Distribution:
+  Number of occupied Slices:            798 out of   1,920   41%
+    Number of Slices containing only related logic:     798 out of     798 100%
+    Number of Slices containing unrelated logic:          0 out of     798   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,148 out of   3,840   29%
+    Number used as logic:             1,022
+    Number used as a route-thru:        126
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 85 out of      97   87%
+  Number of RAMB16s:                      2 out of      12   16%
+  Number of BUFGMUXs:                     5 out of       8   62%
+  Number of DCMs:                         1 out of       4   25%
+
+Average Fanout of Non-Clock Nets:                3.19
+
+Peak Memory Usage:  236 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:266 - The function generator Mrom_adt_rom00001 failed to merge with
+   F5 multiplexer Mrom_adt_rom0000_f6/MUXF5.I1.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator Madd_adt_add0000_xor<5>131 failed to
+   merge with F5 multiplexer s_downsample_not00011_f5.  There is a conflict for
+   the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<0> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<1> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<2> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<3> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<4> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<5> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<6> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<7> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<0> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<1> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<2> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<3> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<4> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<5> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<6> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<7> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<8> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<9> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp adck.PAD
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp adcs.PAD
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp adin.PAD
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp TX.PAD is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<10>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<11>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<20>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<12>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<21>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<13>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<30>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<22>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<14>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<31>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<23>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<15>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<24>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<16>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<25>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<17>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<26>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<18>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<27>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<19>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<28>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<29>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:549 - Unexpected DCM programming. For DCM comp DCM_inst,
+   when the CLKFX or CLKFX180 pins are used the CLKIN_PERIOD attribute must be
+   specified in order to achieve optimal performance.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network
+   i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generat
+   or/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<31> has no load.
+INFO:LIT:395 - The above info message is repeated 162 more times for the
+   following (max. 5 shown):
+   i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generat
+   or/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<30>,
+   i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generat
+   or/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<29>,
+   i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generat
+   or/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<28>,
+   i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generat
+   or/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<27>,
+   i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generat
+   or/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<26>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp DCM_inst, consult the
+   device Interactive Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 381 block(s) removed
+   8 block(s) optimized away
+ 578 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "BUFG_10k" (CKBUF) removed.
+ The signal "cm100" is loadless and has been removed.
+  Loadless block "cm100" (FF) removed.
+   The signal "cm100_cmp_gt0000" is loadless and has been removed.
+    Loadless block "cm100_cmp_gt00001" (ROM) removed.
+     The signal "N25" is loadless and has been removed.
+      Loadless block "cm100_cmp_gt00001_SW0" (ROM) removed.
+       The signal "rm1<3>" is loadless and has been removed.
+        Loadless block "rm1_3" (SFF) removed.
+         The signal "Result<3>8" is loadless and has been removed.
+          Loadless block "Result<3>821" (ROM) removed.
+           The signal "rm1<2>" is loadless and has been removed.
+            Loadless block "rm1_2" (SFF) removed.
+             The signal "Result<2>9" is loadless and has been removed.
+              Loadless block "Result<2>91" (ROM) removed.
+               The signal "rm1<1>" is loadless and has been removed.
+                Loadless block "rm1_1" (SFF) removed.
+                 The signal "Result<1>10" is loadless and has been removed.
+                  Loadless block "Result<1>101" (ROM) removed.
+                   The signal "rm1<0>" is loadless and has been removed.
+                    Loadless block "rm1_0" (SFF) removed.
+                     The signal "Result<0>10" is loadless and has been removed.
+                      Loadless block "Mcount_rm1_xor<0>11_INV_0" (BUF) removed.
+     The signal "rm1<4>" is loadless and has been removed.
+      Loadless block "rm1_4" (SFF) removed.
+       The signal "Result<4>8" is loadless and has been removed.
+        Loadless block "Result<4>811" (ROM) removed.
+         The signal "Result<3>8_bdd0" is loadless and has been removed.
+          Loadless block "Result<3>831" (ROM) removed.
+     The signal "rm1<5>" is loadless and has been removed.
+      Loadless block "rm1_5" (SFF) removed.
+       The signal "Result<5>6" is loadless and has been removed.
+        Loadless block "Result<5>611" (ROM) removed.
+   The signal "cm100_not0001" is loadless and has been removed.
+    Loadless block "cm100_not00011_INV_0" (BUF) removed.
+Loadless block "BUFG_1x" (CKBUF) removed.
+ The signal "clkxx" is loadless and has been removed.
+  Loadless block "clkxx" (SFF) removed.
+   The signal "clkxx_and0001" is loadless and has been removed.
+    Loadless block "clkxx_and000161" (ROM) removed.
+     The signal "dv0<3>" is loadless and has been removed.
+      Loadless block "dv0_3" (SFF) removed.
+       The signal "dv0_mux0000<3>" is loadless and has been removed.
+        Loadless block "dv0_mux0000<3>" (ROM) removed.
+         The signal "dv0<0>" is loadless and has been removed.
+          Loadless block "dv0_0" (SFF) removed.
+           The signal "dv0_mux0000<0>" is loadless and has been removed.
+            Loadless block "dv0_mux0000<0>1" (ROM) removed.
+           The signal "clkxx_and0000" is loadless and has been removed.
+            Loadless block "clkxx_and000057" (ROM) removed.
+             The signal "clkxx_and000024" is loadless and has been removed.
+              Loadless block "clkxx_and000024_f5" (MUX) removed.
+               The signal "clkxx_and0000242" is loadless and has been removed.
+                Loadless block "clkxx_and0000242" (ROM) removed.
+                 The signal "dv0<5>" is loadless and has been removed.
+                  Loadless block "dv0_5" (SFF) removed.
+                   The signal "dv0_mux0000<5>" is loadless and has been removed.
+                    Loadless block "dv0_mux0000<5>" (ROM) removed.
+                     The signal "N306" is loadless and has been removed.
+                      Loadless block "dv0_mux0000<5>_SW1" (ROM) removed.
+                       The signal "dv0<1>" is loadless and has been removed.
+                        Loadless block "dv0_1" (SFF) removed.
+                         The signal "dv0_mux0000<1>" is loadless and has been removed.
+                          Loadless block "dv0_mux0000<1>2" (ROM) removed.
+                           The signal "N5" is loadless and has been removed.
+                            Loadless block "dv0_mux0000<1>11" (ROM) removed.
+                             The signal "dv0<2>" is loadless and has been removed.
+                              Loadless block "dv0_2" (SFF) removed.
+                               The signal "dv0_mux0000<2>" is loadless and has been removed.
+                                Loadless block "dv0_mux0000<2>" (ROM) removed.
+                                 The signal "N8" is loadless and has been removed.
+                                  Loadless block "dv0_mux0000<3>11" (ROM) removed.
+                                 The signal "N224" is loadless and has been removed.
+                                  Loadless block "dv0_mux0000<2>_SW0" (ROM) removed.
+                                   The signal "dv0<4>" is loadless and has been removed.
+                                    Loadless block "dv0_4" (SFF) removed.
+                                     The signal "dv0_mux0000<4>" is loadless and has been removed.
+                                      Loadless block "dv0_mux0000<4>" (ROM) removed.
+                                       The signal "N304" is loadless and has been removed.
+                                        Loadless block "dv0_mux0000<4>_SW1" (ROM) removed.
+                                   The signal "dv0<6>" is loadless and has been removed.
+                                    Loadless block "dv0_6" (SFF) removed.
+                                     The signal "dv0_mux0000<6>" is loadless and has been removed.
+                                      Loadless block "dv0_mux0000<6>" (ROM) removed.
+                                       The signal "N241" is loadless and has been removed.
+                                        Loadless block "dv0_mux0000<6>_SW0" (ROM) removed.
+                             The signal "N77" is loadless and has been removed.
+                              Loadless block "dv0_mux0000<3>411" (ROM) removed.
+               The signal "clkxx_and0000241" is loadless and has been removed.
+                Loadless block "clkxx_and0000241" (ROM) removed.
+         The signal "N247" is loadless and has been removed.
+          Loadless block "dv0_mux0000<3>_SW1" (ROM) removed.
+     The signal "clkxx_and000136" is loadless and has been removed.
+      Loadless block "clkxx_and000040_SW0" (ROM) removed.
+     The signal "clkxx_and000124" is loadless and has been removed.
+      Loadless block "clkxx_and000124_f5" (MUX) removed.
+       The signal "clkxx_and0001242" is loadless and has been removed.
+        Loadless block "clkxx_and0001242" (ROM) removed.
+       The signal "clkxx_and0001241" is loadless and has been removed.
+        Loadless block "clkxx_and0001241" (ROM) removed.
+Loadless block "BUFG_2z" (CKBUF) removed.
+ The signal "clk2" is loadless and has been removed.
+  Loadless block "clk2" (SFF) removed.
+   The signal "clk2_and0001" is loadless and has been removed.
+    Loadless block "clk2_and000111" (ROM) removed.
+     The signal "clk2_and0000_bdd0" is loadless and has been removed.
+      Loadless block "clk2_and0000241" (ROM) removed.
+       The signal "clk2_and0000230" is loadless and has been removed.
+        Loadless block "clk2_and0000230" (ROM) removed.
+         The signal "dv3<5>" is loadless and has been removed.
+          Loadless block "dv3_5" (SFF) removed.
+           The signal "dv3_mux0000<5>" is loadless and has been removed.
+            Loadless block "dv3_mux0000<5>" (ROM) removed.
+             The signal "dv3<4>" is loadless and has been removed.
+              Loadless block "dv3_4" (SFF) removed.
+               The signal "dv3_mux0000<4>" is loadless and has been removed.
+                Loadless block "dv3_mux0000<4>1" (ROM) removed.
+                 The signal "dv3<3>" is loadless and has been removed.
+                  Loadless block "dv3_3" (SFF) removed.
+                   The signal "dv3_mux0000<3>" is loadless and has been removed.
+                    Loadless block "dv3_mux0000<3>1" (ROM) removed.
+                     The signal "N91" is loadless and has been removed.
+                      Loadless block "dv3_mux0000<3>21" (ROM) removed.
+                       The signal "dv3<0>" is loadless and has been removed.
+                        Loadless block "dv3_0" (SFF) removed.
+                         The signal "dv3_mux0000<0>" is loadless and has been removed.
+                          Loadless block "dv3_mux0000<0>1" (ROM) removed.
+                           The signal "dv3<1>" is loadless and has been removed.
+                            Loadless block "dv3_1" (SFF) removed.
+                             The signal "dv3_mux0000<1>" is loadless and has been removed.
+                              Loadless block "dv3_mux0000<1>1" (ROM) removed.
+                               The signal "N83" is loadless and has been removed.
+                                Loadless block "dv3_mux0000<0>11_f5" (MUX) removed.
+                                 The signal "dv3_mux0000<0>11" is loadless and has been removed.
+                                  Loadless block "dv3_mux0000<0>111" (ROM) removed.
+                                   The signal "dv3<2>" is loadless and has been removed.
+                                    Loadless block "dv3_2" (SFF) removed.
+                                     The signal "dv3_mux0000<2>" is loadless and has been removed.
+                                      Loadless block "dv3_mux0000<2>1" (ROM) removed.
+                                     The signal "clk2_and0000" is loadless and has been removed.
+                                      Loadless block "clk2_and000011" (ROM) removed.
+                                 The signal "dv3<6>" is loadless and has been removed.
+                                  Loadless block "dv3_6" (SFF) removed.
+                                   The signal "dv3_mux0000<6>" is loadless and has been removed.
+                                    Loadless block "dv3_mux0000<6>" (ROM) removed.
+                                     The signal "N237" is loadless and has been removed.
+                                      Loadless block "dv3_mux0000<6>_SW0" (ROM) removed.
+             The signal "N228" is loadless and has been removed.
+              Loadless block "dv3_mux0000<5>_SW0" (ROM) removed.
+       The signal "clk2_and000027" is loadless and has been removed.
+        Loadless block "clk2_and000027" (ROM) removed.
+       The signal "clk2_and0000226" is loadless and has been removed.
+        Loadless block "clk2_and0000226" (ROM) removed.
+       The signal "clk2_and000022" is loadless and has been removed.
+        Loadless block "clk2_and000022" (ROM) removed.
+Loadless block "BUFG_BAUD_CLK" (CKBUF) removed.
+ The signal "s_BAUD_CLK_BUF" is loadless and has been removed.
+  Loadless block "s_BAUD_CLK_BUF" (SFF) removed.
+   The signal "s_BAUD_CLK_BUF_cmp_eq0000" is loadless and has been removed.
+    Loadless block "s_baud_clk_counter_or0000124" (ROM) removed.
+     The signal "s_baud_clk_counter_or0000111" is loadless and has been removed.
+      Loadless block "s_baud_clk_counter_or0000111" (ROM) removed.
+       The signal "s_baud_clk_counter<4>" is loadless and has been removed.
+        Loadless block "s_baud_clk_counter_4" (SFF) removed.
+         The signal "Result<4>3" is loadless and has been removed.
+          Loadless block "Mcount_s_baud_clk_counter_xor<4>" (XOR) removed.
+           The signal "Mcount_s_baud_clk_counter_cy<3>" is loadless and has been removed.
+            Loadless block "Mcount_s_baud_clk_counter_cy<3>" (MUX) removed.
+             The signal "Mcount_s_baud_clk_counter_cy<2>" is loadless and has been removed.
+              Loadless block "Mcount_s_baud_clk_counter_cy<2>" (MUX) removed.
+               The signal "Mcount_s_baud_clk_counter_cy<1>" is loadless and has been removed.
+                Loadless block "Mcount_s_baud_clk_counter_cy<1>" (MUX) removed.
+                 The signal "Mcount_s_baud_clk_counter_cy<0>" is loadless and has been removed.
+                  Loadless block "Mcount_s_baud_clk_counter_cy<0>" (MUX) removed.
+                   The signal "Mcount_s_baud_clk_counter_lut<0>" is loadless and has been removed.
+                    Loadless block "Mcount_s_baud_clk_counter_lut<0>_INV_0" (BUF) removed.
+                     The signal "s_baud_clk_counter<0>" is loadless and has been removed.
+                      Loadless block "s_baud_clk_counter_0" (SFF) removed.
+                       The signal "Result<0>5" is loadless and has been removed.
+                        Loadless block "Mcount_s_baud_clk_counter_xor<0>" (XOR) removed.
+                       The signal "s_baud_clk_counter_or0000" is loadless and has been removed.
+                        Loadless block "s_baud_clk_counter_or00002" (ROM) removed.
+                         The signal "s_baud_clk_counter_or0000123" is loadless and has been removed.
+                          Loadless block "s_baud_clk_counter_or0000123" (ROM) removed.
+                           The signal "s_baud_clk_counter<1>" is loadless and has been removed.
+                            Loadless block "s_baud_clk_counter_1" (SFF) removed.
+                             The signal "Result<1>5" is loadless and has been removed.
+                              Loadless block "Mcount_s_baud_clk_counter_xor<1>" (XOR) removed.
+                               The signal "Mcount_s_baud_clk_counter_cy<1>_rt" is loadless and has been
+removed.
+                                Loadless block "Mcount_s_baud_clk_counter_cy<1>_rt" (ROM) removed.
+                           The signal "s_baud_clk_counter<2>" is loadless and has been removed.
+                            Loadless block "s_baud_clk_counter_2" (SFF) removed.
+                             The signal "Result<2>4" is loadless and has been removed.
+                              Loadless block "Mcount_s_baud_clk_counter_xor<2>" (XOR) removed.
+                               The signal "Mcount_s_baud_clk_counter_cy<2>_rt" is loadless and has been
+removed.
+                                Loadless block "Mcount_s_baud_clk_counter_cy<2>_rt" (ROM) removed.
+                           The signal "s_baud_clk_counter<7>" is loadless and has been removed.
+                            Loadless block "s_baud_clk_counter_7" (SFF) removed.
+                             The signal "Result<7>2" is loadless and has been removed.
+                              Loadless block "Mcount_s_baud_clk_counter_xor<7>" (XOR) removed.
+                               The signal "Mcount_s_baud_clk_counter_cy<6>" is loadless and has been removed.
+                                Loadless block "Mcount_s_baud_clk_counter_cy<6>" (MUX) removed.
+                                 The signal "Mcount_s_baud_clk_counter_cy<5>" is loadless and has been removed.
+                                  Loadless block "Mcount_s_baud_clk_counter_cy<5>" (MUX) removed.
+                                   The signal "Mcount_s_baud_clk_counter_cy<4>" is loadless and has been removed.
+                                    Loadless block "Mcount_s_baud_clk_counter_cy<4>" (MUX) removed.
+                                     The signal "Mcount_s_baud_clk_counter_cy<4>_rt" is loadless and has been
+removed.
+                                      Loadless block "Mcount_s_baud_clk_counter_cy<4>_rt" (ROM) removed.
+                                   The signal "Mcount_s_baud_clk_counter_cy<5>_rt" is loadless and has been
+removed.
+                                    Loadless block "Mcount_s_baud_clk_counter_cy<5>_rt" (ROM) removed.
+                                     The signal "s_baud_clk_counter<5>" is loadless and has been removed.
+                                      Loadless block "s_baud_clk_counter_5" (SFF) removed.
+                                       The signal "Result<5>3" is loadless and has been removed.
+                                        Loadless block "Mcount_s_baud_clk_counter_xor<5>" (XOR) removed.
+                                 The signal "Mcount_s_baud_clk_counter_cy<6>_rt" is loadless and has been
+removed.
+                                  Loadless block "Mcount_s_baud_clk_counter_cy<6>_rt" (ROM) removed.
+                                   The signal "s_baud_clk_counter<6>" is loadless and has been removed.
+                                    Loadless block "s_baud_clk_counter_6" (SFF) removed.
+                                     The signal "Result<6>2" is loadless and has been removed.
+                                      Loadless block "Mcount_s_baud_clk_counter_xor<6>" (XOR) removed.
+                               The signal "Mcount_s_baud_clk_counter_xor<7>_rt" is loadless and has been
+removed.
+                                Loadless block "Mcount_s_baud_clk_counter_xor<7>_rt" (ROM) removed.
+             The signal "Mcount_s_baud_clk_counter_cy<3>_rt" is loadless and has been
+removed.
+              Loadless block "Mcount_s_baud_clk_counter_cy<3>_rt" (ROM) removed.
+               The signal "s_baud_clk_counter<3>" is loadless and has been removed.
+                Loadless block "s_baud_clk_counter_3" (SFF) removed.
+                 The signal "Result<3>3" is loadless and has been removed.
+                  Loadless block "Mcount_s_baud_clk_counter_xor<3>" (XOR) removed.
+   The signal "s_BAUD_CLK_BUF_not0001" is loadless and has been removed.
+    Loadless block "s_BAUD_CLK_BUF_not00011_INV_0" (BUF) removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<31>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<30>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<29>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<28>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<27>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<26>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<25>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<24>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<23>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<22>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<21>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<20>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<19>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<18>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<17>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<16>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<15>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<14>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<13>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<12>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<11>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<10>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<9>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<8>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<7>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<6>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<5>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<4>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<3>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<2>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<1>" is sourceless and has been
+removed.
+The signal
+"i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generator
+/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<0>" is sourceless and has been
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<23>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<22>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<21>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<20>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<19>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<18>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<17>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<16>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<15>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<14>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<13>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<12>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<11>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<10>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<9>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<8>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<7>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<6>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<5>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<4>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<3>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<2>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<1>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/doutb<0>" is
+sourceless and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/N0" is sourceless and
+has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/N1" is sourceless and
+has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<63>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<62>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<61>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<60>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<59>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<58>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<57>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<56>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<55>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<54>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<53>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<52>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<51>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<50>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<49>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<48>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<47>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<46>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<45>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<44>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<43>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<42>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<41>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<40>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<39>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<38>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<37>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<36>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<35>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<34>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<33>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<32>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<31>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<30>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<29>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<28>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<27>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<26>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<25>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<24>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<23>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<22>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<21>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<20>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<19>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<18>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<17>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<16>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<15>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<14>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<13>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<12>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<11>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<10>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<9>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<8>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<7>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<6>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<5>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<4>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<3>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<2>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<1>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DOUTA<0>" is sourceless and has been removed.
+The signal
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/DBITERR" is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<30>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<29>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<28>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<27>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<26>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<25>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<24>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<23>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<22>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<21>"
+is sourceless and has been removed.
+The signal "i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/doutb<20>"
+is sourceless and has been removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<31>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<30>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<29>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<28>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<27>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<26>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<25>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<24>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<23>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<22>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<21>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<20>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<19>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<18>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<17>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<16>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<15>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<14>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<13>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<12>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<11>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<10>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<9>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<8>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<7>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<6>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<5>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<4>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<3>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<2>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<1>" is sourceless and has been
+removed.
+The signal
+"i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTA<0>" is sourceless and has been
+removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "N01" is unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_mux0007<2>1_SW0" (ROM)
+removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr<1>" is unused and has been
+removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_1" (SFF) removed.
+    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<1>" is unused and
+has been removed.
+     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<1>1" (ROM)
+removed.
+      The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state<6>" is unused and has
+been removed.
+       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_6" (FF) removed.
+        The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_mux0007<0>1" is unused
+and has been removed.
+         Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_mux0007<0>10" (ROM)
+removed.
+          The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/REC_o" is unused and has been
+removed.
+           Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/REC_o" (SFF) removed.
+            The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/REC_o_or0000" is unused and has been
+removed.
+             Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/REC_o_or00001" (ROM) removed.
+              The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state<4>" is unused and has
+been removed.
+               Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_4" (FF) removed.
+                The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_mux0007<2>1" is unused
+and has been removed.
+                 Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_mux0007<2>1" (ROM)
+removed.
+                  The signal "i_DESERIALIZER/i_COMMAND_MODULE/NEW_DATA_o" is unused and has been
+removed.
+                   Unused block "i_DESERIALIZER/i_COMMAND_MODULE/NEW_DATA_o" (SFF) removed.
+                  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr<2>" is unused and has been
+removed.
+                   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_2" (SFF) removed.
+                    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<0>" is unused and
+has been removed.
+                     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<0>_f5" (MUX)
+removed.
+                      The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<0>2" is unused and
+has been removed.
+                       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<0>2" (ROM)
+removed.
+                        The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr<0>" is unused and has been
+removed.
+                         Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_0" (SFF) removed.
+                          The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<2>" is unused and
+has been removed.
+                           Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<2>1" (ROM)
+removed.
+                      The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<0>1" is unused and
+has been removed.
+                       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_pkt_nbr_mux0001<0>1" (ROM)
+removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_was_on_state<4>" is unused and has
+been removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_was_on_state_4" (FF) removed.
+    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_was_on_state_mux0000<2>1" is
+unused and has been removed.
+     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_was_on_state_mux0000<2>11" (ROM)
+removed.
+The signal "N326" is unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<1>_F" (ROM)
+removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/N13" is unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<0>21" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/N44" is unused and has been removed.
+     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<5>41" (ROM)
+removed.
+      The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<1>" is unused and has
+been removed.
+       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_1" (SFF) removed.
+        The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<7>" is unused and
+has been removed.
+         Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<7>1" (ROM)
+removed.
+          The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<0>" is unused and has
+been removed.
+           Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_0" (SFF) removed.
+            The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<8>" is unused and
+has been removed.
+             Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<8>1" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<3>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_3" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<5>" is unused and
+has been removed.
+       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<5>_f5" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<5>2" is unused
+and has been removed.
+         Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<5>2" (ROM)
+removed.
+          The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<2>" is unused and has
+been removed.
+           Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_2" (SFF) removed.
+            The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<6>" is unused and
+has been removed.
+             Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<6>1" (ROM)
+removed.
+        The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<5>1" is unused
+and has been removed.
+         Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<5>1" (ROM)
+removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<4>" is unused and has
+been removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_4" (SFF) removed.
+    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<4>" is unused and
+has been removed.
+     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<4>" (ROM)
+removed.
+      The signal "N59" is unused and has been removed.
+       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<4>_SW0" (ROM)
+removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<5>" is unused and has
+been removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_5" (SFF) removed.
+    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>" is unused and
+has been removed.
+     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>_f5" (MUX)
+removed.
+      The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>3" is unused
+and has been removed.
+       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>3" (ROM)
+removed.
+      The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>2" is unused
+and has been removed.
+       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>2" (ROM)
+removed.
+        The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/N8" is unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>1_f5" (MUX)
+removed.
+          The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>1" is unused
+and has been removed.
+           Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<3>11" (ROM)
+removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<6>" is unused and has
+been removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_6" (SFF) removed.
+    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<2>" is unused and
+has been removed.
+     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<2>" (MUX)
+removed.
+      The signal "N328" is unused and has been removed.
+       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<2>_F" (ROM)
+removed.
+      The signal "N329" is unused and has been removed.
+       Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<2>_G" (ROM)
+removed.
+The signal "N327" is unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<1>_G" (ROM)
+removed.
+The signal "N831" is unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<0>_SW0_f5"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<0>_SW0" is unused
+and has been removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<0>_SW01" (ROM)
+removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<7>" is unused and has
+been removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_7" (SFF) removed.
+    The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<1>" is unused and
+has been removed.
+     Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<1>" (MUX)
+removed.
+The signal "N84" is unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<0>_SW1" (ROM)
+removed.
+The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr<8>" is unused and has
+been removed.
+ Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_8" (SFF) removed.
+  The signal "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<0>" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_rec_addr_mux0000<0>" (ROM)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<0>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<0>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<0>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<0>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<0>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_0" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<0>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<0>" (XOR)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_lut<0>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_lut<0>_INV_0"
+(BUF) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<0>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<1>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_1" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<1>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<1>" (XOR)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<0>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<0>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<1>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<1>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<1>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<10>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<10>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<9>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<9>"
+(MUX) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<8>" is
+unused and has been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<8>"
+(MUX) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<7>" is
+unused and has been removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<7>"
+(MUX) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<6>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<6>"
+(MUX) removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<5>" is
+unused and has been removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<5>"
+(MUX) removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<4>" is
+unused and has been removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<4>"
+(MUX) removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<3>" is
+unused and has been removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<3>"
+(MUX) removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<2>" is
+unused and has been removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<2>"
+(MUX) removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<1>" is
+unused and has been removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<1>"
+(MUX) removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<1>" is
+unused and has been removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<1>"
+(ROM) removed.
+                      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<2>" is unused and has
+been removed.
+                       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_2" (SFF) removed.
+                        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<2>" is unused and has been
+removed.
+                         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<2>" (XOR)
+removed.
+                          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<1>" is
+unused and has been removed.
+                           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<1>" (MUX)
+removed.
+                          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<2>_rt" is
+unused and has been removed.
+                           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<2>_rt"
+(ROM) removed.
+                      The signal "i_TUNE_PLAYER/s_note_length_mem<2>" is unused and has been removed.
+                      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<3>" is unused and has
+been removed.
+                       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_3" (SFF) removed.
+                        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<3>" is unused and has been
+removed.
+                         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<3>" (XOR)
+removed.
+                          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<2>" is
+unused and has been removed.
+                           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<2>" (MUX)
+removed.
+                          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<3>_rt" is
+unused and has been removed.
+                           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<3>_rt"
+(ROM) removed.
+                      The signal "i_TUNE_PLAYER/s_note_length_mem<3>" is unused and has been removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<2>" is
+unused and has been removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<2>"
+(ROM) removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<4>" is unused and has
+been removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_4" (SFF) removed.
+                      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<4>" is unused and has been
+removed.
+                       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<4>" (XOR)
+removed.
+                        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<3>" is
+unused and has been removed.
+                         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<3>" (MUX)
+removed.
+                        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<4>_rt" is
+unused and has been removed.
+                         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<4>_rt"
+(ROM) removed.
+                    The signal "i_TUNE_PLAYER/s_note_length_mem<4>" is unused and has been removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<5>" is unused and has
+been removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_5" (SFF) removed.
+                      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<5>" is unused and has been
+removed.
+                       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<5>" (XOR)
+removed.
+                        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<4>" is
+unused and has been removed.
+                         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<4>" (MUX)
+removed.
+                        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<5>_rt" is
+unused and has been removed.
+                         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<5>_rt"
+(ROM) removed.
+                    The signal "i_TUNE_PLAYER/s_note_length_mem<5>" is unused and has been removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<3>" is
+unused and has been removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<3>"
+(ROM) removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<6>" is unused and has
+been removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_6" (SFF) removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<6>" is unused and has been
+removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<6>" (XOR)
+removed.
+                      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<5>" is
+unused and has been removed.
+                       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<5>" (MUX)
+removed.
+                      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<6>_rt" is
+unused and has been removed.
+                       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<6>_rt"
+(ROM) removed.
+                  The signal "i_TUNE_PLAYER/s_note_length_mem<6>" is unused and has been removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<7>" is unused and has
+been removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_7" (SFF) removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<7>" is unused and has been
+removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<7>" (XOR)
+removed.
+                      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<6>" is
+unused and has been removed.
+                       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<6>" (MUX)
+removed.
+                      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<7>_rt" is
+unused and has been removed.
+                       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<7>_rt"
+(ROM) removed.
+                  The signal "i_TUNE_PLAYER/s_note_length_mem<7>" is unused and has been removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<4>" is
+unused and has been removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<4>"
+(ROM) removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<8>" is unused and has
+been removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_8" (SFF) removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<8>" is unused and has been
+removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<8>" (XOR)
+removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<7>" is
+unused and has been removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<7>" (MUX)
+removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<8>_rt" is
+unused and has been removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<8>_rt"
+(ROM) removed.
+                The signal "i_TUNE_PLAYER/s_note_length_mem<8>" is unused and has been removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<9>" is unused and has
+been removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_9" (SFF) removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<9>" is unused and has been
+removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<9>" (XOR)
+removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<8>" is
+unused and has been removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<8>" (MUX)
+removed.
+                    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<9>_rt" is
+unused and has been removed.
+                     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<9>_rt"
+(ROM) removed.
+                The signal "i_TUNE_PLAYER/s_note_length_mem<9>" is unused and has been removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<5>" is
+unused and has been removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<5>"
+(ROM) removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<10>" is unused and has
+been removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_10" (SFF) removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<10>" is unused and has been
+removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<10>"
+(XOR) removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<9>" is
+unused and has been removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<9>" (MUX)
+removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<10>_rt" is
+unused and has been removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<10>_rt"
+(ROM) removed.
+              The signal "i_TUNE_PLAYER/s_note_length_mem<10>" is unused and has been removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<11>" is unused and has
+been removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_11" (SFF) removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<11>" is unused and has been
+removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<11>"
+(XOR) removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<10>" is
+unused and has been removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<10>" (MUX)
+removed.
+                  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<11>_rt" is
+unused and has been removed.
+                   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<11>_rt"
+(ROM) removed.
+              The signal "i_TUNE_PLAYER/s_note_length_mem<11>" is unused and has been removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<6>" is
+unused and has been removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<6>"
+(ROM) removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<12>" is unused and has
+been removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_12" (SFF) removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<12>" is unused and has been
+removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<12>"
+(XOR) removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<11>" is
+unused and has been removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<11>" (MUX)
+removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<12>_rt" is
+unused and has been removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<12>_rt"
+(ROM) removed.
+            The signal "i_TUNE_PLAYER/s_note_length_mem<12>" is unused and has been removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<13>" is unused and has
+been removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_13" (SFF) removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<13>" is unused and has been
+removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<13>"
+(XOR) removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<12>" is
+unused and has been removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<12>" (MUX)
+removed.
+                The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<13>_rt" is
+unused and has been removed.
+                 Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<13>_rt"
+(ROM) removed.
+            The signal "i_TUNE_PLAYER/s_note_length_mem<13>" is unused and has been removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<7>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<7>"
+(ROM) removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<14>" is unused and has
+been removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_14" (SFF) removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<14>" is unused and has been
+removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<14>"
+(XOR) removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<13>" is
+unused and has been removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<13>" (MUX)
+removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<14>_rt" is
+unused and has been removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<14>_rt"
+(ROM) removed.
+          The signal "i_TUNE_PLAYER/s_note_length_mem<14>" is unused and has been removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<15>" is unused and has
+been removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_15" (SFF) removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<15>" is unused and has been
+removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<15>"
+(XOR) removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<14>" is
+unused and has been removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<14>" (MUX)
+removed.
+              The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<15>_rt" is
+unused and has been removed.
+               Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<15>_rt"
+(ROM) removed.
+          The signal "i_TUNE_PLAYER/s_note_length_mem<15>" is unused and has been removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<8>" is
+unused and has been removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<8>"
+(ROM) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<16>" is unused and has
+been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_16" (SFF) removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<16>" is unused and has been
+removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<16>"
+(XOR) removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<15>" is
+unused and has been removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<15>" (MUX)
+removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<16>_rt" is
+unused and has been removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<16>_rt"
+(ROM) removed.
+        The signal "i_TUNE_PLAYER/s_note_length_mem<16>" is unused and has been removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<17>" is unused and has
+been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_17" (SFF) removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<17>" is unused and has been
+removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<17>"
+(XOR) removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<16>" is
+unused and has been removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<16>" (MUX)
+removed.
+            The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<17>_rt" is
+unused and has been removed.
+             Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<17>_rt"
+(ROM) removed.
+        The signal "i_TUNE_PLAYER/s_note_length_mem<17>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<9>" is
+unused and has been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<9>"
+(ROM) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<18>" is unused and has
+been removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_18" (SFF) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<18>" is unused and has been
+removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<18>"
+(XOR) removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<17>" is
+unused and has been removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<17>" (MUX)
+removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<18>_rt" is
+unused and has been removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<18>_rt"
+(ROM) removed.
+      The signal "i_TUNE_PLAYER/s_note_length_mem<18>" is unused and has been removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<19>" is unused and has
+been removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_19" (SFF) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<19>" is unused and has been
+removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<19>"
+(XOR) removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<18>" is
+unused and has been removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<18>" (MUX)
+removed.
+          The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<19>_rt" is
+unused and has been removed.
+           Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<19>_rt"
+(ROM) removed.
+      The signal "i_TUNE_PLAYER/s_note_length_mem<19>" is unused and has been removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<10>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<10>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<20>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_20" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<20>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<20>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<19>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<19>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<20>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<20>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<20>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<21>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_21" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<21>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<21>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<20>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<20>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<21>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<21>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<21>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<11>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<11>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<11>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<11>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<22>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_22" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<22>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<22>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<21>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<21>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<22>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<22>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<22>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<23>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_23" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<23>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<23>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<22>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<22>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<23>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<23>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<23>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<12>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<12>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<12>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<12>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<24>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_24" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<24>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<24>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<23>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<23>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<24>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<24>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<24>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<25>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_25" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<25>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<25>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<24>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<24>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<25>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<25>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<25>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<13>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<13>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<13>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<13>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<26>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_26" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<26>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<26>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<25>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<25>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<26>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<26>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<26>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<27>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_27" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<27>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<27>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<26>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<26>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<27>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<27>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<27>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<14>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<14>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<14>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<14>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<28>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_28" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<28>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<28>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<27>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<27>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<28>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<28>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<28>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<29>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_29" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<29>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<29>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<28>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<28>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<29>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<29>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<29>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<15>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<15>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<15>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<15>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<30>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_30" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<30>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<30>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<29>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<29>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<30>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<30>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<30>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<31>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_31" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<31>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<31>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<30>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<30>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<31>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<31>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<31>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<16>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<16>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<16>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<16>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter<32>" is unused and has
+been removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_length_counter_32" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<32>" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<32>"
+(XOR) removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<31>" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_cy<31>" (MUX)
+removed.
+        The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<32>_rt" is
+unused and has been removed.
+         Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_length_counter_xor<32>_rt"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<32>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<33>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<17>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<17>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<17>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<17>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<34>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<35>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<18>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<18>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<18>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<18>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<36>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<37>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<19>" is
+unused and has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_cy<19>"
+(MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<19>" is
+unused and has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcompar_s_addr_o_cmp_eq0000_lut<19>"
+(ROM) removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<38>" is unused and has been removed.
+    The signal "i_TUNE_PLAYER/s_note_length_mem<39>" is unused and has been removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<0>" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<0>" (MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_lut<0>" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_lut<0>_INV_0" (BUF)
+removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<0>" is unused and has been
+removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_0" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<0>1" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<0>" (XOR)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<1>" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<1>" (MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<1>_rt" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<1>_rt" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<1>" is unused and has been
+removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_1" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<1>1" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<1>" (XOR)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<2>" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<2>" (MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<2>_rt" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<2>_rt" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<2>" is unused and has been
+removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_2" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<2>1" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<2>" (XOR)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<3>" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<3>" (MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<3>_rt" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<3>_rt" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<3>" is unused and has been
+removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_3" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<3>1" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<3>" (XOR)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<4>" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<4>" (MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<4>_rt" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<4>_rt" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<4>" is unused and has been
+removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_4" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<4>1" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<4>" (XOR)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<5>" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<5>" (MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<5>_rt" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<5>_rt" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<5>" is unused and has been
+removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_5" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<5>1" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<5>" (XOR)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<6>" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<6>" (MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<6>_rt" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<6>_rt" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<6>" is unused and has been
+removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_6" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<6>1" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<6>" (XOR)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<7>" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<7>" (MUX) removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<7>_rt" is unused and
+has been removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_cy<7>_rt" (ROM)
+removed.
+    The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<7>" is unused and has been
+removed.
+     Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_7" (SFF) removed.
+      The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<7>1" is unused and has been
+removed.
+       Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<7>" (XOR)
+removed.
+The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/Result<8>1" is unused and has been
+removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/Mcount_s_addr_o_xor<8>" (XOR)
+removed.
+  The signal "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o<8>" is unused and has been
+removed.
+   Unused block "i_TUNE_PLAYER/i_TUNE_CONTROL/s_addr_o_8" (SFF) removed.
+The signal "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64_not0000" is unused and
+has been removed.
+ Unused block "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64_not00001_INV_0"
+(BUF) removed.
+The signal "dv0_mux0000<3>_SW2/O" is unused and has been removed.
+ Unused block "dv0_mux0000<3>_SW2" (ROM) removed.
+Unused block
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/XST_GND" (ZERO) removed.
+Unused block
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ra
+m" (RAMB16_S36_S36) removed.
+Unused block
+"i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/U0/xst_blk_mem_generator/gnativeb
+mg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_noinit.ram/dpram.dp36x36.ra
+m" (RAMB16_S36_S36) removed.
+Unused block "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/XST_GND" (ZERO)
+removed.
+Unused block "i_TUNE_PLAYER/i_TUNE_MEM_CONTROL/i_MEM_512x64/XST_VCC" (ONE)
+removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND
+		i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/U0/xst_blk_mem_generat
+or/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/XST_GND
+VCC 		i_LIMITER_WRAPPER/i_COUNT_MEM_CONTROL/COUNTER_MEM_32x32/XST_VCC
+GND
+		i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/U0/xst_blk_mem_generato
+r/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND
+GND 		i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/XST_GND
+VCC 		i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/FAIL_MEM_32x32/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CX                                 | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| PROTOTYPE_o<0>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| PROTOTYPE_o<1>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| PROTOTYPE_o<2>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| PROTOTYPE_o<3>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| PROTOTYPE_o<4>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| PROTOTYPE_o<5>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| PROTOTYPE_o<6>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| PROTOTYPE_o<7>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| RX                                 | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| TX                                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| adck                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| adcs                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| adin                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| adout                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| clk37                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| eval<0>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<1>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<2>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<3>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<4>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<5>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<6>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<7>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<8>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<9>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<10>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<11>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<12>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<13>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<14>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<15>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<16>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<17>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<18>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<19>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<20>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<21>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<22>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<23>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<24>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<25>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<26>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<27>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<28>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<29>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<30>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| eval<31>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| initin                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| led                                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| resetin                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<0>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<1>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<2>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<3>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<4>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<5>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<6>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<7>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<8>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<9>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<10>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<11>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<12>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<13>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<14>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<15>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<16>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<17>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<18>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<19>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<20>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<21>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<22>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<23>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<24>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<25>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<26>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<27>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<28>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<29>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<30>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| sens<31>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| test                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ven                                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

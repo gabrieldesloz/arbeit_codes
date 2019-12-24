@@ -1,0 +1,200 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml EJ_CLEAR_COUNT.twx EJ_CLEAR_COUNT.ncd -o
+EJ_CLEAR_COUNT.twr EJ_CLEAR_COUNT.pcf
+
+Design file:              EJ_CLEAR_COUNT.ncd
+Physical constraint file: EJ_CLEAR_COUNT.pcf
+Device,package,speed:     xc6slx25,ftg256,C,-3 (PRODUCTION 1.21 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock C3KHZ_i to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+CLEAR_CNT_o |        10.043(R)|      SLOW  |         4.442(R)|      FAST  |C3KHZ_i_BUFGP     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock RST_i to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+CLEAR_CNT_o |        10.054(F)|      SLOW  |         5.856(F)|      FAST  |RST_i_s_TEMPO_CNT[0]_AND_34_o |   0.000|
+            |        11.476(F)|      SLOW  |         6.745(F)|      FAST  |RST_i_s_TEMPO_CNT[10]_AND_14_o|   0.000|
+            |        11.951(F)|      SLOW  |         7.100(F)|      FAST  |RST_i_s_TEMPO_CNT[11]_AND_12_o|   0.000|
+            |        11.335(F)|      SLOW  |         6.582(F)|      FAST  |RST_i_s_TEMPO_CNT[12]_AND_10_o|   0.000|
+            |        11.942(F)|      SLOW  |         7.084(F)|      FAST  |RST_i_s_TEMPO_CNT[13]_AND_8_o |   0.000|
+            |        11.484(F)|      SLOW  |         6.431(F)|      FAST  |RST_i_s_TEMPO_CNT[14]_AND_6_o |   0.000|
+            |        11.109(F)|      SLOW  |         6.587(F)|      FAST  |RST_i_s_TEMPO_CNT[15]_AND_4_o |   0.000|
+            |        12.410(F)|      SLOW  |         7.416(F)|      FAST  |RST_i_s_TEMPO_CNT[16]_AND_2_o |   0.000|
+            |        10.363(F)|      SLOW  |         6.093(F)|      FAST  |RST_i_s_TEMPO_CNT[1]_AND_32_o |   0.000|
+            |        10.376(F)|      SLOW  |         6.039(F)|      FAST  |RST_i_s_TEMPO_CNT[2]_AND_30_o |   0.000|
+            |        10.073(F)|      SLOW  |         5.926(F)|      FAST  |RST_i_s_TEMPO_CNT[3]_AND_28_o |   0.000|
+            |        10.331(F)|      SLOW  |         6.109(F)|      FAST  |RST_i_s_TEMPO_CNT[4]_AND_26_o |   0.000|
+            |        10.341(F)|      SLOW  |         6.041(F)|      FAST  |RST_i_s_TEMPO_CNT[5]_AND_24_o |   0.000|
+            |        11.468(F)|      SLOW  |         6.818(F)|      FAST  |RST_i_s_TEMPO_CNT[6]_AND_22_o |   0.000|
+            |        11.327(F)|      SLOW  |         6.685(F)|      FAST  |RST_i_s_TEMPO_CNT[7]_AND_20_o |   0.000|
+            |        11.686(F)|      SLOW  |         6.912(F)|      FAST  |RST_i_s_TEMPO_CNT[8]_AND_18_o |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock TEMPO_ESTATISTICA_i<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+CLEAR_CNT_o |        10.292(F)|      SLOW  |         5.972(F)|      FAST  |RST_i_s_TEMPO_CNT[0]_AND_34_o |   0.000|
+            |        11.292(F)|      SLOW  |         6.561(F)|      FAST  |RST_i_s_TEMPO_CNT[10]_AND_14_o|   0.000|
+            |        11.346(F)|      SLOW  |         6.676(F)|      FAST  |RST_i_s_TEMPO_CNT[11]_AND_12_o|   0.000|
+            |        11.030(F)|      SLOW  |         6.385(F)|      FAST  |RST_i_s_TEMPO_CNT[12]_AND_10_o|   0.000|
+            |        12.034(F)|      SLOW  |         7.106(F)|      FAST  |RST_i_s_TEMPO_CNT[13]_AND_8_o |   0.000|
+            |        11.110(F)|      SLOW  |         6.256(F)|      FAST  |RST_i_s_TEMPO_CNT[14]_AND_6_o |   0.000|
+            |        11.708(F)|      SLOW  |         6.917(F)|      FAST  |RST_i_s_TEMPO_CNT[16]_AND_2_o |   0.000|
+            |        10.663(F)|      SLOW  |         6.181(F)|      FAST  |RST_i_s_TEMPO_CNT[1]_AND_32_o |   0.000|
+            |        10.464(F)|      SLOW  |         6.140(F)|      FAST  |RST_i_s_TEMPO_CNT[2]_AND_30_o |   0.000|
+            |         9.858(F)|      SLOW  |         5.714(F)|      FAST  |RST_i_s_TEMPO_CNT[3]_AND_28_o |   0.000|
+            |        10.553(F)|      SLOW  |         6.209(F)|      FAST  |RST_i_s_TEMPO_CNT[4]_AND_26_o |   0.000|
+            |        11.663(F)|      SLOW  |         6.930(F)|      FAST  |RST_i_s_TEMPO_CNT[6]_AND_22_o |   0.000|
+            |        11.527(F)|      SLOW  |         6.793(F)|      FAST  |RST_i_s_TEMPO_CNT[7]_AND_20_o |   0.000|
+            |        11.903(F)|      SLOW  |         7.018(F)|      FAST  |RST_i_s_TEMPO_CNT[8]_AND_18_o |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock TEMPO_ESTATISTICA_i<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+CLEAR_CNT_o |         9.980(F)|      SLOW  |         5.796(F)|      FAST  |RST_i_s_TEMPO_CNT[0]_AND_34_o |   0.000|
+            |        11.757(F)|      SLOW  |         6.897(F)|      FAST  |RST_i_s_TEMPO_CNT[10]_AND_14_o|   0.000|
+            |        11.872(F)|      SLOW  |         7.002(F)|      FAST  |RST_i_s_TEMPO_CNT[11]_AND_12_o|   0.000|
+            |        11.616(F)|      SLOW  |         6.783(F)|      FAST  |RST_i_s_TEMPO_CNT[12]_AND_10_o|   0.000|
+            |        12.254(F)|      SLOW  |         7.244(F)|      FAST  |RST_i_s_TEMPO_CNT[13]_AND_8_o |   0.000|
+            |        11.719(F)|      SLOW  |         6.633(F)|      FAST  |RST_i_s_TEMPO_CNT[14]_AND_6_o |   0.000|
+            |        11.328(F)|      SLOW  |         6.706(F)|      FAST  |RST_i_s_TEMPO_CNT[15]_AND_4_o |   0.000|
+            |        12.619(F)|      SLOW  |         7.530(F)|      FAST  |RST_i_s_TEMPO_CNT[16]_AND_2_o |   0.000|
+            |        10.998(F)|      SLOW  |         6.466(F)|      FAST  |RST_i_s_TEMPO_CNT[1]_AND_32_o |   0.000|
+            |        10.307(F)|      SLOW  |         6.050(F)|      FAST  |RST_i_s_TEMPO_CNT[2]_AND_30_o |   0.000|
+            |        10.436(F)|      SLOW  |         6.138(F)|      FAST  |RST_i_s_TEMPO_CNT[3]_AND_28_o |   0.000|
+            |        10.423(F)|      SLOW  |         6.171(F)|      FAST  |RST_i_s_TEMPO_CNT[4]_AND_26_o |   0.000|
+            |        10.717(F)|      SLOW  |         6.221(F)|      FAST  |RST_i_s_TEMPO_CNT[5]_AND_24_o |   0.000|
+            |        11.916(F)|      SLOW  |         7.085(F)|      FAST  |RST_i_s_TEMPO_CNT[6]_AND_22_o |   0.000|
+            |        11.902(F)|      SLOW  |         7.064(F)|      FAST  |RST_i_s_TEMPO_CNT[7]_AND_20_o |   0.000|
+            |        12.180(F)|      SLOW  |         7.188(F)|      FAST  |RST_i_s_TEMPO_CNT[8]_AND_18_o |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock TEMPO_ESTATISTICA_i<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+CLEAR_CNT_o |        10.173(F)|      SLOW  |         5.938(F)|      FAST  |RST_i_s_TEMPO_CNT[0]_AND_34_o |   0.000|
+            |        11.256(F)|      SLOW  |         6.635(F)|      FAST  |RST_i_s_TEMPO_CNT[10]_AND_14_o|   0.000|
+            |        12.347(F)|      SLOW  |         7.355(F)|      FAST  |RST_i_s_TEMPO_CNT[11]_AND_12_o|   0.000|
+            |        12.069(F)|      SLOW  |         7.094(F)|      FAST  |RST_i_s_TEMPO_CNT[12]_AND_10_o|   0.000|
+            |        11.760(F)|      SLOW  |         6.950(F)|      FAST  |RST_i_s_TEMPO_CNT[13]_AND_8_o |   0.000|
+            |        11.919(F)|      SLOW  |         6.750(F)|      FAST  |RST_i_s_TEMPO_CNT[14]_AND_6_o |   0.000|
+            |        11.182(F)|      SLOW  |         6.554(F)|      FAST  |RST_i_s_TEMPO_CNT[15]_AND_4_o |   0.000|
+            |        12.139(F)|      SLOW  |         7.231(F)|      FAST  |RST_i_s_TEMPO_CNT[16]_AND_2_o |   0.000|
+            |        10.313(F)|      SLOW  |         6.011(F)|      FAST  |RST_i_s_TEMPO_CNT[1]_AND_32_o |   0.000|
+            |        10.967(F)|      SLOW  |         6.469(F)|      FAST  |RST_i_s_TEMPO_CNT[2]_AND_30_o |   0.000|
+            |        10.623(F)|      SLOW  |         6.291(F)|      FAST  |RST_i_s_TEMPO_CNT[3]_AND_28_o |   0.000|
+            |         9.951(F)|      SLOW  |         5.850(F)|      FAST  |RST_i_s_TEMPO_CNT[4]_AND_26_o |   0.000|
+            |        10.817(F)|      SLOW  |         6.317(F)|      FAST  |RST_i_s_TEMPO_CNT[5]_AND_24_o |   0.000|
+            |        11.683(F)|      SLOW  |         6.936(F)|      FAST  |RST_i_s_TEMPO_CNT[6]_AND_22_o |   0.000|
+            |        11.376(F)|      SLOW  |         6.763(F)|      FAST  |RST_i_s_TEMPO_CNT[7]_AND_20_o |   0.000|
+            |        11.827(F)|      SLOW  |         7.011(F)|      FAST  |RST_i_s_TEMPO_CNT[8]_AND_18_o |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock to Setup on destination clock C3KHZ_i
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+C3KHZ_i               |    4.155|         |         |         |
+RST_i                 |    3.349|    7.383|         |         |
+TEMPO_ESTATISTICA_i<0>|    3.510|    7.383|         |         |
+TEMPO_ESTATISTICA_i<1>|    3.973|    7.383|         |         |
+TEMPO_ESTATISTICA_i<2>|    3.580|    7.383|         |         |
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RST_i
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+RST_i                 |         |         |    0.747|    0.747|
+TEMPO_ESTATISTICA_i<0>|         |         |    0.847|    0.847|
+TEMPO_ESTATISTICA_i<1>|         |         |    1.206|    1.206|
+TEMPO_ESTATISTICA_i<2>|         |         |    1.481|    1.481|
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock TEMPO_ESTATISTICA_i<0>
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+RST_i                 |         |         |    1.109|    1.109|
+TEMPO_ESTATISTICA_i<0>|         |         |    0.738|    0.738|
+TEMPO_ESTATISTICA_i<1>|         |         |    1.324|    1.324|
+TEMPO_ESTATISTICA_i<2>|         |         |    1.777|    1.777|
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock TEMPO_ESTATISTICA_i<1>
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+RST_i                 |         |         |    0.605|    0.605|
+TEMPO_ESTATISTICA_i<0>|         |         |    0.765|    0.765|
+TEMPO_ESTATISTICA_i<1>|         |         |    0.763|    0.763|
+TEMPO_ESTATISTICA_i<2>|         |         |    1.216|    1.216|
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock TEMPO_ESTATISTICA_i<2>
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+RST_i                 |         |         |    0.989|    0.989|
+TEMPO_ESTATISTICA_i<0>|         |         |    1.211|    1.211|
+TEMPO_ESTATISTICA_i<1>|         |         |    1.220|    1.220|
+TEMPO_ESTATISTICA_i<2>|         |         |    0.786|    0.786|
+----------------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Aug 20 15:15:32 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 242 MB
+
+
+

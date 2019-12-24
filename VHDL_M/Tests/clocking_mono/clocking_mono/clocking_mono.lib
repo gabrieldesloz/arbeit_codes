@@ -1,0 +1,519 @@
+timestamp=1435587266214
+
+[all_in_buff]
+I=0*145651
+I/behavioral=I/Behavioral 0*145886
+M=11|0|vb4|1412773170721|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/ALL_IN_BUFF.vhd|0*19117*0xb8a25aeb4cda91c809492dc23182a5a3cdd9e21d|0*19572*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/all_in_buff=NSymbols/ALL_IN_BUFF 40|0|2*37255
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/ALL_IN_BUFF.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[bufg]
+I=0*146260
+I/bufg_v=I/BUFG_V 0*146358
+M=11|0|vb4|1412772219762|./../../../comunicação serial mono/BUFG.vhd|0*11490*0x412aabf53d2eff6edc1d1848eceb8e037d60be4d|0*11705*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/bufg=NSymbols/BUFG 40|0|2*10102
+R=./../../../comunicação serial mono/BUFG.vhd|24
+Version=9.3.2745.4995  (Windows)|
+Version/bufg_v=9.3.2745.4995  (Windows)|
+
+[ch_x_ejet_timer]
+I=0*147893
+I/behavioral=I/Behavioral 0*148136
+M=11|0|vb4|1412773170766|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/CH_X_EJET_TIMER.vhd|0*31434*0xae3385b3c4ce7c53acaadd0af4db64ff09b653ef|0*33115*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/CH_X_EJET_TIMER.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[clock_gen]
+A/arq=A/ARQ 21|./../../../clocking mono/clock_gen.vhd|47|1*75781
+BinI32/arq=3*11811
+I=0*148776
+I/arq=I/ARQ 0*222892
+M=11|0|vb4|1412684894988|./../../../clocking mono/clock_gen.vhd|0*0*0x044c782169d3eb618aebb9d5df5bf27877c7891c|0*505*0x5eebbfaf24833dd780412b1f91e05209
+M/arq=M/ARQ 21|0|vb4|1435587264247|./../../../clocking mono/clock_gen.vhd|0*213545*0x885f652b28081d2b863503b8618849c0f2d7f247|0*215663*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../../clocking mono/clock_gen.vhd|25
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/arq=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[clock_gen_fsm]
+A/arq=A/ARQ 21|./../../../clocking mono/clock_gen_ccd_ctrl_fsm.vhd|54|1*66924
+BinI32/arq=3*9143
+I=0*217678
+I/arq=I/ARQ 0*222647
+M=11|0|vb4|1435587212587|./../../../clocking mono/clock_gen_ccd_ctrl_fsm.vhd|0*216780*0xa253892867ebe3cab03ec241c256afe6c7770fb6|0*217562*0x5eebbfaf24833dd780412b1f91e05209
+M/arq=M/ARQ 21|0|vb4|1435587263144|./../../../clocking mono/clock_gen_ccd_ctrl_fsm.vhd|0*217919*0x834f30ec8fe3eb5e381dc4213dce3b0bf9b558d5|0*222524*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../../clocking mono/clock_gen_ccd_ctrl_fsm.vhd|30
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/arq=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[comm_tb]
+I=0*150473
+I/generic_tb_rtl=0*150694
+M=11|0|vb4|1412772220047|./../../../comunicação serial mono/comm_tb.vhd|0*13619*0x3c361e8a176c2b75e39f2d08e3458dd9de99ac3e|0*13851*0x5eebbfaf24833dd780412b1f91e05209
+R=./../../../comunicação serial mono/comm_tb.vhd|18
+Version=9.3.2745.4995  (Windows)|
+Version/generic_tb_rtl=9.3.2745.4995  (Windows)|
+
+[comm_top]
+I=0*151292
+I/arq=I/ARQ 0*151578
+M=11|0|vb4|1412772547883|./../../../mod_giga_L_conector/testing/comm_top.vhd|0*17149*0x9cfc788e6fddb1357db6a5df10727469352afc09|0*17703*0x5eebbfaf24833dd780412b1f91e05209
+R=./../../../mod_giga_L_conector/testing/comm_top.vhd|13
+Version=9.3.2745.4995  (Windows)|
+Version/arq=9.3.2745.4995  (Windows)|
+
+[definitions]
+I=0*151972
+M=3|0|vb4|1412772219782|./../../../comunicação serial mono/definitions.vhd|0*11804*0x78d9be649358002ae1cf4eaecab1dbd3ac38bd65|0*12047*0x5eebbfaf24833dd780412b1f91e05209
+R=./../../../comunicação serial mono/definitions.vhd|7
+Version=9.3.2745.4995  (Windows)|
+
+[ej_clear_count]
+I=0*152320
+I/behavioral=I/Behavioral 0*152562
+M=11|0|vb4|1412773170781|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/EJ_CLEAR_COUNT.vhd|0*40407*0xe729be3239da2b20688f8c56f5d33c0d75ec73a8|0*40832*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/EJ_CLEAR_COUNT.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[ej_serial_master]
+I=0*153200
+I/behavioral=I/Behavioral 0*153503
+M=11|0|vb4|1412772547365|./../../../mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd|0*14316*0x0fa1c1b63ddcb98456e04735e790ca13390fa8f5|0*14886*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/ej_serial_master=NSymbols/EJ_SERIAL_MASTER 40|0|2*23656
+R=./../../../mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd|44
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[ej_serial_slave]
+I=0*153872
+I/behavioral=I/Behavioral 0*154237
+M=11|0|vb4|1412772547528|./../../../mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora - v2 .vhd|0*15018*0xcf4d17655d63abef62a540266ea601c03c58007b|0*15564*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/ej_serial_slave=NSymbols/EJ_SERIAL_SLAVE 40|0|2*27545
+R=./../../../mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora - v2 .vhd|44
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[ejectors_data_sender]
+I=0*154957
+I/behavioral=I/Behavioral 0*155327
+M=11|0|vb4|1412773170971|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/EJECTORS_DATA_SENDER.vhd|0*42170*0x1ff5ea8d934fab1b17ba41c2a6a8ac80b88f8c11|0*43087*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/ejectors_data_sender=NSymbols/EJECTORS_DATA_SENDER 40|0|2*30350
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/EJECTORS_DATA_SENDER.vhd|46
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[floor_gen]
+I=0*156063
+I/behavioral=I/Behavioral 0*156300
+M=11|0|vb4|1412773170986|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/FLOOR_GEN.vhd|0*47141*0x2fdbabba028196c4c19a2c3c3d79bde432f62962|0*47674*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/FLOOR_GEN.vhd|36
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[fub1]
+BinI32/fub1=3*3997
+I=0*156980
+I/fub1=I/Fub1 0*157278
+M=11|0|vb4|1412709202780|./../compile/Fub1.vhd|0*10816*0x73d163f4fa108bf247dd5739e3862e9b44acb514|0*11413*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/fub1=NSymbols/Fub1 40|0|2*0
+R=./../compile/Fub1.vhd|28
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/fub1=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[in_buff]
+I=0*157829
+I/behavioral=I/Behavioral 0*158060
+M=11|0|vb4|1412773171001|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/IN_BUFF.vhd|0*50004*0xf7146f5878bc00214dbdc01356f54959f77b8c9b|0*50428*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/IN_BUFF.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[main]
+I=0*160318
+M=11|0|vb4|1412773171176|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN.vhd|0*51269*0x10d6f3a8caf1f9647cfe56c27792d2ce661e5a37|0*53278*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN.vhd|42
+Version=9.3.2745.4995  (Windows)|
+
+[main_board_detection]
+I=0*160859
+I/behavioral=I/Behavioral 0*161107
+M=11|0|vb4|1412773171236|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN_BOARD_DETECTION.vhd|0*53400*0xe9fa036cbf001aa0bc5e2a71b73cc4da845f9527|0*53832*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN_BOARD_DETECTION.vhd|37
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[main_reset]
+I=0*161594
+I/behavioral=I/Behavioral 0*161698
+M=11|0|vb4|1412773171246|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN_RESET.vhd|0*54960*0x7a401e51f37329e8d13dea2eea75ac506a77a911|0*55302*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN_RESET.vhd|32
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[max_chx_mean]
+I=0*162628
+I/behavioral=I/Behavioral 0*162868
+M=11|0|vb4|1412773171261|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAX_CHX_MEAN.vhd|0*56435*0xac37149e88a97257d23a3e416c1bd52f5b08cde8|0*57455*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAX_CHX_MEAN.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[mean_16k]
+I=0*163805
+M=11|0|vb4|1412773171296|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEAN_32.vhd|0*72422*0x2ad0b253ecbb4a425e64b28b0efd7c1769208c0f|0*73306*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEAN_32.vhd|34
+Version=9.3.2745.4995  (Windows)|
+
+[mem_ctrl]
+I=0*164921
+I/behavioral=I/Behavioral 0*165157
+M=11|0|vb4|1412773171316|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_CTRL.vhd|0*73435*0xcc88e4cc1d160586aa316aed6b06049110bce7a3|0*74519*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_CTRL.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[mem_ctrl_delta]
+I=0*165726
+I/behavioral=I/Behavioral 0*165964
+M=11|0|vb4|1412773171331|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_CTRL_DELAY.vhd|0*79294*0xa6838e1b03a55525f6298be0b901b02e8676f04a|0*79800*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_CTRL_DELAY.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[mem_sync]
+I=0*166527
+I/mem_sync_a=I/MEM_SYNC_a 0*166629
+M=11|0|vb4|1412773171356|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_SYNC.vhd|0*81371*0x4dbdb96b57bb5c4388b1361ce4b29fb328b07e49|0*81828*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_SYNC.vhd|62
+Version=9.3.2745.4995  (Windows)|
+Version/mem_sync_a=9.3.2745.4995  (Windows)|
+
+[memdef]
+I=0*166991
+I/behavioral=I/Behavioral 0*167349
+M=11|0|vb4|1412773171566|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/memdef.vhd|0*84090*0xae4b828d98bb98f4b68998fcfc413433a6cfaa11|0*84584*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/memdef.vhd|31
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[mux]
+I=0*168330
+I/arq=I/ARQ 0*168561
+M=11|0|vb4|1412772547708|./../../../mod_giga_L_conector/testing/mux.vhd|0*15703*0x168c2cc13c731f57e6a2b46e83fbfc8bb81520ea|0*16479*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/mux=40|0|2*14488
+R=./../../../mod_giga_L_conector/testing/mux.vhd|6
+Version=9.3.2745.4995  (Windows)|
+Version/arq=9.3.2745.4995  (Windows)|
+
+[my_types_pkg]
+I=0*168899
+M=3|0|vb4|1412772547353|./../../../mod_giga_L_conector/testing/definitions.vhd|0*13956*0x908155a274e292c27c57abd4ec31100c2a37c065|0*14198*0x5eebbfaf24833dd780412b1f91e05209
+R=./../../../mod_giga_L_conector/testing/definitions.vhd|4
+Version=9.3.2745.4995  (Windows)|
+
+[neg_edge_moore]
+I=0*169155
+I/moore_arch=0*169263
+M=11|0|vb4|1412772663006|./../../../mod_giga_L_conector/testing/neg_edge_moore.vhd|0*17814*0xea879e9c747abd30a0e1bb0205bf38e14f0761ab|0*18131*0x5eebbfaf24833dd780412b1f91e05209
+R=./../../../mod_giga_L_conector/testing/neg_edge_moore.vhd|3
+Version=9.3.2745.4995  (Windows)|
+Version/moore_arch=9.3.2745.4995  (Windows)|
+
+[packet_detect]
+I=0*169663
+I/arq=I/ARQ 0*169904
+M=11|0|vb4|1412772547713|./../../../mod_giga_L_conector/testing/packet_detect.vhd|0*16580*0x2d83007caabc5bfc947c931c1de0b09e78bd0a1d|0*17028*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/packet_detect=40|0|2*11393
+R=./../../../mod_giga_L_conector/testing/packet_detect.vhd|7
+Version=9.3.2745.4995  (Windows)|
+Version/arq=9.3.2745.4995  (Windows)|
+
+[pos_edge_moore]
+I=0*170230
+I/moore_arch=0*170338
+M=11|0|vb4|1412772663027|./../../../mod_giga_L_conector/testing/pos_edge_moore.vhd|0*18254*0x3835ab06cf93c9913081fa9ee247eb946022d906|0*18571*0x5eebbfaf24833dd780412b1f91e05209
+R=./../../../mod_giga_L_conector/testing/pos_edge_moore.vhd|3
+Version=9.3.2745.4995  (Windows)|
+Version/moore_arch=9.3.2745.4995  (Windows)|
+
+[pseudo_random_test]
+I=0*170699
+I/behavioral=I/Behavioral 0*170945
+M=11|0|vb4|1412773171586|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/PSEUDO_RANDOM_TEST.vhd|0*85346*0x78d712c8691b3d3f975c7c53b8934f829d0f7c81|0*85775*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/PSEUDO_RANDOM_TEST.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[reset_generator]
+I=0*171406
+I/rtl=0*171515
+M=11|0|vb4|1412772663037|./../../../mod_giga_L_conector/testing/reset_generator.vhd|0*18694*0x0cef83a60e03752f8e7a6bc6ba7fa9437040d3cc|0*18992*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/reset_generator=40|0|2*22287
+R=./../../../mod_giga_L_conector/testing/reset_generator.vhd|4
+Version=9.3.2745.4995  (Windows)|
+Version/rtl=9.3.2745.4995  (Windows)|
+
+[send_serial_data]
+I=0*172503
+I/behavioral=I/Behavioral 0*172613
+M=11|0|vb4|1412773171601|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SEND_SERIAL_DATA.vhd|0*89684*0xf648e9874885782ce8cbea1ce82a5cdfd90b1434|0*90725*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SEND_SERIAL_DATA.vhd|32
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[serial_receiver_eject]
+I=0*173074
+I/arq=I/ARQ 0*173321
+M=11|0|vb4|1412772219992|./../../../comunicação serial mono/serial_receiver_eject.vhd|0*12160*0x5dde571ef5306555f5bceecc9e2b76f8339ec776|0*12683*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/serial_receiver_eject=40|0|2*6903
+R=./../../../comunicação serial mono/serial_receiver_eject.vhd|29
+Version=9.3.2745.4995  (Windows)|
+Version/arq=9.3.2745.4995  (Windows)|
+
+[serial_sender_eject]
+I=0*174169
+I/arq=I/ARQ 0*174409
+M=11|0|vb4|1412772220007|./../../../comunicação serial mono/serial_sender_eject.vhd|0*12816*0x4a25763dd411395d5744e99e1bc33dc755686771|0*13490*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/serial_sender_eject=40|0|2*399
+R=./../../../comunicação serial mono/serial_sender_eject.vhd|27
+Version=9.3.2745.4995  (Windows)|
+Version/arq=9.3.2745.4995  (Windows)|
+
+[serial_tx]
+I=0*174921
+I/behavioral=I/Behavioral 0*175158
+M=11|0|vb4|1412773171616|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SERIAL_TX.vhd|0*95472*0xd50414d861e4d57d41585581df083f7fb1a44872|0*95918*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SERIAL_TX.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[sort_case]
+I=0*175742
+M=11|0|vb4|1412773171631|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SORT_CASE.vhd|0*97466*0xdda5c2ecd0af98a110df52e1216adfaf9732b492|0*97993*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SORT_CASE.vhd|38
+Version=9.3.2745.4995  (Windows)|
+
+[status_sender]
+I=0*176791
+I/behavioral=I/Behavioral 0*177032
+M=11|0|vb4|1412773171641|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/STATUS_SEND_TEST.vhd|0*98125*0x021eb90745aef011994ecc23e7421858dd79f261|0*99163*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/STATUS_SEND_TEST.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[tb_clock_gen]
+A/behavior=21|./../../../clocking mono/tb_clock_gen.vhd|38|1*86186
+BinI32/behavior=3*12858
+I=0*177366
+I/behavior=0*223241
+M=11|0|vb4|1412684896438|./../../../clocking mono/tb_clock_gen.vhd|0*604*0xc1bddb10a83c47b89eebd1801dfe75dff3215308|0*794*0x5eebbfaf24833dd780412b1f91e05209
+M/behavior=21|0|vb4|1435587265309|./../../../clocking mono/tb_clock_gen.vhd|0*899*0x2eba696d97afb370c3cc6fb211c6dc7d4d13e6ef|0*2269*0x856b180bf611ec746a6bfcb1befebd18
+R=./../../../clocking mono/tb_clock_gen.vhd|35
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+Version/behavior=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[tb_corr_agt]
+I=0*177723
+I/behavior=0*177962
+M=11|0|vb4|1412773171651|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_CORR_AGT.vhd|0*101649*0xc87d78f2127c6f277e4deefd62f28fc3ce2c7740|0*101931*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_CORR_AGT.vhd|37
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_ejectors_data_sender]
+I=0*178325
+I/behavior=0*178502
+M=11|0|vb4|1412773171666|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_EJECTORS_DATA_SENDER.vhd|0*104640*0xe4f7c910bb642f2e7ef133e03ce0913f13bc441b|0*104983*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_EJECTORS_DATA_SENDER.vhd|45
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_floor_gen]
+I=0*178770
+I/behavior=0*178876
+M=11|0|vb4|1412773171676|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_FLOOR_GEN.vhd|0*108284*0x4c267a23348b85a565468d83f666de9e19ece501|0*108507*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_FLOOR_GEN.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_main_reset]
+I=0*179076
+I/behavior=0*179183
+M=11|0|vb4|1412773171686|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MAIN_RESET.vhd|0*110579*0xb1dffc626312027d2abfb24160065e3ce1273f86|0*110806*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MAIN_RESET.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_max_ch_mean]
+I=0*179387
+I/behavior=0*179629
+M=11|0|vb4|1412773171696|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MAX_CH_MEAN.vhd|0*112149*0x745ff6ada1d4f9c6cb6f2cb816ba81f57560fbee|0*112443*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MAX_CH_MEAN.vhd|37
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_mean_16k]
+I=0*179959
+I/behavior=0*180198
+M=11|0|vb4|1412773171711|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_16K.vhd|0*116217*0x0e3215eb80089a6235ad5e718cdce0cd21d8425c|0*116499*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_16K.vhd|37
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_mean_256]
+I=0*180525
+I/behavior=0*180630
+M=11|0|vb4|1412773171721|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_256.vhd|0*119409*0x217e261266df37c89556a359b94889f78876de6f|0*119628*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_256.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_mean_gain_table]
+I=0*180844
+I/behavior=0*180956
+M=11|0|vb4|1412773171731|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_GAIN_TABLE.vhd|0*121756*0xf978fa51d2ba76de2a4bdefb6bc9e1977248b625|0*122003*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_GAIN_TABLE.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_mem_pixval]
+I=0*181162
+I/behavior=0*181403
+M=11|0|vb4|1412773171746|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEM_PIXVAL.vhd|0*124031*0x6cda573a00ee24ec9dba805620b56cb95af79314|0*124321*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEM_PIXVAL.vhd|37
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_mem_rompixval]
+I=0*181747
+I/behavior=0*181991
+M=11|0|vb4|1412773171781|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEM_ROMPIXVAL.vhd|0*125724*0x002c4e19b713b85d35b0c307cc944829d5965df7|0*126026*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEM_ROMPIXVAL.vhd|37
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_testejet]
+I=0*182323
+I/behavior=0*182562
+M=11|0|vb4|1412773171796|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_TESTEJET.vhd|0*127094*0x5777fd08839aefcf7f0ddf6b60b409b0ca3c1c6a|0*127376*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_TESTEJET.vhd|37
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[tb_wrapper_ejet]
+I=0*182901
+I/behavior=0*183010
+M=11|0|vb4|1412773171806|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_WRAPPER_EJET.vhd|0*129247*0x1de13baf3952f43a786ae385e26dc3a48acf662d|0*129482*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_WRAPPER_EJET.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavior=9.3.2745.4995  (Windows)|
+
+[testejet]
+I=0*183517
+I/behavioral=I/Behavioral 0*183753
+M=11|0|vb4|1412773171821|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TESTEJET.vhd|0*133972*0xd9b94feb7ca67763973e9068521117d150b4ece1|0*134544*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TESTEJET.vhd|35
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[top]
+I=0*213193
+M=11|0|vb4|1430928940034|./../src/TOP.vhd|0*211409*0xa27b79002d9a4d9d27c149a1df265483acb3b538|0*213122*0x5eebbfaf24833dd780412b1f91e05209
+R=./../src/TOP.vhd|35
+Version=9.3.2745.4995  (Windows)|00000003789cd3f5370600015b00b0
+
+[wrapper]
+I=0*185233
+I/behavioral=I/Behavioral 0*185468
+M=11|0|vb4|1412773171836|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER.vhd|0*137894*0xb1d4953c3239e22dd605e557283be6c70eada5bb|0*139360*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[wrapper_ejet]
+I=0*186980
+I/behavioral=I/Behavioral 0*187220
+M=11|0|vb4|1412773171851|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER_EJET.vhd|0*139488*0x05f6822ad170877696c731da9c1a9e23afa0bf17|0*140993*0x5eebbfaf24833dd780412b1f91e05209
+NSymbols/wrapper_ejet=NSymbols/WRAPPER_EJET 40|0|2*39733
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER_EJET.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[wrapper_top]
+I=0*191204
+I/behavioral=I/Behavioral 0*191309
+M=11|0|vb4|1412773171866|M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER_TOP.vhd|0*141131*0x570b6739724156a1159705742f14f723fff3fbba|0*145236*0x5eebbfaf24833dd780412b1f91e05209
+R=M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER_TOP.vhd|34
+Version=9.3.2745.4995  (Windows)|
+Version/behavioral=9.3.2745.4995  (Windows)|
+
+[~A]
+ModifyID=334
+Version=73
+
+[~MFT]
+0=108|0clocking_mono.mgf|223241|124165
+1=16|1clocking_mono.mgf|86186|66924
+2=1|2clocking_mono.mgf|39733|0
+3=16|3clocking_mono.mgf|12858|8984
+
+[~U]
+all_in_buff=ALL_IN_BUFF 11|0*145372||0x8000000000000003
+bufg=BUFG 11|0*146132||0x8000000000000003
+ch_x_ejet_timer=CH_X_EJET_TIMER 11|0*146463||0x8000000000000000
+clock_gen=11|0*148390|
+clock_gen_fsm=11|0*216118|
+comm_tb=11|0*150406||0x8000000000000000
+comm_top=11|0*150930||0x8000000000000000
+definitions=3|0*151684|0*151835|0x8000000000000000
+ej_clear_count=EJ_CLEAR_COUNT 11|0*152077||0x8000000000000000
+ej_serial_master=EJ_SERIAL_MASTER 11|0*152815||0x8000000000000003
+ej_serial_slave=EJ_SERIAL_SLAVE 11|0*153559||0x8000000000000003
+ejectors_data_sender=EJECTORS_DATA_SENDER 11|0*154292||0x8000000000000003
+floor_gen=FLOOR_GEN 11|0*155708||0x8000000000000000
+fub1=Fub1 11|0*156548||0x7
+in_buff=IN_BUFF 11|0*157581||0x8000000000000000
+main=MAIN 11|0*158302||0x8000000000000000
+main_board_detection=MAIN_BOARD_DETECTION 11|0*160613||0x8000000000000000
+main_reset=MAIN_RESET 11|0*161366||0x8000000000000000
+max_chx_mean=MAX_CHX_MEAN 11|0*161813||0x8000000000000000
+mean_16k=MEAN_16K 11|0*163119||0x8000000000000000
+mem_ctrl=MEM_CTRL 11|0*164041||0x8000000000000000
+mem_ctrl_delta=MEM_CTRL_DELTA 11|0*165404||0x8000000000000000
+mem_sync=MEM_SYNC 11|0*166213||0x8000000000000000
+memdef=11|0*166742||0x8000000000000000
+mux=11|0*167718||0x8000000000000003
+my_types_pkg=3|0*168597|0*168756|0x8000000000000000
+neg_edge_moore=11|0*168940||0x8000000000000000
+packet_detect=11|0*169382||0x8000000000000003
+pos_edge_moore=11|0*170015||0x8000000000000000
+pseudo_random_test=PSEUDO_RANDOM_TEST 11|0*170457||0x8000000000000000
+reset_generator=11|0*171202||0x8000000000000003
+send_serial_data=SEND_SERIAL_DATA 11|0*171628||0x8000000000000000
+serial_receiver_eject=11|0*172734||0x8000000000000003
+serial_sender_eject=11|0*173572||0x8000000000000003
+serial_tx=SERIAL_TX 11|0*174653||0x8000000000000000
+sort_case=SORT_CASE 11|0*175406||0x8000000000000000
+status_sender=STATUS_SENDER 11|0*175979||0x8000000000000000
+tb_clock_gen=11|0*177284|
+tb_corr_agt=TB_CORR_AGT 11|0*177644||0x8000000000000000
+tb_ejectors_data_sender=TB_EJECTORS_DATA_SENDER 11|0*178210||0x8000000000000000
+tb_floor_gen=TB_FLOOR_GEN 11|0*178688||0x8000000000000000
+tb_main_reset=TB_MAIN_RESET 11|0*178991||0x8000000000000000
+tb_max_ch_mean=TB_MAX_CH_MEAN 11|0*179299||0x8000000000000000
+tb_mean_16k=TB_MEAN_16K 11|0*179880||0x8000000000000000
+tb_mean_256=TB_MEAN_256 11|0*180446||0x8000000000000000
+tb_mean_gain_table=TB_MEAN_GAIN_TABLE 11|0*180744||0x8000000000000000
+tb_mem_pixval=TB_MEM_PIXVAL 11|0*181077||0x8000000000000000
+tb_mem_rompixval=TB_MEM_ROMPIXVAL 11|0*181653||0x8000000000000000
+tb_testejet=TB_TESTEJET 11|0*182244||0x8000000000000000
+tb_wrapper_ejet=TB_WRAPPER_EJET 11|0*182810||0x8000000000000000
+testejet=TESTEJET 11|0*183128||0x8000000000000000
+top=TOP 11|0*209919|
+wrapper=WRAPPER 11|0*184000||0x8000000000000000
+wrapper_ejet=WRAPPER_EJET 11|0*185714||0x8000000000000003
+wrapper_top=WRAPPER_TOP 11|0*187471||0x8000000000000000
+

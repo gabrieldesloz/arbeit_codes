@@ -1,0 +1,850 @@
+ -- Copyright (C) 1991-2011 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 32-bit Version 11.1 Build 173 11/01/2011 SJ Full Version
+CHIP  "bfilter"  ASSIGNED TO AN: EP3C120F780C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+d_ana_out[156]               : A3        : output : 2.5 V             :         : 8         : N              
+d_ana_out[1]                 : A4        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
+d_ana_in[92]                 : A6        : input  : 2.5 V             :         : 8         : N              
+d_ana_out[61]                : A7        : output : 2.5 V             :         : 8         : N              
+d_ana_out[69]                : A8        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
+d_ana_out[41]                : A10       : output : 2.5 V             :         : 8         : N              
+d_ana_in[106]                : A11       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[118]               : A12       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
+d_ana_in[91]                 : A14       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[124]                : A15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+d_ana_in[105]                : A17       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[112]               : A18       : output : 2.5 V             :         : 7         : N              
+d_ana_in[173]                : A19       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
+d_ana_out[19]                : A21       : output : 2.5 V             :         : 7         : N              
+d_ana_in[131]                : A22       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[251]               : A23       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
+d_ana_in[141]                : A25       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[227]                : A26       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
+VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+d_ana_out[55]                : AA3       : output : 2.5 V             :         : 2         : N              
+d_ana_in[45]                 : AA4       : input  : 2.5 V             :         : 2         : N              
+d_ana_out[64]                : AA5       : output : 2.5 V             :         : 2         : N              
+d_ana_out[198]               : AA6       : output : 2.5 V             :         : 2         : N              
+d_ana_out[167]               : AA7       : output : 2.5 V             :         : 2         : N              
+d_ana_out[34]                : AA8       : output : 2.5 V             :         : 3         : N              
+GNDA1                        : AA9       : gnd    :                   :         :           :                
+d_ana_in[138]                : AA10      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+d_ana_out[44]                : AA12      : output : 2.5 V             :         : 3         : N              
+d_ana_out[206]               : AA13      : output : 2.5 V             :         : 3         : N              
+d_ana_in[17]                 : AA14      : input  : 2.5 V             :         : 3         : N              
+d_ana_out[207]               : AA15      : output : 2.5 V             :         : 4         : N              
+d_ana_out[242]               : AA16      : output : 2.5 V             :         : 4         : N              
+d_ana_in[245]                : AA17      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+d_ana_in[230]                : AA19      : input  : 2.5 V             :         : 4         : N              
+GNDA4                        : AA20      : gnd    :                   :         :           :                
+d_ana_out[90]                : AA21      : output : 2.5 V             :         : 4         : N              
+d_ana_out[82]                : AA22      : output : 2.5 V             :         : 5         : N              
+d_ana_out[212]               : AA23      : output : 2.5 V             :         : 5         : N              
+d_ana_out[52]                : AA24      : output : 2.5 V             :         : 5         : N              
+d_ana_out[204]               : AA25      : output : 2.5 V             :         : 5         : N              
+d_ana_out[186]               : AA26      : output : 2.5 V             :         : 5         : N              
+GND                          : AA27      : gnd    :                   :         :           :                
+VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
+d_ana_out[99]                : AB1       : output : 2.5 V             :         : 2         : N              
+d_ana_out[181]               : AB2       : output : 2.5 V             :         : 2         : N              
+d_ana_out[73]                : AB3       : output : 2.5 V             :         : 2         : N              
+d_ana_out[154]               : AB4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
+d_ana_in[80]                 : AB6       : input  : 2.5 V             :         : 2         : N              
+d_ana_out[225]               : AB7       : output : 2.5 V             :         : 3         : N              
+d_ana_out[97]                : AB8       : output : 2.5 V             :         : 3         : N              
+d_ana_in[60]                 : AB9       : input  : 2.5 V             :         : 3         : N              
+d_ana_out[35]                : AB10      : output : 2.5 V             :         : 3         : N              
+d_ana_out[68]                : AB11      : output : 2.5 V             :         : 3         : N              
+d_ana_in[206]                : AB12      : input  : 2.5 V             :         : 3         : N              
+d_ana_in[208]                : AB13      : input  : 2.5 V             :         : 3         : N              
+d_ana_out[168]               : AB14      : output : 2.5 V             :         : 3         : N              
+d_ana_in[111]                : AB15      : input  : 2.5 V             :         : 4         : N              
+d_ana_in[161]                : AB16      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[17]                : AB17      : output : 2.5 V             :         : 4         : N              
+d_ana_in[189]                : AB18      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[234]               : AB19      : output : 2.5 V             :         : 4         : N              
+d_ana_out[2]                 : AB20      : output : 2.5 V             :         : 4         : N              
+d_ana_out[3]                 : AB21      : output : 2.5 V             :         : 4         : N              
+d_ana_out[238]               : AB22      : output : 2.5 V             :         : 4         : N              
+d_ana_out[21]                : AB23      : output : 2.5 V             :         : 5         : N              
+d_ana_out[113]               : AB24      : output : 2.5 V             :         : 5         : N              
+d_ana_in[221]                : AB25      : input  : 2.5 V             :         : 5         : N              
+d_ana_in[77]                 : AB26      : input  : 2.5 V             :         : 5         : N              
+d_ana_in[119]                : AB27      : input  : 2.5 V             :         : 5         : N              
+d_ana_out[137]               : AB28      : output : 2.5 V             :         : 5         : N              
+d_ana_out[193]               : AC1       : output : 2.5 V             :         : 2         : N              
+d_ana_out[62]                : AC2       : output : 2.5 V             :         : 2         : N              
+d_ana_in[98]                 : AC3       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
+d_ana_in[29]                 : AC5       : input  : 2.5 V             :         : 2         : N              
+GND                          : AC6       : gnd    :                   :         :           :                
+d_ana_out[236]               : AC7       : output : 2.5 V             :         : 3         : N              
+d_ana_in[218]                : AC8       : input  : 2.5 V             :         : 3         : N              
+GND                          : AC9       : gnd    :                   :         :           :                
+d_ana_out[146]               : AC10      : output : 2.5 V             :         : 3         : N              
+d_ana_out[30]                : AC11      : output : 2.5 V             :         : 3         : N              
+d_ana_in[190]                : AC12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC13      : gnd    :                   :         :           :                
+d_ana_out[91]                : AC14      : output : 2.5 V             :         : 3         : N              
+d_ana_out[179]               : AC15      : output : 2.5 V             :         : 4         : N              
+GND                          : AC16      : gnd    :                   :         :           :                
+d_ana_out[40]                : AC17      : output : 2.5 V             :         : 4         : N              
+d_ana_out[50]                : AC18      : output : 2.5 V             :         : 4         : N              
+d_ana_out[255]               : AC19      : output : 2.5 V             :         : 4         : N              
+GND                          : AC20      : gnd    :                   :         :           :                
+d_ana_in[10]                 : AC21      : input  : 2.5 V             :         : 4         : N              
+d_ana_in[126]                : AC22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC23      : gnd    :                   :         :           :                
+d_ana_in[242]                : AC24      : input  : 2.5 V             :         : 5         : N              
+d_ana_in[232]                : AC25      : input  : 2.5 V             :         : 5         : N              
+d_ana_out[29]                : AC26      : output : 2.5 V             :         : 5         : N              
+d_ana_out[229]               : AC27      : output : 2.5 V             :         : 5         : N              
+d_ana_out[177]               : AC28      : output : 2.5 V             :         : 5         : N              
+d_ana_in[215]                : AD1       : input  : 2.5 V             :         : 2         : N              
+d_ana_out[70]                : AD2       : output : 2.5 V             :         : 2         : N              
+d_ana_out[222]               : AD3       : output : 2.5 V             :         : 2         : N              
+d_ana_out[102]               : AD4       : output : 2.5 V             :         : 3         : N              
+d_ana_in[233]                : AD5       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
+d_ana_out[194]               : AD7       : output : 2.5 V             :         : 3         : N              
+d_ana_out[148]               : AD8       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
+d_ana_out[147]               : AD10      : output : 2.5 V             :         : 3         : N              
+d_ana_in[22]                 : AD11      : input  : 2.5 V             :         : 3         : N              
+d_ana_out[84]                : AD12      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+d_ana_out[66]                : AD14      : output : 2.5 V             :         : 3         : N              
+d_ana_out[216]               : AD15      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
+d_ana_out[71]                : AD17      : output : 2.5 V             :         : 4         : N              
+d_ana_out[39]                : AD18      : output : 2.5 V             :         : 4         : N              
+d_ana_out[142]               : AD19      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+d_ana_out[136]               : AD21      : output : 2.5 V             :         : 4         : N              
+d_ana_out[141]               : AD22      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
+d_ana_out[160]               : AD24      : output : 2.5 V             :         : 4         : N              
+d_ana_in[28]                 : AD25      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[241]               : AD26      : output : 2.5 V             :         : 5         : N              
+d_ana_out[240]               : AD27      : output : 2.5 V             :         : 5         : N              
+d_ana_out[12]                : AD28      : output : 2.5 V             :         : 5         : N              
+d_ana_out[108]               : AE1       : output : 2.5 V             :         : 2         : N              
+d_ana_out[140]               : AE2       : output : 2.5 V             :         : 2         : N              
+d_ana_out[224]               : AE3       : output : 2.5 V             :         : 2         : N              
+d_ana_out[158]               : AE4       : output : 2.5 V             :         : 3         : N              
+d_ana_out[230]               : AE5       : output : 2.5 V             :         : 3         : N              
+d_ana_in[73]                 : AE6       : input  : 2.5 V             :         : 3         : N              
+d_ana_out[100]               : AE7       : output : 2.5 V             :         : 3         : N              
+d_ana_in[254]                : AE8       : input  : 2.5 V             :         : 3         : N              
+d_ana_out[122]               : AE9       : output : 2.5 V             :         : 3         : N              
+d_ana_out[8]                 : AE10      : output : 2.5 V             :         : 3         : N              
+d_ana_in[188]                : AE11      : input  : 2.5 V             :         : 3         : N              
+d_ana_out[145]               : AE12      : output : 2.5 V             :         : 3         : N              
+d_ana_out[155]               : AE13      : output : 2.5 V             :         : 3         : N              
+d_ana_in[250]                : AE14      : input  : 2.5 V             :         : 3         : N              
+d_ana_in[4]                  : AE15      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[56]                : AE16      : output : 2.5 V             :         : 4         : N              
+d_ana_in[185]                : AE17      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[81]                : AE18      : output : 2.5 V             :         : 4         : N              
+d_ana_out[166]               : AE19      : output : 2.5 V             :         : 4         : N              
+d_ana_out[76]                : AE20      : output : 2.5 V             :         : 4         : N              
+d_ana_out[48]                : AE21      : output : 2.5 V             :         : 4         : N              
+d_ana_out[203]               : AE22      : output : 2.5 V             :         : 4         : N              
+d_ana_out[174]               : AE23      : output : 2.5 V             :         : 4         : N              
+d_ana_out[23]                : AE24      : output : 2.5 V             :         : 4         : N              
+d_ana_in[127]                : AE25      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[111]               : AE26      : output : 2.5 V             :         : 5         : N              
+d_ana_out[250]               : AE27      : output : 2.5 V             :         : 5         : N              
+d_ana_out[176]               : AE28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+d_ana_out[228]               : AF2       : output : 2.5 V             :         : 2         : N              
+d_ana_in[85]                 : AF3       : input  : 2.5 V             :         : 3         : N              
+d_ana_out[32]                : AF4       : output : 2.5 V             :         : 3         : N              
+d_ana_out[96]                : AF5       : output : 2.5 V             :         : 3         : N              
+d_ana_out[119]               : AF6       : output : 2.5 V             :         : 3         : N              
+d_ana_out[159]               : AF7       : output : 2.5 V             :         : 3         : N              
+d_ana_out[227]               : AF8       : output : 2.5 V             :         : 3         : N              
+d_ana_in[122]                : AF9       : input  : 2.5 V             :         : 3         : N              
+d_ana_in[19]                 : AF10      : input  : 2.5 V             :         : 3         : N              
+d_ana_in[149]                : AF11      : input  : 2.5 V             :         : 3         : N              
+d_ana_in[238]                : AF12      : input  : 2.5 V             :         : 3         : N              
+d_ana_out[150]               : AF13      : output : 2.5 V             :         : 3         : N              
+d_ana_out[87]                : AF14      : output : 2.5 V             :         : 3         : N              
+d_ana_out[57]                : AF15      : output : 2.5 V             :         : 4         : N              
+d_ana_out[77]                : AF16      : output : 2.5 V             :         : 4         : N              
+d_ana_in[135]                : AF17      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[104]               : AF18      : output : 2.5 V             :         : 4         : N              
+d_ana_out[45]                : AF19      : output : 2.5 V             :         : 4         : N              
+d_ana_out[213]               : AF20      : output : 2.5 V             :         : 4         : N              
+d_ana_out[53]                : AF21      : output : 2.5 V             :         : 4         : N              
+d_ana_in[179]                : AF22      : input  : 2.5 V             :         : 4         : N              
+d_ana_in[202]                : AF23      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[182]               : AF24      : output : 2.5 V             :         : 4         : N              
+d_ana_in[212]                : AF25      : input  : 2.5 V             :         : 4         : N              
+d_ana_in[40]                 : AF26      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[202]               : AF27      : output : 2.5 V             :         : 5         : N              
+GND                          : AF28      : gnd    :                   :         :           :                
+VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
+GND                          : AG2       : gnd    :                   :         :           :                
+d_ana_out[201]               : AG3       : output : 2.5 V             :         : 3         : N              
+d_ana_in[200]                : AG4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AG5       : gnd    :                   :         :           :                
+d_ana_out[195]               : AG6       : output : 2.5 V             :         : 3         : N              
+d_ana_out[199]               : AG7       : output : 2.5 V             :         : 3         : N              
+d_ana_out[79]                : AG8       : output : 2.5 V             :         : 3         : N              
+GND                          : AG9       : gnd    :                   :         :           :                
+d_ana_in[72]                 : AG10      : input  : 2.5 V             :         : 3         : N              
+d_ana_in[152]                : AG11      : input  : 2.5 V             :         : 3         : N              
+d_ana_in[78]                 : AG12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AG13      : gnd    :                   :         :           :                
+GND+                         : AG14      :        :                   :         : 3         :                
+GND+                         : AG15      :        :                   :         : 4         :                
+GND                          : AG16      : gnd    :                   :         :           :                
+d_ana_out[189]               : AG17      : output : 2.5 V             :         : 4         : N              
+d_ana_in[56]                 : AG18      : input  : 2.5 V             :         : 4         : N              
+d_ana_in[154]                : AG19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG20      : gnd    :                   :         :           :                
+d_ana_out[114]               : AG21      : output : 2.5 V             :         : 4         : N              
+d_ana_in[166]                : AG22      : input  : 2.5 V             :         : 4         : N              
+d_ana_out[110]               : AG23      : output : 2.5 V             :         : 4         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+d_ana_out[239]               : AG25      : output : 2.5 V             :         : 4         : N              
+d_ana_in[214]                : AG26      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG27      : gnd    :                   :         :           :                
+VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
+VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
+d_ana_out[217]               : AH3       : output : 2.5 V             :         : 3         : N              
+d_ana_in[42]                 : AH4       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
+d_ana_in[81]                 : AH6       : input  : 2.5 V             :         : 3         : N              
+d_ana_out[232]               : AH7       : output : 2.5 V             :         : 3         : N              
+d_ana_out[38]                : AH8       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
+d_ana_out[134]               : AH10      : output : 2.5 V             :         : 3         : N              
+d_ana_out[65]                : AH11      : output : 2.5 V             :         : 3         : N              
+d_ana_in[33]                 : AH12      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
+GND+                         : AH14      :        :                   :         : 3         :                
+GND+                         : AH15      :        :                   :         : 4         :                
+VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
+d_ana_in[102]                : AH17      : input  : 2.5 V             :         : 4         : N              
+d_ana_in[183]                : AH18      : input  : 2.5 V             :         : 4         : N              
+d_ana_in[220]                : AH19      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
+d_ana_out[197]               : AH21      : output : 2.5 V             :         : 4         : N              
+d_ana_out[243]               : AH22      : output : 2.5 V             :         : 4         : N              
+d_ana_in[35]                 : AH23      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
+d_ana_out[88]                : AH25      : output : 2.5 V             :         : 4         : N              
+d_ana_out[183]               : AH26      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+d_ana_out[138]               : B3        : output : 2.5 V             :         : 8         : N              
+d_ana_in[163]                : B4        : input  : 2.5 V             :         : 8         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+d_ana_in[0]                  : B6        : input  : 2.5 V             :         : 8         : N              
+d_ana_out[143]               : B7        : output : 2.5 V             :         : 8         : N              
+d_ana_out[95]                : B8        : output : 2.5 V             :         : 8         : N              
+GND                          : B9        : gnd    :                   :         :           :                
+d_ana_in[16]                 : B10       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[144]               : B11       : output : 2.5 V             :         : 8         : N              
+d_ana_out[235]               : B12       : output : 2.5 V             :         : 8         : N              
+GND                          : B13       : gnd    :                   :         :           :                
+d_ana_in[27]                 : B14       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[236]                : B15       : input  : 2.5 V             :         : 7         : N              
+GND                          : B16       : gnd    :                   :         :           :                
+d_ana_out[105]               : B17       : output : 2.5 V             :         : 7         : N              
+d_ana_in[150]                : B18       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[157]                : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+d_ana_in[109]                : B21       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[172]                : B22       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[180]                : B23       : input  : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+d_ana_in[2]                  : B25       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[18]                 : B26       : input  : 2.5 V             :         : 7         : N              
+GND                          : B27       : gnd    :                   :         :           :                
+VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
+GND                          : C1        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
+start                        : C3        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[75]                 : C4        : input  : 2.5 V             :         : 8         : N              
+d_ana_out[191]               : C5        : output : 2.5 V             :         : 8         : N              
+d_ana_in[96]                 : C6        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[79]                 : C7        : input  : 2.5 V             :         : 8         : N              
+d_ana_out[5]                 : C8        : output : 2.5 V             :         : 8         : N              
+d_ana_out[190]               : C9        : output : 2.5 V             :         : 8         : N              
+d_ana_in[210]                : C10       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[94]                : C11       : output : 2.5 V             :         : 8         : N              
+d_ana_in[110]                : C12       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[235]                : C13       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[112]                : C14       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[22]                : C15       : output : 2.5 V             :         : 7         : N              
+d_ana_in[195]                : C16       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[101]                : C17       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[125]               : C18       : output : 2.5 V             :         : 7         : N              
+d_ana_out[208]               : C19       : output : 2.5 V             :         : 7         : N              
+d_ana_out[43]                : C20       : output : 2.5 V             :         : 7         : N              
+d_ana_out[254]               : C21       : output : 2.5 V             :         : 7         : N              
+d_ana_in[76]                 : C22       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[219]               : C23       : output : 2.5 V             :         : 7         : N              
+d_ana_in[167]                : C24       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[180]               : C25       : output : 2.5 V             :         : 7         : N              
+d_ana_out[54]                : C26       : output : 2.5 V             :         : 7         : N              
+d_ana_out[75]                : C27       : output : 2.5 V             :         : 6         : N              
+GND                          : C28       : gnd    :                   :         :           :                
+d_ana_in[204]                : D1        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[219]                : D2        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[69]                 : D3        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[157]               : D4        : output : 2.5 V             :         : 8         : N              
+d_ana_in[88]                 : D5        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[142]                : D6        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[113]                : D7        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[1]                  : D8        : input  : 2.5 V             :         : 8         : N              
+d_ana_out[67]                : D9        : output : 2.5 V             :         : 8         : N              
+d_ana_in[125]                : D10       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[175]               : D11       : output : 2.5 V             :         : 8         : N              
+d_ana_in[34]                 : D12       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[247]                : D13       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[135]               : D14       : output : 2.5 V             :         : 8         : N              
+d_ana_in[248]                : D15       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[187]               : D16       : output : 2.5 V             :         : 7         : N              
+d_ana_in[32]                 : D17       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[59]                 : D18       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[86]                 : D19       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[130]                : D20       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[6]                 : D21       : output : 2.5 V             :         : 7         : N              
+d_ana_out[24]                : D22       : output : 2.5 V             :         : 7         : N              
+d_ana_out[173]               : D23       : output : 2.5 V             :         : 7         : N              
+d_ana_in[178]                : D24       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[123]               : D25       : output : 2.5 V             :         : 7         : N              
+d_ana_in[168]                : D26       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[205]                : D27       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[196]               : D28       : output : 2.5 V             :         : 6         : N              
+d_ana_out[252]               : E1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[130]               : E3        : output : 2.5 V             :         : 1         : N              
+d_ana_in[159]                : E4        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[175]                : E5        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
+d_ana_in[14]                 : E7        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[249]                : E8        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+d_ana_out[101]               : E10       : output : 2.5 V             :         : 8         : N              
+d_ana_in[187]                : E11       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[216]                : E12       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
+d_ana_in[99]                 : E14       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[139]                : E15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+d_ana_out[215]               : E17       : output : 2.5 V             :         : 7         : N              
+d_ana_out[51]                : E18       : output : 2.5 V             :         : 7         : N              
+d_ana_in[164]                : E19       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
+d_ana_in[237]                : E21       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[196]                : E22       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
+d_ana_out[49]                : E24       : output : 2.5 V             :         : 7         : N              
+d_ana_in[46]                 : E25       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[155]                : E26       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[31]                 : E27       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[89]                 : E28       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[52]                 : F1        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[217]                : F2        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[120]               : F3        : output : 2.5 V             :         : 1         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[139]               : F5        : output : 2.5 V             :         : 1         : N              
+GND                          : F6        : gnd    :                   :         :           :                
+d_ana_in[9]                  : F7        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[239]                : F8        : input  : 2.5 V             :         : 8         : N              
+GND                          : F9        : gnd    :                   :         :           :                
+d_ana_out[226]               : F10       : output : 2.5 V             :         : 8         : N              
+d_ana_in[53]                 : F11       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[151]               : F12       : output : 2.5 V             :         : 8         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+d_ana_in[58]                 : F14       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[240]                : F15       : input  : 2.5 V             :         : 7         : N              
+GND                          : F16       : gnd    :                   :         :           :                
+d_ana_out[172]               : F17       : output : 2.5 V             :         : 7         : N              
+d_ana_in[20]                 : F18       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[214]               : F19       : output : 2.5 V             :         : 7         : N              
+GND                          : F20       : gnd    :                   :         :           :                
+d_ana_in[228]                : F21       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[49]                 : F22       : input  : 2.5 V             :         : 7         : N              
+GND                          : F23       : gnd    :                   :         :           :                
+d_ana_in[224]                : F24       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[37]                 : F25       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[134]                : F26       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[165]                : F27       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[51]                 : F28       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[251]                : G1        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[244]                : G2        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[117]               : G3        : output : 2.5 V             :         : 1         : N              
+d_ana_in[229]                : G4        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[97]                 : G5        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[241]                : G6        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[223]                : G7        : input  : 2.5 V             :         : 8         : N              
+d_ana_in[136]                : G8        : input  : 2.5 V             :         : 8         : N              
+d_ana_out[86]                : G9        : output : 2.5 V             :         : 8         : N              
+d_ana_in[38]                 : G10       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[92]                : G11       : output : 2.5 V             :         : 8         : N              
+d_ana_out[129]               : G12       : output : 2.5 V             :         : 8         : N              
+d_ana_in[203]                : G13       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[24]                 : G14       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[129]                : G15       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[120]                : G16       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[143]                : G17       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[233]               : G18       : output : 2.5 V             :         : 7         : N              
+d_ana_out[200]               : G19       : output : 2.5 V             :         : 7         : N              
+d_ana_out[188]               : G20       : output : 2.5 V             :         : 7         : N              
+d_ana_in[63]                 : G21       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[156]                : G22       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 6         :                
+d_ana_in[47]                 : G24       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[71]                 : G25       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[184]                : G26       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[68]                 : G27       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[181]                : G28       : input  : 2.5 V             :         : 6         : N              
+VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
+GND                          : H2        : gnd    :                   :         :           :                
+d_ana_in[30]                 : H3        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[26]                 : H4        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[109]               : H5        : output : 2.5 V             :         : 1         : N              
+d_ana_out[133]               : H6        : output : 2.5 V             :         : 1         : N              
+d_ana_in[48]                 : H7        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[8]                  : H8        : input  : 2.5 V             :         : 8         : N              
+GNDA3                        : H9        : gnd    :                   :         :           :                
+d_ana_in[174]                : H10       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
+d_ana_in[3]                  : H12       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[95]                 : H13       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[231]                : H14       : input  : 2.5 V             :         : 8         : N              
+d_ana_in[207]                : H15       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[151]                : H16       : input  : 2.5 V             :         : 7         : N              
+d_ana_in[93]                 : H17       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+d_ana_out[59]                : H19       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : H20       : gnd    :                   :         :           :                
+d_ana_out[46]                : H21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
+d_ana_in[148]                : H23       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[123]                : H24       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[98]                : H25       : output : 2.5 V             :         : 6         : N              
+d_ana_in[114]                : H26       : input  : 2.5 V             :         : 6         : N              
+GND                          : H27       : gnd    :                   :         :           :                
+VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
+reset_n                      : J1        : input  : 2.5 V             :         : 1         : N              
+sysclk                       : J2        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[194]                : J3        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[116]                : J4        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[104]                : J5        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[90]                 : J6        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[193]                : J7        : input  : 2.5 V             :         : 1         : N              
+VCCA3                        : J8        : power  :                   : 2.5V    :           :                
+VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
+d_ana_in[225]                : J10       : input  : 2.5 V             :         : 8         : N              
+GND                          : J11       : gnd    :                   :         :           :                
+d_ana_out[127]               : J12       : output : 2.5 V             :         : 8         : N              
+ready                        : J13       : output : 2.5 V             :         : 8         : N              
+d_ana_in[74]                 : J14       : input  : 2.5 V             :         : 8         : N              
+d_ana_out[253]               : J15       : output : 2.5 V             :         : 7         : N              
+d_ana_in[100]                : J16       : input  : 2.5 V             :         : 7         : N              
+d_ana_out[210]               : J17       : output : 2.5 V             :         : 7         : N              
+GND                          : J18       : gnd    :                   :         :           :                
+d_ana_in[213]                : J19       : input  : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
+VCCA2                        : J21       : power  :                   : 2.5V    :           :                
+d_ana_in[36]                 : J22       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[176]                : J23       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[124]               : J24       : output : 2.5 V             :         : 6         : N              
+d_ana_in[57]                 : J25       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[132]               : J26       : output : 2.5 V             :         : 6         : N              
+d_ana_in[7]                  : J27       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[39]                 : J28       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[243]                : K1        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[65]                 : K2        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[126]               : K3        : output : 2.5 V             :         : 1         : N              
+d_ana_in[153]                : K4        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
+GND                          : K6        : gnd    :                   :         :           :                
+d_ana_in[199]                : K7        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[165]               : K8        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+VCCINT                       : K15       : power  :                   : 1.2V    :           :                
+GND                          : K16       : gnd    :                   :         :           :                
+VCCINT                       : K17       : power  :                   : 1.2V    :           :                
+GND                          : K18       : gnd    :                   :         :           :                
+VCCINT                       : K19       : power  :                   : 1.2V    :           :                
+GND                          : K20       : gnd    :                   :         :           :                
+d_ana_in[62]                 : K21       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[118]                : K22       : input  : 2.5 V             :         : 6         : N              
+GND                          : K23       : gnd    :                   :         :           :                
+VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
+d_ana_in[171]                : K25       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[70]                 : K26       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[222]                : K27       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[162]               : K28       : output : 2.5 V             :         : 6         : N              
+d_ana_in[191]                : L1        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[67]                 : L2        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[66]                 : L3        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[211]                : L4        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[252]                : L5        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[15]                : L6        : output : 2.5 V             :         : 1         : N              
+d_ana_in[209]                : L7        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[21]                 : L8        : input  : 2.5 V             :         : 1         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+d_ana_in[25]                 : L21       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[18]                : L22       : output : 2.5 V             :         : 6         : N              
+d_ana_in[234]                : L23       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[25]                : L24       : output : 2.5 V             :         : 6         : N              
+d_ana_in[82]                 : L25       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[23]                 : L26       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[5]                  : L27       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[182]                : L28       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[201]                : M1        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[115]                : M2        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[162]                : M3        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[107]                : M4        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[197]                : M5        : input  : 2.5 V             :         : 1         : N              
+nSTATUS                      : M6        :        :                   :         : 1         :                
+d_ana_in[121]                : M7        : input  : 2.5 V             :         : 1         : N              
+d_ana_out[33]                : M8        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+d_ana_in[186]                : M21       : input  : 2.5 V             :         : 6         : N              
+MSEL2                        : M22       :        :                   :         : 6         :                
+d_ana_in[64]                 : M23       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[211]               : M24       : output : 2.5 V             :         : 6         : N              
+d_ana_in[83]                 : M25       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[12]                 : M26       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[103]                : M27       : input  : 2.5 V             :         : 6         : N              
+d_ana_out[93]                : M28       : output : 2.5 V             :         : 6         : N              
+VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
+GND                          : N2        : gnd    :                   :         :           :                
+d_ana_in[132]                : N3        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[108]                : N4        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
+GND                          : N6        : gnd    :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[246]                : N8        : input  : 2.5 V             :         : 1         : N              
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+d_ana_in[87]                 : N21       : input  : 2.5 V             :         : 6         : N              
+MSEL0                        : N22       :        :                   :         : 6         :                
+GND                          : N23       : gnd    :                   :         :           :                
+VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
+d_ana_in[169]                : N25       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[15]                 : N26       : input  : 2.5 V             :         : 6         : N              
+GND                          : N27       : gnd    :                   :         :           :                
+VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
+d_ana_in[226]                : P1        : input  : 2.5 V             :         : 1         : N              
+d_ana_in[147]                : P2        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
+nCONFIG                      : P4        :        :                   :         : 1         :                
+TCK                          : P5        : input  :                   :         : 1         :                
+TDO                          : P6        : output :                   :         : 1         :                
+TDI                          : P7        : input  :                   :         : 1         :                
+TMS                          : P8        : input  :                   :         : 1         :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+d_ana_in[133]                : P21       : input  : 2.5 V             :         : 5         : N              
+MSEL3                        : P22       :        :                   :         : 6         :                
+MSEL1                        : P23       :        :                   :         : 6         :                
+CONF_DONE                    : P24       :        :                   :         : 6         :                
+d_ana_in[11]                 : P25       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[137]                : P26       : input  : 2.5 V             :         : 6         : N              
+d_ana_in[43]                 : P27       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+d_ana_in[84]                 : R1        : input  : 2.5 V             :         : 2         : N              
+d_ana_in[145]                : R2        : input  : 2.5 V             :         : 2         : N              
+d_ana_in[144]                : R3        : input  : 2.5 V             :         : 2         : N              
+d_ana_out[237]               : R4        : output : 2.5 V             :         : 2         : N              
+d_ana_out[163]               : R5        : output : 2.5 V             :         : 2         : N              
+d_ana_in[94]                 : R6        : input  : 2.5 V             :         : 2         : N              
+d_ana_in[50]                 : R7        : input  : 2.5 V             :         : 2         : N              
+nCE                          : R8        :        :                   :         : 1         :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+d_ana_in[146]                : R21       : input  : 2.5 V             :         : 5         : N              
+d_ana_in[128]                : R22       : input  : 2.5 V             :         : 5         : N              
+d_ana_in[177]                : R23       : input  : 2.5 V             :         : 5         : N              
+d_ana_in[198]                : R24       : input  : 2.5 V             :         : 5         : N              
+d_ana_out[42]                : R25       : output : 2.5 V             :         : 5         : N              
+d_ana_out[31]                : R26       : output : 2.5 V             :         : 5         : N              
+d_ana_in[158]                : R27       : input  : 2.5 V             :         : 5         : N              
+d_ana_in[55]                 : R28       : input  : 2.5 V             :         : 5         : N              
+VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
+GND                          : T2        : gnd    :                   :         :           :                
+d_ana_out[170]               : T3        : output : 2.5 V             :         : 2         : N              
+d_ana_in[117]                : T4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
+GND                          : T6        : gnd    :                   :         :           :                
+d_ana_out[131]               : T7        : output : 2.5 V             :         : 2         : N              
+d_ana_out[27]                : T8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+d_ana_out[128]               : T21       : output : 2.5 V             :         : 5         : N              
+d_ana_out[161]               : T22       : output : 2.5 V             :         : 5         : N              
+GND                          : T23       : gnd    :                   :         :           :                
+VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
+d_ana_in[253]                : T25       : input  : 2.5 V             :         : 5         : N              
+d_ana_in[54]                 : T26       : input  : 2.5 V             :         : 5         : N              
+GND                          : T27       : gnd    :                   :         :           :                
+VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
+d_ana_out[11]                : U1        : output : 2.5 V             :         : 2         : N              
+d_ana_out[248]               : U2        : output : 2.5 V             :         : 2         : N              
+d_ana_in[170]                : U3        : input  : 2.5 V             :         : 2         : N              
+d_ana_in[44]                 : U4        : input  : 2.5 V             :         : 2         : N              
+d_ana_out[153]               : U5        : output : 2.5 V             :         : 2         : N              
+d_ana_out[80]                : U6        : output : 2.5 V             :         : 2         : N              
+d_ana_out[47]                : U7        : output : 2.5 V             :         : 2         : N              
+d_ana_out[7]                 : U8        : output : 2.5 V             :         : 2         : N              
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+d_ana_out[74]                : U21       : output : 2.5 V             :         : 5         : N              
+d_ana_out[16]                : U22       : output : 2.5 V             :         : 5         : N              
+d_ana_out[245]               : U23       : output : 2.5 V             :         : 5         : N              
+d_ana_out[26]                : U24       : output : 2.5 V             :         : 5         : N              
+d_ana_out[246]               : U25       : output : 2.5 V             :         : 5         : N              
+d_ana_in[13]                 : U26       : input  : 2.5 V             :         : 5         : N              
+d_ana_out[60]                : U27       : output : 2.5 V             :         : 5         : N              
+d_ana_out[28]                : U28       : output : 2.5 V             :         : 5         : N              
+d_ana_out[107]               : V1        : output : 2.5 V             :         : 2         : N              
+d_ana_out[9]                 : V2        : output : 2.5 V             :         : 2         : N              
+d_ana_out[58]                : V3        : output : 2.5 V             :         : 2         : N              
+d_ana_out[78]                : V4        : output : 2.5 V             :         : 2         : N              
+d_ana_out[121]               : V5        : output : 2.5 V             :         : 2         : N              
+d_ana_out[36]                : V6        : output : 2.5 V             :         : 2         : N              
+d_ana_out[192]               : V7        : output : 2.5 V             :         : 2         : N              
+d_ana_in[41]                 : V8        : input  : 2.5 V             :         : 2         : N              
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+VCCINT                       : V11       : power  :                   : 1.2V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCCINT                       : V15       : power  :                   : 1.2V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+d_ana_out[205]               : V21       : output : 2.5 V             :         : 5         : N              
+d_ana_out[169]               : V22       : output : 2.5 V             :         : 5         : N              
+d_ana_in[6]                  : V23       : input  : 2.5 V             :         : 5         : N              
+d_ana_out[115]               : V24       : output : 2.5 V             :         : 5         : N              
+d_ana_out[221]               : V25       : output : 2.5 V             :         : 5         : N              
+d_ana_out[20]                : V26       : output : 2.5 V             :         : 5         : N              
+d_ana_out[223]               : V27       : output : 2.5 V             :         : 5         : N              
+d_ana_out[178]               : V28       : output : 2.5 V             :         : 5         : N              
+d_ana_out[83]                : W1        : output : 2.5 V             :         : 2         : N              
+d_ana_out[0]                 : W2        : output : 2.5 V             :         : 2         : N              
+d_ana_out[218]               : W3        : output : 2.5 V             :         : 2         : N              
+d_ana_in[140]                : W4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
+GND                          : W6        : gnd    :                   :         :           :                
+d_ana_out[4]                 : W7        : output : 2.5 V             :         : 2         : N              
+d_ana_out[63]                : W8        : output : 2.5 V             :         : 2         : N              
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GND                          : W11       : gnd    :                   :         :           :                
+VCCINT                       : W12       : power  :                   : 1.2V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+VCCINT                       : W16       : power  :                   : 1.2V    :           :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+d_ana_in[61]                 : W21       : input  : 2.5 V             :         : 5         : N              
+d_ana_out[220]               : W22       : output : 2.5 V             :         : 5         : N              
+GND                          : W23       : gnd    :                   :         :           :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+d_ana_out[249]               : W25       : output : 2.5 V             :         : 5         : N              
+d_ana_out[184]               : W26       : output : 2.5 V             :         : 5         : N              
+d_ana_out[244]               : W27       : output : 2.5 V             :         : 5         : N              
+d_ana_out[85]                : W28       : output : 2.5 V             :         : 5         : N              
+d_ana_in[160]                : Y1        : input  : 2.5 V             :         : 2         : N              
+d_ana_in[192]                : Y2        : input  : 2.5 V             :         : 2         : N              
+d_ana_out[13]                : Y3        : output : 2.5 V             :         : 2         : N              
+d_ana_out[37]                : Y4        : output : 2.5 V             :         : 2         : N              
+d_ana_out[116]               : Y5        : output : 2.5 V             :         : 2         : N              
+d_ana_out[209]               : Y6        : output : 2.5 V             :         : 2         : N              
+d_ana_out[247]               : Y7        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
+VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
+d_ana_out[164]               : Y10       : output : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+d_ana_out[72]                : Y12       : output : 2.5 V             :         : 3         : N              
+d_ana_out[89]                : Y13       : output : 2.5 V             :         : 3         : N              
+d_ana_out[106]               : Y14       : output : 2.5 V             :         : 3         : N              
+d_ana_in[255]                : Y15       : input  : 2.5 V             :         : 3         : N              
+d_ana_out[103]               : Y16       : output : 2.5 V             :         : 4         : N              
+d_ana_out[171]               : Y17       : output : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+d_ana_out[14]                : Y19       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
+d_ana_out[185]               : Y22       : output : 2.5 V             :         : 5         : N              
+d_ana_out[231]               : Y23       : output : 2.5 V             :         : 5         : N              
+d_ana_out[10]                : Y24       : output : 2.5 V             :         : 5         : N              
+d_ana_out[149]               : Y25       : output : 2.5 V             :         : 5         : N              
+d_ana_out[152]               : Y26       : output : 2.5 V             :         : 5         : N              
+GND+                         : Y27       :        :                   :         : 5         :                
+GND+                         : Y28       :        :                   :         : 5         :                

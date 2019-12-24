@@ -1,0 +1,31 @@
+Release 14.1 - netgen P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -s 3 -pcf clock_gen.pcf -rpw 100 -tpw 0 -ar
+Structure -tm clock_gen -w -dir netgen/map -ofmt vhdl -sim clock_gen_map.ncd
+clock_gen_map.vhd  
+
+Read and Annotate design 'clock_gen_map.ncd' ...
+Loading device for application Rf_Device from file '6slx25.nph' in environment
+C:\Xilinx\14.1\ISE_DS\ISE\.
+   "clock_gen" is an NCD, version 3.2, device xc6slx25, package ftg256, speed -3
+Loading constraints from 'clock_gen.pcf'...
+The speed grade (-3) differs from the speed grade specified in the .ncd file
+(-3).
+WARNING:Anno:67 - NCD is not completely routed, some delays may be inaccurate.
+The number of routable networks is 31
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist '\\smkn33\s10169\vhdl\clocking mono\xilinx\clocking_test\netgen\map\clock_gen_map.vhd' ...
+Writing VHDL SDF file '\\smkn33\s10169\vhdl\clocking mono\xilinx\clocking_test\netgen\map\clock_gen_map.sdf' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx SIMPRIM simulation primitives and has to be used with SIMPRIM library
+   for correct compilation and simulation. 
+INFO:NetListWriters - Xilinx recommends running separate simulations to check for setup by specifying the MAX field in the SDF file and for
+   hold by specifying the MIN field in the SDF file. Please refer to Simulator documentation for more details on specifying MIN and MAX
+   field in the SDF.
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches to the simulator, see your Simulator tool documentation.
+Number of warnings: 1
+Number of info messages: 3
+Total memory usage is 264340 kilobytes

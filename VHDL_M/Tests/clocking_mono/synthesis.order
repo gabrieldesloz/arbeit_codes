@@ -1,0 +1,3 @@
+i<>.\..\..\clocking mono\clock_gen.vhd
+i<>.\..\..\clocking mono\tb_clock_gen.vhd
+i<>.\..\..\clocking mono\clock_gen_ccd_ctrl_fsm.vhd

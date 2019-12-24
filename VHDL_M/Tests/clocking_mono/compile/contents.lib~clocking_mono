@@ -1,0 +1,57 @@
+334
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/ALL_IN_BUFF.vhd" 35 ALL_IN_BUFF
+~E 1 "./../../../comunicação serial mono/BUFG.vhd" 24 BUFG
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/CH_X_EJET_TIMER.vhd" 35 CH_X_EJET_TIMER
+~E 1 "./../../../clocking mono/clock_gen.vhd" 25 clock_gen
+~A 1 "./../../../clocking mono/clock_gen.vhd" 47 ARQ
+~E 1 "./../../../clocking mono/clock_gen_ccd_ctrl_fsm.vhd" 30 clock_gen_fsm
+~A 1 "./../../../clocking mono/clock_gen_ccd_ctrl_fsm.vhd" 54 ARQ
+~E 1 "./../../../comunicação serial mono/comm_tb.vhd" 18 comm_tb
+~E 1 "./../../../mod_giga_L_conector/testing/comm_top.vhd" 13 comm_top
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/EJ_CLEAR_COUNT.vhd" 34 EJ_CLEAR_COUNT
+~E 1 "./../../../mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd" 44 EJ_SERIAL_MASTER
+~E 1 "./../../../mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora - v2 .vhd" 44 EJ_SERIAL_SLAVE
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/EJECTORS_DATA_SENDER.vhd" 46 EJECTORS_DATA_SENDER
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/FLOOR_GEN.vhd" 36 FLOOR_GEN
+~E 1 "./../compile/Fub1.vhd" 28 Fub1
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/IN_BUFF.vhd" 35 IN_BUFF
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN.vhd" 42 MAIN
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN_BOARD_DETECTION.vhd" 37 MAIN_BOARD_DETECTION
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAIN_RESET.vhd" 32 MAIN_RESET
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MAX_CHX_MEAN.vhd" 34 MAX_CHX_MEAN
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEAN_32.vhd" 34 MEAN_16K
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_CTRL.vhd" 34 MEM_CTRL
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_CTRL_DELAY.vhd" 34 MEM_CTRL_DELTA
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/MEM_SYNC.vhd" 62 MEM_SYNC
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/memdef.vhd" 31 memdef
+~E 1 "./../../../mod_giga_L_conector/testing/mux.vhd" 6 mux
+~E 1 "./../../../mod_giga_L_conector/testing/neg_edge_moore.vhd" 3 neg_edge_moore
+~E 1 "./../../../mod_giga_L_conector/testing/packet_detect.vhd" 7 packet_detect
+~E 1 "./../../../mod_giga_L_conector/testing/pos_edge_moore.vhd" 3 pos_edge_moore
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/PSEUDO_RANDOM_TEST.vhd" 34 PSEUDO_RANDOM_TEST
+~E 1 "./../../../mod_giga_L_conector/testing/reset_generator.vhd" 4 reset_generator
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SEND_SERIAL_DATA.vhd" 32 SEND_SERIAL_DATA
+~E 1 "./../../../comunicação serial mono/serial_receiver_eject.vhd" 29 serial_receiver_eject
+~E 1 "./../../../comunicação serial mono/serial_sender_eject.vhd" 27 serial_sender_eject
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SERIAL_TX.vhd" 34 SERIAL_TX
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/SORT_CASE.vhd" 38 SORT_CASE
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/STATUS_SEND_TEST.vhd" 35 STATUS_SENDER
+~E 1 "./../../../clocking mono/tb_clock_gen.vhd" 35 tb_clock_gen
+~A 1 "./../../../clocking mono/tb_clock_gen.vhd" 38 behavior
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_CORR_AGT.vhd" 37 TB_CORR_AGT
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_EJECTORS_DATA_SENDER.vhd" 45 TB_EJECTORS_DATA_SENDER
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_FLOOR_GEN.vhd" 35 TB_FLOOR_GEN
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MAIN_RESET.vhd" 35 TB_MAIN_RESET
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MAX_CH_MEAN.vhd" 37 TB_MAX_CH_MEAN
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_16K.vhd" 37 TB_MEAN_16K
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_256.vhd" 35 TB_MEAN_256
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEAN_GAIN_TABLE.vhd" 35 TB_MEAN_GAIN_TABLE
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEM_PIXVAL.vhd" 37 TB_MEM_PIXVAL
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_MEM_ROMPIXVAL.vhd" 37 TB_MEM_ROMPIXVAL
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_TESTEJET.vhd" 37 TB_TESTEJET
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TB_WRAPPER_EJET.vhd" 35 TB_WRAPPER_EJET
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/TESTEJET.vhd" 35 TESTEJET
+~E 1 "./../src/TOP.vhd" 35 TOP
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER.vhd" 34 WRAPPER
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER_EJET.vhd" 34 WRAPPER_EJET
+~E 1 "M:/codigos originais/mono/BENCH_FPGA_V00_35_LAST_MONO_BKP/WRAPPER_TOP.vhd" 34 WRAPPER_TOP

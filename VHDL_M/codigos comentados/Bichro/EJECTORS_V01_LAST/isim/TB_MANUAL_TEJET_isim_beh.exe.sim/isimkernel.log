@@ -1,0 +1,29 @@
+Command line:
+   TB_MANUAL_TEJET_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61123
+
+Mon Jul 08 17:06:10 2013
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 503.128 Meg
+
+ Total Signals          : 16
+ Total Nets             : 54
+ Total Signal Drivers   : 11
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 6
+ Total Traceable Variables  : 17
+ Total Scalar Nets and Variables : 557
+Total Line Count : 92
+
+ Total Simulation Time: 1.35721 sec
+
+ Current Memory Usage: 503.128 Meg
+
+Mon Jul 08 17:25:17 2013
+

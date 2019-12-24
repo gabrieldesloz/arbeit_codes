@@ -1,0 +1,157 @@
+-------------------------------------------------------------------------------
+-- Title      : Testbench for design "full_adder"
+-- Project    : 
+-------------------------------------------------------------------------------
+-- File       : full_adder_tb.vhd
+-- Author     :   <gdl@IXION>
+-- Company    : 
+-- Created    : 2013-12-18
+-- Last update: 2014-01-27
+-- Platform   : 
+-- Standard   : VHDL'93/02
+-------------------------------------------------------------------------------
+-- Description:
+-------------------------------------------------------------------------------
+-- Copyright (c) 2013 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2013-12-18  1.0      gdl     Created
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-------------------------------------------------------------------------------
+
+entity adder_ovf_tb is
+
+end entity adder_ovf_tb;
+
+-------------------------------------------------------------------------------
+
+architecture arch of adder_ovf_tb is
+
+  -- component generics
+  constant N : natural := 8;
+
+
+  -- component ports
+
+
+  signal sysclk       : std_logic                      := '0';
+  signal reset_n      : std_logic                      := '0';
+  signal start_calc_i : std_logic                      := '0';
+  signal val_1_i      : std_logic_vector(N-1 downto 0) := (others => '0');
+  signal val_2_i      : std_logic_vector(N-1 downto 0) := (others => '0');
+  signal val_3_i      : std_logic_vector(N-1 downto 0) := (others => '0');
+  signal val_o        : std_logic_vector(N-1 downto 0) := (others => '0');
+  signal done_o       : std_logic                      := '0';
+  signal ovf_o        : std_logic                      := '0';
+
+
+
+  
+begin  -- architecture arch
+
+
+
+  adder_ovf_1 : entity work.adder_ovf
+    generic map (
+      N => N)
+    port map (
+      sysclk       => sysclk,
+      reset_n      => reset_n,
+      start_calc_i => start_calc_i,
+      val_1_i      => val_1_i,
+      val_2_i      => val_2_i,
+      val_3_i      => val_3_i,
+      val_o        => val_o,
+      done_o       => done_o,
+      ovf_o        => ovf_o);
+
+
+
+  -- clock generation
+  sysclk <= not sysclk after 5 ns;
+
+  -- waveform generation
+  WaveGen_Proc : process
+  begin
+
+
+    wait for 1 ms;
+    wait until sysclk = '1';
+    -- teste 1 -- overflow positivo (> 2**N-1 )
+    val_1_i      <= std_logic_vector(to_signed(-40, N));
+    val_2_i      <= std_logic_vector(to_signed(100, N));
+    val_3_i      <= std_logic_vector(to_signed(120, N));
+    start_calc_i <= '0';
+    wait for 10 ns;
+    start_calc_i <= '1';
+    wait for 10 ns;
+    start_calc_i <= '0';
+    wait for 1 ms;
+    -- teste 2 overflow negativo ( < 2**N )
+    val_1_i      <= std_logic_vector(to_signed(40, N));
+    val_2_i      <= std_logic_vector(to_signed(-100, N));
+    val_3_i      <= std_logic_vector(to_signed(-100, N));
+    wait for 10 ns;
+    start_calc_i <= '1';
+    wait for 10 ns;
+    start_calc_i <= '0';
+    wait for 1 ms;
+    wait until sysclk = '1';
+    -- teste 3 -- sem overflow  
+    val_1_i      <= std_logic_vector(to_signed(-40, N));
+    val_2_i      <= std_logic_vector(to_signed(100, N));
+    val_3_i      <= std_logic_vector(to_signed(30, N));
+    start_calc_i <= '0';
+    wait for 10 ns;
+    start_calc_i <= '1';
+    wait for 10 ns;
+    start_calc_i <= '0';
+    wait for 1 ms;
+    -- teste 4 sem overflow negativo 
+    val_1_i      <= std_logic_vector(to_signed(40, N));
+    val_2_i      <= std_logic_vector(to_signed(-100, N));
+    val_3_i      <= std_logic_vector(to_signed(-30, N));
+    wait for 10 ns;
+    start_calc_i <= '1';
+    wait for 10 ns;
+    start_calc_i <= '0';
+    wait for 1 ms;
+    -- teste 5 com overflow negativo 
+    val_1_i      <= std_logic_vector(to_signed(-30, N));
+    val_2_i      <= std_logic_vector(to_signed(-100, N));
+    val_3_i      <= std_logic_vector(to_signed(30, N));
+    wait for 10 ns;
+    start_calc_i <= '1';
+    wait for 10 ns;
+    start_calc_i <= '0';
+    wait for 1 ms;   
+    wait until sysclk = '1';
+    -- teste 6 -- com overflow positivo  
+    val_1_i      <= std_logic_vector(to_signed(30, N));
+    val_2_i      <= std_logic_vector(to_signed(100, N));
+    val_3_i      <= std_logic_vector(to_signed(-40, N));
+    start_calc_i <= '0';
+    wait for 10 ns;
+    start_calc_i <= '1';
+    wait for 10 ns;
+    start_calc_i <= '0';
+  end process WaveGen_Proc;
+
+
+
+  reset_generator_1 : entity work.reset_generator
+    generic map (
+      MAX => 100)
+    port map (
+      clk     => sysclk,
+      n_reset => reset_n
+      );
+
+
+end architecture arch;

@@ -1,0 +1,7 @@
+vhdl isim_temp "ipcore_dir/MEM_DEF_CNT_DIST.vhd"
+vhdl isim_temp "ipcore_dir/EJ_SEL_MEM.vhd"
+vhdl isim_temp "EJ_CLEAR_COUNT.vhd"
+vhdl isim_temp "MEM_CTRL.vhd"
+vhdl isim_temp "CH_X_EJET_TIMER.vhd"
+vhdl isim_temp "WRAPPER_EJET.vhd"
+vhdl isim_temp "TB_WRAPPER_EJET.vhd"

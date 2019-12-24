@@ -1,0 +1,88 @@
+
+
+* geral
+*	Criar toda a especificação do projeto
+*	1 top level com apenas instanciação de componentes
+*	O nome do .vhd deve ser o mesmo da entidade
+		_tb, -pkg
+* 	cada componente .vhd deve ter apenas 1 entidade e 1 arquitetura
+* 	cada arquivo vhd deve ser a implementação de apenas 1 funcionalidade
+* 	cabeçalho
+** Nome do Projeto
+** Nome do arquivo	
+** Nome do autor
+** Data de criação
+** Versão
+** historico de mudanças
+** descrição detalhada
+* Manter sempre disponivel, e na mesma versão todas as ferramentas
+* Usar versionamento, salvar apenas arquivos texto. Apenas o Binario release sera salvo no servidor
+* resource share  <-- multiplexado no tempo
+
+
+* Particionamento
+** Dividir o projeto empartes com mesmo clock
+** Particionar o projeto tendo em vista o reuso do codigo
+** logica relacionada a um gerador de reset: arquivo especifico
+** logica combinacional semelhante, manter juntas, proximo aos regs logica de entrada e saida 
+** isolar partes speed / logic
+
+
+
+* Escrita
+** Usar apenas numeric_std e  std_logic_1164
+** Parametrização com componentes e generics
+** nao deixar codigo comentado 
+** manter o nome do sinal consistente por toda a hierarquia
+** manter apenas uma declaração por linah de codigo
+** todo o codigo escrito em linhas minusculas
+** vetor: downto
+** array:  array(0 to 5) of std_logic_vector(7 downto 0); 
+** item collections: to
+** atributos no lugar de valores numericos:    out_data <= (data’high and in_data) & port_data’range); 
+** nao usar global signals e shared variables
+** nao usar feedback combinatorial  a <= a and b;
+** if-generate para habilitar ou desabilitar simulação
+** evitar vendor primitive, ou coloca-las em componentes. Tantar inferir memorias, DSPs, etc;
+** usar apenas active_high
+** registrar todas as entradas e saidas dos componentes
+** manter as experessões matematicas no mesmo componente
+
+______________________________
+Estrutura de diretorios e subdiretorios
+	RTL
+		COMPONENTS
+		VENDOR
+	TEST BENCH
+			 Test  bench  auxiliary  files:  like  stimulus  vectors,  memory  contents, 
+				behavioral models, etc.  
+			Test  bench  package:  package  that  holds  functions,  procedures, 
+				declarations, etc.	
+			Component level test benches:
+			 System level test bench
+		TB
+			NON_SYN
+				SYSTEM
+					FUNCTIONAL
+					GATE_LEVEL
+				COMPONENTS
+					FUNCTIONAL
+					GATE_LEVEL	
+			SYN	
+				SYSTEM
+				COMPONENTS
+Package: package declaration and package body related to the project. 			
+Synthesis: scripts and synthesis related files, such as synthesis constraint files. 			
+Constraints: FPGA implementation constraint file. 	
+Documents: the entire project’s related documents.		
+	
+	Functional Simulation: scripts and functional simulation files, such as 
+	ModelSim’s .do files 
+
+	Gate  Level  Simulation:  scripts  and  gate  level  simulation  files  (post 
+	place and route simulation) 
+ Bitstream: FPGA configuration file. 
+___________________________________________________
+
+
+

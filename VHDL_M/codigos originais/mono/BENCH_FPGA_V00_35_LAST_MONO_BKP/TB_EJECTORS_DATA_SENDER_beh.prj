@@ -1,0 +1,2 @@
+vhdl work "EJECTORS_DATA_SENDER.vhd"
+vhdl work "TB_EJECTORS_DATA_SENDER.vhd"

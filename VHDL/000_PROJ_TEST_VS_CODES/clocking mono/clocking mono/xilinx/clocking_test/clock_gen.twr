@@ -1,0 +1,82 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml clock_gen.twx clock_gen.ncd -o clock_gen.twr clock_gen.pcf
+-ucf clock_gen.ucf
+
+Design file:              clock_gen.ncd
+Physical constraint file: clock_gen.pcf
+Device,package,speed:     xc6slx25,ftg256,C,-3 (PRODUCTION 1.21 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK37mux_i
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+dcmrst_i    |    0.756(R)|      SLOW  |    1.863(R)|      SLOW  |clk2x_o_OBUF      |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK37mux_i to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+adc1_sclk_o |        12.976(R)|      SLOW  |         7.229(R)|      FAST  |clk2x_o_OBUF      |   0.000|
+adc2_sclk_o |        12.809(R)|      SLOW  |         7.100(R)|      FAST  |clk2x_o_OBUF      |   0.000|
+c1us_o      |        12.756(R)|      SLOW  |         7.176(R)|      FAST  |clk2x_o_OBUF      |   0.000|
+clkaq_o     |        11.841(R)|      SLOW  |         6.914(R)|      FAST  |clk2x_o_OBUF      |   0.000|
+clkx_o      |        12.082(R)|      SLOW  |         6.730(R)|      FAST  |clk2x_o_OBUF      |   0.000|
+clkz_o      |        13.438(R)|      SLOW  |         7.517(R)|      FAST  |clk2x_o_OBUF      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK37mux_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK37mux_i     |    2.815|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CLK37mux_i     |clk2x_o        |   10.772|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Aug 29 15:20:16 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 236 MB
+
+
+

@@ -1,0 +1,551 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-------------------------------------------------------------------------------
+
+entity gate_nios_interface_tb is
+
+
+end gate_nios_interface_tb;
+
+-------------------------------------------------------------------------------
+
+architecture gate_nios_interface_tb_rtl of gate_nios_interface_tb is
+
+
+  -- component ports
+  -- clock
+  
+  constant SYS_CLK_PERIOD    : time    := 10 ns;    -- 100 MHz
+  constant SAMPLE_CLK_PERIOD : time    := 65.1 us;  -- 15360 Hz
+  constant NIOS_CLK_PERIOD   : time    := 40 ns;    -- 25 MHz
+  constant D_WIDTH           : natural := 32;
+  constant A_WIDTH           : natural := 4;
+
+
+
+-- uut signals
+
+  signal sysclk               : std_logic                            := '0';
+  signal reset_n              : std_logic                            := '0';
+  signal avs_chipselect       : std_logic                            := '0';
+  signal avs_address          : std_logic_vector(A_WIDTH-1 downto 0) := (others => '0');
+  signal avs_write            : std_logic                            := '0';
+  signal avs_read             : std_logic                            := '0';
+  signal avs_writedata        : std_logic_vector(D_WIDTH-1 downto 0) := (others => '0');
+  signal avs_readdata         : std_logic_vector(D_WIDTH-1 downto 0) := (others => '0');
+  signal avs_waitrequest      : std_logic                            := '0';
+  signal coe_gate_address     : std_logic_vector(A_WIDTH-1 downto 0) := (others => '0');
+  signal coe_gate_write       : std_logic                            := '0';
+  signal coe_gate_read        : std_logic                            := '0';
+  signal coe_gate_writedata   : std_logic_vector(D_WIDTH-1 downto 0) := (others => '0');
+  signal coe_gate_readdata    : std_logic_vector(D_WIDTH-1 downto 0) := (others => '0');
+  signal coe_gate_waitrequest : std_logic                            := '0';
+
+
+  signal sample_clk, sample_clk_sync, nios_clk, nios_clk_sync : std_logic                            := '0';
+  signal data_input                                           : std_logic_vector(D_WIDTH-1 downto 0) := (others => '0');
+  signal data_input_available                                 : std_logic                            := '0';
+
+
+
+-- procedures e functions
+
+  
+begin
+
+
+  gate_nios_interface_1 : entity work.gate_nios_interface
+    generic map (
+      D_WIDTH => D_WIDTH,
+      A_WIDTH => A_WIDTH)
+    port map (
+      sysclk               => sysclk,
+      reset_n              => reset_n,
+      avs_chipselect       => avs_chipselect,
+      avs_address          => avs_address,
+      avs_write            => avs_write,
+      avs_read             => avs_read,
+      avs_writedata        => avs_writedata,
+      avs_readdata         => avs_readdata,
+      avs_waitrequest      => avs_waitrequest,
+
+      coe_sysclk           => nios_clk_sync,
+      coe_gate_address     => coe_gate_address,
+      coe_gate_write       => coe_gate_write,
+      coe_gate_read        => coe_gate_read,
+      coe_gate_writedata   => coe_gate_writedata,
+      coe_gate_readdata    => coe_gate_readdata,
+      coe_gate_waitrequest => coe_gate_waitrequest);
+
+
+  -- clock generation
+  sysclk <= not sysclk after SYS_CLK_PERIOD/2;
+
+  sample_clk      <= not sample_clk       after SAMPLE_CLK_PERIOD/2;
+  sample_clk_sync <= transport sample_clk after SYS_CLK_PERIOD/2;
+  nios_clk        <= not nios_clk         after NIOS_CLK_PERIOD/2;
+  nios_clk_sync   <= transport nios_clk   after SYS_CLK_PERIOD/2;
+
+
+  -- geração das amostras 
+  p_random_generic_1 : entity work.p_random_generic
+    generic map (
+      SEED => 666,
+      N    => D_WIDTH
+      )
+    port map (
+      clk         => sample_clk_sync,
+      n_reset     => reset_n,
+      random_vect => data_input);
+
+
+  -- gera um pulso de SYS_CLK_PERIOD quando ocorre uma mudança nas amostras
+  stimuli : process
+  begin
+    wait until data_input'event;
+    wait for SYS_CLK_PERIOD;
+    data_input_available <= '1';
+    wait for SYS_CLK_PERIOD;
+    data_input_available <= '0';
+  end process;
+
+
+
+  
+  -- estimulos port a -- 
+  process
+
+    procedure read_nios(do : in std_logic; address : in integer) is
+    begin
+      avs_address   <= std_logic_vector(to_unsigned(address, A_WIDTH));
+      avs_writedata <= (others => '0');
+      avs_write     <= '0';
+      if do = '1' then
+        avs_read       <= '1';
+        avs_chipselect <= '1';
+      else
+        avs_read       <= '0';
+        avs_chipselect <= '0';
+      end if;
+    end procedure read_nios;
+
+
+    procedure write_nios(do : in std_logic; address : in integer) is
+    begin
+      avs_address   <= std_logic_vector(to_unsigned(address, A_WIDTH));
+      avs_writedata <= data_input;
+      avs_read      <= '0';
+      if do = '1' then
+        avs_write      <= '1';
+        avs_chipselect <= '1';
+      else
+        avs_write      <= '0';
+        avs_chipselect <= '0';
+      end if;
+    end procedure write_nios;
+    
+    
+  begin
+
+    wait until reset_n = '1';
+    wait for 3 ms;
+
+    read_nios('1', 7);
+    wait for 2*NIOS_CLK_PERIOD;
+    read_nios('0', 7);
+    wait for 3 ms;
+
+    wait until nios_clk_sync = '1';
+    write_nios('1', 10);
+    wait for 2*NIOS_CLK_PERIOD;
+    write_nios('0', 10);
+    wait for 1 ms;
+
+    wait until nios_clk_sync = '1';
+    write_nios('1', 4);
+    wait for 2*NIOS_CLK_PERIOD;
+    write_nios('0', 4);
+    wait for 1 ms;
+
+    wait until nios_clk_sync = '1';
+    read_nios('1', 4);
+    wait for 2*NIOS_CLK_PERIOD;
+    read_nios('0', 4);
+    wait for 1 ms;
+
+    wait until nios_clk_sync = '1';
+    read_nios('1', 10);
+    wait for 2*NIOS_CLK_PERIOD;
+    read_nios('0', 10);
+    wait for 3 ms;
+
+    --leitura entre dominios
+    wait until nios_clk_sync = '1';
+    read_nios('1', 0);
+    wait for 2*NIOS_CLK_PERIOD;
+    read_nios('0', 4);
+    wait for 1 ms;
+        
+
+  end process;
+
+
+
+
+
+  -- estimulos port b -- 
+  process
+
+    procedure read_gate(do : in std_logic; address : in integer) is
+    begin
+      coe_gate_address   <= std_logic_vector(to_unsigned(address, A_WIDTH));
+      coe_gate_writedata <= (others => '0');
+      coe_gate_write     <= '0';
+      if do = '1' then
+        coe_gate_read       <= '1';     
+      else
+        coe_gate_read       <= '0';       
+      end if;
+    end procedure read_gate;
+
+
+    procedure write_gate(do : in std_logic; address : in integer) is
+    begin
+      coe_gate_address   <= std_logic_vector(to_unsigned(address, A_WIDTH));
+      coe_gate_writedata <= data_input;
+      coe_gate_read      <= '0';
+      if do = '1' then
+        coe_gate_write      <= '1';    
+      else
+        coe_gate_write      <= '0'; 
+      end if;
+    end procedure write_gate;
+    
+    
+  begin
+
+    wait until reset_n = '1';
+    wait for 3 ms;
+    
+    write_gate('1', 7);
+    wait for 2*SYS_CLK_PERIOD;
+    write_gate('0', 7);
+    wait for 1 ms;
+
+    wait until sysclk = '1';
+    write_gate('1', 5);
+    wait for 2*SYS_CLK_PERIOD;
+    write_gate('0', 5);
+    wait for 1 ms;
+
+    wait until sysclk = '1';
+    write_gate('1', 8);
+    wait for 2*SYS_CLK_PERIOD;
+    write_gate('0', 8);
+    wait for 1 ms;
+
+    wait until sysclk = '1';
+    read_gate('1', 5);
+    wait for 2*SYS_CLK_PERIOD;
+    read_gate('0', 5);
+    wait for 1 ms;
+
+    wait until sysclk = '1';
+    read_gate('1', 8);
+    wait for 2*SYS_CLK_PERIOD;
+    read_gate('0', 8);
+    wait for 1 ms;
+
+    -- leitura entre dominios
+    wait until sysclk = '1';
+    write_gate('1', 0);
+    wait for 2*SYS_CLK_PERIOD;
+    write_gate('0', 0);
+    wait for 1 ms;
+
+
+  end process;
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
+-- gerador de reset
+-------------------------------------------------------------------------------
+  reset_generator_1 : entity work.reset_generator
+    generic map (
+      MAX => 100)
+    port map (
+      clk     => sysclk,
+      n_reset => reset_n
+      );
+
+
+end gate_nios_interface_tb_rtl;
+
+-------------------------------------------------------------------------------
+-- forma de onda triangular
+
+--estimulo : process(sysclk)
+--  constant COUNT_MAX : natural := (MAX_VALUE);
+--  variable counter   : integer := 0;
+--  variable sample    : natural := 0;
+--  variable operador  : integer := 0;
+
+--begin
+--  if rising_edge(sysclk) then
+--    if sample_available_i = '1' then
+--      counter := counter + operador;
+--      if counter = COUNT_MAX then
+--        operador := -1;
+--      elsif counter = 0 then
+--        operador := 1;
+--      end if;
+--    end if;
+--    amostra <= std_logic_vector(to_unsigned(counter, SAMPLE_SIZE));
+--  end if;
+--end process estimulo;
+
+
+
+
+
+-------------------------------------------------------------------------------
+-- exemplo clock com jitter - bilbioteca math_real
+-------------------------------------------------------------------------------
+--signal d : time := 0 ns;
+--signal clock : std_logic := '0';
+--signal sys_clk : std_logic := '0';
+--constant SYS_CLK_PERIOD: time:= 10 ns;
+
+
+--  sys_clk_process:  process
+--    -- variables for uniform
+--     variable seed1, seed2 : positive;
+--     variable r : real;
+--     variable int_rand : integer;
+
+--  begin
+--    int_rand := integer(trunc(r*3.0));
+--    uniform(seed1, seed2, r);
+--    d <= int_rand * 1 ns;
+--    wait for SYS_CLK_PERIOD/2;
+--    clock <= '0';
+--    wait for SYS_CLK_PERIOD/2;
+--    clock <= '1'; 
+--end process;
+
+--sys_clk <= transport clock after d ;
+
+
+
+-----------------------------------------------------------------------------------------------
+-- Testbench Clock Generation
+-----------------------------------------------------------------------------------------------
+--clk_gen : process
+--begin
+--   loop
+--       clk<='0' ,
+--           '1'  after HALF_CYCLE;
+--       wait for HALF_CYCLE*2;
+--   end loop;
+--end process;
+
+
+
+-----------------------------------------------------------------------------------------------
+-- Output text file
+-----------------------------------------------------------------------------------------------
+--testbench_o : process(clk) 
+--file sin_file                 : text open write_mode is "fsin_o_vhdl_nco_altera.txt";
+--variable ls                   : line;
+--variable sin_int      : integer ;
+
+--  begin
+--    if rising_edge(clk) then
+--      if(reset_n='1' and out_valid='1') then
+--        sin_int := conv_integer(sin_val);
+--        write(ls,sin_int);
+--        writeline(sin_file,ls);
+--     end if;          
+--      end if;         
+--end process testbench_o;
+
+-----------------------------------------------------------------------------------------------
+-- Geraçao de estimulos -  exemplos 
+-----------------------------------------------------------------------------------------------
+
+
+--wait on teste;
+--wait until x = 5; -- espera ate que a condição x = 5 seja verdadeira (espera
+--mudança)
+--wait for 25 ns;
+--wait until now = t;
+--wait on s until p = '1' for t;  -- espera mudança em s enquanto p diferente de '1', ou até t
+--wait on s until s = '1' – rising_edge
+
+
+
+--WaveGen_Proc : process
+--begin
+--  wait until n_reset = '1';
+--  n_point_samples <= "10000000000";     -- 1024
+--  for i in 1 to maxN_Points+1 loop      -- manda 1025 amostras
+--    wait for sys_clk_period;
+--    data_input     <= x"FFFFFFFF";
+--    wait for sys_clk_period;
+--    data_available <= '1';
+--    wait for sys_clk_period;
+--    data_available <= '0';
+--  end loop;
+--  wait for 1 ms;
+--end process;
+
+
+--WaveGen_Proc : process
+--begin
+--  wait until n_reset = '1';
+--  n_point_samples <= "00000000010";     -- 2 amostras
+--  for i in 1 to maxN_Points+1 loop      -- manda 3 amostras
+--    wait for sys_clk_period;
+--    data_input     <= x"00000005";
+--    wait for sys_clk_period;
+--    data_available <= '1';
+--    wait for sys_clk_period;
+--    data_available <= '0';
+--  end loop;
+--  wait for 1 ms;
+--end process;
+
+
+
+--Char: std_logic_vector(c-1 downto 0):= (OTHERS => '0');
+--...
+--gen_stimuli1: process
+--      begin     
+--              for i in 0 to (2**c)-1 loop
+--                      char <= std_logic_vector(unsigned(char) + 1);
+--              end loop;  
+--              wait for 10 ns;  
+--end process; 
+--...
+
+
+--Geraçao de relogio com razao ciclica diferente de 0,5 – exemplo
+
+--...
+--constant PERIOD: TIME := 1 ms; 
+--constant DUTY_CYCLE: REAL := 0.4; 
+--...
+
+--clock: process
+--      begin
+--      clockdiv <= '0';
+--      wait for (PERIOD-(PERIOD*DUTY_CYCLE));
+--      clockdiv <= '1';
+--      wait for (PERIOD*DUTY_CYCLE);
+--end process;
+
+
+-- geração de um pulso com tamanho e periodicidade ajustaveis
+
+--...
+--constant PERIOD: TIME := 1 ms; 
+--constant PULSE_PERIOD: TIME := 10 ns; 
+--...
+
+--clock: process
+--      begin
+--      clockdiv <= '0';
+--      wait for (PERIOD-PULSE_PERIOD);
+--      clockdiv <= '1';
+--      wait for (PULSE_PERIOD);
+--end process;
+
+
+-----------------------------------------------------------------------------------------------
+-- Monitoramento da saida
+-----------------------------------------------------------------------------------------------
+--monitor : process
+--begin
+--  wait until rising_edge(a);
+--  wait for 2 ns;                        -- simulacao do atraso de propagacao
+--  case cont_vect is
+--    when 1      => assert y = '0' report "y diferente do valor esperado" severity warning;
+--    when 2      => assert y = '1' report "y diferente do valor esperado" severity warning;
+--    when 3      => assert y = '0' report "y diferente do valor esperado" severity warning;
+--    when 4      => assert y = '0' report "y diferente do valor esperado" severity warning;
+--    when others => null;
+--  end case;
+
+--end process monitor;
+
+
+
+---- verificação
+--verification : process
+--begin
+--  wait until (coe_data_ready_in = '1');
+--  wait for 5*sys_clk_period;
+--  if avs_writedata(0) = '1' then
+--    assert signed(vn_out) = (signed(va_in) + signed(vb_in) + signed(vc_in)) report "Problema na soma após a requisição para somar do linux" severity error;
+--  end if;
+--end process;
+
+
+
+--process
+--begin
+--      assert a = b 
+--              report "a e b não são iguais"
+--                      severity WARNING;
+--      wait on a,b;
+--end process;
+
+
+
+-- função de leitura de arquivos 
+--impure function input_txt (ram_file_name : in string) return matrix is   
+--   file ram_file  : text is in ram_file_name; 
+--      variable linha : line;                                 
+--      variable i: natural := 1;      
+--      variable str: std_logic_vector(largura-1 downto 0);  
+--      variable matriz: matrix;                        
+--            begin
+--              loop1: while not endfile(ram_file) loop                                                 
+--                escr_linha: for i in 1 to altura loop                                         
+--                 readline(ram_file,linha);
+--                      read (linha, str);
+--                      matriz(i) := str;
+--                     end loop escr_linha;                                                     
+--              end loop loop1;            
+--              return matriz;            
+--       end function input_txt;
+
+
+-- procedimento de escrita de arquivos
+--procedure output_txt (ram_file_name : in string;  vetor: in std_logic_vector(largura-1 downto 0);
+--              cont: in natural range 1 to altura; agora: time) is     
+--      file file_out : TEXT open APPEND_MODE is ram_file_name; --WRITE_MODE ou READ_MODE    
+--      variable linha : line;          
+--      begin                                   
+--              write(linha, vetor); 
+--              write(linha, string'(" @ "));
+--              write(linha, agora);
+--                writeline(file_out, linha);           
+--              if  cont = altura then           
+--              write(linha, string'("Fim do arquivo de estimulos"));
+--              writeline(file_out, linha);
+--              end if;                          
+-- end procedure output_txt;    
+
+
+
+

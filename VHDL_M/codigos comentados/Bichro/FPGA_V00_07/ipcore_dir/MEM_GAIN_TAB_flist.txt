@@ -1,0 +1,16 @@
+# Output products list for <MEM_GAIN_TAB>
+MEM_GAIN_TAB.asy
+MEM_GAIN_TAB.gise
+MEM_GAIN_TAB.ngc
+MEM_GAIN_TAB.sym
+MEM_GAIN_TAB.vhd
+MEM_GAIN_TAB.vho
+MEM_GAIN_TAB.xco
+MEM_GAIN_TAB.xise
+MEM_GAIN_TAB\doc\blk_mem_gen_ds512.pdf
+MEM_GAIN_TAB\doc\blk_mem_gen_v6_1_vinfo.html
+MEM_GAIN_TAB_flist.txt
+MEM_GAIN_TAB_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

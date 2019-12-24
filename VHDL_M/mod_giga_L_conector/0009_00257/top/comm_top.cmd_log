@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top.ucf -p xc3s200-tq144-4 comm_top.ngc comm_top.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm area -ir off -pr b -power off -o comm_top_map.ncd comm_top.ngd comm_top.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 comm_top_map.ncd comm_top.ncd comm_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml comm_top.twx comm_top.ncd -o comm_top.twr comm_top.pcf -ucf top.ucf 
+bitgen -intstyle ise -f comm_top.ut comm_top.ncd 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top.ucf -p xc3s200-tq144-4 comm_top.ngc comm_top.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm area -ir off -pr b -power off -o comm_top_map.ncd comm_top.ngd comm_top.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 comm_top_map.ncd comm_top.ncd comm_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml comm_top.twx comm_top.ncd -o comm_top.twr comm_top.pcf -ucf top.ucf 
+bitgen -intstyle ise -f comm_top.ut comm_top.ncd 
+xst -intstyle ise -ifn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.xst" -ofn "M:/vhdl/mod_giga_L_conector/0009_00257/top/comm_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top.ucf -p xc3s200-tq144-4 comm_top.ngc comm_top.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -timing -logic_opt on -ol high -xe n -t 1 -register_duplication on -cm area -ir off -pr b -power off -o comm_top_map.ncd comm_top.ngd comm_top.pcf 
+par -w -intstyle ise -pl high -rl high -xe n -t 1 comm_top_map.ncd comm_top.ncd comm_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml comm_top.twx comm_top.ncd -o comm_top.twr comm_top.pcf -ucf top.ucf 
+bitgen -intstyle ise -f comm_top.ut comm_top.ncd 

@@ -1,0 +1,53 @@
+
+
+======================================
+1 - 
+FLed on / RLed off
+Fcam <= reflect
+RCam <= transluc
+
+2 - 
+FLed off / RLed on
+Fcam <= transluc
+RCam <= reflect
+
+3 - 
+FLed on / RLed on
+Fcam <= backg
+RCam <= backg
+=======================================
+
+
+4 - lê imagem do ccd
+5 - le floor da memoria FE, Fcam Rcam
+001 & PIX
+010 & PIX
+
+6 - le info sobre ganho
+011 & PIX
+111 & PIX
+
+7 - multiplica 6 por 5
+
+8 - multiplica 7 pelo ganho de grupo
+9 - salva na memoria fifo
+10 - repete processo 4 - 9 para cada pixel e para cada iluminação
+	 para a iluminação de background o ganho é  unitário
+
+11 - le a informação da fifo, backg, transluc, reflect
+12 - testa backg, se mais escuro que trip level, considerado pixel valido, senao, pixel de edge
+13 - se pixel valido, então testa no endereço X da reflectancia, se Y (B,A) estão dentro da elipse
+14 - se o Dot (ponto) estiver dentro da elipse, o contador é incrementado para esta elipse
+15 - se o contador alcança um numero maximo de defeitos para alguma elipse, 
+	 manda sinal de ejeção para o modulo, reseta contador
+
+	
+
+
+
+
+
+
+
+
+

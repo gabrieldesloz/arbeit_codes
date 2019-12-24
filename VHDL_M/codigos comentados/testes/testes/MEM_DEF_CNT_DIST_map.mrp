@@ -1,0 +1,34 @@
+Release 14.1 Map P.15xf (nt64)
+Xilinx Mapping Report File for Design 'MEM_DEF_CNT_DIST'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o MEM_DEF_CNT_DIST_map.ncd MEM_DEF_CNT_DIST.ngd
+MEM_DEF_CNT_DIST.pcf 
+Target Device  : xc6slx25
+Target Package : ftg256
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Wed Aug 20 15:13:37 2014
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Map:116 - The design is empty.  No processing will be done.
+ERROR:Map:52 - Problem encountered processing RPMs. 
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc6slx25' is a WebPack part.

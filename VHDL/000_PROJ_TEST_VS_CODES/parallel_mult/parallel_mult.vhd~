@@ -1,0 +1,228 @@
+-------------------------------------------------------------------------------
+-- $Id:
+-- $URL:
+-- Title      : Synchronization Module  
+-- Project    : protective relay
+-------------------------------------------------------------------------------
+-- File       : divider.vhd
+-- Author     : Gabriel Deschamps Lozano
+-- Company    : Reason Tecnologia S.A.
+-- Created    : 2012-08-01
+-- Last update: 2013-01-28
+-- Platform   : 
+-- Standard   : 
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2011/2012 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2012-09-03   1.0      GDL     Revised 
+-------------------------------------------------------------------------------
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity parallel_mult is
+  generic (
+    N : natural := 4
+    );
+
+  port (
+    sysclk  : in  std_logic;
+    n_reset : in  std_logic;
+    start   : in  std_logic;
+    ready   : out std_logic;
+    a       : in  std_logic_vector(31 downto 0);
+    b       : in  std_logic_vector(31 downto 0);
+    c       : out std_logic_vector(63 downto 0)
+    );
+
+
+end entity parallel_mult;
+
+architecture rd_RTL of parallel_mult is
+
+  type STATE_TYPE is (IDLE, LOAD, MULT_PARC, ADD_PARC, DONE);
+  signal state_reg, state_next         : STATE_TYPE;
+  attribute syn_encoding               : string;
+  attribute syn_encoding of state_type : type is "safe";
+
+
+  -- signal declarations
+
+  signal div_p1_next   : unsigned(3 downto 0);
+  signal div_p2_next   : unsigned(3 downto 0);
+  signal div_p1_reg    : unsigned(3 downto 0);
+  signal div_p2_reg    : unsigned(3 downto 0);
+  signal c_next, c_reg : std_logic_vector(c'range);
+
+  
+begin  -- architecture rd_RTL
+
+
+
+  process (n_reset, sysclk)
+  begin
+    if (n_reset = '0') then
+      state_reg  <= IDLE;
+      div_p1_reg <= (others => '0');
+      div_p2_reg <= (others => '0');
+      c_reg      <= (others => '0');
+    elsif rising_edge (sysclk) then
+      div_p1_reg <= div_p1_next;
+      div_p2_reg <= div_p2_next;
+      c_reg      <= c_next;
+      state_reg  <= state_next;
+    end if;
+  end process;
+
+
+  state_machine : process(all) is
+  begin  -- process state_machine
+
+    ready <= '0';
+
+    state_next  <= state_reg;
+    div_p1_next <= div_p1_reg;
+    div_p2_next <= div_p2_reg;
+    c_next      <= c_reg;
+
+    case state_reg is
+      when IDLE =>
+        if start = '1' then
+          state_next <= LOAD;
+        end if;
+        
+
+      when LOAD =>
+
+        -- id SIGNED/UNSIGNED
+        state_next <= MULT_PARC;
+
+        -- b: 1011
+        -- a: 1101
+ 
+      when MULT_PARC =>
+
+
+        div_p1_1_next <= resize(unsigned(a(1 downto 0)),4)  *  resize(unsigned(b(1 downto 0)),4); --        
+        -- 01 * 11
+        
+        div_p1_2_next <= resize(unsigned(a(1 downto 0)),4)  *  resize(unsigned(b(3 downto 2)),4); --
+        -- 01 * 10 
+
+        div_p2_1_next <= resize(unsigned(a(3 downto 2)),4)  *  resize(unsigned(b(1 downto 0)),4); --
+        -- 11 * 11
+
+        div_p2_2_next <= resize(unsigned(a(3 downto 2)),4)  *  resize(unsigned(b(3 downto 2)),4); --
+        -- 11 * 10
+        
+      
+        state_next <= ADD_PARC_1;
+        
+        
+      when ADD_PARC_1 =>
+        
+       
+        add_p1_p1_next <= resize(div_p1_1_reg,6) + (resize(div_p1_2_reg,6) sll 2);
+
+        add_p1_p2_next <= resize(div_p2_1_reg,6) + (resize(div_p2_2_reg,6) sll 2);
+        
+
+        state_next <= DONE;
+
+      when ADD_PARC_2
+
+        add_p2_next <= resize(add_p1_p1_reg,8) + (resize(add_p1_p2_reg,8) sll 2);
+
+      when DONE =>
+        ready      <= '1';
+        state_next <= IDLE;
+
+      when others =>
+        state_next <= IDLE;
+
+        
+    end case;
+  end process state_machine;
+
+
+  c <= std_logic_vector(add_p2_reg);
+
+end architecture;
+
+
+--begin  -- architecture rd_RTL
+--
+--
+--
+--  process (n_reset, sysclk)
+--  begin
+--    if (n_reset = '0') then
+--      state_reg <= IDLE;
+--              div_p1_reg <= (others => '0');
+--              div_p2_reg <= (others => '0');
+--              c_reg <= (others => '0');
+--    elsif rising_edge (sysclk) then
+--         div_p1_reg <= div_p1_next;
+--              div_p2_reg <= div_p2_next;
+--              c_reg <= c_next;
+--      state_reg <= state_next;
+--    end if;
+--  end process;
+--
+--
+--  state_machine : process(all) is
+--  begin  -- process state_machine
+--
+--    ready <= '0';
+--
+--    state_next <= state_reg;
+--       div_p1_next <= div_p1_reg;
+--       div_p2_next <= div_p2_reg;
+--       c_next <= c_reg;
+--
+--    case state_reg is
+--      when IDLE =>
+--        if start = '1' then
+--          state_next <= LOAD;
+--        end if;
+--        
+--
+--      when LOAD =>
+--        state_next <= MULT_PARC;
+--        
+--
+--      when MULT_PARC =>        
+--        
+--                
+--                state_next  <= ADD_PARC;
+--        
+--        
+--      when ADD_PARC =>
+--        
+--        c_next <= std_logic_vector( unsigned(a)*unsigned(b) );
+--                
+--                state_next <= DONE;
+--
+--      when DONE =>
+--        ready      <= '1';
+--        state_next <= IDLE;
+--
+--      when others =>
+--        state_next <= IDLE;
+--
+--        
+--    end case;
+--  end process state_machine;
+--
+--
+--   c <= c_reg;
+--
+--end architecture;
+

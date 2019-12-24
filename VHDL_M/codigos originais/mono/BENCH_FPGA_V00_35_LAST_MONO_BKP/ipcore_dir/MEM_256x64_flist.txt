@@ -1,0 +1,25 @@
+# Output products list for <MEM_256x64>
+MEM_256x64.asy
+MEM_256x64.gise
+MEM_256x64.ngc
+MEM_256x64.sym
+MEM_256x64.vhd
+MEM_256x64.vho
+MEM_256x64.xco
+MEM_256x64.xise
+MEM_256x64_flist.txt
+MEM_256x64_ste\example_design\MEM_256x64_top.ucf
+MEM_256x64_ste\example_design\MEM_256x64_top.vhd
+MEM_256x64_ste\example_design\MEM_256x64_top.xdc
+MEM_256x64_ste\example_design\bmg_wrapper.vhd
+MEM_256x64_ste\implement\implement.sh
+MEM_256x64_ste\implement\planAhead_rdn.bat
+MEM_256x64_ste\implement\planAhead_rdn.sh
+MEM_256x64_ste\implement\planAhead_rdn.tcl
+MEM_256x64_ste\implement\xst.prj
+MEM_256x64_ste\implement\xst.scr
+MEM_256x64_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+summary.log

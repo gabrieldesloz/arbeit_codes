@@ -1,0 +1,25 @@
+# Output products list for <MEM_32x64>
+MEM_32x64.asy
+MEM_32x64.gise
+MEM_32x64.ngc
+MEM_32x64.sym
+MEM_32x64.vhd
+MEM_32x64.vho
+MEM_32x64.xco
+MEM_32x64.xise
+MEM_32x64_flist.txt
+MEM_32x64_ste\example_design\MEM_32x64_top.ucf
+MEM_32x64_ste\example_design\MEM_32x64_top.vhd
+MEM_32x64_ste\example_design\MEM_32x64_top.xdc
+MEM_32x64_ste\example_design\bmg_wrapper.vhd
+MEM_32x64_ste\implement\implement.sh
+MEM_32x64_ste\implement\planAhead_rdn.bat
+MEM_32x64_ste\implement\planAhead_rdn.sh
+MEM_32x64_ste\implement\planAhead_rdn.tcl
+MEM_32x64_ste\implement\xst.prj
+MEM_32x64_ste\implement\xst.scr
+MEM_32x64_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+summary.log

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/Projetos/VHDL/FPGA_V040/TESTEJET.xst" -ofn "F:/Projetos/VHDL/FPGA_V040/TESTEJET.syr" 
+xst -intstyle ise -ifn "F:/Projetos/VHDL/FPGA_V040/TESTEJET.xst" -ofn "F:/Projetos/VHDL/FPGA_V040/TESTEJET.syr" 

@@ -1,0 +1,429 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+clocking_mono=1
+Built-in symbols=0
+SPARTAN6=0
+
+[COMPILESTATUS|.\..\..\clocking mono\clock_gen.vhd]
+FileTimeLow=30454389
+Status=Compiled
+
+[COMPILESTATUS|.\..\..\clocking mono\clock_gen_fsm.vhd]
+FileTimeLow=30393841
+Status=Compiled
+
+[COMPILESTATUS|.\..\..\clocking mono\tb_clock_gen.vhd]
+FileTimeLow=30393269
+Status=Compiled
+
+[COMPILESTATUS|.\..\..\clocking mono\clock_gen_ccd_ctrl_fsm.vhd]
+FileTimeLow=30454389
+Status=Compiled
+
+[COMPILESTATUS|.\src\waveform.asdb]
+FileTimeLow=30401070
+Status=Modified
+
+[COMPILESTATUS|.\src\waveform.awc]
+FileTimeLow=30401300
+Status=Modified
+
+[CACHEDOC|Aldec.WaveFormASDB.7|.\clocking_mono\src/waveform.awc|]
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAADAAAA/////////////////////yMJAABoAAAAAA8AAG4DAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[COMPILESTATUS|.\src\test.asf]
+FileTimeLow=30401073
+Status=Modified
+
+[COMPILESTATUS|.\src\test_fe_mux_proc.bde]
+FileTimeLow=30401120
+Status=Modified
+
+[COMPILESTATUS|.\src\Fub1.vhd]
+FileTimeLow=30401120
+Status=Modified
+
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\clocking_mono\src\Fub1.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAADAAAA/////////////////////7QBAAB5AAAAQAQAAO4BAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[COMPILESTATUS|.\src\Fub1.bde]
+FileTimeLow=30401122
+Status=Modified
+
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|Process_1|]
+CurrentLine=8
+CurrentColumn=305
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAADAAAA/////////////////////7QBAAB5AAAAlgQAAO4BAAAsAAAAAgAAAAMAAAD/////////////////////kAAAAGQAAABQBAAASAIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAAGwAAAAEAAAA=
+
+[COMPILESTATUS|.\compile\Fub1.vhd]
+FileTimeLow=30401122
+Status=Warning
+
+[CACHEDOC|Aldec.BDE.7|.\clocking_mono\src\test_fe_mux_proc.bde|]
+PROBEBAL=0
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,50,50,
+
+[CACHEDOC|Aldec.BDE.7|.\clocking_mono\src\Fub1.bde|]
+PROBEBAL=1
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,50,50,
+
+[COMPILESTATUS|.\..\..\comunicação serial mono\BUFG.bde]
+FileTimeLow=30401269
+Status=Modified
+
+[COMPILESTATUS|.\..\..\comunicação serial mono\comm_tb.bde]
+FileTimeLow=30401269
+Status=Modified
+
+[COMPILESTATUS|.\..\..\comunicação serial mono\serial_receiver_eject.bde]
+FileTimeLow=30401269
+Status=Modified
+
+[COMPILESTATUS|.\..\..\comunicação serial mono\serial_sender_eject.bde]
+FileTimeLow=30401269
+Status=Modified
+
+[COMPILESTATUS|.\..\..\mod_giga_L_conector\testing\EJ_SERIAL_MASTER.bde]
+FileTimeLow=30401270
+Status=Modified
+
+[COMPILESTATUS|.\..\..\mod_giga_L_conector\testing\EJ_SERIAL_SLAVE.bde]
+FileTimeLow=30401270
+Status=Modified
+
+[COMPILESTATUS|.\..\..\mod_giga_L_conector\testing\mux.bde]
+FileTimeLow=30401270
+Status=Modified
+
+[COMPILESTATUS|.\..\..\mod_giga_L_conector\testing\packet_detect.asf]
+FileTimeLow=30401270
+Status=Modified
+
+[COMPILESTATUS|.\..\..\mod_giga_L_conector\testing\comm_top.bde]
+FileTimeLow=30401270
+Status=Modified
+
+[COMPILESTATUS|.\..\..\mod_giga_L_conector\testing\neg_edge_moore.asf]
+FileTimeLow=30401270
+Status=Modified
+
+[COMPILESTATUS|.\..\..\mod_giga_L_conector\testing\pos_edge_moore.asf]
+FileTimeLow=30401270
+Status=Modified
+
+[COMPILESTATUS|.\..\..\mod_giga_L_conector\testing\reset_generator.asf]
+FileTimeLow=30401270
+Status=Modified
+
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\..\clocking mono\clock_gen.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////7QBAAB5AAAAlgQAAO4BAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\..\clocking mono\clock_gen_ccd_ctrl_fsm.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////7QBAAB5AAAAlgQAAO4BAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|C:\Aldec\Active-HDL Student Edition\vlib\xilinx_ise\vhdl\unisim/src/primitive/BUFG.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////7QBAAB5AAAAlgQAAO4BAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|C:\Aldec\Active-HDL Student Edition\vlib\ieee/src/std_logic_1164.vhdl|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////7QBAAB5AAAAlgQAAO4BAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[CACHEDOC|Aldec.BDE.7|.\..\comunicação serial mono\comm_tb.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,702,-7,
+
+[CACHEDOC|Aldec.BDE.7|.\..\comunicação serial mono\serial_sender_eject.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,354,12,
+
+[CACHEDOC|Aldec.BDE.7|.\..\mod_giga_L_conector\testing\mux.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,4,-4,161,
+
+[CACHEDOC|Aldec.BDE.7|.\..\mod_giga_L_conector\testing\comm_top.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,8,76,272,
+
+[CACHEDOC|Aldec.BDE.7|.\..\mod_giga_L_conector\testing\EJ_SERIAL_SLAVE.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,591,963,
+
+[COMPILESTATUS|.\..\..\..\codigos originais\ALL_IN_BUFF.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\CH_X_EJET_TIMER.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\EJECTORS_DATA_SENDER.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\EJ_CLEAR_COUNT.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\FLOOR_GEN.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\IN_BUFF.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\MAIN_BOARD_DETECTION.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\MAIN_RESET.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\MAX_CHX_MEAN.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\memdef.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\MEM_CTRL.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\MEM_CTRL_DELTA.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\MEM_SYNC.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\PSEUDO_RANDOM_TEST.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\SEND_SERIAL_DATA.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\SERIAL_TX.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\STATUS_SENDER.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_CORR_AGT.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_EJECTORS_DATA_SENDER.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_FLOOR_GEN.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_MAIN_RESET.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_MAX_CH_MEAN.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_MEAN_16K.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_MEAN_256.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_MEAN_GAIN_TABLE.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_MEM_PIXVAL.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_MEM_ROMPIXVAL.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_TESTEJET.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TB_WRAPPER_EJET.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\TESTEJET.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\WRAPPER.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\WRAPPER_EJET.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[COMPILESTATUS|.\..\..\..\codigos originais\WRAPPER_TOP.bde]
+FileTimeLow=30401271
+Status=Modified
+
+[CACHEDOC|Aldec.BDE.7|.\..\..\codigos originais\WRAPPER.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,410,-25,
+
+[CACHEDOC|Aldec.BDE.7|.\..\..\codigos originais\FLOOR_GEN.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,4096,-457,-221,
+
+[CACHEDOC|Aldec.Project.Generic.7|.\clocking_mono\clocking_mono.adf|]
+Path=/tb_clock_gen
+
+[COMPILESTATUS|.\src\top_fpga_3.bde]
+FileTimeLow=30414382
+Status=Modified
+
+[CACHEDOC|Aldec.Project.Generic.7|.\clocking_mono.adf|]
+Path=/tb_clock_gen
+
+[CACHEDOC|Aldec.BDE.7|.\clocking_mono\src\top_fpga_3.bde|]
+SymbolsToolbox=0
+ZOOMOFSETS_PAGES=1,1,1,2,-42,-108,
+
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\..\..\clocking mono\clock_gen_ccd_ctrl_fsm.vhd|]
+CurrentLine=204
+CurrentColumn=68
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-19
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAADAAAA/////////////////////4AHAACDAAAAAA8AAAgEAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[COMPILESTATUS|.\src\TOP.vhd]
+FileTimeLow=30443543
+Status=Error
+
+[General]
+CurrentVersion=103
+
+[Gui config]
+RunFor=1 ms
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\clocking mono\clock_gen_ccd_ctrl_fsm.vhd|]
+CurrentLine=54
+CurrentColumn=53
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////1QDAAByAQAAPwcAAAsDAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[OPENDOC|Aldec.WaveFormASDB.7|.\clocking_mono\src/waveform.awc|]
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////1QDAABXAQAAcQgAAF0EAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\clocking_mono\src\TOP.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////1QDAAByAQAAcQgAAF0EAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\clocking mono\tb_clock_gen.vhd|]
+CurrentLine=48
+CurrentColumn=33
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////1QDAAByAQAAcQgAAF0EAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\clocking mono\clock_gen.vhd|]
+CurrentLine=32
+CurrentColumn=38
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=LAAAAAAAAAABAAAA/////////////////////1QDAAByAQAAcQgAAF0EAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA=
+
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\src\TOP.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAADAAAA/////////////////////yMJAACDAAAAQA4AAG4DAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+
+[OPENDOC|Aldec.WaveFormASDB.7|.\src\waveform.awc|]
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////24IAABoAAAAAA8AAG4DAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\clocking mono\clock_gen_ccd_ctrl_fsm.vhd|]
+CurrentLine=269
+CurrentColumn=37
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////24IAACDAAAAiw0AAG4DAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\clocking mono\clock_gen.vhd|]
+CurrentLine=161
+CurrentColumn=40
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////24IAACDAAAAiw0AAG4DAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+

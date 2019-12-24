@@ -1,0 +1,148 @@
+-------------------------------------------------------------------------------
+-- Title      : Reason Tecnologia S.A. - Merging Unit - MU320
+-- Project    : MU320
+-------------------------------------------------------------------------------
+-- File       : quality.vhd
+-- Author     : 
+-- Company    : Reason Tecnologia S.A.
+-- Created    : 2012-08-07
+-- Last update: 2013-12-16
+-- Standard   : VHDL'87
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2012 Reason Tecnologia S.A.
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+--              1.0              Created
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity quality_ctlr is
+  generic
+    (
+      VALUE1 : natural;
+      VALUE2 : natural;
+      VALUE3 : natural;
+      BITS   : natural
+      );
+  port (
+    sysclk  : in std_logic;
+    reset_n : in std_logic;
+
+    acq_data_in    : in std_logic_vector(BITS-1 donwto 0);
+    acq_data_ready : in std_logic;
+
+    gain_register_data_in    : in std_logic_vector(BITS-1 downto 0);
+    gain_register_data_ready : in std_logic;
+
+    phase_sum_data_ready : in std_logic;
+    phase_sum_ovf_i      : in std_logic;
+
+    config_i : in std_logic(1 downto 0)
+
+    );
+
+end quality_ctlr;
+
+architecture rtl of quality_ctlr is
+
+
+  type FSM_TYPE is (WAIT_ACQ, CHECK_1, CHECK_2, CHECK_3);
+  attribute syn_encoding             : string;
+  attribute syn_encoding of FSM_TYPE : type is "safe";
+  signal state_next, state_reg       : FSM_TYPE;
+
+  signal acq_data_in_reg            : std_logic_vector(acq_data_in'range);
+  signal acq_data_in_next           : std_logic_vector(acq_data_in'range);
+  signal gain_register_data_in_reg  : std_logic_vector(gain_register_data_in'range);
+  signal gain_register_data_in_next : std_logic_vector(gain_register_data_in'range);
+
+  signal acq_data_ready_reg            : std_logic;
+  signal acq_data_ready_next           : std_logic;
+  signal gain_register_data_ready_reg  : std_logic;
+  signal gain_register_data_ready_next : std_logic;
+  signal phase_sum_data_ready_reg      : std_logic;
+  signal phase_sum_data_ready_next     : std_logic;
+
+begin
+
+  
+  process (sysclk, reset_n)
+  begin
+    if reset_n = '0' then
+      gain_register_data_in_reg <= (others => '0');
+      acq_data_in_reg           <= (others => '0');
+      config_reg                <= (others => '0');
+      phase_sum_ovf_i_reg       <= (others => '0');
+      quality_reg               <= (others => '0');
+    elsif rising_edge(sysclk) then
+      gain_register_data_in_reg <= gain_register_data_in_next;
+      acq_data_in_reg           <= acq_data_in_next;
+      config_reg                <= config_next;
+      phase_sum_ovf_i_reg       <= phase_sum_ovf_i_next;
+      quality_reg               <= quality_next;
+    end if;
+  end process;
+
+
+  gain_register_data_in_next <= gain_register_data_in;
+  acq_data_in_next           <= acq_data_in;
+  data_vector_in_next        <= data_vector_in;
+  status_data_in_next        <= status_data_in;
+  config_next                <= config_i;
+  phase_sum_ovf_i_next       <= phase_sum_ovf_i;
+
+
+  process (acq_data_in_reg, acq_data_ready, gain_register_data_in_reg,
+           gain_register_data_ready, phase_sum_data_ready, state_reg)
+  begin  -- process
+
+    -- default
+    state_next   <= state_reg;
+    quality_next <= quality_reg;
+
+    case state_reg is
+      when WAIT_ACQ =>
+        if acq_data_ready = '1' then
+          state_next <= CHECK_1;
+        end if;
+      when CHECK_1 =>
+
+        if abs(acq_data_in_reg) > VALUE1 then
+          quality_next(1) <= '1';
+        end if;
+
+        if gain_register_data_ready = '1' then
+          state_next <= CHECK_2;
+        end if;
+        
+      when CHECK_2 =>
+        
+        if (config_reg(1) = '1' and (abs(gain_register_data_in_reg) > VALUE2)) then
+          quality_next(0) <= '1';
+        end if;
+        if (config_reg(1) = '0' and (abs(gain_register_data_in_reg) > VALUE3)) then
+          quality_next(0) <= '1';
+        end if;
+
+        if (phase_sum_data_ready = '1') then
+          state_next <= CHECK_3;
+        end if;
+
+      when CHECK_3 =>
+        quality_next(0) <= phase_sum_ovf_i_reg;
+        state_next      <= WAIT_ACQ;
+
+      when others =>
+        state_next <= WAIT_ACQ;
+        
+    end case;
+  end process;
+end rtl;
+
+

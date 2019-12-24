@@ -1,0 +1,1161 @@
+-------------------------------------------------------------------------------------------------------------------
+-------------- Luminary interface ***********************************************************************************
+
+   -- decode the command from LUMINARY microcontroller
+			lumstpd<=lumstp;
+			s_lumstp_last <= lumstp;
+
+        case lumstp is
+		    when "000000000000" => clr_cmd<='1'; lumstp<="000000000001"; busy_clr<='0';
+		    when "000000000001" => if busy_flag='1' then lumstp<="000000000010"; busy_clr<='1'; lct:=0; end if;
+          ------------------------------------------------------------------------------------------------
+		    when "000000000010" => lumstp<="000000000100";
+			                        busy_clr<='0';
+
+			                        case cmd_reg(7 downto 0) is
+											  -- read FPGA version
+			                          when X"03"  => data_rd <= FPGA_version; 
+																	s_cmd_last <= cmd_reg(7 downto 0);
+																	s_cmd_last_1 <= s_cmd_last;
+																	s_cmd_last_2 <= s_cmd_last_1;
+																	s_cmd_last_3 <= s_cmd_last_2;
+																	s_cmd_last_4 <= s_cmd_last_3;
+
+																	LED1 <= not(LED1);
+																	--LED2 <= not(LED2);
+											  -- read last command executed
+--			                          when X"04"  => data_rd<=X"0000"; lumstp<="100000000000";
+--																	s_cmd_last <= cmd_reg(7 downto 0);
+--																	s_cmd_last_1 <= s_cmd_last;
+--																	s_cmd_last_2 <= s_cmd_last_1;
+--																	s_cmd_last_3 <= s_cmd_last_2;
+--																	s_cmd_last_4 <= s_cmd_last_3;	
+--
+--																	LED1 <= not(LED1);
+--																	--LED2 <= not(LED2);																	
+											  -- write data to AFE
+			                          when X"41"  => if busy_flag='0' then 
+																		lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- read ejector module data
+			                          when X"42"  => if busy_flag='0' then 
+																		lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write configuration word
+			                          when X"43"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write illumination intensity setup
+			                          when X"44"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- read 256 words from Front-End memory
+			                          when X"45"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write 256 words on Front-End memory
+			                          when X"46"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- testejet
+			                          when X"48"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- send command to ejector module
+			                          when X"49"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write delay setup
+			                          when X"4A"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- read dot memory
+			                          when X"4B"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write trigger level
+			                          when X"4C"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write pixini, pixend
+			                          when X"4D"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write ejector table
+			                          when X"4E"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write number of defects per ellipsis
+			                          when X"4F"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write ellipsis dwell time
+			                          when X"50"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write ellipsis
+			                          when X"51"  => if busy_flag='0' then lumstp<="000000000010";
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write illumination configuration
+			                          when X"52"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- read FIFO memory
+			                          when X"53"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- read ejector counters
+			                          when X"54"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- read configuration word
+			                          when X"56"  => data_rd<=(others=>'0');
+																	data_rd(0)<='1';
+																	data_rd(1)<='0';
+																	data_rd(2)<='0';
+																	data_rd(3)<=floorx;
+																	data_rd(4)<='0';
+																	data_rd(5)<=extra(0);
+																	data_rd(6)<=extra(1);
+																	data_rd(9)<='0';
+																	data_rd(10)<='0';
+																	data_rd(11)<='0';
+																	data_rd(12)<=extra(6);
+																	data_rd(13)<=extra(7);
+																	data_rd(14)<=s_CLR_MEAN_COMMAND_A; -- allow gain correction calculation
+																	data_rd(15)<=s_CLR_MEAN_COMMAND_B;
+														
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+
+											  -- write X axis gain						
+			                          when X"57"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- write Y axis gain
+			                          when X"58"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  -- read gain values
+			                          when X"59"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+											  ----------------------------------
+											  -- multiplier input multiplexer -- 
+											  ----------------------------------
+											  -- write 256 bckgnd gain values
+			                          when X"5A"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+	
+																		LED1 <= not(LED1);
+																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+																	
+											  -- write luminary last command
+			                          when X"60"  => if busy_flag='0' then lumstp<="000000000010"; 
+--																	else
+--																		s_cmd_last <= cmd_reg(7 downto 0);
+--																		s_cmd_last_1 <= s_cmd_last;
+--																		s_cmd_last_2 <= s_cmd_last_1;
+--																		s_cmd_last_3 <= s_cmd_last_2;
+--																		s_cmd_last_4 <= s_cmd_last_3;
+--	
+--																		LED1 <= not(LED1);
+--																		--LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+																	
+											  -- Read 16 command flags that indicates if the FPGA is with default configuration
+			                          when X"61"  => 		data_rd(14 downto 0) <= s_already_conf_flag;
+																		data_rd(15) <= s_already_conf_flag(0) and s_already_conf_flag(1) and s_already_conf_flag(2) 
+																		and s_already_conf_flag(3) and s_already_conf_flag(4) and s_already_conf_flag(5) and s_already_conf_flag(6) 
+																		and s_already_conf_flag(7) and s_already_conf_flag(8) and s_already_conf_flag(9) and s_already_conf_flag(10) 
+																		and s_already_conf_flag(11) and s_already_conf_flag(12) and s_already_conf_flag(13) and s_already_conf_flag(14);
+											  
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+--	
+																		LED1 <= not(LED1);
+--																		-- LED2 <= not(LED2);	
+
+											  -- Erase all command flags
+			                          when X"62"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+--	
+																		LED1 <= not(LED1);
+--																		-- LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+												-- Returns flags from ellipsis
+			                          when X"63"  => 		data_rd <= s_ellip_confirm_B & '0' & s_ellip_confirm_A & '0';
+											  
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+--	
+																		LED1 <= not(LED1);
+--																		-- LED2 <= not(LED2);	
+
+											  -- Set image grab trigger wait
+			                          when X"F0"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+--	
+--																		--LED1 <= not(LED1);
+--																		-- LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+																	
+											  -- Read 256 words from RAM image data - Lower part
+			                          when X"F1"  => if busy_flag='0' then lumstp<="000000000010"; 
+																	else
+																		s_cmd_last <= cmd_reg(7 downto 0);
+																		s_cmd_last_1 <= s_cmd_last;
+																		s_cmd_last_2 <= s_cmd_last_1;
+																		s_cmd_last_3 <= s_cmd_last_2;
+																		s_cmd_last_4 <= s_cmd_last_3;
+--	
+--																		--LED1 <= not(LED1);
+--																		-- LED2 <= not(LED2);	
+																	end if; -- stay here if busy=0
+																	
+											  when others => lumstp<="000000000000";
+																	s_cmd_others <= cmd_reg(7 downto 0);
+																	s_cmd_others_1 <= s_cmd_others;
+																	s_cmd_others_2 <= s_cmd_others_1;
+
+																	--LED1 <= not(LED1);
+																	-- LED2 <= not(LED2);	
+											end case;
+          ------------------------------------------------------------------------------------------------
+		    when "000000000100" => lumstp<="000000001000"; 
+			                        case cmd_reg(7 downto 0) is
+			                          when X"03"  => lumstp<="100000000000"; -- s_cmd_last <= X"0003";-- exit 1
+--			                          when X"04"  => s_cmd_last <= X"0000"; lumstp<="100000000000"; -- exit 1
+			                          when X"41"  => afeaddr<=data_wr(14 downto 12);
+						                                afen <=data_wr(15);
+						                                afedata<=data_wr(8 downto 0);
+			                          when X"42"  => if data_wr(15)='0' then
+											  
+																		case data_wr(14 downto 12) is
+																			when "000" => data_rd <= "0000" & ejdt0(conv_integer(data_wr(14 downto 12)))(11 downto 0);
+																			when "001" => data_rd <= "0000" & ejdt0(conv_integer(data_wr(14 downto 12)))(11 downto 0);
+																			when "011" => data_rd <= s_overusage_a(28 downto 25) & s_overusage_a_coffee(11 downto 0);
+																			when others => data_rd <= ejdt0(conv_integer(data_wr(14 downto 12)))(15 downto 0);
+																		end case;
+																		
+						                                else
+																		
+																		case data_wr(14 downto 12) is
+																			when "000" => data_rd <= "0000" & ejdt0(conv_integer(data_wr(14 downto 12)))(23 downto 12);
+																			when "001" => data_rd <= "0000" & ejdt0(conv_integer(data_wr(14 downto 12)))(23 downto 12);
+																			when "011" => data_rd <= '0' & s_overusage_a(31 downto 29) & s_overusage_b_coffee(11 downto 0);
+																			when others => data_rd <= ejdt0(conv_integer(data_wr(14 downto 12)))(15 downto 0);
+																		end case;
+
+						                                end if;
+						                                busy_clr<='1';
+			                          when X"43"  => busy_clr<='1';
+		                                            floorx<=data_wr(3);
+		                                            extra(0)<=data_wr(5);
+		                                            extra(1)<=data_wr(6);
+																  s_has_overusage_clr <= data_wr(10);
+		                                            extra(6)<=data_wr(12);
+		                                            extra(7)<=data_wr(13);
+																  s_CLR_MEAN_COMMAND_A <= data_wr(14);
+																  s_CLR_MEAN_COMMAND_B <= data_wr(15);
+																  
+																  s_already_conf_flag(1) <= '1';
+																  
+																  lumstp<="000000000000";
+			                          when X"44"  => busy_clr<='1';
+																  lumstp<="000000000010"; -- return to wait busy=1
+											                 case lct is
+																   when 0 => led_duration_bckgnd<=data_wr(7 downto 0); --if data_wr(7 downto 0)>X"B0" then led_duration_bckgnd<=X"B0"; else led_duration_bckgnd<=data_wr(7 downto 0); end if;
+																   when 1 => led_duration_A<=data_wr(7 downto 0);
+																   when 2 => led_duration_B<=data_wr(7 downto 0);
+																   when 3 => led_duration_C<=data_wr(7 downto 0);
+																   when 4 => led_duration_D<=data_wr(7 downto 0);
+--																	           s_cmd_last <= X"0044";
+																				  lumstp<="000000000000";
+																				  
+																				  s_already_conf_flag(2) <= '1';
+																				  
+																   when others => lumstp<="000000000000"; --s_cmd_last <= X"0044";
+																  end case;
+																  lct:=lct+1;
+			                          when X"45"  => ndumpf<=(others=>'0'); 
+						                                extpart<=data_wr(15) & data_wr(5);
+							                             exttype<='0'; -- read
+																  
+																  if (data_wr(5) = '1') then
+																		if (data_wr(2 downto 0) = "101") then
+																			ext3bf<="110";
+																		else
+																			if (data_wr(2 downto 0) = "110") then
+																				ext3bf<="101";
+																			else
+																				ext3bf<=data_wr(2 downto 0);
+																			end if;
+																		end if;
+																  else
+																   ext3bf<=data_wr(2 downto 0);
+																  end if;
+																  
+			                          when X"46"  => ndumpf<=(others=>'0'); 
+											                 exttype<='1'; -- write 
+																  extpart<= data_wr(15) & data_wr(5); 
+																  
+																  if data_wr(5) = '1' then
+																		if data_wr(2 downto 0) = "011" then
+																			ext3bf <= "111";
+																		else
+																			if data_wr(2 downto 0) = "111" then
+																				ext3bf <= "011";
+																			else
+																				ext3bf<=data_wr(2 downto 0);
+																			end if;
+																		end if;
+																  else
+																		ext3bf<=data_wr(2 downto 0);
+																  end if;
+																	
+																  busy_clr<='1';
+			                          when X"48"  => busy_clr<='1';
+ 							                             s_tejet_dwell <= data_wr(13 downto 6) & "00";
+							                             s_tejetbuff(CONV_INTEGER(data_wr(4 downto 0))) <= data_wr(5);
+							                             s_tejet_chute <= data_wr(15);
+--						                                s_cmd_last <= X"0048";
+																  lumstp<="000000000000";
+			                          when X"49"  => busy_clr<='1';
+											                 rasc1com<=data_wr(14 downto 12); rsc1chute<=data_wr(15);
+			                          when X"4A"  => busy_clr<='1';
+																  if data_wr(15)='0' then
+																	s_sinc_confirm_A <= '1';
+																  
+																	if data_wr(14)='0' then
+																		sincperiod <= data_wr(8 downto 0);
+																	else
+																		sincperiod_el_7 <= data_wr(8 downto 0);
+																	end if;
+																	
+																  else
+																	s_sinc_confirm_B <= '1';
+																	
+																	if data_wr(14)='0' then
+																		sincperiodb <= data_wr(8 downto 0);
+																	else
+																		sincperiodb_el_7 <= data_wr(8 downto 0);
+																	end if;
+																	
+																	
+																  end if;
+--						                                s_cmd_last <= X"004A";
+
+																  lumstp<="000000000000";
+			                          when X"4B"  => ndumpf<=(others=>'0'); 
+						                                extpart<=data_wr(15) & data_wr(5);
+							                             exttype<='0'; -- read
+							                             ext3bf<=data_wr(2 downto 0);
+--											                 exteventd<='0'; -- try to get rid of dot-misreading
+			                          when X"4C"  => busy_clr<='1';
+																	if data_wr(8)='0' then
+																		if data_wr(15)='0' then
+																			dottrigga<=data_wr(7 downto 0);
+																			s_trip_confirm_A <= '1';
+																		else
+																			dottriggb<=data_wr(7 downto 0);
+																			s_trip_confirm_B <= '1';
+																		end if;
+																	else	 
+																		if data_wr(15)='0' then
+																			dottrigga2<=data_wr(7 downto 0);
+																		else
+																			dottriggb2<=data_wr(7 downto 0);
+																		end if;
+																	end if;	 
+--						                                s_cmd_last <= X"004C";
+																  
+																  lumstp<="000000000000";
+			                          when X"4D"  => busy_clr<='1';
+																	if data_wr(15)='0' then
+																		if data_wr(8)='0' then
+																			pixstarta<=data_wr(7 downto 0);
+																			s_boundaries_start_confirmation_A <= '1';
+																		else
+																			pixenda<=data_wr(7 downto 0);
+																			s_boundaries_end_confirmation_A <= '1';
+																		end if;
+																	else
+																		if data_wr(8)='0' then
+																			pixstartb<=data_wr(7 downto 0);
+																			s_boundaries_start_confirmation_B <= '1';
+																		else
+																			pixendb<=data_wr(7 downto 0);
+																			s_boundaries_end_confirmation_B <= '1';
+																		end if;
+																	end if;
+--						                                s_cmd_last <= X"004D";
+																  
+																  lumstp<="000000000000";
+			                          when X"4E"  => busy_clr<='1';
+																	ndumpf<=(others=>'0'); 
+																	extpart<='0' & data_wr(15);
+																	
+			                          when X"4F"  => busy_clr<='1';
+											                 ext3bf<=data_wr(10 downto 8);
+																  
+			                          when X"50"  => extpart<= '0'& data_wr(15); 
+																  busy_clr<='1';
+			                          when X"51"  => ndumpf<=(others=>'0'); 
+																  extpart<= '0'& data_wr(15); 
+																  ext3bf<=data_wr(10 downto 8);
+																  busy_clr<='1';
+			                          when X"52"  => busy_clr<='1';
+																  ilum<=data_wr(11 downto 0);
+																  s_already_conf_flag(11) <= '1';
+--						                                s_cmd_last <= X"0052";
+																  lumstp<="000000000000";
+			                          when X"53"  => ndumpf<=(others=>'0'); 
+						                                extpartf<=data_wr(15) & data_wr(1 downto 0);
+							                             exttype<='0'; -- read
+							                             ext3bf<="000";
+																  
+			                          when X"54"  => ndumpdsm<=(others=>'0'); ndumpdsm(5)<=data_wr(15);
+			                          when X"56"  => lumstp<="100000000000"; --s_cmd_last <= X"0056"; -- exit 1
+			                          when X"57"  => busy_clr<='1';
+																	if data_wr(15)='0'  then
+																		ggain_imageA(8 downto 0)<=data_wr(8 downto 0);
+																		s_image_gain_confirmation_A <= '1';
+																	else
+																		ggain_imageB(8 downto 0)<=data_wr(8 downto 0);
+																		s_image_gain_confirmation_B <= '1';
+																	end if;
+--						                                s_cmd_last <= X"0057";
+																  
+																  lumstp<="000000000000";
+			                          when X"58"  => busy_clr<='1';
+																	if data_wr(15)='0'  then
+																		ggain_bckA(8 downto 0)<=data_wr(8 downto 0);
+																		s_static_bgnd_confirmation_A <= '1';
+																	else
+																		ggain_bckB(8 downto 0)<=data_wr(8 downto 0);
+																		s_static_bgnd_confirmation_B <= '1';
+																	end if;
+--						                                s_cmd_last <= X"0058";
+																  
+																  lumstp<="000000000000";
+			                          when X"59"  => ndumpf<=(others=>'0'); 
+						                                s_ref_or_trans <= data_wr(0); -- Choses between reflectance or transluscence
+						                                extpartag<=data_wr(15); -- Chooses chute
+						                                s_extcam<=data_wr(1);	-- Chooses cam
+			                          when X"5A"  => ndumpf <= (others=>'0'); 
+																  s_bckgnd_mem_sel <= data_wr(15) & data_wr(5); --Chute & camera
+																  busy_clr<='1';
+												-- write luminary last command
+			                          when X"60"  => busy_clr<='1';
+																  s_lumcmd_last <= data_wr(7 downto 0);
+																  s_lumcmd_last_1 <= s_lumcmd_last;
+																  s_lumcmd_last_2 <= s_lumcmd_last_1;
+																  s_lumcmd_last_3 <= s_lumcmd_last_2;
+																  s_lumcmd_last_4 <= s_lumcmd_last_3;
+																  lumstp<="000000000000";
+												-- Read 16 command flags that indicates if the FPGA is with default configuration				  
+											  when X"61"  => lumstp<="100000000000"; --s_cmd_last <= X"0056"; -- exit 1
+											  
+											   -- Erase all command flags
+											  when X"62"  => if data_wr(0) = '1' then
+																		s_already_conf_flag(2 downto 1) <= (others => '0');
+																		s_already_conf_flag(9) <= '0';
+																		s_already_conf_flag(11) <= '0';
+																		
+																		s_AFE_confirm_A <= (others => '0');
+																		s_AFE_confirm_B <= (others => '0');
+																		s_FE_confirm_A <= (others => '0');
+																		s_FE_confirm_B <= (others => '0');
+																		s_def_confirm_A(6 downto 0) <= (others=>'0');
+																		s_def_confirm_B(6 downto 0) <= (others=>'0');
+																		s_ellip_confirm_A(6 downto 0) <= (others=>'0');
+																		s_ellip_confirm_B(6 downto 0) <= (others=>'0');
+																		s_bgnd_confirm_A(1 downto 0) <= (others=>'0');
+																		s_bgnd_confirm_B(1 downto 0) <= (others=>'0');
+																		s_sinc_confirm_A <= '0';
+																		s_sinc_confirm_B <= '0';
+																		s_trip_confirm_A <= '0';
+																		s_trip_confirm_B <= '0';
+																		s_boundaries_start_confirmation_A <= '0';
+																		s_boundaries_start_confirmation_B <= '0';
+																		s_boundaries_end_confirmation_A <= '0';
+																		s_boundaries_end_confirmation_B <= '0';
+																		s_tab_confirm_A <= '0';
+																		s_tab_confirm_B <= '0';
+																		s_image_gain_confirmation_A <= '0';
+																		s_image_gain_confirmation_B <= '0';
+																		s_static_bgnd_confirmation_A <= '0';
+																		s_static_bgnd_confirmation_B <= '0';
+
+																  end if;
+																  
+																  lumstp<="100000000000";
+												 -- Returns flags from ellipsis				  
+												when X"63"  => lumstp<="100000000000"; --s_cmd_last <= X"0056"; -- exit 1
+											 
+												-- Set image grab trigger wait				  
+			                          when X"F0"  => s_writing_sram_int <= '1'; 
+																  s_grab_a_or_b <= not(conf(2));
+																  s_debug_or_normal <= not(conf(3));
+																  lumstp<="000000000000";
+											   -- Read 256 words from RAM image data - Lower part
+			                          when X"F1"  => 	s_grabpix <= (others=>'0');
+																	s_grabline <= '0' & data_wr(5 downto 0);
+																	s_grab_sector <= '0' & data_wr(15 downto 14);
+											 
+											  when others => lumstp<="000000000000";
+											end case;
+          ------------------------------------------------------------------------------------------------
+		    when "000000001000" => lumstp<="000000010000";
+			                        case cmd_reg(7 downto 0) is
+			                          when X"41"  => sendafe<='1';
+			                          when X"42"  => busy_clr<='0';
+											                 if busy_flag='0' then lumstp<="000000001000"; end if; -- stay here if busy=0
+			                          when X"45"  => extaddr<= ext3bf & ndumpf; 
+		                                            extevent<='1';
+			                          when X"46"  => busy_clr<='0'; extaddrw<= ext3bf & ndumpf; 
+			                          when X"49"  => busy_clr<='0'; if busy_flag='0' then lumstp<="000000001000"; end if; -- stay here if busy=0
+			                          when X"4B"  => extaddrd<= ext3bf & ndumpf; 	 
+		                                            exteventd<='1';
+			                          when X"4E"  => busy_clr<='0';if busy_flag='0' then lumstp<="000000001000"; end if; -- stay here if busy=0
+			                          when X"4F"  => busy_clr<='0'; -- if busy_flag='0' then lumstp<="000000001000"; end if; -- stay here if busy=0
+			                          when X"50"  => busy_clr<='0';if busy_flag='0' then lumstp<="000000001000"; end if; -- stay here if busy=0
+			                          when X"51"  => busy_clr<='0';if busy_flag='0' then lumstp<="000000001000"; end if; -- stay here if busy=0
+			                          when X"53"  => extaddrf<= ext3bf & ndumpf; 
+															     exteventf<='1';
+			                          when X"54"  => data_rd<=s_EJ_CNT_o; busy_clr<='1';
+			                          when X"59"  => --extaddrag<=ndumpf; 
+																  exteventag<='1';				
+											  when X"5A"  => busy_clr<='0'; s_bckgnd_gain_wr_addr <= ndumpf; 																  
+											  
+												-- Read 256 words from RAM image data - Lower part			
+			                          when X"F1"  => 	s_sram_int_rd_addr<= s_grab_sector & s_grabline & s_grabpix; 
+																								-- sector  		& line  		&  pixel
+																	s_reading_sram_int <= '1';																	
+											  
+											  when others => lumstp<="000000000000";
+											end case;
+          ------------------------------------------------------------------------------------------------
+		    when "000000010000" => lumstp<="000000100000";
+			                        case cmd_reg(7 downto 0) is
+			                          when X"41"  => if afesent='0' then lumstp<="000000010000"; end if; -- stay here till AFE is written
+			                          when X"42"  => if data_wr(15)='0' then
+											  
+																		case data_wr(14 downto 12) is
+																			when "000" => data_rd <= (others => '0');
+																			when "001" => data_rd <= (others => '0');
+																			when "011" => data_rd <= s_overusage_b(15 downto 0);
+																			when others => data_rd <= ejdt0(conv_integer(data_wr(14 downto 12)))(31 downto 16);
+																		end case;
+																		
+						                                else
+																		
+																		case data_wr(14 downto 12) is
+																			when "000" => data_rd <= (others => '0');
+																			when "001" => data_rd <= (others => '0');
+																			when "011" => data_rd <= s_overusage_b(31 downto 16);
+																			when others => data_rd <= ejdt0(conv_integer(data_wr(14 downto 12)))(31 downto 16);
+																		end case;
+
+						                                end if;
+																  
+						                                busy_clr<='1';
+			                          when X"45"  => if extevent_req='0' then data_rd<=extdataread; busy_clr<='1'; else lumstp<="000000010000"; end if; 
+											  when X"46"  => if busy_flag='0' then lumstp<="000000010000"; end if; -- stay here if busy=0
+			                          when X"49"  => busy_clr<='1';
+											                 rascl<=data_wr;
+			                          when X"4B"  => if extevent_reqd='0' then data_rd<=extdatareadot; busy_clr<='1'; else lumstp<="000000010000"; end if; 
+--											                 exteventd<='0';	-- try to get rid of dot misreading
+			                          when X"4E"  => busy_clr<='1';
+																	if extpart(0)='0' then
+																		tabejeta(CONV_INTEGER(ndumpf))<=data_wr(4 downto 0);
+																	else
+																		tabejetb(CONV_INTEGER(ndumpf))<=data_wr(4 downto 0);
+																	end if;  
+																	
+			                          when X"4F"  => busy_clr<='1';
+																	if data_wr(15)='0' then
+																		seteja(CONV_INTEGER(ext3bf))<=data_wr(7 downto 0);
+																		case ext3bf is
+																			when "001" =>
+																								s_def_confirm_A(0) <= '1';
+																			when "010" =>
+																								s_def_confirm_A(1) <= '1';
+																			when "011" =>
+																								s_def_confirm_A(2) <= '1';
+																			when "100" =>
+																								s_def_confirm_A(3) <= '1';
+																			when "101" =>
+																								s_def_confirm_A(4) <= '1';
+																			when "110" =>
+																								s_def_confirm_A(5) <= '1';
+																			when "111" =>
+																								s_def_confirm_A(6) <= '1';
+																			when others =>
+																		end case;
+																		
+																	else
+																		setejb(CONV_INTEGER(ext3bf))<=data_wr(7 downto 0);
+																		case ext3bf is
+																			when "001" =>
+																								s_def_confirm_B(0) <= '1';
+																			when "010" =>
+																								s_def_confirm_B(1) <= '1';
+																			when "011" =>
+																								s_def_confirm_B(2) <= '1';
+																			when "100" =>
+																								s_def_confirm_B(3) <= '1';
+																			when "101" =>
+																								s_def_confirm_B(4) <= '1';
+																			when "110" =>
+																								s_def_confirm_B(5) <= '1';
+																			when "111" =>
+																								s_def_confirm_B(6) <= '1';
+																			when others =>
+																		end case;
+																		
+																	end if;
+														
+																	lumstp<="000000000000"; --s_cmd_last <= X"004F";
+			                          when X"50"  => busy_clr<='1';
+																  lumstp<="000000001000"; -- return to wait busy=1
+											                 case lct is
+																   when 0 => if extpart(0)='0' then adwell1<=data_wr(7 downto 0); else bdwell1<=data_wr(7 downto 0); end if;
+																   when 1 => if extpart(0)='0' then adwell1<=data_wr(7 downto 0); else bdwell1<=data_wr(7 downto 0); end if;
+																   when 2 => if extpart(0)='0' then adwell2<=data_wr(7 downto 0); else bdwell2<=data_wr(7 downto 0); end if;
+																   when 3 => if extpart(0)='0' then adwell3<=data_wr(7 downto 0); else bdwell3<=data_wr(7 downto 0); end if;
+																   when 4 => if extpart(0)='0' then adwell4<=data_wr(7 downto 0); else bdwell4<=data_wr(7 downto 0); end if;
+																   when 5 => if extpart(0)='0' then adwell5<=data_wr(7 downto 0); else bdwell5<=data_wr(7 downto 0); end if;
+																   when 6 => if extpart(0)='0' then adwell6<=data_wr(7 downto 0); else bdwell6<=data_wr(7 downto 0); end if;
+																   when 7 => if extpart(0)='0' then adwell7<=data_wr(7 downto 0); else bdwell7<=data_wr(7 downto 0); end if;
+--																	           s_cmd_last <= X"0050";
+																				  lumstp<="000000000000";
+																				  s_already_conf_flag(9) <= '1';
+																				  
+																   when others => lumstp<="000000000000"; --s_cmd_last <= X"0050";
+																  end case;
+																  lct:=lct+1;
+			                          when X"51"  => extaddre<=ext3bf & ndumpf;
+																  extdata<=data_wr;
+																  if extpart(0)='0' then extellipeva<='1'; else extellipevb<='1'; end if;
+			                          when X"53"  => if extevent_reqf='0' then data_rd<=extdatareadf; busy_clr<='1'; else lumstp<="000000010000"; end if; 
+			                          when X"54"  => busy_clr<='0'; if busy_flag='0' then lumstp<="000000010000"; end if; -- stay here if busy=0
+			                          when X"59"  => if exteventag_req='0' then data_rd<=extdatareadag; busy_clr<='1'; else lumstp<="000000010000"; end if; 
+											  when X"5A"  => if busy_flag='0' then lumstp<="000000010000"; end if; -- stay here if busy=0
+											  
+												-- Read 256 words from RAM image data - Lower part		
+			                          when X"F1"  => 	if s_reading_sram = '0' then 
+																		data_rd <= s_sram_output_data; 
+																		busy_clr<='1'; 
+																	else 
+																		lumstp<="000000010000"; 
+																	end if; --data_rd<=grabbed;											  
+											  
+											  when others => lumstp<="000000000000";
+											end case;
+          ------------------------------------------------------------------------------------------------
+		    when "000000100000" => lumstp<="000001000000";
+			                        case cmd_reg(7 downto 0) is
+			                          when X"41"  => sendafe<='0'; busy_clr<='1'; lumstp<="000000000000"; --s_cmd_last <= X"0041";
+																	if (afen = '1') then
+																		if (afeaddr = "011") then
+																			s_AFE_confirm_B(1) <= '1';
+																		else
+																			if (afeaddr = "010") then
+																				s_AFE_confirm_B(0) <= '1';
+																			end if;
+																		end if;
+																	else
+																		if (afeaddr = "011") then
+																			s_AFE_confirm_A(1) <= '1';
+																		else
+																			if (afeaddr = "010") then
+																				s_AFE_confirm_A(0) <= '1';
+																			end if;
+																		end if;
+																	end if;
+
+			                          when X"42"  => busy_clr<='0';if busy_flag='0' then lumstp<="000000100000"; end if; -- stay here if busy=0
+			                          when X"45"  => busy_clr<='0';if busy_flag='0' then lumstp<="000000100000"; end if; -- stay here if busy=0
+			                          when X"46"  => extevent<='1'; extdata<=data_wr;
+											  
+			                          when X"49"  => busy_clr<='0';if busy_flag='0' then lumstp<="000000100000"; end if; -- stay here if busy=0
+			                          when X"4B"  => busy_clr<='0';if busy_flag='0' then lumstp<="000000100000"; end if; -- stay here if busy=0
+			                          when X"4E"  => busy_clr<='0';
+											                 if ndumpf=X"FF" then lumstp<="000000000000"; --s_cmd_last <= X"004E";
+																  
+																		if extpart(0)='0' then
+																			s_tab_confirm_A <= '1';
+																		else
+																			s_tab_confirm_B <= '1';
+																		end if;  
+																  
+																  else ndumpf<=ndumpf+1; lumstp<="000000001000";
+																  end if;	
+											  when X"51"  => if (extellia='0') and (extellib='0') then lumstp<="000001000000"; busy_clr<='1'; else lumstp<="000000100000"; end if;
+			                          when X"53"  => busy_clr<='0'; if busy_flag='0' then lumstp<="000000100000"; end if; -- stay here if busy=0
+			                          when X"54"  => if ndumpdsm=X"1F" then lumstp<="000000000000"; --s_cmd_last <= X"0054";
+											                                   else ndumpdsm<=ndumpdsm+1; lumstp<="000000001000";
+																  end if;												  
+			                          when X"59"  => busy_clr<='0';if busy_flag='0' then lumstp<="000000100000"; end if; -- stay here if busy=0
+											  when X"5A"  => s_extevent_bckgnd_gain <= '1'; s_bckgnd_gain_data_in <= data_wr;
+												-- Read 256 words from RAM image data - Lower part											  
+			                          when X"F1"  => 	busy_clr<='0';
+																	if busy_flag='0' then lumstp<="000000100000"; end if;
+																	
+											  when others => lumstp<="000000000000";
+											end case;
+          ------------------------------------------------------------------------------------------------
+		    when "000001000000" => lumstp<="000010000000";
+			                        case cmd_reg(7 downto 0) is
+			                          when X"42"  => lumstp<="100000000000"; -- exit 1 s_cmd_last <= X"0042";
+--																	if (data_wr(14 downto 12) = "011") then
+--																	  s_overusage_clr_a <= not(data_wr(15));
+--																	  s_overusage_clr_b <= data_wr(15);
+--																	else
+--																	  s_overusage_clr_a <= '0';
+--																	  s_overusage_clr_b <= '0';
+--																	end if;
+
+			                          when X"45"  => if ndumpf=X"FF" then lumstp<="000000000000"; busy_clr<='1'; --s_cmd_last <= X"0045";
+											                                else ndumpf<=ndumpf+1; lumstp<="000000001000";
+																  end if;				  
+			                          when X"46"  => if extevent_req='0' then busy_clr<='1'; else lumstp<="000001000000"; end if; 
+			                          when X"49"  => busy_clr<='1';
+											                 rasch<=data_wr;
+			                          when X"4B"  => if ndumpf=X"FF" then lumstp<="000000000000"; busy_clr<='1'; --s_cmd_last <= X"004B";
+											                                else ndumpf<=ndumpf+1; lumstp<="000000001000";
+																  end if;				  
+			                          when X"51"  => if ndumpf=X"FF" then lumstp<="000000000000"; busy_clr<='1'; --s_cmd_last <= X"0051";
+											  
+																	if extpart(0) = '1' then
+																	
+																		case ext3bf is
+																			when "001" =>
+																								s_ellip_confirm_A(0) <= '1';
+																			when "010" =>
+																								s_ellip_confirm_A(1) <= '1';
+																			when "011" =>
+																								s_ellip_confirm_A(2) <= '1';
+																			when "100" =>
+																								s_ellip_confirm_A(3) <= '1';
+																			when "101" =>
+																								s_ellip_confirm_A(4) <= '1';
+																			when "110" =>
+																								s_ellip_confirm_A(5) <= '1';
+																			when "111" =>
+																								s_ellip_confirm_A(6) <= '1';
+																			when others =>
+																		end case;
+																	
+																	else
+																	
+																		case ext3bf is
+																			when "001" =>
+																								s_ellip_confirm_B(0) <= '1';
+																			when "010" =>
+																								s_ellip_confirm_B(1) <= '1';
+																			when "011" =>
+																								s_ellip_confirm_B(2) <= '1';
+																			when "100" =>
+																								s_ellip_confirm_B(3) <= '1';
+																			when "101" =>
+																								s_ellip_confirm_B(4) <= '1';
+																			when "110" =>
+																								s_ellip_confirm_B(5) <= '1';
+																			when "111" =>
+																								s_ellip_confirm_B(6) <= '1';
+																			when others =>
+																		end case;
+																	
+																	end if;
+											  							
+											                 else ndumpf<=ndumpf+1; lumstp<="000000001000";
+																  end if;				  
+			                          when X"53"  => if ndumpf=X"FF" then lumstp<="000000000000"; busy_clr<='1'; --s_cmd_last <= X"0053";
+											                                else ndumpf<=ndumpf+1; lumstp<="000000001000";
+																  end if;				  
+			                          when X"59"  => if ndumpf=X"FF" then lumstp<="000000000000"; busy_clr<='1'; --s_cmd_last <= X"0059";
+											                                else ndumpf<=ndumpf+1; lumstp<="000000001000";
+																  end if;				  
+											  when X"5A"  => if s_extevent_bckgnd_gain_req='0' then busy_clr<='1'; else lumstp<="000001000000"; end if; 		
+
+--												-- Read 256 words from RAM image data - Lower part		
+			                          when X"F1"  => if s_grabpix=X"FF" then 
+																		lumstp<="000000000000"; 
+																		busy_clr<='1'; --s_cmd_last <= X"004B";
+											                  else 
+																		s_grabpix<=s_grabpix+1; 
+																		lumstp<="000000001000";	
+																	end if;
+											  
+											  when others => lumstp<="000000000000";
+											end case;
+          ------------------------------------------------------------------------------------------------
+		    when "000010000000" => lumstp<="000100000000";
+			                        case cmd_reg(7 downto 0) is
+			                          when X"46"  => if ndumpf=X"FF" then lumstp<="000000000000"; --s_cmd_last <= X"0046";
+																	case extpart is --(0) Chute (1) Camera
+																		when "00" =>
+																						if ext3bf = "011" then
+																							s_FE_confirm_A(0) <= '1';
+																						else
+																							if ext3bf = "111" then
+																								s_FE_confirm_A(1) <= '1';
+																							end if;
+																						end if;
+																						
+																		when "01" =>
+																						if ext3bf = "011" then
+																							s_FE_confirm_A(2) <= '1';
+																						else
+																							if ext3bf = "111" then
+																								s_FE_confirm_A(3) <= '1';
+																							end if;
+																						end if;
+																			
+																		when "10" =>
+																						if ext3bf = "011" then
+																							s_FE_confirm_B(0) <= '1';
+																						else
+																							if ext3bf = "111" then
+																								s_FE_confirm_B(1) <= '1';
+																							end if;
+																						end if;
+																			
+																		when "11" =>
+																						if ext3bf = "011" then
+																							s_FE_confirm_B(2) <= '1';
+																						else
+																							if ext3bf = "111" then
+																								s_FE_confirm_B(3) <= '1';
+																							end if;
+																						end if;
+																			
+																		when others =>
+																	end case;
+																else ndumpf<=ndumpf+1; lumstp<="000000001000"; 
+																end if;				  
+			                          when X"49"  => busy_clr<='0';
+											                 case rasc1com is
+		                                              when "001" => wejt<=rasch & rascl; -- Altera ON_TIME_TOP (high word) e ON_TIME_BOT (low word)
+							                                             wcom<="011";
+											                                 if rsc1chute='0' then rqpaca<='1'; else rqpacb<='1';  end if;
+											  
+		                                              when "010" => wejt<=rasch & rascl; -- Altera DECVAL (high word) e INCVAL (low word)
+							                                             wcom<="100";
+											                                 if rsc1chute='0' then rqpaca<='1'; else rqpacb<='1';  end if;
+											  
+		                                              when "011" => wejt<="010" & "00000000000000000000000000001"; -- 34V on 
+							                                             wcom<="110";
+											                                 if rsc1chute='0' then rqpaca<='1'; else rqpacb<='1';  end if;
+	
+		                                              when "100" => wejt<="010" & "00000000000000000000000000000"; -- 34V off
+							                                             wcom<="110";
+											                                 if rsc1chute='0' then rqpaca<='1'; else rqpacb<='1';  end if;
+	
+		                                              when "101" => wejt<="001" & "00000000000000000000000000000"; -- execute
+							                                             wcom<="110";
+											                                 if rsc1chute='0' then rqpaca<='1'; else rqpacb<='1';  end if;
+	
+		                                              when "110" => wejt<=rasch & rascl; -- Altera o limite de corrente de auto-desligamento dos 34V (low word)
+							                                             wcom<="101";
+											                                 if rsc1chute='0' then rqpaca<='1'; else rqpacb<='1';  end if;
+											  
+		                                              when others => wejt<=rasch & rascl; wcom<="000";
+		                                            end case;
+																  
+			                          when X"5A"  => if ndumpf=X"FF" then lumstp<="000000000000"; --s_cmd_last <= X"0046";
+																		case s_bckgnd_mem_sel is
+																			when "00" =>
+																								s_bgnd_confirm_A(0) <= '1';
+																			when "01" =>
+																								s_bgnd_confirm_A(1) <= '1';
+																			when "10" =>
+																								s_bgnd_confirm_B(0) <= '1';
+																			when "11" =>
+																								s_bgnd_confirm_B(1) <= '1';
+																			when others =>
+																		end case;
+											  
+																	else ndumpf<=ndumpf+1; lumstp<="000000001000"; 
+																  end if;		
+																  
+											  when others => lumstp<="000000000000";
+											end case;
+          ------------------------------------------------------------------------------------------------
+		    when "000100000000" => lumstp<="001000000000";
+			                        case cmd_reg(7 downto 0) is
+			                          when X"49"  => if (ispaca='0') and (ispacb='0') then busy_clr<='1'; lumstp<="000000000000"; --s_cmd_last <= X"0049";
+											                                                  else lumstp<="000100000000"; 
+																  end if;
+											  when others => lumstp<="000000000000";
+											end case;
+											
+          ------------------------------------------------------------------------------------------------
+		    when "100000000000" => if busy_flag='1' then lumstp<="000000000000"; busy_clr<='1'; end if;
+			 
+		    when others => lumstp<="000000000000";
+		  end case;
+ 
+-------------- Luminary interface ***********************************************************************************
+-------------------------------------------------------------------------------------------------------------------
+		 
+------------------------------------------------------------------------------------------		 
+-- little sequencer for automatic AFE innitialization		 
+       if (lts<10000000) then
+		    lts:=lts+1;
+			 if (lts>9000000) then
+				 case ltc is
+				   when 0 => afeaddr<="000"; afen<='0'; afedata<="001101000"; ltc:=ltc+1; -- $0068
+					when 1 => sendafe<='1'; ltc:=ltc+1;
+					when 2 => if afesent='1' then ltc:=ltc+1; sendafe<='0'; end if;
+
+				   when 3 => afeaddr<="010"; afen<='0'; afedata<="000011110"; ltc:=ltc+1; -- $0222
+					when 4 => sendafe<='1'; ltc:=ltc+1;
+					when 5 => if afesent='1' then ltc:=ltc+1; sendafe<='0'; end if;
+					
+				   when 6 => afeaddr<="011"; afen<='0'; afedata<="000011110"; ltc:=ltc+1; -- $0325 rear A
+					when 7 => sendafe<='1'; ltc:=ltc+1;
+					when 8 => if afesent='1' then ltc:=ltc+1; sendafe<='0'; end if;
+
+				   when 9 => afeaddr<="000"; afen<='1'; afedata<="001101000"; ltc:=ltc+1; -- $0868
+					when 10 => sendafe<='1'; ltc:=ltc+1;
+					when 11 => if afesent='1' then ltc:=ltc+1; sendafe<='0'; end if;
+
+				   when 12 => afeaddr<="010"; afen<='1'; afedata<="000011110"; ltc:=ltc+1; -- $0A22
+					when 13 => sendafe<='1'; ltc:=ltc+1;
+					when 14 => if afesent='1' then ltc:=ltc+1; sendafe<='0'; end if;
+					
+				   when 15 => afeaddr<="011"; afen<='1'; afedata<="000011110"; ltc:=ltc+1; -- $0B25 rear B
+					when 16 => sendafe<='1'; ltc:=ltc+1;
+					when 17 => if afesent='1' then ltc:=ltc+1; sendafe<='0'; end if;
+					
+					-------------------------------------------------
+					------------------- RG Offset -------------------
+					-------------------------------------------------
+					
+				   when 18 => afeaddr<="101"; afen<='1'; afedata<="000000000"; ltc:=ltc+1; -- Red offset to 0
+					when 19 => sendafe<='1'; ltc:=ltc+1;
+					when 20 => if afesent='1' then ltc:=ltc+1; sendafe<='0'; end if;
+					
+				   when 21 => afeaddr<="110"; afen<='1'; afedata<="000000000"; ltc:=ltc+1; -- Green offset to 0
+					when 22 => sendafe<='1'; ltc:=ltc+1;
+					when 23 => if afesent='1' then ltc:=ltc+1; sendafe<='0'; end if;
+										
+					when 24=> lts:=10000001;
+					
+					when others => ltc:=0;
+				 end case;
+			 end if;
+		 end if;
+	  end if;
+	end process;

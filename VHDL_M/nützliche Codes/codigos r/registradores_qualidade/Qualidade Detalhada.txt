@@ -1,0 +1,60 @@
+= Descrição da Implementação dos registradores de qualidade no gateware =
+
+[[PageOutline(1-3, Índice, inline)]]
+
+== Overflow == 
+
+=== phase_sum (Cálculo de neutro) ===
+
+Serão comparados os bits mais significativos dos vetores de entrada com O bit mais[[BR]]
+significativo do vetor de saída. Para que seja verificada a condição de [[BR]]
+''overflow'', o bit mais significativo dos vetores de entrada tem que ser iguais, ao passo[[BR]]
+que o bit mais significativo do vetor de saídas terá o sinal contrário
+
+=== Gain Register (Ganho) ===
+O registrador __acc_reg__ não pde receber um valor fora do intervalo -2^32^ ... 2^(32-1)^  
+Para isso é necessário verificar se __gain_register__ é maior que 1. [[BR]] Já para não haver overflow 
+em __data_register__, é necessário verificar se  __offset_register__ é menor que zero. [[BR]]
+Além disso, o valor da entrada do módulo tem que ser menor que 29459, o que significa [[BR]] 
+que esta não está saturada. 
+
+== outOfRange == 
+
+=== Sample Adjust === 
+ * Local: Depois do Sample Adjust
+ * Definição dos valores limites:
+ {{{
+max 230V e 20A
+689V = 2^15 (32768)
+230V = x (aprox 10938)
+1A = 216  (20A*216 = 4320)
+ }}}
+
+
+== badReference == 
+Quando ocorre Problema de Calibração.
+A ser definido pelo firmware
+
+=== Gain_Register (Ganho) ===
+	
+	Ganho (__gain_register__) na faixa (1,0 – 1,09) e (1,21 – 1,3) – questionable.
+
+== failure ==
+
+=== Gain_Register (Ganho) ===
+	
+	'1' Se o ganho (__gain_register__) estiver acima de 1,3 e abaixo de 1,1, indicação invalida. [[BR]]
+Representação - informação vem em ponto fixo.
+	 __offset_register__ >= 10;
+
+
+== innacurate ==
+
+A ser definido pelo firmware
+quando o sistema nao está balanceado ou com diferenças estranhas entre ângulos [[BR]]
+Atualmente não é verificada no gateware a diferença das fases que entram
+	
+
+
+
+	

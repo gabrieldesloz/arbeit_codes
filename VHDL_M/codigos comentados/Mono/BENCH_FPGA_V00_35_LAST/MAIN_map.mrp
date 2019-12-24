@@ -1,0 +1,2063 @@
+Release 14.1 Map P.15xf (nt64)
+Xilinx Mapping Report File for Design 'MAIN'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol
+high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off
+-ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+Target Device  : xc6slx25
+Target Package : ftg256
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Fri Aug 08 15:49:49 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  259
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,763 out of  30,064   19%
+    Number used as Flip Flops:               5,684
+    Number used as Latches:                     78
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                1
+  Number of Slice LUTs:                      6,000 out of  15,032   39%
+    Number used as logic:                    4,961 out of  15,032   33%
+      Number using O6 output only:           3,171
+      Number using O5 output only:             315
+      Number using O5 and O6:                1,475
+      Number used as ROM:                        0
+    Number used as Memory:                     358 out of   3,664    9%
+      Number used as Dual Port RAM:            270
+        Number using O6 output only:           206
+        Number using O5 output only:             0
+        Number using O5 and O6:                 64
+      Number used as Single Port RAM:           84
+        Number using O6 output only:            84
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:             4
+        Number using O6 output only:             3
+        Number using O5 output only:             0
+        Number using O5 and O6:                  1
+    Number used exclusively as route-thrus:    681
+      Number with same-slice register load:    629
+      Number with same-slice carry load:        28
+      Number with other load:                   24
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 3,069 out of   3,758   81%
+  Nummber of MUXCYs used:                      720 out of   7,516    9%
+  Number of LUT Flip Flop pairs used:        6,930
+    Number with an unused Flip Flop:         2,320 out of   6,930   33%
+    Number with an unused LUT:                 930 out of   6,930   13%
+    Number of fully used LUT-FF pairs:       3,680 out of   6,930   53%
+    Number of unique control sets:             576
+    Number of slice register sites lost
+      to control set restrictions:           2,975 out of  30,064    9%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       162 out of     186   87%
+    Number of LOCed IOBs:                      162 out of     162  100%
+    IOB Flip Flops:                            119
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        42 out of      52   80%
+  Number of RAMB8BWERs:                         16 out of     104   15%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        7
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
+    Number used as DCMs:                         0
+    Number used as DCM_CLKGENs:                  1
+  Number of ILOGIC2/ISERDES2s:                  21 out of     272    7%
+    Number used as ILOGIC2s:                    21
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     272    0%
+  Number of OLOGIC2/OSERDES2s:                  80 out of     272   29%
+    Number used as OLOGIC2s:                    80
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     160    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            4 out of      38   10%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.52
+
+Peak Memory Usage:  591 MB
+Total REAL time to MAP completion:  5 mins 56 secs 
+Total CPU time to MAP completion:   5 mins 52 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:23 - Short on signal TEST<8> detected.
+WARNING:MapLib:23 - Short on signal TEST<7> detected.
+WARNING:MapLib:23 - Short on signal TEST<5> detected.
+WARNING:MapLib:23 - Short on signal TEST<3> detected.
+WARNING:MapLib:23 - Short on signal TEST<2> detected.
+WARNING:MapLib:23 - Short on signal TEST<1> detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal TEST<8> detected.
+WARNING:MapLib:23 - Short on signal TEST<7> detected.
+WARNING:MapLib:23 - Short on signal TEST<5> detected.
+WARNING:MapLib:23 - Short on signal TEST<3> detected.
+WARNING:MapLib:23 - Short on signal TEST<2> detected.
+WARNING:MapLib:23 - Short on signal TEST<1> detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal TEST<8> detected.
+WARNING:MapLib:23 - Short on signal TEST<7> detected.
+WARNING:MapLib:23 - Short on signal TEST<5> detected.
+WARNING:MapLib:23 - Short on signal TEST<3> detected.
+WARNING:MapLib:23 - Short on signal TEST<2> detected.
+WARNING:MapLib:23 - Short on signal TEST<1> detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal TEST<8> detected.
+WARNING:MapLib:23 - Short on signal TEST<7> detected.
+WARNING:MapLib:23 - Short on signal TEST<5> detected.
+WARNING:MapLib:23 - Short on signal TEST<3> detected.
+WARNING:MapLib:23 - Short on signal TEST<2> detected.
+WARNING:MapLib:23 - Short on signal TEST<1> detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal TEST<8> detected.
+WARNING:MapLib:23 - Short on signal TEST<8> detected.
+WARNING:MapLib:23 - Short on signal TEST<7> detected.
+WARNING:MapLib:23 - Short on signal TEST<7> detected.
+WARNING:MapLib:23 - Short on signal TEST<5> detected.
+WARNING:MapLib:23 - Short on signal TEST<5> detected.
+WARNING:MapLib:23 - Short on signal TEST<3> detected.
+WARNING:MapLib:23 - Short on signal TEST<3> detected.
+WARNING:MapLib:23 - Short on signal TEST<2> detected.
+WARNING:MapLib:23 - Short on signal TEST<2> detected.
+WARNING:MapLib:23 - Short on signal TEST<1> detected.
+WARNING:MapLib:23 - Short on signal TEST<1> detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:Pack:2549 - The register "s_writing_sram_7" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_7
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_10.
+WARNING:Pack:2549 - The register "s_writing_sram_6" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_6
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_11.
+WARNING:Pack:2549 - The register "s_writing_sram_5" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_5
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_12.
+WARNING:Pack:2549 - The register "s_writing_sram_4" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_4
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_13.
+WARNING:Pack:2549 - The register "s_writing_sram_3" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_3
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_14.
+WARNING:Pack:2549 - The register "s_writing_sram_2" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_2
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_15.
+WARNING:Pack:2549 - The register "s_writing_sram_17" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_17
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_0.
+WARNING:Pack:2549 - The register "s_writing_sram_16" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_16
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_1.
+WARNING:Pack:2549 - The register "s_writing_sram_15" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_15
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_2.
+WARNING:Pack:2549 - The register "s_writing_sram_14" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_14
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_3.
+WARNING:Pack:2549 - The register "s_writing_sram_13" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_13
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_4.
+WARNING:Pack:2549 - The register "s_writing_sram_12" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_12
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_5.
+WARNING:Pack:2549 - The register "s_writing_sram_11" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_11
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_6.
+WARNING:Pack:2549 - The register "s_writing_sram_10" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_10
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_7.
+WARNING:Pack:2549 - The register "s_writing_sram_9" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_9
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_8.
+WARNING:Pack:2549 - The register "s_writing_sram_8" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_8
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_9.
+WARNING:Timing:3159 - The DCM, DCM_CLKGEN_inst, has the attribute DFS_OSCILLATOR_MODE not set to PHASE_FREQ_LOCK. No phase relationship
+   exists between the input clock and CLKFX or CLKFX180 outputs of this DCM. Data paths between these clock domains must be constrained
+   using FROM/TO constraints.
+WARNING:Place:1206 - This design contains a global buffer instance, <BUFG_1u>,
+   driving the net, <ADC2_SCLK_OBUF>, that is driving the following (first 30)
+   non-clock load pins off chip.
+   < PIN: ADC1_SCLK.O; >
+   < PIN: ADC2_SCLK.O; >
+   This design practice, in Spartan-6, can lead to an unroutable situation due
+   to limitations in the global routing. If the design does route there may be
+   excessive delay or skew on this net. It is recommended to use a Clock
+   Forwarding technique to create a reliable and repeatable low skew solution:
+   instantiate an ODDR2 component; tie the .D0 pin to Logic1; tie the .D1 pin to
+   Logic0; tie the clock net to be forwarded to .C0; tie the inverted clock to
+   .C1. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
+   applied on COMP.PIN <BUFG_1u.O> allowing your design to continue. This
+   constraint disables all clock placer rules related to the specified COMP.PIN.
+WARNING:Place:1137 - This design is not guaranteed to be routable! This design
+   contains a global buffer instance, <BUFG_1u>, driving the net,
+   <ADC2_SCLK_OBUF>, that is driving the following (first 30) non-clock load
+   pins.
+   < PIN: lut9559_421.A4; >
+   < PIN: ADC1_SCLK.O; >
+   < PIN: ADC2_SCLK.O; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. Please pay extra attention to the timing and routing of this path to
+   ensure the design goals are met. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <BUFG_1u.O> allowing
+   your design to continue. This constraint disables all clock placer rules
+   related to the specified COMP.PIN.
+WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
+   that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
+   IOB component <RSINC2> is placed at site <E11>. The corresponding BUFG
+   component <RSINC2_IBUF_BUFG> is placed at site <BUFGMUX_X2Y2>. There is only
+   a select set of IOBs that can use the fast path to the Clocker buffer, and
+   they are not being used. You may want to analyze why this problem exists and
+   correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE
+   constraint was applied on COMP.PIN <RSINC2.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9856_642 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut27150_6820 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9864_648 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9804_603 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9892_669 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9616_462 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9612_459 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9660_495 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9608_456 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9604_453 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net chopvalve is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9600_450 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9596_447 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9824_618 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut27001_6755 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut27006_6757 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9430_371 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9744_558 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9740_555 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9736_552 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9732_549 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9872_654 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9720_540 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9860_645 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9728_546 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9868_651 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9724_543 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9716_537 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9684_513 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9712_534 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9852_639 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9708_531 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9592_444 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9848_636 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9844_633 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9840_630 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9836_627 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9676_507 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9760_570 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9628_471 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9704_528 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut27011_6759 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut27159_6823 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9700_525 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9696_522 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9664_498 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut26992_6753 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9588_441 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9692_519 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9656_492 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9620_465 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9688_516 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9652_489 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9624_468 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9680_510 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9648_486 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9644_483 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9672_504 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9640_480 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9832_624 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9668_501 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9636_477 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9828_621 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9792_594 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9632_474 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9820_615 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9788_591 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9816_612 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9784_588 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9752_564 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9812_609 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9780_585 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9748_561 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9808_606 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9776_582 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9772_579 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9800_600 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9768_576 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9796_597 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9756_567 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9764_573 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9888_666 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut32533_8213 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut27020_6761 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut27204_6834 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9584_438 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net s_reading_sram_int is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9876_657 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9880_660 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut9884_663 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut16050_2819 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut16193_2828 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram2_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram1_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram3_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram5_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram4_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram1_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram2_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram3_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram5_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram4_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram5_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram2_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram4_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram1_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram3_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EN_BACK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_SI1_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_SI2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_SI3_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_SI4_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_CLK1_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_CLK2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_CLK3_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_CLK4_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EJA_CK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EJB_CK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EJA_TX_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EJB_TX_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC1_CLK2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC2_CLK2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC1_SCLK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC2_SCLK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TSINC1_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TSINC2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FLEDA_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FLEDB_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FLEDD_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC1_SLOAD_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<10>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<11>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FLEDc_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<12>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<13>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<14>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<15>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<16>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<17>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC1_CLK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC2_CLK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC2_SLOAD_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   LED1_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   LED2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<0>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<1>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<2>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<3>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<4>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<5>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<6>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<7>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<8>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<9>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   RLEDA_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   RLEDB_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   RLEDC_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   RLEDD_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp MCS_PULLUP
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp MOE_PULLUP
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FPGA_BUSYCOM_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp MWR_PULLUP
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<0>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<4>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<6>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<10>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<11>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<12>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<9>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<13>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<14>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<15>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc6slx25' is a WebPack part.
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc_reflect_final_15_BRB2> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc_reflect_final_14_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_13_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_12_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_11_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_10_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_9_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_8_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_7_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_6_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_5_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_4_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_3_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_2_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_1_BRB2>
+   <i_MEAN_16K/s_acc_reflect_final_0_BRB2> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc_transluc_wmean_29_BRB1> in Unit
+   <MAIN> is equivalent to the following 29 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc_transluc_wmean_28_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_27_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_26_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_25_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_24_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_23_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_22_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_21_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_20_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_19_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_18_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_17_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_16_BRB1>
+   <i_MEAN_16K/s_acc_transluc_wmean_15_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_14_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_13_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_12_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_11_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_10_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_9_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_8_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_7_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_6_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_5_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_4_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_3_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_2_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_1_BRB0>
+   <i_MEAN_16K/s_acc_transluc_wmean_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2b_transluc_wmean_29_BRB1> in Unit
+   <MAIN> is equivalent to the following 29 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2b_transluc_wmean_28_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_27_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_26_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_25_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_24_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_23_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_22_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_21_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_20_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_19_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_18_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_17_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_16_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_15_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_14_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_13_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_12_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_11_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_10_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_9_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_8_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_7_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_6_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_5_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_4_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_3_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_2_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_1_BRB0>
+   <i_MEAN_16K/s_acc2b_transluc_wmean_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_accb_transluc_final_15_BRB4> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_accb_transluc_final_14_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_13_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_12_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_11_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_10_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_9_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_8_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_7_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_6_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_5_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_4_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_3_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_2_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_1_BRB4>
+   <i_MEAN_16K/s_accb_transluc_final_0_BRB4> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_accb_transluc_final_15_BRB2> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_accb_transluc_final_14_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_13_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_12_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_11_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_10_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_9_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_8_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_7_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_6_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_5_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_4_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_3_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_2_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_1_BRB2>
+   <i_MEAN_16K/s_accb_transluc_final_0_BRB2> 
+INFO:Xst:2261 - The FF/Latch <rqpaca_BRB2> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <rqpacb_BRB2> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_accb_reflect_final_15_BRB1> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_accb_reflect_final_14_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_13_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_12_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_11_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_10_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_9_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_8_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_7_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_6_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_5_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_4_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_3_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_2_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_1_BRB1>
+   <i_MEAN_16K/s_accb_reflect_final_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch <extellipeva_BRB1> in Unit <MAIN> is equivalent to
+   the following FF/Latch, which will be removed : <extellipevb_BRB2> 
+INFO:Xst:2261 - The FF/Latch <rqpaca_BRB0> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <rqpacb_BRB0> 
+INFO:Xst:2261 - The FF/Latch <extclr_BRB2> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <s_extclr_bckgnd_gain_BRB2> 
+INFO:Xst:2261 - The FF/Latch <extclr_BRB3> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <s_extclr_bckgnd_gain_BRB3> 
+INFO:Xst:2261 - The FF/Latch <extclr_BRB4> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <s_extclr_bckgnd_gain_BRB4> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2b_transluc_final_15_BRB4> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2b_transluc_final_14_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_13_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_12_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_11_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_10_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_9_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_8_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_7_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_6_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_5_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_4_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_3_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_2_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_1_BRB4>
+   <i_MEAN_16K/s_acc2b_transluc_final_0_BRB4> 
+INFO:Xst:2261 - The FF/Latch <extclrd_BRB0> in Unit <MAIN> is equivalent to the
+   following 2 FFs/Latches, which will be removed : <extclrf_BRB0>
+   <extclrag_BRB0> 
+INFO:Xst:2261 - The FF/Latch <clkbd> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <sortst_24> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_accb_transluc_wmean_29_BRB1> in Unit
+   <MAIN> is equivalent to the following 29 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_accb_transluc_wmean_28_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_27_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_26_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_25_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_24_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_23_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_22_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_21_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_20_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_19_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_18_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_17_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_16_BRB1>
+   <i_MEAN_16K/s_accb_transluc_wmean_15_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_14_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_13_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_12_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_11_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_10_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_9_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_8_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_7_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_6_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_5_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_4_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_3_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_2_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_1_BRB0>
+   <i_MEAN_16K/s_accb_transluc_wmean_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc_reflect_wmean_29_BRB1> in Unit
+   <MAIN> is equivalent to the following 29 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc_reflect_wmean_28_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_27_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_26_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_25_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_24_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_23_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_22_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_21_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_20_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_19_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_18_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_17_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_16_BRB1>
+   <i_MEAN_16K/s_acc_reflect_wmean_15_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_14_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_13_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_12_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_11_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_10_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_9_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_8_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_7_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_6_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_5_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_4_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_3_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_2_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_1_BRB0>
+   <i_MEAN_16K/s_acc_reflect_wmean_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2_transluc_final_15_BRB2> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2_transluc_final_14_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_13_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_12_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_11_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_10_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_9_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_8_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_7_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_6_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_5_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_4_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_3_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_2_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_1_BRB2>
+   <i_MEAN_16K/s_acc2_transluc_final_0_BRB2> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2_transluc_wmean_29_BRB1> in Unit
+   <MAIN> is equivalent to the following 29 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2_transluc_wmean_28_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_27_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_26_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_25_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_24_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_23_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_22_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_21_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_20_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_19_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_18_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_17_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_16_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_wmean_15_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_14_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_13_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_12_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_11_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_10_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_9_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_8_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_7_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_6_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_5_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_4_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_3_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_2_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_1_BRB0>
+   <i_MEAN_16K/s_acc2_transluc_wmean_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2b_reflect_wmean_29_BRB1> in Unit
+   <MAIN> is equivalent to the following 29 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2b_reflect_wmean_28_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_27_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_26_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_25_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_24_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_23_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_22_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_21_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_20_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_19_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_18_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_17_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_16_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_15_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_14_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_13_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_12_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_11_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_10_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_9_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_8_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_7_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_6_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_5_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_4_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_3_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_2_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_1_BRB0>
+   <i_MEAN_16K/s_acc2b_reflect_wmean_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch <s_fifoline_last_0> in Unit <MAIN> is equivalent to
+   the following FF/Latch, which will be removed : <fifolinew_0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc_transluc_final_15_BRB4> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc_transluc_final_14_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_13_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_12_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_11_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_10_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_9_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_8_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_7_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_6_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_5_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_4_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_3_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_2_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_1_BRB4>
+   <i_MEAN_16K/s_acc_transluc_final_0_BRB4> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2_reflect_final_15_BRB1> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2_reflect_final_14_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_13_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_12_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_11_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_10_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_9_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_8_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_7_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_6_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_5_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_4_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_3_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_2_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_1_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_final_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch <wdefena> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <wdefenb> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2_reflect_wmean_29_BRB1> in Unit
+   <MAIN> is equivalent to the following 29 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2_reflect_wmean_28_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_27_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_26_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_25_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_24_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_23_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_22_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_21_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_20_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_19_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_18_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_17_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_16_BRB1>
+   <i_MEAN_16K/s_acc2_reflect_wmean_15_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_14_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_13_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_12_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_11_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_10_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_9_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_8_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_7_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_6_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_5_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_4_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_3_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_2_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_1_BRB0>
+   <i_MEAN_16K/s_acc2_reflect_wmean_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_accb_reflect_final_15_BRB2> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_accb_reflect_final_14_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_13_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_12_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_11_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_10_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_9_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_8_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_7_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_6_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_5_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_4_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_3_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_2_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_1_BRB2>
+   <i_MEAN_16K/s_accb_reflect_final_0_BRB2> 
+INFO:Xst:2261 - The FF/Latch <rqpaca_BRB1> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <rqpacb_BRB1> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2_transluc_final_15_BRB4> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2_transluc_final_14_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_13_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_12_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_11_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_10_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_9_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_8_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_7_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_6_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_5_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_4_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_3_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_2_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_1_BRB4>
+   <i_MEAN_16K/s_acc2_transluc_final_0_BRB4> 
+INFO:Xst:2261 - The FF/Latch <clrellib> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <ellclkb> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2b_reflect_final_15_BRB1> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2b_reflect_final_14_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_13_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_12_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_11_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_10_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_9_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_8_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_7_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_6_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_5_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_4_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_3_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_2_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_1_BRB1>
+   <i_MEAN_16K/s_acc2b_reflect_final_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_accb_reflect_final_15_BRB4> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_accb_reflect_final_14_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_13_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_12_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_11_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_10_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_9_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_8_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_7_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_6_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_5_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_4_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_3_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_2_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_1_BRB4>
+   <i_MEAN_16K/s_accb_reflect_final_0_BRB4> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2_reflect_final_15_BRB4> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2_reflect_final_14_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_13_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_12_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_11_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_10_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_9_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_8_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_7_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_6_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_5_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_4_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_3_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_2_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_1_BRB4>
+   <i_MEAN_16K/s_acc2_reflect_final_0_BRB4> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc_transluc_final_15_BRB1> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc_transluc_final_14_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_13_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_12_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_11_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_10_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_9_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_8_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_7_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_6_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_5_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_4_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_3_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_2_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_1_BRB1>
+   <i_MEAN_16K/s_acc_transluc_final_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_8> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_8>
+   <s_ramdata_5_8> <s_ramdata_6_8> <s_ramdata_7_8> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_accb_reflect_wmean_29_BRB1> in Unit
+   <MAIN> is equivalent to the following 29 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_accb_reflect_wmean_28_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_27_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_26_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_25_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_24_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_23_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_22_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_21_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_20_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_19_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_18_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_17_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_16_BRB1>
+   <i_MEAN_16K/s_accb_reflect_wmean_15_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_14_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_13_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_12_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_11_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_10_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_9_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_8_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_7_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_6_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_5_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_4_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_3_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_2_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_1_BRB0>
+   <i_MEAN_16K/s_accb_reflect_wmean_0_BRB0> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_9> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_9>
+   <s_ramdata_5_9> <s_ramdata_6_9> <s_ramdata_7_9> 
+INFO:Xst:2261 - The FF/Latch <clrellia> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <ellclka> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_10> in Unit <MAIN> is equivalent to
+   the following 4 FFs/Latches, which will be removed : <s_ramdata_3_10>
+   <s_ramdata_5_10> <s_ramdata_6_10> <s_ramdata_7_10> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_11> in Unit <MAIN> is equivalent to
+   the following 4 FFs/Latches, which will be removed : <s_ramdata_3_11>
+   <s_ramdata_5_11> <s_ramdata_6_11> <s_ramdata_7_11> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_12> in Unit <MAIN> is equivalent to
+   the following 4 FFs/Latches, which will be removed : <s_ramdata_3_12>
+   <s_ramdata_5_12> <s_ramdata_6_12> <s_ramdata_7_12> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_13> in Unit <MAIN> is equivalent to
+   the following 4 FFs/Latches, which will be removed : <s_ramdata_3_13>
+   <s_ramdata_5_13> <s_ramdata_6_13> <s_ramdata_7_13> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_14> in Unit <MAIN> is equivalent to
+   the following 4 FFs/Latches, which will be removed : <s_ramdata_3_14>
+   <s_ramdata_5_14> <s_ramdata_6_14> <s_ramdata_7_14> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_15> in Unit <MAIN> is equivalent to
+   the following 4 FFs/Latches, which will be removed : <s_ramdata_3_15>
+   <s_ramdata_5_15> <s_ramdata_6_15> <s_ramdata_7_15> 
+INFO:Xst:2261 - The FF/Latch <exteventd_BRB0> in Unit <MAIN> is equivalent to
+   the following 2 FFs/Latches, which will be removed : <exteventf_BRB0>
+   <exteventag_BRB0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc_reflect_final_15_BRB4> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc_reflect_final_14_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_13_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_12_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_11_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_10_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_9_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_8_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_7_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_6_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_5_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_4_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_3_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_2_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_1_BRB4>
+   <i_MEAN_16K/s_acc_reflect_final_0_BRB4> 
+INFO:Xst:2261 - The FF/Latch <rqpaca_BRB4> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <rqpacb_BRB4> 
+INFO:Xst:2261 - The FF/Latch <rqpaca_BRB5> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <rqpacb_BRB5> 
+INFO:Xst:2261 - The FF/Latch <rqpaca_BRB3> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <rqpacb_BRB3> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2b_reflect_final_15_BRB4> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2b_reflect_final_14_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_13_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_12_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_11_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_10_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_9_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_8_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_7_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_6_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_5_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_4_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_3_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_2_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_1_BRB4>
+   <i_MEAN_16K/s_acc2b_reflect_final_0_BRB4> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2b_reflect_final_15_BRB2> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2b_reflect_final_14_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_13_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_12_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_11_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_10_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_9_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_8_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_7_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_6_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_5_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_4_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_3_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_2_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_1_BRB2>
+   <i_MEAN_16K/s_acc2b_reflect_final_0_BRB2> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_0> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_0>
+   <s_ramdata_5_0> <s_ramdata_6_0> <s_ramdata_7_0> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_1> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_1>
+   <s_ramdata_5_1> <s_ramdata_6_1> <s_ramdata_7_1> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_2> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_2>
+   <s_ramdata_5_2> <s_ramdata_6_2> <s_ramdata_7_2> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_3> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_3>
+   <s_ramdata_5_3> <s_ramdata_6_3> <s_ramdata_7_3> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_4> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_4>
+   <s_ramdata_5_4> <s_ramdata_6_4> <s_ramdata_7_4> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_5> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_5>
+   <s_ramdata_5_5> <s_ramdata_6_5> <s_ramdata_7_5> 
+INFO:Xst:2261 - The FF/Latch <s_ramdata_4_6> in Unit <MAIN> is equivalent to the
+   following 4 FFs/Latches, which will be removed : <s_ramdata_3_6>
+   <s_ramdata_5_6> <s_ramdata_6_6> <s_ramdata_7_6> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc_transluc_final_15_BRB2> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc_transluc_final_14_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_13_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_12_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_11_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_10_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_9_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_8_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_7_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_6_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_5_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_4_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_3_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_2_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_1_BRB2>
+   <i_MEAN_16K/s_acc_transluc_final_0_BRB2> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2b_transluc_final_15_BRB1> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2b_transluc_final_14_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_13_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_12_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_11_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_10_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_9_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_8_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_7_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_6_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_5_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_4_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_3_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_2_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_1_BRB1>
+   <i_MEAN_16K/s_acc2b_transluc_final_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/s_rd_ptr_1> in Unit <MAIN> is
+   equivalent to the following FF/Latch, which will be removed :
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/Madd_s_CH_IS1_xor<1>11_FRB> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc_reflect_final_15_BRB1> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc_reflect_final_14_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_13_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_12_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_11_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_10_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_9_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_8_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_7_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_6_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_5_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_4_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_3_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_2_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_1_BRB1>
+   <i_MEAN_16K/s_acc_reflect_final_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2b_transluc_final_15_BRB2> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2b_transluc_final_14_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_13_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_12_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_11_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_10_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_9_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_8_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_7_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_6_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_5_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_4_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_3_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_2_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_1_BRB2>
+   <i_MEAN_16K/s_acc2b_transluc_final_0_BRB2> 
+INFO:Xst:2261 - The FF/Latch <extclr_BRB0> in Unit <MAIN> is equivalent to the
+   following FF/Latch, which will be removed : <s_extclr_bckgnd_gain_BRB0> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2_reflect_final_15_BRB2> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2_reflect_final_14_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_13_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_12_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_11_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_10_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_9_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_8_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_7_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_6_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_5_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_4_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_3_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_2_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_1_BRB2>
+   <i_MEAN_16K/s_acc2_reflect_final_0_BRB2> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_accb_transluc_final_15_BRB1> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_accb_transluc_final_14_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_13_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_12_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_11_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_10_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_9_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_8_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_7_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_6_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_5_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_4_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_3_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_2_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_1_BRB1>
+   <i_MEAN_16K/s_accb_transluc_final_0_BRB1> 
+INFO:Xst:2261 - The FF/Latch <i_MEAN_16K/s_acc2_transluc_final_15_BRB1> in Unit
+   <MAIN> is equivalent to the following 15 FFs/Latches, which will be removed :
+   <i_MEAN_16K/s_acc2_transluc_final_14_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_13_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_12_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_11_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_10_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_9_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_8_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_7_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_6_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_5_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_4_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_3_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_2_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_1_BRB1>
+   <i_MEAN_16K/s_acc2_transluc_final_0_BRB1> 
+INFO:LIT:243 - Logical network LDATA_15_IOBUF/N2 has no load.
+INFO:LIT:395 - The above info message is repeated 99 more times for the
+   following (max. 5 shown):
+   LDATA_15_IOBUF/N3,
+   LDATA_14_IOBUF/N2,
+   LDATA_14_IOBUF/N3,
+   LDATA_13_IOBUF/N2,
+   LDATA_13_IOBUF/N3
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  95 block(s) removed
+   2 block(s) optimized away
+  84 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<15>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_15" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<14>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_14" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<13>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_13" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<12>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_12" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<11>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_11" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<10>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_10" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<9>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_9" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<8>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_8" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<7>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_7" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<6>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_6" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<5>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_5" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<4>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_4" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<3>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_3" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<2>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_2" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<1>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_1" (FF) removed.
+The signal
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int<0>" is loadless and has been removed.
+ Loadless block
+"i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpram_
+inst/qsdpo_int_0" (FF) removed.
+The signal "LDATA_15_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_15_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_14_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_14_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_13_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_13_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_12_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_12_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_11_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_11_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_10_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_10_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_9_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_9_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_8_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_8_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_7_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_7_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_6_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_6_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_5_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_5_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_4_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_4_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_3_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_3_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_2_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_2_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_1_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_1_IOBUF/N3" is sourceless and has been removed.
+The signal "LDATA_0_IOBUF/N2" is sourceless and has been removed.
+The signal "LDATA_0_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_15_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_15_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_14_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_14_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_13_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_13_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_12_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_12_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_11_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_11_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_10_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_10_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_9_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_9_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_8_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_8_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_7_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_7_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_6_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_6_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_5_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_5_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_4_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_4_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_3_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_3_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_2_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_2_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_1_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_1_IOBUF/N3" is sourceless and has been removed.
+The signal "MDATA_0_IOBUF/N2" is sourceless and has been removed.
+The signal "MDATA_0_IOBUF/N3" is sourceless and has been removed.
+The signal "ADC1_SDATA_IOBUF/N2" is sourceless and has been removed.
+The signal "ADC1_SDATA_IOBUF/N3" is sourceless and has been removed.
+The signal "ADC2_SDATA_IOBUF/N2" is sourceless and has been removed.
+The signal "ADC2_SDATA_IOBUF/N3" is sourceless and has been removed.
+Unused block "ADC1_CLK1_PULLUP" (PULLUP) removed.
+Unused block "ADC1_OEB_PULLUP" (PULLUP) removed.
+Unused block "ADC1_SDATA_IOBUF/XST_GND" (ZERO) removed.
+Unused block "ADC1_SDATA_IOBUF/XST_VCC" (ONE) removed.
+Unused block "ADC2_CLK1_PULLUP" (PULLUP) removed.
+Unused block "ADC2_OEB_PULLUP" (PULLUP) removed.
+Unused block "ADC2_SDATA_IOBUF/XST_GND" (ZERO) removed.
+Unused block "ADC2_SDATA_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_0_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_0_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_10_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_10_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_11_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_11_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_12_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_12_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_13_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_13_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_14_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_14_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_15_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_15_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_1_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_1_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_2_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_2_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_3_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_3_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_4_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_4_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_5_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_5_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_6_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_6_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_7_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_7_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_8_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_8_IOBUF/XST_VCC" (ONE) removed.
+Unused block "LDATA_9_IOBUF/XST_GND" (ZERO) removed.
+Unused block "LDATA_9_IOBUF/XST_VCC" (ONE) removed.
+Unused block "L_RX_PULLUP" (PULLUP) removed.
+Unused block "MDATA_0_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_0_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_10_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_10_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_11_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_11_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_12_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_12_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_13_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_13_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_14_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_14_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_15_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_15_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_1_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_1_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_2_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_2_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_3_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_3_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_4_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_4_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_5_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_5_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_6_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_6_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_7_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_7_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_8_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_8_IOBUF/XST_VCC" (ONE) removed.
+Unused block "MDATA_9_IOBUF/XST_GND" (ZERO) removed.
+Unused block "MDATA_9_IOBUF/XST_VCC" (ONE) removed.
+Unused block "TEST<1>_PULLUP" (PULLUP) removed.
+Unused block "TEST<2>_PULLUP" (PULLUP) removed.
+Unused block "TEST<3>_PULLUP" (PULLUP) removed.
+Unused block "TEST<5>_PULLUP" (PULLUP) removed.
+Unused block "TEST<7>_PULLUP" (PULLUP) removed.
+Unused block "TEST<8>_PULLUP" (PULLUP) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ADC1<0>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC1<1>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC1<2>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC1<3>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC1<4>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC1<5>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC1<6>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC1<7>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC1_CLK                           | IOB              | OUTPUT    | LVTTL                |       | 24       | FAST | OFF          | PULLUP   |          |
+| ADC1_CLK1                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ADC1_CLK2                          | IOB              | OUTPUT    | LVTTL                |       | 24       | FAST | OFF          | PULLUP   |          |
+| ADC1_OEB                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ADC1_SCLK                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| ADC1_SDATA                         | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ADC1_SLOAD                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| ADC2<0>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC2<1>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC2<2>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC2<3>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC2<4>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC2<5>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC2<6>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC2<7>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| ADC2_CLK                           | IOB              | OUTPUT    | LVTTL                |       | 24       | FAST | OFF          | PULLUP   |          |
+| ADC2_CLK1                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ADC2_CLK2                          | IOB              | OUTPUT    | LVTTL                |       | 24       | FAST | OFF          | PULLUP   |          |
+| ADC2_OEB                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ADC2_SCLK                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| ADC2_SDATA                         | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| ADC2_SLOAD                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CCD_CLK1                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CCD_CLK2                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CCD_CLK3                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CCD_CLK4                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CCD_DIS1                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| CCD_DIS2                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| CCD_DIS3                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| CCD_DIS4                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| CCD_SI1                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CCD_SI2                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CCD_SI3                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CCD_SI4                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| CH1                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CLK37                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CONF<0>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CONF<1>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CONF<2>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CONF<3>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CONF<4>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CONF<5>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CONF<6>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| CONF<7>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| EJA_CK                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| EJA_RX                             | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          | PULLUP   |          |
+| EJA_TX                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| EJB_CK                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| EJB_RX                             | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          | PULLUP   |          |
+| EJB_TX                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| EN_BACK                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| FLEDA                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| FLEDB                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| FLEDD                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| FLEDc                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| FPGA_BUSYCOM                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| FPGA_RSTCOM                        | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          | PULLUP   |          |
+| F_C                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
+| F_D                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
+| F_Q                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
+| F_S                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
+| LADDR<0>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| LADDR<1>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| LADDR<2>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| LADDR<3>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| LADDR<4>                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| LCLKL                              | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          | PULLUP   |          |
+| LDATA<0>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<1>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<2>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<3>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<4>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<5>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<6>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<7>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<8>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<9>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<10>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<11>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<12>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<13>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<14>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LDATA<15>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | TFF          |          |          |
+| LED1                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| LED2                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| LED_RESET                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| LFRAME                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| LRD                                | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          | PULLUP   |          |
+| LWR                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| L_IO<0>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| L_IO<1>                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| L_RX                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| L_TX                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| MADDR<0>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<1>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<2>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<3>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<4>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<5>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<6>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<7>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<8>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<9>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<10>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<11>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<12>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<13>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<14>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<15>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<16>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MADDR<17>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| MCS                                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| MDATA<0>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<1>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<2>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<3>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<4>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<5>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<6>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<7>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<8>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<9>                           | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<10>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<11>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<12>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<13>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<14>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MDATA<15>                          | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW | IFF          | PULLUP   |          |
+|                                    |                  |           |                      |       |          |      | OFF          |          |          |
+| MOE                                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| MWR                                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| RLEDA                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| RLEDB                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| RLEDC                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| RLEDD                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| RSINC1                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| RSINC2                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
+| TEST<0>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TEST<1>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| TEST<2>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| TEST<3>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| TEST<4>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TEST<5>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| TEST<6>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TEST<7>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| TEST<8>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| TEST<9>                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TEST<10>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TEST<11>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TEST<12>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TEST<13>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| TEST<14>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TEST<15>                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          | PULLUP   |          |
+| TSINC1                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
+| TSINC2                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLUP   |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

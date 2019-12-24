@@ -1,0 +1,37 @@
+type BUFFER_R is array (integer range <>) of std_logic_vector (31 downto 0);
+
+signal BUFFER_REGS        : BUFFER_R ((total_input'length/(8*4))-1 downto 0);
+signal BUFFER_REGS_next   : BUFFER_R ((total_input'length/(8*4))-1 downto 0);
+
+
+  process (BUFFER_REGS, address, read_en) is
+  begin
+    -- Linux adresses and values
+    if read_en = '1' then
+      readdata <= BUFFER_REGS(to_integer(unsigned(address)));
+    else
+      readdata <= "00000000000000000000000000000000";
+    end if;
+  end process;
+
+
+
+ -- Start
+  process (reset_n, sysclk) is
+  begin
+    if (reset_n = '0') then
+      state_start <= INIT;
+      for i in 0 to BUFFER_REGS'length-1 loop
+        for j in 0 to 31 loop
+          BUFFER_REGS(i)(j) <= '0';
+        end loop;  -- j
+      end loop;  -- i
+    elsif rising_edge(sysclk) then
+      state_start <= state_start_next;
+      for i in 0 to BUFFER_REGS'length-1 loop
+        for j in 0 to 31 loop
+          BUFFER_REGS(i)(j) <= BUFFER_REGS_next(i)(j);
+        end loop;  -- j
+      end loop;  -- i
+    end if;
+  end process;

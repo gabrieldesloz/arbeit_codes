@@ -1,0 +1,2007 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: MAIN_VHDL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MAIN_VHDL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MAIN_VHDL"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-tq144
+
+---- Source Options
+Top Module Name                    : MAIN_VHDL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/ipcore_dir/MEM_32x32.vhd" in Library work.
+Architecture mem_32x32_a of Entity mem_32x32 is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/ipcore_dir/MEM_512x64.vhd" in Library work.
+Architecture mem_512x64_a of Entity mem_512x64 is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/COUNT_CHOPPER.vhd" in Library work.
+Architecture behavioral of Entity count_chopper is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/COUNT_MEM_CONTROL.vhd" in Library work.
+Architecture behavioral of Entity count_mem_control is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/SERIAL_RX.vhd" in Library work.
+Architecture behavioral of Entity serial_rx is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/COMMAND_MODULE.vhd" in Library work.
+Architecture behavioral of Entity command_module is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/FREQUENCY_GEN.vhd" in Library work.
+Architecture behavioral of Entity frequency_gen is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TUNE_CONTROL.vhd" in Library work.
+Architecture behavioral of Entity tune_control is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TUNE_MEM_CONTROL.vhd" in Library work.
+Architecture behavioral of Entity tune_mem_control is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/INT_TUNE_PLAYER.vhd" in Library work.
+Architecture behavioral of Entity int_tune_player is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/SERIAL_TX.vhd" in Library work.
+Architecture behavioral of Entity serial_tx is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/SEND_SERIAL_DATA.vhd" in Library work.
+Architecture behavioral of Entity send_serial_data is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/VALVE_FAIL.vhd" in Library work.
+Architecture behavioral of Entity valve_fail is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/FAIL_MEM_CONTROL.vhd" in Library work.
+Architecture behavioral of Entity fail_mem_control is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MANUAL_TEJET.vhd" in Library work.
+Architecture behavioral of Entity manual_tejet is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/WRAPPER_VALVE_FAIL.vhd" in Library work.
+Architecture behavioral of Entity wrapper_valve_fail is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/LED_ENCODER.vhd" in Library work.
+Architecture behavioral of Entity led_encoder is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/STATUS_SEND_TEST.vhd" in Library work.
+Architecture behavioral of Entity status_sender is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TUNE_PLAYER.vhd" in Library work.
+Architecture behavioral of Entity tune_player is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/DESERIALIZER.vhd" in Library work.
+Architecture behavioral of Entity deserializer is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/WRAPPER_COUNTER.vhd" in Library work.
+Architecture behavioral of Entity wrapper_counter is up to date.
+Compiling vhdl file "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.vhd" in Library work.
+Entity <main_vhdl> compiled.
+Entity <main_vhdl> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MAIN_VHDL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MANUAL_TEJET> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <WRAPPER_VALVE_FAIL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <LED_ENCODER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <STATUS_SENDER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TUNE_PLAYER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DESERIALIZER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <WRAPPER_COUNTER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <VALVE_FAIL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FAIL_MEM_CONTROL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SERIAL_TX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SEND_SERIAL_DATA> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FREQUENCY_GEN> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TUNE_CONTROL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TUNE_MEM_CONTROL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <INT_TUNE_PLAYER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SERIAL_RX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <COMMAND_MODULE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <COUNT_CHOPPER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <COUNT_MEM_CONTROL> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MAIN_VHDL> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "CLKIN_PERIOD =  0.0000000000000000" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_inst> in unit <MAIN_VHDL>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_inst> in unit <MAIN_VHDL>.
+WARNING:Xst:753 - "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.vhd" line 485: Unconnected output port 'SEND_o' of component 'STATUS_SENDER'.
+WARNING:Xst:753 - "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.vhd" line 485: Unconnected output port 'TX_o' of component 'STATUS_SENDER'.
+WARNING:Xst:819 - "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.vhd" line 821: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+WARNING:Xst:819 - "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.vhd" line 849: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+Entity <MAIN_VHDL> analyzed. Unit <MAIN_VHDL> generated.
+
+Analyzing Entity <MANUAL_TEJET> in library <work> (Architecture <behavioral>).
+Entity <MANUAL_TEJET> analyzed. Unit <MANUAL_TEJET> generated.
+
+Analyzing Entity <WRAPPER_VALVE_FAIL> in library <work> (Architecture <behavioral>).
+Entity <WRAPPER_VALVE_FAIL> analyzed. Unit <WRAPPER_VALVE_FAIL> generated.
+
+Analyzing Entity <VALVE_FAIL> in library <work> (Architecture <behavioral>).
+Entity <VALVE_FAIL> analyzed. Unit <VALVE_FAIL> generated.
+
+Analyzing Entity <FAIL_MEM_CONTROL> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/FAIL_MEM_CONTROL.vhd" line 99: Instantiating black box module <MEM_32x32>.
+Entity <FAIL_MEM_CONTROL> analyzed. Unit <FAIL_MEM_CONTROL> generated.
+
+Analyzing Entity <LED_ENCODER> in library <work> (Architecture <behavioral>).
+Entity <LED_ENCODER> analyzed. Unit <LED_ENCODER> generated.
+
+Analyzing Entity <STATUS_SENDER> in library <work> (Architecture <behavioral>).
+Entity <STATUS_SENDER> analyzed. Unit <STATUS_SENDER> generated.
+
+Analyzing Entity <SERIAL_TX> in library <work> (Architecture <behavioral>).
+Entity <SERIAL_TX> analyzed. Unit <SERIAL_TX> generated.
+
+Analyzing Entity <SEND_SERIAL_DATA> in library <work> (Architecture <behavioral>).
+Entity <SEND_SERIAL_DATA> analyzed. Unit <SEND_SERIAL_DATA> generated.
+
+Analyzing Entity <TUNE_PLAYER> in library <work> (Architecture <behavioral>).
+Entity <TUNE_PLAYER> analyzed. Unit <TUNE_PLAYER> generated.
+
+Analyzing Entity <FREQUENCY_GEN> in library <work> (Architecture <behavioral>).
+Entity <FREQUENCY_GEN> analyzed. Unit <FREQUENCY_GEN> generated.
+
+Analyzing Entity <TUNE_CONTROL> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TUNE_CONTROL.vhd" line 113: Mux is complete : default of case is discarded
+Entity <TUNE_CONTROL> analyzed. Unit <TUNE_CONTROL> generated.
+
+Analyzing Entity <TUNE_MEM_CONTROL> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TUNE_MEM_CONTROL.vhd" line 67: Instantiating black box module <MEM_512x64>.
+Entity <TUNE_MEM_CONTROL> analyzed. Unit <TUNE_MEM_CONTROL> generated.
+
+Analyzing Entity <INT_TUNE_PLAYER> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <s_live> in unit <INT_TUNE_PLAYER> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <INT_TUNE_PLAYER> analyzed. Unit <INT_TUNE_PLAYER> generated.
+
+Analyzing Entity <DESERIALIZER> in library <work> (Architecture <behavioral>).
+Entity <DESERIALIZER> analyzed. Unit <DESERIALIZER> generated.
+
+Analyzing Entity <SERIAL_RX> in library <work> (Architecture <behavioral>).
+Entity <SERIAL_RX> analyzed. Unit <SERIAL_RX> generated.
+
+Analyzing Entity <COMMAND_MODULE> in library <work> (Architecture <behavioral>).
+Entity <COMMAND_MODULE> analyzed. Unit <COMMAND_MODULE> generated.
+
+Analyzing Entity <WRAPPER_COUNTER> in library <work> (Architecture <behavioral>).
+Entity <WRAPPER_COUNTER> analyzed. Unit <WRAPPER_COUNTER> generated.
+
+Analyzing Entity <COUNT_CHOPPER> in library <work> (Architecture <behavioral>).
+Entity <COUNT_CHOPPER> analyzed. Unit <COUNT_CHOPPER> generated.
+
+Analyzing Entity <COUNT_MEM_CONTROL> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/COUNT_MEM_CONTROL.vhd" line 92: Instantiating black box module <MEM_32x32>.
+Entity <COUNT_MEM_CONTROL> analyzed. Unit <COUNT_MEM_CONTROL> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MANUAL_TEJET>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MANUAL_TEJET.vhd".
+    Found 32-bit register for signal <MANUAL_TESTEJET_o>.
+    Found 13-bit adder for signal <MANUAL_TESTEJET_o_3$add0000> created at line 125.
+    Found 5-bit up counter for signal <s_inc_valve>.
+    Found 5-bit register for signal <s_manual_testejet_valve>.
+    Found 5-bit up counter for signal <s_manual_testejet_valve_int>.
+    Found 1-bit register for signal <s_on_inc_manual_testejet>.
+    Found 1-bit register for signal <s_on_manual_testejet>.
+    Found 12-bit adder for signal <s_on_manual_testejet$add0000> created at line 70.
+    Found 12-bit up counter for signal <v_cnt_manual_testejet>.
+    Found 13-bit up counter for signal <v_freq_gen_cnt>.
+    Found 10-bit up counter for signal <v_valve_alternate_cnt>.
+    Summary:
+	inferred   5 Counter(s).
+	inferred  39 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <MANUAL_TEJET> synthesized.
+
+
+Synthesizing Unit <LED_ENCODER>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/LED_ENCODER.vhd".
+WARNING:Xst:1780 - Signal <s_manual_tejet> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <s_blink_case>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK_i                     (rising_edge)        |
+    | Reset              | RST_i                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8x2-bit ROM for signal <s_blink_times>.
+    Found 2-bit comparator equal for signal <s_blink_case$cmp_eq0003> created at line 115.
+    Found 1-bit register for signal <s_led>.
+    Found 11-bit register for signal <s_led_count>.
+    Found 11-bit adder for signal <s_led_count$share0000> created at line 90.
+    Found 2-bit register for signal <s_times_blinked>.
+    Found 2-bit adder for signal <s_times_blinked$addsub0000> created at line 135.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <LED_ENCODER> synthesized.
+
+
+Synthesizing Unit <VALVE_FAIL>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/VALVE_FAIL.vhd".
+    Found 32-bit register for signal <FUSE_o>.
+    Found 2-bit register for signal <DEBOUNCE_o>.
+    Found 15-bit register for signal <FEEDBACK_COUNT_o>.
+    Found 13-bit register for signal <ACTIVATION_COUNT_o>.
+    Found 1-bit register for signal <HAS_ACTIVATION_PULSE_o>.
+    Found 13-bit subtractor for signal <ACTIVATION_COUNT_o$addsub0000> created at line 147.
+    Found 13-bit 4-to-1 multiplexer for signal <ACTIVATION_COUNT_o$mux0002> created at line 101.
+    Found 2-bit adder for signal <DEBOUNCE_o$addsub0000> created at line 120.
+    Found 2-bit 4-to-1 multiplexer for signal <DEBOUNCE_o$mux0003> created at line 101.
+    Found 15-bit subtractor for signal <FEEDBACK_COUNT_o$addsub0000> created at line 128.
+    Found 15-bit 4-to-1 multiplexer for signal <FEEDBACK_COUNT_o$mux0002> created at line 101.
+    Found 1-bit 4-to-1 multiplexer for signal <HAS_ACTIVATION_PULSE_o$mux0002> created at line 101.
+    Found 1-bit 32-to-1 multiplexer for signal <s_fail_test_state$varindex0000> created at line 75.
+    Found 1-bit register for signal <s_has_sens_o>.
+    Found 1-bit 4-to-1 multiplexer for signal <s_has_sens_o$mux0002> created at line 101.
+    Found 1-bit 32-to-1 multiplexer for signal <SENS_i$mux0000> created at line 132.
+    Found 1-bit 32-to-1 multiplexer for signal <VALVE_LIMITER_i$mux0000> created at line 95.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  35 Multiplexer(s).
+Unit <VALVE_FAIL> synthesized.
+
+
+Synthesizing Unit <SERIAL_TX>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/SERIAL_TX.vhd".
+    Found 1-bit register for signal <PACKET_SENT_o>.
+    Found 1-bit register for signal <TX_o>.
+    Found 1-bit register for signal <s_finish_packet>.
+    Found 1-bit register for signal <s_send_packet>.
+    Found 4-bit up counter for signal <s_send_state_machine>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   4 D-type flip-flop(s).
+Unit <SERIAL_TX> synthesized.
+
+
+Synthesizing Unit <SEND_SERIAL_DATA>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/SEND_SERIAL_DATA.vhd".
+    Found finite state machine <FSM_1> for signal <s_send_state_machine>.
+    -----------------------------------------------------------------------
+    | States             | 18                                             |
+    | Transitions        | 26                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 19                                             |
+    | Clock              | CLK_i                     (rising_edge)        |
+    | Reset              | s_send_state_machine$or0000 (positive)         |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <SEND_o>.
+    Found 8-bit register for signal <SEND_8BIT_DATA_o>.
+    Found 17-bit register for signal <s_send_interval_counter>.
+    Found 17-bit adder for signal <s_send_interval_counter$addsub0000> created at line 195.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <SEND_SERIAL_DATA> synthesized.
+
+
+Synthesizing Unit <FREQUENCY_GEN>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/FREQUENCY_GEN.vhd".
+WARNING:Xst:647 - Input <PERIOD_i<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PERIOD_MEM_i<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <s_frequency_o>.
+    Found 23-bit register for signal <s_period_i>.
+    Found 23-bit comparator equal for signal <s_period_i$cmp_eq0000> created at line 65.
+    Found 23-bit up counter for signal <s_pwm_counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <FREQUENCY_GEN> synthesized.
+
+
+Synthesizing Unit <TUNE_CONTROL>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TUNE_CONTROL.vhd".
+    Found 1-bit register for signal <ENABLE_o>.
+    Found 9-bit up counter for signal <s_addr_o>.
+    Found 40-bit comparator equal for signal <s_addr_o$cmp_eq0000> created at line 100.
+    Found 33-bit up counter for signal <s_length_counter>.
+    Found 1-bit register for signal <s_tune_state>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <TUNE_CONTROL> synthesized.
+
+
+Synthesizing Unit <INT_TUNE_PLAYER>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/INT_TUNE_PLAYER.vhd".
+WARNING:Xst:1780 - Signal <s_max_wait> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <s_live> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <s_inside_command> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <s_cmd_state> of Case statement line 104 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <s_cmd_state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <s_cmd_state>.
+    Found 1-bit register for signal <STOP_o>.
+    Found 1-bit register for signal <LIVE_o>.
+    Found 24-bit register for signal <PERIOD_o>.
+    Found 40-bit register for signal <NOTE_LENGTH_o>.
+    Found 1-bit register for signal <REC_o>.
+    Found 1-bit register for signal <PLAY_o>.
+    Found 7-bit register for signal <s_cmd_state>.
+    Found 64-bit register for signal <s_part>.
+    Found 3-bit register for signal <s_pkt_nbr>.
+    Found 3-bit adder for signal <s_pkt_nbr$addsub0000> created at line 179.
+    Found 9-bit register for signal <s_rec_addr>.
+    Found 9-bit adder for signal <s_rec_addr$addsub0000> created at line 168.
+    Found 7-bit register for signal <s_was_on_state>.
+    Summary:
+	inferred 158 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <INT_TUNE_PLAYER> synthesized.
+
+
+Synthesizing Unit <SERIAL_RX>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/SERIAL_RX.vhd".
+    Found finite state machine <FSM_2> for signal <s_receive_state_machine>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 11                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 19                                             |
+    | Clock              | BAUD_CLK_i                (rising_edge)        |
+    | Reset              | RST_i                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <RX_DATA_o>.
+    Found 1-bit register for signal <PACKET_READY_o>.
+    Found 1-bit register for signal <FAIL_o>.
+    Found 8-bit register for signal <s_rx_data_buff>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  18 D-type flip-flop(s).
+Unit <SERIAL_RX> synthesized.
+
+
+Synthesizing Unit <COMMAND_MODULE>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/COMMAND_MODULE.vhd".
+WARNING:Xst:647 - Input <FAIL_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_3> for signal <s_command_state_machine>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | CLK_i                     (rising_edge)        |
+    | Reset              | RESET_i                   (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <ERROR_o>.
+    Found 8-bit register for signal <DATA_o>.
+    Found 8-bit register for signal <CMD_o>.
+    Found 1-bit register for signal <NEW_DATA_o>.
+    Found 1-bit register for signal <CMD_END_o>.
+    Found 1-bit register for signal <s_clear_has_packet>.
+    Found 1-bit register for signal <s_has_packet>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  21 D-type flip-flop(s).
+Unit <COMMAND_MODULE> synthesized.
+
+
+Synthesizing Unit <COUNT_CHOPPER>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/COUNT_CHOPPER.vhd".
+WARNING:Xst:1780 - Signal <s_valve_state_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_min_count> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_max_count> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <VALVE_STATE_o>.
+    Found 20-bit register for signal <COUNT_o>.
+    Found 20-bit comparator lessequal for signal <COUNT_o$cmp_le0000> created at line 118.
+    Found 20-bit addsub for signal <COUNT_o$share0000> created at line 80.
+    Found 1-bit register for signal <s_max_flag_o>.
+    Found 20-bit comparator greatequal for signal <s_max_flag_o$cmp_ge0000> created at line 101.
+    Found 3-bit register for signal <s_probe>.
+    Found 1-bit 32-to-1 multiplexer for signal <VALVE_STATE_i$mux0000> created at line 60.
+    Summary:
+	inferred  56 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <COUNT_CHOPPER> synthesized.
+
+
+Synthesizing Unit <STATUS_SENDER>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/STATUS_SEND_TEST.vhd".
+Unit <STATUS_SENDER> synthesized.
+
+
+Synthesizing Unit <DESERIALIZER>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/DESERIALIZER.vhd".
+Unit <DESERIALIZER> synthesized.
+
+
+Synthesizing Unit <FAIL_MEM_CONTROL>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/FAIL_MEM_CONTROL.vhd".
+    Found 5-bit register for signal <s_last_valve>.
+    Found 5-bit up counter for signal <s_valve>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   5 D-type flip-flop(s).
+Unit <FAIL_MEM_CONTROL> synthesized.
+
+
+Synthesizing Unit <TUNE_MEM_CONTROL>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TUNE_MEM_CONTROL.vhd".
+Unit <TUNE_MEM_CONTROL> synthesized.
+
+
+Synthesizing Unit <COUNT_MEM_CONTROL>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/COUNT_MEM_CONTROL.vhd".
+WARNING:Xst:646 - Signal <s_mem_out<30:20>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 5-bit register for signal <s_last_valve>.
+    Found 5-bit up counter for signal <s_valve>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   5 D-type flip-flop(s).
+Unit <COUNT_MEM_CONTROL> synthesized.
+
+
+Synthesizing Unit <WRAPPER_VALVE_FAIL>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/WRAPPER_VALVE_FAIL.vhd".
+Unit <WRAPPER_VALVE_FAIL> synthesized.
+
+
+Synthesizing Unit <TUNE_PLAYER>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TUNE_PLAYER.vhd".
+Unit <TUNE_PLAYER> synthesized.
+
+
+Synthesizing Unit <WRAPPER_COUNTER>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/WRAPPER_COUNTER.vhd".
+Unit <WRAPPER_COUNTER> synthesized.
+
+
+Synthesizing Unit <MAIN_VHDL>.
+    Related source file is "//smkn33/s10067/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.vhd".
+WARNING:Xst:653 - Signal <venn> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <venbit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <valve> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <set34> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_rx_fail> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_rx_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <s_rx> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <s_prototype> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <s_pkt_ready> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <s_illum_off> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_illum_floor> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_floor> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_bgnd_floor> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ontimerst> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ontimeout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <on_time_top> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <on_time_bot> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <need34> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <incval> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <decval> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <currentlimit> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clkx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <c25MHz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <c10k> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <adcdt3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <adcdt2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <adcdt> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 64x7-bit ROM for signal <adt$rom0000>.
+    Found 32x1-bit ROM for signal <adck$mux0002>.
+    Found 1-bit register for signal <adin>.
+    Found 1-bit register for signal <adcs>.
+    Found 1-bit register for signal <adck>.
+    Found 1-bit register for signal <TX>.
+    Found 1-bit 36-to-1 multiplexer for signal <$varindex0000> created at line 855.
+    Found 6-bit register for signal <adt>.
+    Found 6-bit adder for signal <adt$add0000> created at line 758.
+    Found 1-bit register for signal <c3>.
+    Found 2-bit up counter for signal <ch>.
+    Found 1-bit register for signal <ck1us>.
+    Found 1-bit register for signal <clk12>.
+    Found 1-bit register for signal <clk2>.
+    Found 7-bit comparator greatequal for signal <clk2$cmp_ge0000> created at line 362.
+    Found 1-bit register for signal <clkxx>.
+    Found 7-bit comparator greatequal for signal <clkxx$cmp_ge0000> created at line 350.
+    Found 1-bit register for signal <cm100>.
+    Found 6-bit adder for signal <cm100$addsub0000> created at line 394.
+    Found 6-bit comparator greater for signal <cm100$cmp_gt0000> created at line 395.
+    Found 1-bit register for signal <cmit>.
+    Found 3-bit register for signal <command>.
+    Found 7-bit register for signal <dv0>.
+    Found 7-bit adder for signal <dv0$add0000> created at line 348.
+    Found 7-bit comparator greatequal for signal <dv0$cmp_ge0000> created at line 349.
+    Found 7-bit register for signal <dv1>.
+    Found 7-bit adder for signal <dv1$add0000> created at line 352.
+    Found 7-bit comparator greatequal for signal <dv1$cmp_ge0000> created at line 353.
+    Found 7-bit comparator greatequal for signal <dv1$cmp_ge0001> created at line 354.
+    Found 7-bit register for signal <dv2>.
+    Found 7-bit adder for signal <dv2$add0000> created at line 356.
+    Found 7-bit comparator greatequal for signal <dv2$cmp_ge0000> created at line 357.
+    Found 7-bit comparator greatequal for signal <dv2$cmp_ge0001> created at line 358.
+    Found 7-bit register for signal <dv3>.
+    Found 7-bit adder for signal <dv3$add0000> created at line 360.
+    Found 7-bit comparator greatequal for signal <dv3$cmp_ge0000> created at line 361.
+    Found 8-bit register for signal <dv4>.
+    Found 8-bit adder for signal <dv4$add0000> created at line 364.
+    Found 8-bit comparator greatequal for signal <dv4$cmp_ge0000> created at line 365.
+    Found 8-bit comparator greatequal for signal <dv4$cmp_ge0001> created at line 366.
+    Found 1-bit register for signal <gooff>.
+    Found 10-bit comparator less for signal <gooff$cmp_lt0000> created at line 723.
+    Found 6-bit up counter for signal <nrx>.
+    Found 9-bit up counter for signal <rm>.
+    Found 9-bit adder for signal <rm$addsub0000> created at line 388.
+    Found 9-bit comparator greater for signal <rm$cmp_gt0000> created at line 389.
+    Found 6-bit up counter for signal <rm1>.
+    Found 1-bit xor36 for signal <rxpar$xor0000> created at line 833.
+    Found 36-bit register for signal <rxs>.
+    Found 5-bit up counter for signal <s_acc_cycles>.
+    Found 10-bit register for signal <s_ad_12vin_sens>.
+    Found 14-bit register for signal <s_ad_12vin_sens_acc>.
+    Found 14-bit adder for signal <s_ad_12vin_sens_acc$addsub0000> created at line 699.
+    Found 10-bit register for signal <s_ad_12vin_sens_mean>.
+    Found 10-bit register for signal <s_ad_34vin_sens>.
+    Found 14-bit register for signal <s_ad_34vin_sens_acc>.
+    Found 14-bit adder for signal <s_ad_34vin_sens_acc$addsub0000> created at line 702.
+    Found 10-bit register for signal <s_ad_34vin_sens_mean>.
+    Found 10-bit register for signal <s_ad_ibus1_sens>.
+    Found 14-bit register for signal <s_ad_ibus1_sens_acc>.
+    Found 14-bit adder for signal <s_ad_ibus1_sens_acc$addsub0000> created at line 693.
+    Found 10-bit register for signal <s_ad_ibus1_sens_mean>.
+    Found 10-bit register for signal <s_ad_ibus2_sens>.
+    Found 14-bit register for signal <s_ad_ibus2_sens_acc>.
+    Found 14-bit adder for signal <s_ad_ibus2_sens_acc$addsub0000> created at line 696.
+    Found 10-bit register for signal <s_ad_ibus2_sens_mean>.
+    Found 1-bit register for signal <s_BAUD_CLK_BUF>.
+    Found 8-bit up counter for signal <s_baud_clk_counter>.
+    Found 11-bit up counter for signal <s_cutoff_times>.
+    Found 11-bit comparator greater for signal <s_cutoff_times$cmp_gt0000> created at line 729.
+    Found 8-bit up counter for signal <s_downsample>.
+    Found 11-bit register for signal <s_max_both_ibus>.
+    Found 11-bit comparator lessequal for signal <s_max_both_ibus$cmp_le0000> created at line 748.
+    Found 20-bit up counter for signal <s_max_curr_stop>.
+    Found 1-bit register for signal <s_max_current>.
+    Found 11-bit register for signal <s_total_current>.
+    Found 11-bit adder for signal <s_total_current$add0000> created at line 719.
+    Found 3-bit up counter for signal <sc>.
+    Found 1-bit register for signal <serend>.
+    Found 1-bit register for signal <serst>.
+    Found 35-bit register for signal <sys_status>.
+    Found 3-bit adder for signal <sys_status$addsub0000> created at line 880.
+    Found 35-bit 8-to-1 multiplexer for signal <sys_status$mux0001> created at line 881.
+    Found 6-bit down counter for signal <ti>.
+    Found 36-bit register for signal <txs>.
+    Found 1-bit xor35 for signal <txs$xor0000> created at line 812.
+    Found 32-bit register for signal <valverx>.
+    Found 32-bit register for signal <vdata>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred  11 Counter(s).
+	inferred 395 D-type flip-flop(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred  15 Comparator(s).
+	inferred  36 Multiplexer(s).
+	inferred   2 Xor(s).
+Unit <MAIN_VHDL> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 32x1-bit ROM                                          : 1
+ 64x7-bit ROM                                          : 1
+ 8x2-bit ROM                                           : 1
+# Adders/Subtractors                                   : 24
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 1
+ 13-bit adder                                          : 1
+ 13-bit subtractor                                     : 1
+ 14-bit adder                                          : 4
+ 15-bit subtractor                                     : 1
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 2
+ 20-bit addsub                                         : 1
+ 3-bit adder                                           : 2
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 4
+ 9-bit adder                                           : 2
+# Counters                                             : 21
+ 10-bit up counter                                     : 1
+ 12-bit up counter                                     : 1
+ 13-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 33-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 5
+ 6-bit down counter                                    : 1
+ 6-bit up counter                                      : 2
+ 8-bit up counter                                      : 2
+ 9-bit up counter                                      : 2
+# Registers                                            : 239
+ 1-bit register                                        : 184
+ 10-bit register                                       : 8
+ 11-bit register                                       : 3
+ 13-bit register                                       : 1
+ 14-bit register                                       : 4
+ 15-bit register                                       : 1
+ 17-bit register                                       : 1
+ 2-bit register                                        : 2
+ 20-bit register                                       : 1
+ 23-bit register                                       : 1
+ 24-bit register                                       : 1
+ 3-bit register                                        : 3
+ 32-bit register                                       : 2
+ 35-bit register                                       : 1
+ 36-bit register                                       : 2
+ 40-bit register                                       : 1
+ 5-bit register                                        : 3
+ 6-bit register                                        : 1
+ 7-bit register                                        : 6
+ 8-bit register                                        : 12
+ 9-bit register                                        : 1
+# Comparators                                          : 18
+ 10-bit comparator less                                : 1
+ 11-bit comparator greater                             : 1
+ 11-bit comparator lessequal                           : 1
+ 2-bit comparator equal                                : 1
+ 20-bit comparator greatequal                          : 1
+ 20-bit comparator lessequal                           : 1
+ 23-bit comparator equal                               : 1
+ 40-bit comparator equal                               : 1
+ 6-bit comparator greater                              : 1
+ 7-bit comparator greatequal                           : 8
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 11
+ 1-bit 32-to-1 multiplexer                             : 4
+ 1-bit 36-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 2
+ 13-bit 4-to-1 multiplexer                             : 1
+ 15-bit 4-to-1 multiplexer                             : 1
+ 2-bit 4-to-1 multiplexer                              : 1
+ 35-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 2
+ 1-bit xor35                                           : 1
+ 1-bit xor36                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <i_DESERIALIZER/i_COMMAND_MODULE/s_command_state_machine/FSM> on signal <s_command_state_machine[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 100   | 110
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine/FSM> on signal <s_receive_state_machine[1:10]> with one-hot encoding.
+---------------------
+ State | Encoding
+---------------------
+ 0000  | 0000000001
+ 0001  | 0000000010
+ 0010  | 0000000100
+ 0011  | 0000001000
+ 0100  | 0000010000
+ 0101  | 0000100000
+ 0110  | 0001000000
+ 0111  | 0010000000
+ 1000  | 0100000000
+ 1001  | 1000000000
+---------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine/FSM> on signal <s_send_state_machine[1:18]> with one-hot encoding.
+-----------------------------
+ State | Encoding
+-----------------------------
+ 00000 | 000000000000000001
+ 00001 | 000000000000000010
+ 00010 | 000000000000000100
+ 00011 | 000000000000001000
+ 00100 | 000000000000010000
+ 00101 | 000000000000100000
+ 00110 | 000000000001000000
+ 00111 | 000000000010000000
+ 01000 | 000000000100000000
+ 01001 | 000000001000000000
+ 01010 | 000000010000000000
+ 01011 | 000000100000000000
+ 01100 | 000001000000000000
+ 01101 | 000010000000000000
+ 01110 | 000100000000000000
+ 01111 | 001000000000000000
+ 10000 | 010000000000000000
+ 10001 | 100000000000000000
+-----------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <i_LED_ENCODER/s_blink_case/FSM> on signal <s_blink_case[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Reading core <ipcore_dir/MEM_32x32.ngc>.
+Reading core <ipcore_dir/MEM_512x64.ngc>.
+Loading core <MEM_32x32> for timing and area information for instance <FAIL_MEM_32x32>.
+Loading core <MEM_512x64> for timing and area information for instance <i_MEM_512x64>.
+Loading core <MEM_32x32> for timing and area information for instance <COUNTER_MEM_32x32>.
+WARNING:Xst:1290 - Hierarchical block <i_STATUS_SENDER> is unconnected in block <MAIN_VHDL>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <s_part_1_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_1_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_1_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_2_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_2_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_2_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_2_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_2_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_2_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_2_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_2_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_0_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_0_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_0_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_0_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_0_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_0_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_0_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_0_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_3_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_3_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_3_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_3_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_3_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_3_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_3_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_3_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_4_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CMD_o_7> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CMD_o_6> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CMD_o_5> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CMD_o_4> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CMD_o_3> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CMD_o_2> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CMD_o_1> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CMD_o_0> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_o_7> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_o_6> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_o_5> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_o_4> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_o_3> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_o_2> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_o_1> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DATA_o_0> (without init value) has a constant value of 0 in block <i_COMMAND_MODULE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_5> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_4> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_2> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_1> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_3> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_0> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_6> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_7> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_1_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_1_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_1_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_1_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_1_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_5_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_5_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_23> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_22> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_21> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_20> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_19> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_18> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_17> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_16> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_15> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_14> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_13> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_12> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_11> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_10> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_9> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_8> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PERIOD_o_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PLAY_o> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ENABLE_o> (without init value) has a constant value of 0 in block <i_TUNE_CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_tune_state> (without init value) has a constant value of 0 in block <i_TUNE_CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_5_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_7_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_7_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_7_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_7_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_7_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_7_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_7_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_7_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_6_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_6_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_6_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_6_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_6_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_6_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_6_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_6_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_4_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_4_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_4_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_4_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_4_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_4_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_4_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_5_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_5_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_5_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_5_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_part_5_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_12> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_11> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_0> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_1> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_2> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_3> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_4> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_5> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_6> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_7> (without init value) has a constant value of 0 in block <i_SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_10> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_9> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_8> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_7> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_6> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_5> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_4> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_3> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_2> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_1> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_0> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_19> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_20> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_21> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_22> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_23> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_24> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_25> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_26> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_27> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_28> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_29> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_30> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_31> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_32> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_33> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_34> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_35> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_36> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_37> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_38> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_39> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_18> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_17> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_16> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_15> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_14> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <NOTE_LENGTH_o_13> (without init value) has a constant value of 0 in block <i_INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <STOP_o> is unconnected in block <i_INT_TUNE_PLAYER>.
+WARNING:Xst:1710 - FF/Latch <FFd3> (without init value) has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FFd1> (without init value) has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FFd2> (without init value) has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 4
+# ROMs                                                 : 3
+ 32x1-bit ROM                                          : 1
+ 64x7-bit ROM                                          : 1
+ 8x2-bit ROM                                           : 1
+# Adders/Subtractors                                   : 24
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 1
+ 13-bit adder                                          : 1
+ 13-bit subtractor                                     : 1
+ 14-bit adder                                          : 4
+ 15-bit subtractor                                     : 1
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 2
+ 20-bit addsub                                         : 1
+ 3-bit adder                                           : 2
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 4
+ 9-bit adder                                           : 2
+# Counters                                             : 21
+ 10-bit up counter                                     : 1
+ 12-bit up counter                                     : 1
+ 13-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 33-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 5
+ 6-bit down counter                                    : 1
+ 6-bit up counter                                      : 2
+ 8-bit up counter                                      : 2
+ 9-bit up counter                                      : 2
+# Registers                                            : 857
+ Flip-Flops                                            : 857
+# Comparators                                          : 18
+ 10-bit comparator less                                : 1
+ 11-bit comparator greater                             : 1
+ 11-bit comparator lessequal                           : 1
+ 2-bit comparator equal                                : 1
+ 20-bit comparator greatequal                          : 1
+ 20-bit comparator lessequal                           : 1
+ 23-bit comparator equal                               : 1
+ 40-bit comparator equal                               : 1
+ 6-bit comparator greater                              : 1
+ 7-bit comparator greatequal                           : 8
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 11
+ 1-bit 32-to-1 multiplexer                             : 4
+ 1-bit 36-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 2
+ 13-bit 4-to-1 multiplexer                             : 1
+ 15-bit 4-to-1 multiplexer                             : 1
+ 2-bit 4-to-1 multiplexer                              : 1
+ 35-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 2
+ 1-bit xor35                                           : 1
+ 1-bit xor36                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <s_was_on_state_1> (without init value) has a constant value of 0 in block <INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_was_on_state_3> (without init value) has a constant value of 0 in block <INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_was_on_state_5> (without init value) has a constant value of 0 in block <INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_was_on_state_6> (without init value) has a constant value of 0 in block <INT_TUNE_PLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_rx_data_buff_6> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_rx_data_buff_7> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_rx_data_buff_2> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_rx_data_buff_0> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_rx_data_buff_1> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_rx_data_buff_5> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_rx_data_buff_3> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_rx_data_buff_4> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_0> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_1> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_2> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_3> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_4> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_5> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_6> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RX_DATA_o_7> (without init value) has a constant value of 0 in block <SERIAL_RX>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram in unit ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram in unit ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramloop[1].ram.r/s3_noinit.ram/dpram.dp36x36.ram in unit ramloop[1].ram.r/s3_noinit.ram/dpram.dp36x36.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram in unit ramloop[0].ram.r/s3_noinit.ram/dpram.dp36x36.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+
+Optimizing unit <MAIN_VHDL> ...
+
+Optimizing unit <MANUAL_TEJET> ...
+
+Optimizing unit <LED_ENCODER> ...
+
+Optimizing unit <VALVE_FAIL> ...
+
+Optimizing unit <SERIAL_TX> ...
+
+Optimizing unit <SEND_SERIAL_DATA> ...
+
+Optimizing unit <FREQUENCY_GEN> ...
+
+Optimizing unit <TUNE_CONTROL> ...
+
+Optimizing unit <INT_TUNE_PLAYER> ...
+
+Optimizing unit <SERIAL_RX> ...
+
+Optimizing unit <COMMAND_MODULE> ...
+
+Optimizing unit <COUNT_CHOPPER> ...
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_8> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_9> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_10> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_11> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_12> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_13> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_14> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_15> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_16> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_17> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_18> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_19> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_20> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_21> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_22> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_23> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_was_on_state_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/DATA_o_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/DATA_o_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/DATA_o_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/DATA_o_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/DATA_o_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/DATA_o_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/DATA_o_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/DATA_o_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_o_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_o_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_o_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_o_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_o_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_o_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_o_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_o_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/s_command_state_machine_FSM_FFd3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/s_command_state_machine_FSM_FFd2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_0> (without init value) has a constant value of 1 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PLAY_o> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/LIVE_o> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/PERIOD_o_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_TUNE_CONTROL/ENABLE_o> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_TUNE_CONTROL/s_tune_state> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_7_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_7_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_7_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_7_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_7_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_7_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_6_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_6_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_6_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_6_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_6_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_6_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_6_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_6_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_4_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_7_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_7_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_5_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_5_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_5_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_5_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_5_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_5_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_5_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_5_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_1_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_1_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_1_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_1_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_1_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_1_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_1_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_1_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_2_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_2_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_2_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_2_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_2_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_2_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_2_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_2_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_0_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_0_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_0_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_0_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_0_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_0_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_4_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_4_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_4_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_4_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_4_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_4_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_4_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_3_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_0_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_0_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_3_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_3_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_3_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_3_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_3_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_3_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_part_3_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_22> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_23> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_24> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_25> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_26> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_27> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_28> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_29> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_30> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_31> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_32> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_33> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_34> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_35> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_36> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_37> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_38> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_39> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_0> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_2> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_4> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_5> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_6> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_7> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_8> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_9> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_10> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_11> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_12> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_13> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_14> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_15> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_16> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_17> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_18> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_19> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_20> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/NOTE_LENGTH_o_21> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <s_max_both_ibus_0> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_3> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_4> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_5> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_6> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_7> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_8> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_9> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <s_max_both_ibus_10> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SERIAL_TX/s_send_state_machine_3> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SERIAL_TX/s_send_state_machine_2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SERIAL_TX/s_send_state_machine_1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SERIAL_TX/s_send_state_machine_0> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SERIAL_TX/TX_o> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SERIAL_TX/s_finish_packet> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SERIAL_TX/s_send_packet> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SERIAL_TX/PACKET_SENT_o> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd18> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd17> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd16> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd15> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd14> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd13> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd11> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd10> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd12> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd9> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd8> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd7> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd6> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd5> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd4> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_state_machine_FSM_FFd3> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_o> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_8BIT_DATA_o_7> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_8BIT_DATA_o_6> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_8BIT_DATA_o_5> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_8BIT_DATA_o_4> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_8BIT_DATA_o_3> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_8BIT_DATA_o_2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_8BIT_DATA_o_1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/SEND_8BIT_DATA_o_0> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_16> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_15> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_14> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_13> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_12> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_11> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_10> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_9> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_8> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_7> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_6> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_5> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_4> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_3> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_STATUS_SENDER/i_SEND_SERIAL_DATA/s_send_interval_counter_0> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/FAIL_o> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_LIMITER_WRAPPER/i_COUNT_CHOPPER/s_probe_2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_LIMITER_WRAPPER/i_COUNT_CHOPPER/s_probe_1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_LIMITER_WRAPPER/i_COUNT_CHOPPER/s_probe_0> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/STOP_o> is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:1710 - FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_3> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/s_command_state_machine_FSM_FFd1> (without init value) has a constant value of 0 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_22> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_21> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_20> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_19> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_18> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_17> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_16> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_15> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_14> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_13> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_12> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_11> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_10> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_9> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_8> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_7> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_6> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_5> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_4> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_3> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_pwm_counter_0> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_frequency_o> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_22> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_21> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_20> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_19> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_18> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_17> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_16> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_15> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_14> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_13> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_12> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_11> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_10> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_9> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_8> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_7> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_6> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_5> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_4> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_3> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_FREQUENCY_GEN/s_period_i_0> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_was_on_state_0> of sequential type is unconnected in block <MAIN_VHDL>.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch <i_DESERIALIZER/i_COMMAND_MODULE/CMD_END_o> (without init value) has a constant value of 1 in block <MAIN_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd1> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd2> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd3> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd4> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd5> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd6> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd7> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd8> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd10> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/s_receive_state_machine_FSM_FFd9> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_SERIAL_RX/PACKET_READY_o> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_COMMAND_MODULE/s_has_packet> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_COMMAND_MODULE/s_clear_has_packet> of sequential type is unconnected in block <MAIN_VHDL>.
+WARNING:Xst:2677 - Node <i_DESERIALIZER/i_COMMAND_MODULE/ERROR_o> of sequential type is unconnected in block <MAIN_VHDL>.
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/REC_o> in Unit <MAIN_VHDL> is equivalent to the following FF/Latch, which will be removed : <i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state_5> 
+Found area constraint ratio of 100 (+ 5) on block MAIN_VHDL, actual ratio is 39.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 779
+ Flip-Flops                                            : 779
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MAIN_VHDL.ngr
+Top Level Output File Name         : MAIN_VHDL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 85
+
+Cell Usage :
+# BELS                             : 2009
+#      GND                         : 11
+#      INV                         : 63
+#      LUT1                        : 156
+#      LUT2                        : 162
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 347
+#      LUT3_D                      : 8
+#      LUT3_L                      : 1
+#      LUT4                        : 542
+#      LUT4_D                      : 5
+#      LUT4_L                      : 5
+#      MUXCY                       : 289
+#      MUXF5                       : 117
+#      MUXF6                       : 21
+#      MUXF7                       : 10
+#      MUXF8                       : 5
+#      VCC                         : 4
+#      XORCY                       : 261
+# FlipFlops/Latches                : 779
+#      FD                          : 3
+#      FDC                         : 15
+#      FDCE                        : 50
+#      FDCE_1                      : 32
+#      FDE                         : 296
+#      FDE_1                       : 33
+#      FDP                         : 3
+#      FDPE_1                      : 3
+#      FDR                         : 187
+#      FDR_1                       : 83
+#      FDRE                        : 36
+#      FDRE_1                      : 1
+#      FDRS                        : 3
+#      FDS                         : 1
+#      FDS_1                       : 1
+#      FDSE_1                      : 32
+# RAMS                             : 4
+#      RAMB16                      : 4
+# Clock Buffers                    : 9
+#      BUFG                        : 9
+# IO Buffers                       : 85
+#      IBUF                        : 37
+#      IBUFG                       : 2
+#      OBUF                        : 46
+# DCMs                             : 1
+#      DCM                         : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200tq144-5 
+
+ Number of Slices:                      766  out of   1920    39%  
+ Number of Slice Flip Flops:            779  out of   3840    20%  
+ Number of 4 input LUTs:               1291  out of   3840    33%  
+ Number of IOs:                          85
+ Number of bonded IOBs:                  85  out of     97    87%  
+ Number of BRAMs:                         4  out of     12    33%  
+ Number of GCLKs:                         9  out of      8   112% (*) 
+ Number of DCMs:                          1  out of      4    25%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+RX                                 | IBUF                   | 37    |
+CX                                 | IBUFG+BUFG             | 155   |
+clk37                              | DCM_inst:CLKFX         | 32    |
+clk12                              | BUFG                   | 308   |
+ck1us                              | BUFG                   | 196   |
+cmit                               | BUFG                   | 55    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset(reset1_INV_0:O)              | NONE(adt_0)            | 89    |
+serend_or0000(serend_or00001:O)    | NONE(nrx_0)            | 13    |
+serst_or0000(serst_or00001:O)      | NONE(serst)            | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 24.797ns (Maximum Frequency: 40.327MHz)
+   Minimum input arrival time before clock: 9.930ns
+   Maximum output required time after clock: 9.771ns
+   Maximum combinational path delay: 6.369ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CX'
+  Clock period: 8.988ns (frequency: 111.260MHz)
+  Total number of paths / destination ports: 2033 / 221
+-------------------------------------------------------------------------
+Delay:               4.494ns (Levels of Logic = 2)
+  Source:            command_2 (FF)
+  Destination:       valverx_0 (FF)
+  Source Clock:      CX rising
+  Destination Clock: CX falling
+
+  Data Path: command_2 to valverx_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.626   0.976  command_2 (command_2)
+     LUT4:I0->O            1   0.479   0.000  valverx_and00001 (valverx_and00001)
+     MUXF5:I0->O          32   0.314   1.575  valverx_and0000_f5 (valverx_and0000)
+     FDE_1:CE                  0.524          valverx_0
+    ----------------------------------------
+    Total                      4.494ns (1.943ns logic, 2.551ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk37'
+  Clock period: 24.797ns (frequency: 40.327MHz)
+  Total number of paths / destination ports: 718 / 64
+-------------------------------------------------------------------------
+Delay:               6.199ns (Levels of Logic = 3)
+  Source:            dv3_5 (FF)
+  Destination:       clk2 (FF)
+  Source Clock:      clk37 rising 4.0X
+  Destination Clock: clk37 rising 4.0X
+
+  Data Path: dv3_5 to clk2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.626   1.078  dv3_5 (dv3_5)
+     LUT2:I0->O            1   0.479   0.976  clk2_and0000230 (clk2_and0000230)
+     LUT4_D:I0->LO         1   0.479   0.270  clk2_and0000241 (N390)
+     LUT2:I1->O            8   0.479   0.921  clk2_and000011 (clk2_and0000)
+     FDRE:R                    0.892          clk2
+    ----------------------------------------
+    Total                      6.199ns (2.955ns logic, 3.244ns route)
+                                       (47.7% logic, 52.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk12'
+  Clock period: 22.555ns (frequency: 44.335MHz)
+  Total number of paths / destination ports: 9811 / 533
+-------------------------------------------------------------------------
+Delay:               11.278ns (Levels of Logic = 9)
+  Source:            s_max_current (FF)
+  Destination:       i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/FUSE_o_26 (FF)
+  Source Clock:      clk12 rising
+  Destination Clock: clk12 falling
+
+  Data Path: s_max_current to i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/FUSE_o_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            36   0.626   1.618  s_max_current (s_max_current)
+     LUT4:I3->O            1   0.479   0.851  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/s_valid_valve<8>1 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/s_valid_valve<8>)
+     LUT3:I1->O            1   0.479   0.000  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_91 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_91)
+     MUXF5:I0->O           1   0.314   0.000  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_7_f5_0 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_7_f51)
+     MUXF6:I0->O           1   0.298   0.000  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_5_f6_0 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_5_f61)
+     MUXF7:I1->O           1   0.298   0.000  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_4_f7 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_4_f7)
+     MUXF8:I0->O          34   0.298   1.608  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/Mmux_s_fail_test_state_varindex0000_2_f8 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/s_fail_test_state<1>)
+     LUT4_D:I3->O          4   0.479   0.838  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/FUSE_o_0_not00011 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/N01)
+     LUT3_D:I2->O          7   0.479   0.929  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/FUSE_o_10_not000121 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/N12)
+     LUT4:I3->O            1   0.479   0.681  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/FUSE_o_22_not00011 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/FUSE_o_22_not0001)
+     FDSE_1:CE                 0.524          i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/FUSE_o_22
+    ----------------------------------------
+    Total                     11.278ns (4.753ns logic, 6.525ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ck1us'
+  Clock period: 20.741ns (frequency: 48.214MHz)
+  Total number of paths / destination ports: 40242 / 308
+-------------------------------------------------------------------------
+Delay:               10.371ns (Levels of Logic = 28)
+  Source:            i_MANUAL_TEJET/MANUAL_TESTEJET_o_1 (FF)
+  Destination:       i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_19 (FF)
+  Source Clock:      ck1us rising
+  Destination Clock: ck1us falling
+
+  Data Path: i_MANUAL_TEJET/MANUAL_TESTEJET_o_1 to i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.626   0.949  i_MANUAL_TEJET/MANUAL_TESTEJET_o_1 (i_MANUAL_TEJET/MANUAL_TESTEJET_o_1)
+     LUT2:I1->O            1   0.479   0.704  s_valve_state<1>1 (s_valve_state<1>)
+     LUT4:I3->O            1   0.479   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_10 (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_10)
+     MUXF5:I0->O           1   0.314   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_8_f5 (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_8_f5)
+     MUXF6:I0->O           1   0.298   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_6_f6 (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_6_f6)
+     MUXF7:I0->O           1   0.298   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_4_f7 (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_4_f7)
+     MUXF8:I0->O          22   0.298   1.530  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mmux_VALVE_STATE_i_mux0000_2_f8 (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/PROTOTYPE_o<1>)
+     LUT3:I1->O            1   0.479   0.681  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_mux0004<17>2 (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_mux0004<17>1)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<0> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<1> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<2> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<3> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<4> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<5> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<6> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<7> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<8> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<9> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<10> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<11> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<12> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<13> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<14> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<15> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<16> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<17> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<17>)
+     MUXCY:CI->O           0   0.056   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<18> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_cy<18>)
+     XORCY:CI->O           1   0.786   0.740  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_xor<19> (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_share0000<19>)
+     LUT3:I2->O            1   0.479   0.000  i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_mux0003<19>1 (i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_mux0003<19>)
+     FDR_1:D                   0.176          i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_19
+    ----------------------------------------
+    Total                     10.371ns (5.766ns logic, 4.604ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'cmit'
+  Clock period: 10.481ns (frequency: 95.411MHz)
+  Total number of paths / destination ports: 2001 / 88
+-------------------------------------------------------------------------
+Delay:               10.481ns (Levels of Logic = 9)
+  Source:            i_MANUAL_TEJET/v_cnt_manual_testejet_1 (FF)
+  Destination:       i_MANUAL_TEJET/s_on_manual_testejet (FF)
+  Source Clock:      cmit rising
+  Destination Clock: cmit rising
+
+  Data Path: i_MANUAL_TEJET/v_cnt_manual_testejet_1 to i_MANUAL_TEJET/s_on_manual_testejet
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.626   1.040  i_MANUAL_TEJET/v_cnt_manual_testejet_1 (i_MANUAL_TEJET/v_cnt_manual_testejet_1)
+     LUT1:I0->O            1   0.479   0.000  i_MANUAL_TEJET/Madd_s_on_manual_testejet_add0000_cy<1>_rt (i_MANUAL_TEJET/Madd_s_on_manual_testejet_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.435   0.000  i_MANUAL_TEJET/Madd_s_on_manual_testejet_add0000_cy<1> (i_MANUAL_TEJET/Madd_s_on_manual_testejet_add0000_cy<1>)
+     XORCY:CI->O           2   0.786   1.040  i_MANUAL_TEJET/Madd_s_on_manual_testejet_add0000_xor<2> (i_MANUAL_TEJET/s_on_manual_testejet_add0000<2>)
+     LUT3:I0->O            1   0.479   0.740  i_MANUAL_TEJET/s_on_inc_manual_testejet_mux00005_SW0 (N90)
+     LUT4:I2->O            3   0.479   0.941  i_MANUAL_TEJET/s_on_inc_manual_testejet_mux00005 (i_MANUAL_TEJET/s_on_inc_manual_testejet_mux0000_bdd7)
+     LUT3:I1->O            1   0.479   0.704  i_MANUAL_TEJET/s_on_inc_manual_testejet_mux00002_SW0 (N92)
+     LUT4:I3->O            2   0.479   0.804  i_MANUAL_TEJET/s_on_inc_manual_testejet_mux00002 (i_MANUAL_TEJET/s_on_inc_manual_testejet_mux0000_bdd0)
+     LUT3:I2->O            1   0.479   0.000  i_MANUAL_TEJET/s_on_manual_testejet_mux0000153_G (N3311)
+     MUXF5:I1->O           1   0.314   0.000  i_MANUAL_TEJET/s_on_manual_testejet_mux0000153 (i_MANUAL_TEJET/s_on_manual_testejet_mux0000)
+     FDRE:D                    0.176          i_MANUAL_TEJET/s_on_manual_testejet
+    ----------------------------------------
+    Total                     10.481ns (5.211ns logic, 5.270ns route)
+                                       (49.7% logic, 50.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RX'
+  Total number of paths / destination ports: 73 / 37
+-------------------------------------------------------------------------
+Offset:              5.097ns (Levels of Logic = 2)
+  Source:            resetin (PAD)
+  Destination:       txs_0 (FF)
+  Destination Clock: RX rising
+
+  Data Path: resetin to txs_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   0.715   1.784  resetin_IBUF (i_MANUAL_TEJET/RESET_i_inv)
+     LUT3:I1->O           36   0.479   1.595  txs_and00001 (txs_and0000)
+     FDE:CE                    0.524          txs_0
+    ----------------------------------------
+    Total                      5.097ns (1.718ns logic, 3.379ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CX'
+  Total number of paths / destination ports: 108 / 108
+-------------------------------------------------------------------------
+Offset:              6.713ns (Levels of Logic = 3)
+  Source:            resetin (PAD)
+  Destination:       vdata_0 (FF)
+  Destination Clock: CX rising
+
+  Data Path: resetin to vdata_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   0.715   1.909  resetin_IBUF (i_MANUAL_TEJET/RESET_i_inv)
+     LUT2:I0->O           14   0.479   1.032  serend_or00001 (serend_or0000)
+     LUT4:I3->O           32   0.479   1.575  vdata_and00002 (vdata_and0000)
+     FDE:CE                    0.524          vdata_0
+    ----------------------------------------
+    Total                      6.713ns (2.197ns logic, 4.516ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk12'
+  Total number of paths / destination ports: 325 / 294
+-------------------------------------------------------------------------
+Offset:              9.930ns (Levels of Logic = 5)
+  Source:            resetin (PAD)
+  Destination:       s_ad_ibus1_sens_mean_0 (FF)
+  Destination Clock: clk12 rising
+
+  Data Path: resetin to s_ad_ibus1_sens_mean_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   0.715   1.637  resetin_IBUF (i_MANUAL_TEJET/RESET_i_inv)
+     LUT4:I3->O            5   0.479   0.953  s_ad_ibus1_sens_mean_and000011 (N39)
+     LUT4:I1->O           57   0.479   1.867  s_ad_ibus1_sens_mean_and000031 (s_ad_34vin_sens_acc_and0000)
+     LUT3:I1->O            1   0.479   0.704  s_ad_ibus1_sens_mean_and0000_SW0 (N611)
+     LUT4:I3->O           40   0.479   1.614  s_ad_ibus1_sens_mean_and0000 (s_ad_ibus1_sens_mean_and0000)
+     FDE:CE                    0.524          s_ad_ibus1_sens_mean_0
+    ----------------------------------------
+    Total                      9.930ns (3.155ns logic, 6.775ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ck1us'
+  Total number of paths / destination ports: 133 / 133
+-------------------------------------------------------------------------
+Offset:              7.072ns (Levels of Logic = 3)
+  Source:            resetin (PAD)
+  Destination:       i_MANUAL_TEJET/v_freq_gen_cnt_12 (FF)
+  Destination Clock: ck1us rising
+
+  Data Path: resetin to i_MANUAL_TEJET/v_freq_gen_cnt_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   0.715   1.909  resetin_IBUF (i_MANUAL_TEJET/RESET_i_inv)
+     LUT3:I0->O           33   0.479   1.603  i_MANUAL_TEJET/MANUAL_TESTEJET_o_3_or00001 (i_MANUAL_TEJET/MANUAL_TESTEJET_o_3_or0000)
+     LUT4:I3->O           13   0.479   0.994  i_MANUAL_TEJET/v_freq_gen_cnt_or000048 (i_MANUAL_TEJET/v_freq_gen_cnt_or0000)
+     FDR:R                     0.892          i_MANUAL_TEJET/v_freq_gen_cnt_0
+    ----------------------------------------
+    Total                      7.072ns (2.565ns logic, 4.507ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'cmit'
+  Total number of paths / destination ports: 94 / 77
+-------------------------------------------------------------------------
+Offset:              6.371ns (Levels of Logic = 2)
+  Source:            resetin (PAD)
+  Destination:       i_MANUAL_TEJET/s_on_inc_manual_testejet (FF)
+  Destination Clock: cmit rising
+
+  Data Path: resetin to i_MANUAL_TEJET/s_on_inc_manual_testejet
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   0.715   1.614  resetin_IBUF (i_MANUAL_TEJET/RESET_i_inv)
+     INV:I->O            257   0.479   2.671  reset1_INV_0 (reset)
+     FDRE:R                    0.892          i_MANUAL_TEJET/s_on_manual_testejet
+    ----------------------------------------
+    Total                      6.371ns (2.086ns logic, 4.285ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk12'
+  Total number of paths / destination ports: 12 / 8
+-------------------------------------------------------------------------
+Offset:              9.085ns (Levels of Logic = 3)
+  Source:            i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/s_valve_0 (FF)
+  Destination:       PROTOTYPE_o<0> (PAD)
+  Source Clock:      clk12 rising
+
+  Data Path: i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/s_valve_0 to PROTOTYPE_o<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             61   0.626   2.011  i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/s_valve_0 (i_VALVE_FAIL_WRAPPER/i_FAIL_MEM_CONTROL/s_valve_0)
+     LUT4:I0->O            1   0.479   0.000  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/is_valve_0_cmp_eq00001 (i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/is_valve_0_cmp_eq0000)
+     MUXF5:I1->O           2   0.314   0.745  i_VALVE_FAIL_WRAPPER/i_VALVE_FAIL/is_valve_0_cmp_eq0000_f5 (PROTOTYPE_o_0_OBUF)
+     OBUF:I->O                 4.909          PROTOTYPE_o_0_OBUF (PROTOTYPE_o<0>)
+    ----------------------------------------
+    Total                      9.085ns (6.328ns logic, 2.757ns route)
+                                       (69.7% logic, 30.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'cmit'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.376ns (Levels of Logic = 2)
+  Source:            i_LED_ENCODER/s_led (FF)
+  Destination:       led (PAD)
+  Source Clock:      cmit rising
+
+  Data Path: i_LED_ENCODER/s_led to led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.626   0.681  i_LED_ENCODER/s_led (i_LED_ENCODER/s_led)
+     INV:I->O              1   0.479   0.681  i_LED_ENCODER/LED_o1_INV_0 (led_OBUF)
+     OBUF:I->O                 4.909          led_OBUF (led)
+    ----------------------------------------
+    Total                      7.376ns (6.014ns logic, 1.362ns route)
+                                       (81.5% logic, 18.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CX'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              7.769ns (Levels of Logic = 2)
+  Source:            valverx_0 (FF)
+  Destination:       eval<0> (PAD)
+  Source Clock:      CX falling
+
+  Data Path: valverx_0 to eval<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            4   0.626   1.074  valverx_0 (valverx_0)
+     LUT3:I0->O            1   0.479   0.681  s_valve_out<0>1 (eval_0_OBUF)
+     OBUF:I->O                 4.909          eval_0_OBUF (eval<0>)
+    ----------------------------------------
+    Total                      7.769ns (6.014ns logic, 1.755ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk37'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              9.771ns (Levels of Logic = 2)
+  Source:            clk12 (FF)
+  Destination:       PROTOTYPE_o<7> (PAD)
+  Source Clock:      clk37 rising 4.0X
+
+  Data Path: clk12 to PROTOTYPE_o<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            12   0.626   0.950  clk12 (clk12)
+     BUFG:I->O           310   0.357   2.929  BUFG_1z (PROTOTYPE_o_7_OBUF)
+     OBUF:I->O                 4.909          PROTOTYPE_o_7_OBUF (PROTOTYPE_o<7>)
+    ----------------------------------------
+    Total                      9.771ns (5.892ns logic, 3.879ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ck1us'
+  Total number of paths / destination ports: 65 / 33
+-------------------------------------------------------------------------
+Offset:              7.769ns (Levels of Logic = 2)
+  Source:            i_MANUAL_TEJET/MANUAL_TESTEJET_o_31 (FF)
+  Destination:       eval<31> (PAD)
+  Source Clock:      ck1us rising
+
+  Data Path: i_MANUAL_TEJET/MANUAL_TESTEJET_o_31 to eval<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.626   1.074  i_MANUAL_TEJET/MANUAL_TESTEJET_o_31 (i_MANUAL_TEJET/MANUAL_TESTEJET_o_31)
+     LUT3:I0->O            1   0.479   0.681  s_valve_out<31>1 (eval_31_OBUF)
+     OBUF:I->O                 4.909          eval_31_OBUF (eval<31>)
+    ----------------------------------------
+    Total                      7.769ns (6.014ns logic, 1.755ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.369ns (Levels of Logic = 2)
+  Source:            sens<0> (PAD)
+  Destination:       PROTOTYPE_o<2> (PAD)
+
+  Data Path: sens<0> to PROTOTYPE_o<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   0.745  sens_0_IBUF (sens_0_IBUF)
+     OBUF:I->O                 4.909          PROTOTYPE_o_2_OBUF (PROTOTYPE_o<2>)
+    ----------------------------------------
+    Total                      6.369ns (5.624ns logic, 0.745ns route)
+                                       (88.3% logic, 11.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 29.62 secs
+ 
+--> 
+
+Total memory usage is 334480 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  521 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

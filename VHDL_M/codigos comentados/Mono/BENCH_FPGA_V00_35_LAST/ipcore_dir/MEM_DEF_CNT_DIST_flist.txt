@@ -1,0 +1,15 @@
+# Output products list for <MEM_DEF_CNT_DIST>
+MEM_DEF_CNT_DIST.asy
+MEM_DEF_CNT_DIST.gise
+MEM_DEF_CNT_DIST.ngc
+MEM_DEF_CNT_DIST.v
+MEM_DEF_CNT_DIST.veo
+MEM_DEF_CNT_DIST.vhd
+MEM_DEF_CNT_DIST.vho
+MEM_DEF_CNT_DIST.xco
+MEM_DEF_CNT_DIST.xise
+MEM_DEF_CNT_DIST_flist.txt
+MEM_DEF_CNT_DIST_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+dist_mem_gen_ds322.pdf
+dist_mem_gen_readme.txt

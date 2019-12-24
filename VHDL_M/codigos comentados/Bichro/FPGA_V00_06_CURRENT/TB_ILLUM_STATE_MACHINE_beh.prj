@@ -1,0 +1,3 @@
+vhdl work "CAMERA_SIMULATOR.vhd"
+vhdl work "ILLUM_STATE_MACHINE.vhd"
+vhdl work "TB_ILLUM_STATE_MACHINE.vhd"

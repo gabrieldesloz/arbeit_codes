@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "M:/vhdl/chipscope/chipscope_ila.xst" -ofn "M:/vhdl/chipscope/chipscope_ila.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-tq144-4 chipscope_ila.ngc chipscope_ila.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o chipscope_ila_map.ncd chipscope_ila.ngd chipscope_ila.pcf 

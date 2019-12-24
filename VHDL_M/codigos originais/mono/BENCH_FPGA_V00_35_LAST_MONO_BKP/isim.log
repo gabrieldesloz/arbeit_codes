@@ -1,0 +1,22 @@
+ISim log file
+Running: M:\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35\TB_EJECTORS_DATA_SENDER_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/TB_EJECTORS_DATA_SENDER_isim_beh.wdb 
+ISim P.15xf (signature 0xc3576ebc)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us

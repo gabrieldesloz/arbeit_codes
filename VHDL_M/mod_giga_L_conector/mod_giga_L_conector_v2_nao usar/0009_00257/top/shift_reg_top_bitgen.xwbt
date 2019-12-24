@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=M:\vhdl\0009_00257\shift_reg\shift_reg_top.ncd
+OUTFILE=M:\vhdl\0009_00257\shift_reg\shift_reg_top.bit
+FAMILY=Spartan3
+PART=xc3s200-4tq144
+WORKINGDIR=M:\vhdl\0009_00257\shift_reg
+LICENSE=WebPack
+USER_INFO=205418984_0_0_513

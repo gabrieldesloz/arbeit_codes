@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" Line 194: Actual for formal port <arg fmt="%s" index="1">addrb</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" Line 211: Actual for formal port <arg fmt="%s" index="1">addrb</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" Line 226: Actual for formal port <arg fmt="%s" index="1">addrb</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" Line 243: Actual for formal port <arg fmt="%s" index="1">addrb</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2347: Actual for formal port <arg fmt="%s" index="1">reset_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2359: Actual for formal port <arg fmt="%s" index="1">reset_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 3446: Actual for formal port <arg fmt="%s" index="1">pack_8bit_6</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4954: Actual for formal port <arg fmt="%s" index="1">has_grain_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4960: Actual for formal port <arg fmt="%s" index="1">a_elipse2_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4961: Actual for formal port <arg fmt="%s" index="1">a_elipse3_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4962: Actual for formal port <arg fmt="%s" index="1">a_elipse4_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4963: Actual for formal port <arg fmt="%s" index="1">a_elipse5_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4964: Actual for formal port <arg fmt="%s" index="1">a_elipse6_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4965: Actual for formal port <arg fmt="%s" index="1">a_elipse7_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4968: Actual for formal port <arg fmt="%s" index="1">b_elipse2_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4969: Actual for formal port <arg fmt="%s" index="1">b_elipse3_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4970: Actual for formal port <arg fmt="%s" index="1">b_elipse4_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4971: Actual for formal port <arg fmt="%s" index="1">b_elipse5_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4972: Actual for formal port <arg fmt="%s" index="1">b_elipse6_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4973: Actual for formal port <arg fmt="%s" index="1">b_elipse7_i</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1047: Assignment to <arg fmt="%s" index="1">s_en_back</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1269: <arg fmt="%s" index="1">a</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1272: <arg fmt="%s" index="1">a</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1275: <arg fmt="%s" index="1">a2</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1278: <arg fmt="%s" index="1">a2</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1281: <arg fmt="%s" index="1">ab</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1284: <arg fmt="%s" index="1">ab</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1287: <arg fmt="%s" index="1">a2b</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1290: <arg fmt="%s" index="1">a2b</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 1468: Assignment to <arg fmt="%s" index="1">phaseclr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2277: Assignment to <arg fmt="%s" index="1">is_there_a_hit</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2278: Assignment to <arg fmt="%s" index="1">is_there_b_hit</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2283: Assignment to <arg fmt="%s" index="1">debdeb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2284: Assignment to <arg fmt="%s" index="1">debdebb</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 76: <arg fmt="%s" index="1">sort_case_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 86: <arg fmt="%s" index="1">sort_case_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 90: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 98: <arg fmt="%s" index="1">sort_case_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 109: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 114: <arg fmt="%s" index="1">inx_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 116: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 126: <arg fmt="%s" index="1">s_sort_case_3_1</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 137: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 142: <arg fmt="%s" index="1">inx_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 144: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 155: <arg fmt="%s" index="1">sort_case_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 158: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 162: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 166: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 174: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 182: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 191: <arg fmt="%s" index="1">inx_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 196: <arg fmt="%s" index="1">rcont_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" Line 202: <arg fmt="%s" index="1">inx_i</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2412: Assignment to <arg fmt="%s" index="1">inside_ellip_r_am</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 3492: Assignment to <arg fmt="%s" index="1">s_cmd_others_2</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\CH_X_EJET_TIMER.vhd" Line 137: <arg fmt="%s" index="1">s_length_is</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\CH_X_EJET_TIMER.vhd" Line 166: <arg fmt="%s" index="1">s_length_is</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\CH_X_EJET_TIMER.vhd" Line 195: Assignment to <arg fmt="%s" index="1">s_should_rettrig</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\CH_X_EJET_TIMER.vhd" Line 113: Net &lt;<arg fmt="%s" index="1">s_already_ejected[0]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="758" delta="old" >"\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MEM_SYNC.vhd" Line 62: Replacing existing netlist <arg fmt="%s" index="1">MEM_SYNC</arg>(<arg fmt="%s" index="2"></arg>)
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">3438</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">i_STATUS_SENDER</arg>&gt; of block &lt;<arg fmt="%s" index="4">STATUS_SENDER</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">MAIN</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CONF&lt;3:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CONF&lt;5:5&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">LADDR&lt;4:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CH1</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">LFRAME</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">L_TX</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd</arg>&quot; line <arg fmt="%s" index="2">3438</arg>: Output port &lt;<arg fmt="%s" index="3">SEND_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_STATUS_SENDER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd</arg>&quot; line <arg fmt="%s" index="2">3438</arg>: Output port &lt;<arg fmt="%s" index="3">TX_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_STATUS_SENDER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd</arg>&quot; line <arg fmt="%s" index="2">4883</arg>: Output port &lt;<arg fmt="%s" index="3">PROBE_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_FORMAT</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">\\smkn33\s10067\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_35_LAST\MAIN.vhd</arg>&quot; line <arg fmt="%s" index="2">4883</arg>: Output port &lt;<arg fmt="%s" index="3">MAX_ACTIVE_COUNTER_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_FORMAT</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CH1_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CLKSEL_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">CLK_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">PACK_8BIT_14</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">RETRIGGER_ON_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">s_already_ejected&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">s_tjet_state</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">TESTEJET</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">s_grabline</arg>&lt;<arg fmt="%d" index="2">6</arg>:<arg fmt="%d" index="3">6</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">s_grab_sector</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">s_sram_int_rd_addr</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">s_sram_rd_addr</arg>&lt;<arg fmt="%d" index="2">17</arg>:<arg fmt="%d" index="3">17</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">MAIN</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">s_end_floor</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_s_floor_state[4]_PWR_8_o_Mux_15_o</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="info" file="Xst" num="3230" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Mram_rasc1com[2]_GND_6_o_wide_mux_2227_OUT</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+</msg>
+
+<msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">ejeta</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_tabejeta</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">nejeta</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_tabejeta1</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">ejetb</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_tabejetb</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">nejetb</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_tabejetb1</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">datasel[1]_CLKA_DFF_470</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_datasel[1]_PWR_31_o_Mux_1431_o</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="info" file="Xst" num="3230" delta="old" >The RAM description &lt;<arg fmt="%s" index="1">Mram_ledout[2]_GND_6_o_Mux_85_o</arg>&gt; will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_tabejeta</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_tabejeta1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_tabejetb</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_tabejetb1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ejdt0</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ejdt1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n8677</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n8885</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n8682</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n8697</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n8706</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n8741</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n8750</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n8671</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ab_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ab_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ab_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ab_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a2b_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a2b_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a2b_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a2b_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">addrdotwb_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">addrdotwb_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_4_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_3_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_5_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_6_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">s_ramdata_7_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">s_tejet_dwell_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">s_tejet_dwell_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">s_sram_int_rd_addr_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">deb_refle_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">deb_refle_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">deb_refleb_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">deb_refleb_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">s_sram_rd_addr_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ccd1_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ccd1_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ccd3_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ccd3_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ccd2_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ccd2_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ccd4_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ccd4_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly
+incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
+either a register or latch described with both an asynchronous set and
+asynchronous reset, or a register or latch described with an asynchronous
+set or reset which however has an initialization value of the opposite 
+polarity (i.e. asynchronous reset with an initialization value of 1).
+ While this circuit can be built, it creates a sub-optimal implementation
+in terms of area, power and performance. For a more optimal implementation
+Xilinx highly recommends one of the following:
+
+       1) Remove either the set or reset from all registers and latches
+          if not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Ensure all registers have the same initialization value as the
+          described asynchronous set or reset polarity
+       4) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ltc_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ltc_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_max_active_counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_inc_max_active_counter</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_active_valves_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_EJET_TIMER/s_active_valves_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MAIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_baud_clk_counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_baud_clk_counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_baud_clk_counter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_baud_clk_counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_baud_clk_counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_baud_clk_counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_baud_clk_counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_baud_clk_counter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">s_BAUD_CLK_BUF</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MAIN</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s6_init.ram/SDP.SIMPLE_PRIM18.ram</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BU2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+<msg type="warning" file="Xst" num="615" delta="old" ><arg fmt="%s" index="1">Flip flop associated with net</arg> <arg fmt="%s" index="2">clkaq_BUFG</arg> not found, property <arg fmt="%s" index="3">IOB</arg> not attached.
+</msg>
+
+</messages>
+

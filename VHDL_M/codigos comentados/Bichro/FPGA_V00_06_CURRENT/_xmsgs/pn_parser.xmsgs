@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/ALL_IN_BUFF.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/CAMERA_SIMULATOR.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/CH_X_EJET_TIMER.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/EJ_CLEAR_COUNT.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/FLOOR_GEN.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/ILLUM_STATE_MACHINE.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/IN_BUFF.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MAIN.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MAIN_BOARD_DETECTION.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MAIN_RESET.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MEAN_32.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MEM_CTRL.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MEM_CTRL_DELAY.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MEM_SYNC.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/PSEUDO_RANDOM_TEST.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/SEND_SERIAL_DATA.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/SERIAL_TX.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/SORT_CASE.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/STATUS_SEND_TEST.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/TESTEJET.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/WRAPPER.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/WRAPPER_EJET.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/WRAPPER_TOP.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/memdef.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

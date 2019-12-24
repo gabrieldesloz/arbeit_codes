@@ -1,0 +1,17 @@
+colorida - linha 138 - nao tem informação de offset de background
+colorida - 266, 267: so possui informacao de reflectancia
+mono linha 304, sinal phaseclr
+colorida - linha 483, 484, excesso de uso para café
+colorida - sincronia só pra elipse 7?
+color - 731 - detector de placa
+color - 781 - nao possui o sinal s_sync_in
+main reset nao é utilizado
+mono - deletar s_EN_BACK
+color - linha 1165 - offset horizontal
+color  - linha 1428 - entrada do multiplicador
+mono - phcnt, phaseclr, s_afec
+color - linha 2353 - sobre uso
+color - linha 3096 - acesso externo da fifo, 
+color - linha 3121
+color - linha 3971
+color - linha 5079

@@ -1,0 +1,5 @@
+
+State Machine - |phase_sum|fsm_state_reg
+Name fsm_state_reg.ST_FSM_SUM 
+fsm_state_reg.ST_FSM_NORMAL 0 
+fsm_state_reg.ST_FSM_SUM 1 

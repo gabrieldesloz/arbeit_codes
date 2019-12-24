@@ -1,0 +1,29 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/TB_EJECTORS_DATA_SENDER_isim_beh.exe -prj M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/TB_EJECTORS_DATA_SENDER_beh.prj work.TB_EJECTORS_DATA_SENDER 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/EJECTORS_DATA_SENDER.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/TB_EJECTORS_DATA_SENDER.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package my_types_pkg
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture oddr2_v of entity ODDR2 [\ODDR2("NONE",'0',"SYNC")(1,4,1,...]
+Compiling architecture obuf_v of entity OBUF [\OBUF("DONT_CARE",12,"DEFAULT","...]
+Compiling architecture behavioral of entity EJECTORS_DATA_SENDER [ejectors_data_sender_default]
+Compiling architecture behavior of entity tb_ejectors_data_sender
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 17 VHDL Units
+Built simulation executable M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/TB_EJECTORS_DATA_SENDER_isim_beh.exe
+Fuse Memory Usage: 54064 KB
+Fuse CPU Usage: 1123 ms

@@ -1,0 +1,29 @@
+Command line:
+   TB_WRAPPER_TOP_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55850
+
+Mon Jun 02 13:31:30 2014
+
+
+ Elaboration Time: 0.156001 sec
+
+ Current Memory Usage: 573.313 Meg
+
+ Total Signals          : 1746
+ Total Nets             : 74152
+ Total Signal Drivers   : 805
+ Total Blocks           : 232
+ Total Primitive Blocks : 192
+ Total Processes        : 710
+ Total Traceable Variables  : 1010
+ Total Scalar Nets and Variables : 77614
+Total Line Count : 2419
+
+ Total Simulation Time: 23.6186 sec
+
+ Current Memory Usage: 573.313 Meg
+
+Tue Jun 03 10:09:29 2014
+

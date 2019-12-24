@@ -1,0 +1,215 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+
+
+entity EJECT_SHAPER is
+    Port (	
+			CLK_i: in std_logic;
+			RST_i: in std_logic;		
+			
+			FSM_STATE_o: 		out std_logic_vector(3 downto 0);
+			FSM_STATE_i: 		in std_logic_vector(3 downto 0);
+			FLAG_FINISH_o:		out std_logic;
+			FLAG_FINISH_i:		in std_logic;
+			VALVE_o:			out std_logic_vector(31 downto 0);
+			VALVE_i:			in std_logic_vector(31 downto 0);
+			VALV_COUNTER_o: 		out std_logic_vector(12 downto 0);		
+			VALV_COUNTER_i: 		in std_logic_vector(12 downto 0);		
+			PWM_COUNTER_o: 		out std_logic_vector(6 downto 0);
+			PWM_COUNTER_i: 		in std_logic_vector(6 downto 0);
+			CURRENT_VALVE_i:		in std_logic_vector(4 downto 0)
+		
+			);
+			
+end EJECT_SHAPER;
+
+architecture Behavioral of EJECT_SHAPER is
+
+
+	
+  CONSTANT ACTIVE_TIME: 			NATURAL := 5093; -- 5093*16*27ns (37.5 MHz) - 2200 us (14 bits)
+  CONSTANT PWM_OFF: 				NATURAL := 80; -- 37*16*27ns (37.5 MHz) - 33.89 us  (7 bits)
+--  CONSTANT PWM_ON: 					NATURAL := 37; -- 79*16*27ns (37.5 MHz) - 16 us  (7 bits)
+   CONSTANT PWM_ON: 					NATURAL := 18; -- 37*16*27ns (37.5 MHz) - 16 us  (7 bits)
+
+begin
+
+
+
+
+-- test: block 
+
+-- signal s_VALV_COUNTER_i: std_logic_vector(VALV_COUNTER_i'range);
+-- signal s_PWM_COUNTER_i: std_logic_vector(PWM_COUNTER_i'range);
+-- signal s_VALVE_i: std_logic;
+-- signal s_FLAG_FINISH_i: std_logic;
+-- signal s_FSM_STATE_i: std_logic_vector(FSM_STATE_i'range);
+
+-- begin
+
+	-- process(CURRENT_VALVE_i)
+	-- begin
+	-- if CURRENT_VALVE_i = "00000" then
+			-- s_VALV_COUNTER_i <= VALV_COUNTER_i;
+			-- s_PWM_COUNTER_i <= PWM_COUNTER_i;
+			-- s_VALVE_i <= VALVE_i(0);
+			-- s_FLAG_FINISH_i <= FLAG_FINISH_i;
+			-- s_FSM_STATE_i	<= FSM_STATE_i;
+	-- end if;
+	-- end process;
+	
+-- end block;
+
+
+
+
+	
+	
+	process (RST_i, CLK_i)
+	begin
+		if falling_edge(CLK_i) then
+			if (RST_i = '1') then		
+					
+					
+					FLAG_FINISH_o            	<= '0'; 
+					FSM_STATE_o          		<= "0000";
+					VALVE_o		 				<= x"00000000"; -- 32 Valves
+					VALV_COUNTER_o 				<= (others => '0');    
+					PWM_COUNTER_o    			<= (others => '0');
+						
+			
+			else
+				
+					
+					-- FLAG_FINISH_o            	<= FLAG_FINISH_i; 
+					 FSM_STATE_o          		<= FSM_STATE_i; ---*************
+					-- VALVE_o		 				<= VALVE_i;
+					-- VALV_COUNTER_o 				<= VALV_COUNTER_i;    
+					-- PWM_COUNTER_o    			<= PWM_COUNTER_i;
+				
+										
+				case FSM_STATE_i is
+				
+					when "0000" =>  --IDLE	
+
+					
+						VALVE_o(CONV_INTEGER(CURRENT_VALVE_i)) 				<= '0';
+						VALV_COUNTER_o   									<= (others => '0');
+
+						if 	VALVE_i(CONV_INTEGER(CURRENT_VALVE_i)) = '1' then 
+						FSM_STATE_o 										<= "0001"; -- active
+						end if;
+						
+						
+					
+					when "0001" => 	-- active
+
+							if VALV_COUNTER_i = ACTIVE_TIME then 		
+								VALVE_o(CONV_INTEGER(CURRENT_VALVE_i)) 		<= '0';
+								PWM_COUNTER_o    							<= (others => '0');
+								FSM_STATE_o 	 							<= "0010"; -- pwm off
+								VALV_COUNTER_o   							<= (others => '0');
+			
+							else 
+								VALVE_o(CONV_INTEGER(CURRENT_VALVE_i)) 		<= '1';
+								VALV_COUNTER_o   							<= VALV_COUNTER_i + 1;			
+								FSM_STATE_o 								<= "0001"; -- active 
+							end if;
+							
+						
+					when "0010" => 	-- pwm off
+
+						   -- flag and input check --------------------------------
+							if 	VALVE_i(CONV_INTEGER(CURRENT_VALVE_i)) = '0' then 
+								FLAG_FINISH_o    	<= '1';					
+							else
+								FLAG_FINISH_o    	<= '0';	
+							end if; 
+							---------------------------------------------------------
+
+								
+							if PWM_COUNTER_i = PWM_OFF then 
+							
+								if FLAG_FINISH_i = '0' then
+									VALVE_o(CONV_INTEGER(CURRENT_VALVE_i))		<= '1';
+									PWM_COUNTER_o    							<= (others => '0');
+									FSM_STATE_o 								<= "0100"; -- pwm on
+								else
+									FLAG_FINISH_o   							<= '0';
+									VALVE_o(CONV_INTEGER(CURRENT_VALVE_i))		<= '0';
+									PWM_COUNTER_o    							<= (others => '0');	
+									VALV_COUNTER_o   							<= (others => '0');					
+									FSM_STATE_o 								<= "0000"; -- wait 
+								end if;
+									
+							else 
+								VALVE_o(CONV_INTEGER(CURRENT_VALVE_i))			<= '0';
+								PWM_COUNTER_o    								<= PWM_COUNTER_i + 1;			
+								FSM_STATE_o										<= "0010"; -- pwm off
+							end if;
+							
+							----------------------------------------------
+					
+					
+					when "0100" => 	-- pwm on		
+
+						
+							 -- flag and input check --------------------------------
+							if 	VALVE_i(CONV_INTEGER(CURRENT_VALVE_i)) = '0' then 
+								FLAG_FINISH_o    	<= '1';					
+							else
+								FLAG_FINISH_o    	<= '0';	
+							end if; 
+							---------------------------------------------------------
+							
+								
+							
+							if PWM_COUNTER_i = PWM_ON then 
+								
+								if FLAG_FINISH_i = '0' then
+									VALVE_o(CONV_INTEGER(CURRENT_VALVE_i))		<= '0';
+									PWM_COUNTER_o    							<= (others => '0');
+									FSM_STATE_o 								<= "0010"; -- pwm off
+								else
+									FLAG_FINISH_o   							<= '0';
+									VALVE_o(CONV_INTEGER(CURRENT_VALVE_i))		<= '0';
+									PWM_COUNTER_o    							<= (others => '0');	
+									VALV_COUNTER_o   							<= (others => '0');					
+									FSM_STATE_o 								<= "0000"; -- wait 
+								end if;					
+				
+							else 
+								VALVE_o(CONV_INTEGER(CURRENT_VALVE_i))			<= '1';
+								PWM_COUNTER_o    								<= PWM_COUNTER_i + 1;			
+								FSM_STATE_o										<= "0100"; -- pwm on
+							end if;
+							
+					when "1000" => 	-- wait time							
+						
+							-- if VALV_COUNTER_i = WAIT_TIME then 		
+								-- VALVE_o(CONV_INTEGER(CURRENT_VALVE_i))		<= '0';
+								-- VALV_COUNTER_o   							<= (others => '0');	
+								--FSM_STATE_o 								<= "0000"; -- idle
+							-- else 
+								-- VALVE_o(CONV_INTEGER(CURRENT_VALVE_i))		<= '0';
+								-- VALV_COUNTER_o   							<= VALV_COUNTER_i + 1;			
+								-- FSM_STATE_o 								<= "1000"; -- wait time		
+							-- end if;	
+							
+							
+					when others =>		
+							
+							FSM_STATE_o 										<= "0000";	-- idle	
+		
+					
+				end case;
+
+			end if;
+		end if;
+	end process;
+
+end Behavioral;

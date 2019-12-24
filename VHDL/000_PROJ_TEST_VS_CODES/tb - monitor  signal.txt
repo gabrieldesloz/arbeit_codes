@@ -1,0 +1,9 @@
+  prtxxx: process (xxx)
+            variable my_line : LINE;
+          begin
+            write(my_line, string'("xxx="));
+            write(my_line, xxx);
+            write(my_line, string'(",  at="));
+            write(my_line, now);
+            writeline(output, my_line);
+          end process prtxxx;

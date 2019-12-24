@@ -1,0 +1,155 @@
+-------------------------------------------------------------------------------
+-- Title      : Reason Tecnologia S.A. - Merging Unit - MU320
+-- Project    : MU320
+-------------------------------------------------------------------------------
+-- File       : quality.vhd
+-- Author     : 
+-- Company    : Reason Tecnologia S.A.
+-- Created    : 2012-08-07
+-- Last update: 2014-01-31
+-- Standard   : VHDL'87
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2012 Reason Tecnologia S.A.
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2012-08-07  1.0              Created
+-------------------------------------------------------------------------------
+
+
+
+
+--Registrador/memoria de acesso comum a 8 registradores de 32 bits
+--linux precisa ler/escrever nestes registradores
+--gateware precisa escrever nestes registradores 
+--junção através de um "or" - fora do componente
+--ver o que significa cada posição de bit - ok 
+--será "empacotado" em cada SV um vetor de 32 bits com a informação de qualidade
+--a interface enviara um wait request para não haver escrita nem leitura simultaneamente
+--memoria dual ram
+--estabelecer um controlador ...:
+--não pode ler durante a escrita em um mesmo endereço
+--entradas e saídas
+-- 1 leitura /1 escrita
+-- waitrequest = '1' quando em reset
+-- maquina de estados que inicia com o acesso do linux sobre os registradores
+-- propriedades do componente -- tcl
+
+-- Read-during-write on port A or B returns newly written data
+-- Read-during-write on port A and B returns unknown data.
+-- endereço de leitura e escrita das duas portas não pode ser o mesmo
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity gate_nios_interface is
+
+  generic (
+    D_WIDTH : natural := 32;
+    A_WIDTH : natural := 4
+    );
+
+  port (
+
+
+    -- interface nios --
+    sysclk          : in  std_logic;
+    reset_n         : in  std_logic;
+    avs_chipselect  : in  std_logic;
+    avs_address     : in  std_logic_vector(A_WIDTH-1 downto 0);
+    avs_write       : in  std_logic;
+    avs_read        : in  std_logic;
+    avs_writedata   : in  std_logic_vector(D_WIDTH-1 downto 0);
+    avs_waitrequest : out std_logic;
+
+    -- interface gateware
+    coe_sysclk           : in  std_logic;
+    coe_gate_address     : in  std_logic_vector(A_WIDTH-1 downto 0);
+    coe_gate_write       : in  std_logic;
+    coe_gate_read        : in  std_logic;
+    coe_gate_writedata   : in  std_logic_vector(A_WIDTH-1 downto 0);
+    coe_gate_waitrequest : out std_logic
+
+    );
+
+
+end quality;
+
+architecture rtl of gate_nios_interface is
+
+  -- type
+  -- attribute
+  -- constants
+  -- signals
+  -- procedures
+  -- functions
+  -- alias
+
+  type STATE_TYPE is ();
+  signal state_next, state_reg         : STATE_TYPE;
+  attribute syn_encoding               : string;
+  attribute syn_encoding of STATE_TYPE : type is "safe";
+
+
+begin  -- quality_rtl
+
+
+
+  true_dual_port_ram_dual_clock_1 :
+    entity work.true_dual_port_ram_dual_clock
+
+      generic map (
+        DATA_WIDTH => D_WITH,
+        ADDR_WIDTH => A_WIDTH)
+      port map (
+        clk_a  => sysclk,
+        clk_b  => clk_b,
+        addr_a => addr_a,
+        addr_b => addr_b,
+        data_a => data_a,
+        data_b => data_b,
+        we_a   => we_a_reg,             -- registrar
+        we_b   => we_b_reg,             --0 registrar
+        q_a    => q_a,
+        q_b    => q_b);
+
+
+  process (sysclk, reset_n)
+  begin
+    if reset_n = '0' then
+
+    elsif rising_edge(sysclk) then      -- rising clock edge
+
+    end if;
+
+  end process;
+
+
+
+
+  process
+
+  
+  process ()
+  begin  -- process
+    
+    case x is
+      when a =>
+
+      when others =>
+        
+    end case;
+
+  end process;
+
+
+
+end quality_rtl;
+
+
+-- configurations

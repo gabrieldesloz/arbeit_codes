@@ -1,0 +1,53 @@
+# Reading C:/altera/11.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile S:/gateware/rt131_comentado/rtl/vhdl/burst_filter/sim/bfilter_teste.mpf 
+# Loading project bfilter_teste
+vsim work.bfilter_tb
+# vsim work.bfilter_tb 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.rl131_constants
+# Loading ieee.std_logic_signed(body)
+# Loading work.bfilter_tb(bfilter_teste)
+# Loading ieee.numeric_std(body)
+# Loading work.bfilter(bfilter_rtl)
+# Loading work.bfilter_data_ram(bfilter_data_ram_rtl)
+# WARNING: No extended dataflow license exists
+do S:/gateware/rt131_comentado/rtl/vhdl/burst_filter/sim/wave.do
+run
+# Compile of bfilter_data_ram.vhd was successful.
+# Compile of rl131_constants.vhd was successful.
+# Compile of bfilter.vhd was successful.
+# Compile of bfilter_tb.vhd was successful.
+vsim work.bfilter_tb
+# vsim work.bfilter_tb 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.rl131_constants
+# Loading ieee.std_logic_signed(body)
+# Loading work.bfilter_tb(bfilter_teste)
+# Loading ieee.numeric_std(body)
+# Loading work.bfilter(bfilter_rtl)
+# Loading work.bfilter_data_ram(bfilter_data_ram_rtl)
+# WARNING: No extended dataflow license exists
+add wave sim:/bfilter_tb/dut/*
+run
+vsim work.bfilter
+# vsim work.bfilter 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.rl131_constants
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.bfilter(bfilter_rtl)
+# Loading work.bfilter_data_ram(bfilter_data_ram_rtl)
+# WARNING: No extended dataflow license exists
+# Compile of bfilter_data_ram.vhd was successful.
+# Compile of rl131_constants.vhd was successful.
+# Compile of bfilter.vhd was successful.
+# Compile of bfilter_tb.vhd failed.

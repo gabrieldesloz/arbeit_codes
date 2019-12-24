@@ -1,0 +1,5 @@
+ type STATE_TYPE is (IDLE, WAIT_ARITH, SAVE_ARITH, SAVE_DIV, DO_SUBT, READY);
+
+  attribute syn_encoding               : string;
+  attribute syn_encoding of STATE_TYPE : type is "safe";
+  signal state_reg, state_next         : STATE_TYPE;

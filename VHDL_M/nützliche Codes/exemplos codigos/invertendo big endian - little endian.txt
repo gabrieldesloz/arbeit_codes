@@ -1,0 +1,7 @@
+  --invertendo a ordem dos bits
+  process(ch_in)
+  begin
+    for i in ch_in'range loop
+      inv_ch_in(inv_ch_in'left - i) <= ch_in(i);
+    end loop;
+  end process;

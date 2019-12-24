@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Aug 27 14:26:36 2013
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : divider
+Top-level Entity Name : circular_buffer
+Family : Cyclone IV E
+Device : EP4CE75F23C7
+Timing Models : Final
+Total logic elements : 84 / 75,408 ( < 1 % )
+    Total combinational functions : 52 / 75,408 ( < 1 % )
+    Dedicated logic registers : 60 / 75,408 ( < 1 % )
+Total registers : 60
+Total pins : 70 / 293 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 4,096 / 2,810,880 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 400 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,256 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    15:02:51 03/23/2011 
+-- Design Name: 
+-- Module Name:    WRAPPER_EJET - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+entity WRAPPER_EJET is
+  port (
+    LENGTH_BUFF_i       : in std_logic_vector (191 downto 0); -- Sinais vindos do "buffer" de entrada
+     -- tempo de acumulo de informação
+    TEMPO_ESTATISTICA_i : in std_logic_vector(2 downto 0);  -- Tempo da estatistica de ejecoes (3  10seg)
+    HAS_GRAIN_i         : in std_logic_vector(63 downto 0); -- Tem grão?
+
+    INT_CH_REQ_i : in std_logic_vector (5 downto 0);  -- CH que a interface deseja ler
+
+    RETRIGGER_ON_i : in std_logic;
+
+    --Tempos iniciais do contador 
+    A_ELIPSE1_i : in std_logic_vector (9 downto 0);  --
+    A_ELIPSE2_i : in std_logic_vector (9 downto 0);
+    A_ELIPSE3_i : in std_logic_vector (9 downto 0);
+    A_ELIPSE4_i : in std_logic_vector (9 downto 0);
+    A_ELIPSE5_i : in std_logic_vector (9 downto 0);
+    A_ELIPSE6_i : in std_logic_vector (9 downto 0);
+    A_ELIPSE7_i : in std_logic_vector (9 downto 0);
+
+    B_ELIPSE1_i : in std_logic_vector (9 downto 0);  --
+    B_ELIPSE2_i : in std_logic_vector (9 downto 0);
+    B_ELIPSE3_i : in std_logic_vector (9 downto 0);
+    B_ELIPSE4_i : in std_logic_vector (9 downto 0);
+    B_ELIPSE5_i : in std_logic_vector (9 downto 0);
+    B_ELIPSE6_i : in std_logic_vector (9 downto 0);
+    B_ELIPSE7_i : in std_logic_vector (9 downto 0);
+
+    OVERUSAGE_CLR_A_i : in std_logic;
+    OVERUSAGE_CLR_B_i : in std_logic;
+
+    C18MHZ_i : in std_logic;
+    C3KHZ_i  : in std_logic;
+    RST_i    : in std_logic;
+
+
+    PROBE_o  : out std_logic_vector (15 downto 0);  --Sinais de ejecao dos canais
+    EJ_CNT_o : out std_logic_vector (15 downto 0);
+
+    MAX_ACTIVE_COUNTER_o : out std_logic_vector (15 downto 0);
+
+    CH_NUM_o    : out std_logic_vector (5 downto 0);
+    OVERUSAGE_o : out std_logic_vector(63 downto 0);
+    CH_OUT_o    : out std_logic_vector (63 downto 0));
+end WRAPPER_EJET;
+
+architecture Behavioral of WRAPPER_EJET is
+
+  signal LENGTH_MEM_i : std_logic_vector (2 downto 0);
+  signal ACTIVE_i     : std_logic;
+  signal PWM_i        : std_logic;
+  signal COUNT_i      : std_logic_vector (9 downto 0); 
+
+  signal LENGTH_MEM_o : std_logic_vector (2 downto 0);
+  signal COUNT_o      : std_logic_vector (9 downto 0);  
+  signal ACTIVE_o     : std_logic;
+  signal s_CH_NUM_o   : std_logic_vector (5 downto 0);
+  signal PWM_o        : std_logic;
+
+  signal LENGTH_BUFF_o : std_logic_vector (191 downto 0);
+
+  signal PROTEC_VALVE_i : std_logic;
+  signal PROTEC_VALVE_o : std_logic;
+
+  signal s_DEF_CNT_i : std_logic_vector (15 downto 0);
+  signal s_DEF_CNT_o : std_logic_vector (15 downto 0);
+
+  component MEM_CTRL is
+    port (PROTEC_VALVE_i : in std_logic;
+          LENGTH_MEM_i   : in std_logic_vector (2 downto 0);
+          COUNT_i        : in std_logic_vector (9 downto 0);
+          ACTIVE_i       : in std_logic;
+          PWM_i          : in std_logic;
+          DEF_CNT_i      : in std_logic_vector(15 downto 0);
+
+          TEMPO_ESTATISTICA_i : in std_logic_vector(2 downto 0);
+          INT_CH_REQ_i        : in std_logic_vector (5 downto 0);  -- CH que a interface deseja ler
+          OVERUSAGE_CLR_A_i   : in std_logic;
+          OVERUSAGE_CLR_B_i   : in std_logic;
+
+          C18MHZ_i : in std_logic;
+          C3KHZ_i  : in std_logic;
+          RST_i    : in std_logic;
+
+          LENGTH_MEM_o   : out std_logic_vector (2 downto 0);
+          COUNT_o        : out std_logic_vector (9 downto 0);
+          PWM_o          : out std_logic;
+          ACTIVE_o       : out std_logic;
+          PROTEC_VALVE_o : out std_logic;
+          PROBE_o        : out std_logic_vector(7 downto 0);
+          DEF_CNT_o      : out std_logic_vector(15 downto 0);  --Sinal de estatistica que vai ser atualizado
+          EJ_CNT_o       : out std_logic_vector(15 downto 0);  -- Sinal que vai ser jogado para a interface mostrando as estatisticas totais
+          OVERUSAGE_o    : out std_logic_vector(63 downto 0);
+
+          CH_NUM_o : out std_logic_vector (5 downto 0));
+  end component;
+
+  component CH_X_EJET_TIMER is
+    port (LENGTH_BUFF_i  : in std_logic_vector (191 downto 0);  -- Sinais vindos do "buffer" de entrada
+          CH_NUM_i       : in std_logic_vector (5 downto 0);  -- Sinal que indica qual canal deve ser tratado no momento
+          HAS_GRAIN_i    : in std_logic_vector(63 downto 0);  -- tem grão?
+          ACTIVE_i       : in std_logic;  --Sinal vindo da memoria que indica se a ejetora esta ativa ou nao
+          PWM_i          : in std_logic;  --Sinal que indica quando o sinal de acionamento de 0.4ms acabou e o pwm inicia
+          PROTEC_VALVE_i : in std_logic;  --Sinal que vem da memoria e indica se ha tempo morto
+          COUNT_i        : in std_logic_vector (9 downto 0);  -- Valor do contador vindo da memoria ???
+          DEF_CNT_i      : in std_logic_vector (15 downto 0); -- contagem atual de ejeções -- vinda da memória 
+          LENGTH_MEM_i   : in std_logic_vector(2 downto 0);  -- Sinal vindo da memoria que indica qual foi a elipse que detectou
+
+          RETRIGGER_ON_i : in std_logic;
+
+          --Tempos iniciais do contador 
+          A_ELIPSE1_i : in std_logic_vector (9 downto 0);
+          A_ELIPSE2_i : in std_logic_vector (9 downto 0);
+          A_ELIPSE3_i : in std_logic_vector (9 downto 0);
+          A_ELIPSE4_i : in std_logic_vector (9 downto 0);
+          A_ELIPSE5_i : in std_logic_vector (9 downto 0);
+          A_ELIPSE6_i : in std_logic_vector (9 downto 0);
+          A_ELIPSE7_i : in std_logic_vector (9 downto 0);
+
+          B_ELIPSE1_i : in std_logic_vector (9 downto 0);
+          B_ELIPSE2_i : in std_logic_vector (9 downto 0);
+          B_ELIPSE3_i : in std_logic_vector (9 downto 0);
+          B_ELIPSE4_i : in std_logic_vector (9 downto 0);
+          B_ELIPSE5_i : in std_logic_vector (9 downto 0);
+          B_ELIPSE6_i : in std_logic_vector (9 downto 0);
+          B_ELIPSE7_i : in std_logic_vector (9 downto 0);
+
+          C18MHZ_i : in std_logic;
+          C3KHZ_i  : in std_logic;
+          RST_i    : in std_logic;
+
+          PROBE_o              : out std_logic_vector (15 downto 0);  --Sinais de ejecao dos canais
+          CH_OUT_o             : out std_logic_vector (63 downto 0);  --Sinais de ejecao dos canais
+          LENGTH_MEM_o         : out std_logic_vector (2 downto 0);
+          COUNT_o              : out std_logic_vector (9 downto 0);  -- Valor do contador do canal que vai para a memoria
+          ACTIVE_o             : out std_logic;  -- Indica se a ejecao deve continuar ou nao
+          PWM_o                : out std_logic;  --Indica se o PWM esta ativo
+          DEF_CNT_o            : out std_logic_vector (15 downto 0);
+          MAX_ACTIVE_COUNTER_o : out std_logic_vector (15 downto 0);
+          PROTEC_VALVE_o       : out std_logic
+          );                            --Indica se o tempo morto esta ativo
+  end component;
+
+  signal s_probe_ch_x : std_logic_vector(15 downto 0);
+  signal s_probe_mem  : std_logic_vector(7 downto 0);
+
+begin
+
+  CH_NUM_o <= s_CH_NUM_o;
+
+  
+  -- ponteira de teste
+  PROBE_o <= s_probe_ch_x(15 downto 3) & s_probe_mem(2 downto 1) & s_probe_ch_x(0);
+  
+
+  i_MEM_CTRL : MEM_CTRL port map (
+
+    LENGTH_MEM_i   => LENGTH_MEM_i, -- qual foi a elipse que detectou
+    COUNT_i        => COUNT_i, -- Valor do contador
+    ACTIVE_i       => ACTIVE_i, -- ejetora esta ativa ou nao
+    PWM_i          => PWM_i, -- Sinal que indica quando o sinal de acionamento de 0.4ms acabou e o pwm inicia
+    PROTEC_VALVE_i => PROTEC_VALVE_i,
+    DEF_CNT_i      => s_DEF_CNT_i,
+
+    TEMPO_ESTATISTICA_i => TEMPO_ESTATISTICA_i,
+    INT_CH_REQ_i        => INT_CH_REQ_i,
+    OVERUSAGE_CLR_A_i   => OVERUSAGE_CLR_A_i,
+    OVERUSAGE_CLR_B_i   => OVERUSAGE_CLR_B_i,
+
+    C18MHZ_i => C18MHZ_i,
+    C3KHZ_i  => C3KHZ_i,
+    RST_i    => RST_i,
+
+    LENGTH_MEM_o   => LENGTH_MEM_o,
+    COUNT_o        => COUNT_o,
+    PWM_o          => PWM_o,
+    ACTIVE_o       => ACTIVE_o,
+    PROTEC_VALVE_o => PROTEC_VALVE_o,
+    PROBE_o        => s_probe_mem,
+    DEF_CNT_o      => s_DEF_CNT_o,
+    EJ_CNT_o       => EJ_CNT_o,
+    OVERUSAGE_o    => OVERUSAGE_o,
+    CH_NUM_o       => s_CH_NUM_o
+    );
+
+  i_EJET_TIMER : CH_X_EJET_TIMER port map (
+    LENGTH_BUFF_i  => LENGTH_BUFF_i, -- Sinais vindos do "buffer" de entrada
+    CH_NUM_i       => s_CH_NUM_o, -- Sinal que indica qual canal deve ser tratado no momento
+    HAS_GRAIN_i    => HAS_GRAIN_i, -- tem grão?
+    ACTIVE_i       => ACTIVE_o, -- Sinal vindo da memoria que indica se a ejetora esta ativa ou nao
+    PWM_i          => PWM_o, -- Sinal que indica quando o sinal de acionamento de 0.4ms acabou e o pwm inicia
+    COUNT_i        => COUNT_o,  -- Valor do contador 
+    LENGTH_MEM_i   => LENGTH_MEM_o, --Sinal vindo da memoria que indica qual foi a elipse que detectou
+    PROTEC_VALVE_i => PROTEC_VALVE_o, --Sinal que vem da memoria e indica se ha tempo morto
+    DEF_CNT_i      => s_DEF_CNT_o, --  contagem atual -- vinda da memória
+
+    RETRIGGER_ON_i => RETRIGGER_ON_i,
+
+    --Tempos iniciais do contador 
+    A_ELIPSE1_i => A_ELIPSE1_i,
+    A_ELIPSE2_i => A_ELIPSE2_i,
+    A_ELIPSE3_i => A_ELIPSE3_i,
+    A_ELIPSE4_i => A_ELIPSE4_i,
+    A_ELIPSE5_i => A_ELIPSE5_i,
+    A_ELIPSE6_i => A_ELIPSE6_i,
+    A_ELIPSE7_i => A_ELIPSE7_i,
+
+    B_ELIPSE1_i => B_ELIPSE1_i,
+    B_ELIPSE2_i => B_ELIPSE2_i,
+    B_ELIPSE3_i => B_ELIPSE3_i,
+    B_ELIPSE4_i => B_ELIPSE4_i,
+    B_ELIPSE5_i => B_ELIPSE5_i,
+    B_ELIPSE6_i => B_ELIPSE6_i,
+    B_ELIPSE7_i => B_ELIPSE7_i,
+
+    C18MHZ_i             => C18MHZ_i,
+    C3KHZ_i              => C3KHZ_i,
+    RST_i                => RST_i,
+    PROBE_o              => s_probe_ch_x, --Sinais de ejecao dos canais
+    CH_OUT_o             => CH_OUT_o, --Sinais de ejecao dos canais
+    LENGTH_MEM_o         => LENGTH_MEM_i,
+    COUNT_o              => COUNT_i,
+    ACTIVE_o             => ACTIVE_i,
+    PROTEC_VALVE_o       => PROTEC_VALVE_i,
+    DEF_CNT_o            => s_DEF_CNT_i, -- adiciona mais 1 a contagem ()
+    MAX_ACTIVE_COUNTER_o => MAX_ACTIVE_COUNTER_o,
+    PWM_o                => PWM_i
+    );
+
+end Behavioral;
+

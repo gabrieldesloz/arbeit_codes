@@ -1,0 +1,27 @@
+(DATABASE_VERSION 19)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "enta08e01a740aa524546b1a2aeaf227163")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 3")
+      (PROPERTY "STAMP_TIME" "Fri Sep 26 15:01:40 2014")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.1")
+    )
+    (HDL_IDENT
+      (NAME "test")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 0 0)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "S10169")
+      (CREATED 1411754500 "Fri Sep 26 15:01:40 2014")
+      (MODIFIED 1411754500 "Fri Sep 26 15:01:40 2014")
+    )
+  )
+)
+(END_OF_FILE)

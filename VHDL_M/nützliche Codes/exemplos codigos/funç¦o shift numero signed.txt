@@ -1,0 +1,2 @@
+-- divisão
+shift_result_tmp <= std_logic_vector(shift_right(signed(arith_result_reg),SHIFT_DIV_BITS));

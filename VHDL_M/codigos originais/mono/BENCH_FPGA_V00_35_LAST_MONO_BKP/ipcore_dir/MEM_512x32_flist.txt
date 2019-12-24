@@ -1,0 +1,16 @@
+# Output products list for <MEM_512x32>
+MEM_512x32.asy
+MEM_512x32.gise
+MEM_512x32.ngc
+MEM_512x32.sym
+MEM_512x32.vhd
+MEM_512x32.vho
+MEM_512x32.xco
+MEM_512x32.xise
+MEM_512x32\doc\blk_mem_gen_ds512.pdf
+MEM_512x32\doc\blk_mem_gen_v6_1_vinfo.html
+MEM_512x32_flist.txt
+MEM_512x32_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

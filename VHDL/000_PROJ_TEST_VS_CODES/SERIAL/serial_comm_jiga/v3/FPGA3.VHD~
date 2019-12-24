@@ -1,0 +1,108 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+use work.definitions.all;
+
+
+library UNISIM;
+use UNISIM.VComponents.all;
+
+entity FPGA3 is
+
+  port(
+-- fpga comm
+    FPGA2_TX2 : out std_logic;
+    FPGA2_RX2 : in  std_logic;
+
+-- system signals
+    CLK_60MHz_i   : in std_logic;
+    CLK_EN_1MHz_i : in std_logic;
+    RST_i         : in std_logic;
+
+-- uc comm
+    uC_REQUEST_i     : in std_logic;
+    uC_FPGA_SELECT_i : in std_logic;
+    uC_COMMAND_i     : in std_logic_vector(7 downto 0);
+    uC_DATA_i        : in std_logic_vector(31 downto 0);
+
+-- testes
+    R_TEST_o       : out std_logic_vector(31 downto 0);
+    TEST_FED_OUT_i : in  std_logic_vector(11 downto 0);
+    R_COMP_i       : in  std_logic_vector(31 downto 0)
+
+    );
+
+end entity;
+
+
+architecture arq of entity FPGA3 is
+                      
+                      signal s_send : std_logic;
+                                          signal s_sent    : std_logic;
+                                          signal s_ready   : std_logic;
+                                          signal s_fail    : std_logic;
+                                          signal s_tx_data : std_logic_vector(7 downto 0);
+                                          signal s_rx_data : std_logic_vector(7 downto 0);
+
+                    begin
+
+
+
+                                          i_SERIAL_COMMUNICATION : entity work.SERIAL_COMMUNICATION_fpga_3
+                                                                port map(
+                                                                                      RX_i => FPGA3_RX3,
+
+                                                                                                          TX_DATA_i => s_tx_data,
+                                                                                                          SEND_i    => s_send,
+
+                                                                                                          CLK_60MHz_i   => CLK_60MHz_i,
+                                                                                                          CLK_EN_1MHz_i => CLK_EN_1MHz_i,
+                                                                                                          RST_i         => RST_i,
+
+                                                                                                          TX_o => FPGA3_TX3,
+
+                                                                                                          SENT_o    => s_sent,
+                                                                                                          FAIL_o    => s_fail,
+                                                                                                          READY_o   => s_ready,
+                                                                                                          RX_DATA_o => s_rx_data
+                                                                                                          );
+
+                                                              
+                                                              i_SERIAL_COMMANDS : entity work.SERIAL_COMMANDS_fpga_3
+                                                                                    port map(
+                                        -------------------------------------------------------------------------
+                                        ---------------------------- System signals -----------------------------
+                                        -------------------------------------------------------------------------
+                                                                                                          CLK_60MHZ_i                  => CLK_60MHZ_i,
+                                                                                                                              EN_CLK_i => EN_CLK_i,
+
+                                                                                                                              RESET_i       => RST_i,
+                                        -------------------------------------------------------------------------
+                                        ------------------------- Serial block signals --------------------------
+                                        -------------------------------------------------------------------------
+                                        -- Serial data (from serial communication block)
+                                                                                                                              SERIAL_DATA_i => s_rx_data,
+                                                                                                                              SERIAL_DATA_o => s_tx_data,
+
+                                        -- Control signals from Serial communication block 
+                                                                                                                              PACKET_SENT_i  => s_sent,
+                                                                                                                              PACKET_FAIL_i  => s_fail,
+                                                                                                                              PACKET_READY_i => s_ready,
+
+                                                                                                                              SEND_PACKET_o  => s_send,
+                                        --------------------------------------------------------------------------------
+                                        ---------------------------- Feeder board output test --------------------------
+                                        --------------------------------------------------------------------------------
+                                        -- Vibrator driver board feeder output
+                                                                                                                              TEST_FED_OUT_i => TEST_FED_OUT_i,
+                                        --------------------------------------------------------------------------------
+                                        ------------------------------- Resistor board test ----------------------------
+                                        --------------------------------------------------------------------------------
+                                        -- Resistor board test output
+                                                                                                                              R_TEST_o       => R_TEST_o,
+                                        -- Resistor board test input feedback
+                                                                                                                              R_COMP_i       => R_COMP_i--x"FFFFFFFF" -- R_COMP
+                                                                                                                              );
+
+                                        end architecture;

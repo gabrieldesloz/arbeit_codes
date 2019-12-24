@@ -1,0 +1,13 @@
+ -- detecta presenção do sinal para cada canal	
+	gen_reg: for i in 0 to 11 generate
+	  
+		p0: entity p_detect is
+		  
+		  port map (	
+			reset 			=> s_reset, 
+			clk 			=> s_en_100kHz,
+			OK_o 			=> TEST_FED_OUT_reg(i), 
+			FEEDBACK_i 		=> TEST_FED_OUT(i) 
+			);
+
+	end generate gen_reg;

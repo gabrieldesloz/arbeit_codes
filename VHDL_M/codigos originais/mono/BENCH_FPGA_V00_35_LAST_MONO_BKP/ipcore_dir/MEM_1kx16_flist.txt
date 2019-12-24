@@ -1,0 +1,16 @@
+# Output products list for <MEM_1kx16>
+MEM_1kx16.asy
+MEM_1kx16.gise
+MEM_1kx16.ngc
+MEM_1kx16.sym
+MEM_1kx16.vhd
+MEM_1kx16.vho
+MEM_1kx16.xco
+MEM_1kx16.xise
+MEM_1kx16\doc\blk_mem_gen_ds512.pdf
+MEM_1kx16\doc\blk_mem_gen_v6_1_vinfo.html
+MEM_1kx16_flist.txt
+MEM_1kx16_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

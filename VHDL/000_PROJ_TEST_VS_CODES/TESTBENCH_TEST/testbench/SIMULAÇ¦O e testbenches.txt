@@ -1,0 +1,18 @@
+verificar aquivos testbench
+refazer todos os testes de simulação 
+bibliotecas randomicas
+io verificar
+
+
+com assertions
+
+	vsim  -assertfile <filename>  -do "algo.tcl"
+
+
+-f <filename>           Read command line arguments from <filename>
+-wlf <filename>         Specify the name of the WLF file (Default: vsim.wlf)
+ -wlfslim <size>         Specify maximum number of Megabytes to be saved in
+-title <string>         Optional title for the Main window
+
+
+

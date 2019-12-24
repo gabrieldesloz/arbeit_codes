@@ -1,0 +1,14 @@
+# Output products list for <M2Kx16>
+M2Kx16.asy
+M2Kx16.gise
+M2Kx16.ngc
+M2Kx16.v
+M2Kx16.veo
+M2Kx16.vhd
+M2Kx16.vho
+M2Kx16.xco
+M2Kx16.xise
+M2Kx16_flist.txt
+M2Kx16_readme.txt
+M2Kx16_xmdf.tcl
+blk_mem_gen_ds512.pdf

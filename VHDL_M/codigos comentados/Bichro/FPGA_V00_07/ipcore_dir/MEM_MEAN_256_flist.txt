@@ -1,0 +1,16 @@
+# Output products list for <MEM_MEAN_256>
+MEM_MEAN_256.asy
+MEM_MEAN_256.gise
+MEM_MEAN_256.ngc
+MEM_MEAN_256.sym
+MEM_MEAN_256.vhd
+MEM_MEAN_256.vho
+MEM_MEAN_256.xco
+MEM_MEAN_256.xise
+MEM_MEAN_256\doc\blk_mem_gen_ds512.pdf
+MEM_MEAN_256\doc\blk_mem_gen_v6_1_vinfo.html
+MEM_MEAN_256_flist.txt
+MEM_MEAN_256_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

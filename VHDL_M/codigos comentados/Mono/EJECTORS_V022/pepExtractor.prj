@@ -1,0 +1,5 @@
+work	"FAIL_MEM_CONTROL.vhd"
+work	"VALVE_FAIL.vhd"
+work	"WRAPPER_VALVE_FAIL.vhd"
+work	"ipcore_dir/MEM_32x32.vhd"
+work	"ipcore_dir/MEM_512x64.vhd"

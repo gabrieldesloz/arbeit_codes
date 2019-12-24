@@ -1,0 +1,2 @@
+vhdl work "MAIN_RESET.vhd"
+vhdl work "TB_MAIN_RESET.vhd"

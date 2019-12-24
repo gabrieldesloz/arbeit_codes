@@ -1,0 +1,200 @@
+Release 14.1 Map P.15xf (nt64)
+Xilinx Map Application Log File for Design 'MAIN_VHDL'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off
+-c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+Target Device  : xc3s200
+Target Package : tq144
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Wed Nov 06 11:25:08 2013
+
+Mapping design into LUTs...
+WARNING:MapLib:23 - Short on signal eval<31> detected.
+WARNING:MapLib:23 - Short on signal eval<29> detected.
+WARNING:MapLib:23 - Short on signal eval<18> detected.
+WARNING:MapLib:23 - Short on signal eval<16> detected.
+WARNING:MapLib:23 - Short on signal eval<14> detected.
+WARNING:MapLib:23 - Short on signal eval<12> detected.
+WARNING:MapLib:23 - Short on signal eval<3> detected.
+WARNING:MapLib:23 - Short on signal eval<1> detected.
+WARNING:MapLib:23 - Short on signal eval<31> detected.
+WARNING:MapLib:23 - Short on signal eval<29> detected.
+WARNING:MapLib:23 - Short on signal eval<18> detected.
+WARNING:MapLib:23 - Short on signal eval<16> detected.
+WARNING:MapLib:23 - Short on signal eval<14> detected.
+WARNING:MapLib:23 - Short on signal eval<12> detected.
+WARNING:MapLib:23 - Short on signal eval<3> detected.
+WARNING:MapLib:23 - Short on signal eval<1> detected.
+WARNING:MapLib:23 - Short on signal eval<31> detected.
+WARNING:MapLib:23 - Short on signal eval<29> detected.
+WARNING:MapLib:23 - Short on signal eval<18> detected.
+WARNING:MapLib:23 - Short on signal eval<16> detected.
+WARNING:MapLib:23 - Short on signal eval<14> detected.
+WARNING:MapLib:23 - Short on signal eval<12> detected.
+WARNING:MapLib:23 - Short on signal eval<3> detected.
+WARNING:MapLib:23 - Short on signal eval<1> detected.
+WARNING:MapLib:23 - Short on signal eval<31> detected.
+WARNING:MapLib:23 - Short on signal eval<29> detected.
+WARNING:MapLib:23 - Short on signal eval<18> detected.
+WARNING:MapLib:23 - Short on signal eval<16> detected.
+WARNING:MapLib:23 - Short on signal eval<14> detected.
+WARNING:MapLib:23 - Short on signal eval<12> detected.
+WARNING:MapLib:23 - Short on signal eval<3> detected.
+WARNING:MapLib:23 - Short on signal eval<1> detected.
+WARNING:MapLib:23 - Short on signal eval<12> detected.
+WARNING:MapLib:23 - Short on signal eval<12> detected.
+WARNING:MapLib:23 - Short on signal eval<14> detected.
+WARNING:MapLib:23 - Short on signal eval<14> detected.
+WARNING:MapLib:23 - Short on signal eval<16> detected.
+WARNING:MapLib:23 - Short on signal eval<16> detected.
+WARNING:MapLib:23 - Short on signal eval<18> detected.
+WARNING:MapLib:23 - Short on signal eval<18> detected.
+WARNING:MapLib:23 - Short on signal eval<1> detected.
+WARNING:MapLib:23 - Short on signal eval<1> detected.
+WARNING:MapLib:23 - Short on signal eval<29> detected.
+WARNING:MapLib:23 - Short on signal eval<29> detected.
+WARNING:MapLib:23 - Short on signal eval<31> detected.
+WARNING:MapLib:23 - Short on signal eval<31> detected.
+WARNING:MapLib:23 - Short on signal eval<3> detected.
+WARNING:MapLib:23 - Short on signal eval<3> detected.
+Running directed packing...
+WARNING:Pack:266 - The function generator Mrom_adt_rom00001 failed to merge with
+   F5 multiplexer Mrom_adt_rom0000_f6/MUXF5.I1.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator Madd_adt_add0000_xor<5>131 failed to
+   merge with F5 multiplexer s_downsample_not00011_f5.  There is a conflict for
+   the FXMUX.  The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<0> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<1> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<2> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<3> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<4> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<5> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<6> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   PROTOTYPE_o<7> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<0> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<2> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<4> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<5> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<6> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<7> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<8> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<9> is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp adck.PAD
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp adcs.PAD
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp adin.PAD
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp TX.PAD is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<10>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<11>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<20>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<21>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<13>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<30>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<22>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<23>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<15>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<24>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<25>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<17>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<26>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<27>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<19>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp eval<28>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:549 - Unexpected DCM programming. For DCM comp DCM_inst,
+   when the CLKFX or CLKFX180 pins are used the CLKIN_PERIOD attribute must be
+   specified in order to achieve optimal performance.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   87
+Logic Utilization:
+  Number of Slice Flip Flops:           656 out of   3,840   17%
+  Number of 4 input LUTs:               963 out of   3,840   25%
+Logic Distribution:
+  Number of occupied Slices:            747 out of   1,920   38%
+    Number of Slices containing only related logic:     747 out of     747 100%
+    Number of Slices containing unrelated logic:          0 out of     747   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,076 out of   3,840   28%
+    Number used as logic:               963
+    Number used as a route-thru:        113
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 85 out of      97   87%
+  Number of RAMB16s:                      2 out of      12   16%
+  Number of BUFGMUXs:                     5 out of       8   62%
+  Number of DCMs:                         1 out of       4   25%
+
+Average Fanout of Non-Clock Nets:                3.12
+
+Peak Memory Usage:  229 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "MAIN_VHDL_map.mrp" for details.

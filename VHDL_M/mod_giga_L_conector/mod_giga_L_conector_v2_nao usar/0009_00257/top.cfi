@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.15xf
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.15xf
+DATE            10/01/2014 - 14:30
+SOURCE          \\smkn33\s10169\vhdl\mod_giga_L_conector_v2\0009_00257\top.mcs
+DEVICE          XCF02S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x0200A98E
+START_ADDRESS   0x00000000 END_ADDRESS 0x0001FF87 DIRECTION_UP   "M:/vhdl/mod_giga_L_conector_v2/0009_00257/top/comm_top.bit" 3s200tq144

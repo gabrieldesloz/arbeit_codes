@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="clocking_test.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="clock_gen.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="clock_gen.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="clock_gen.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="clock_gen.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="clock_gen.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="clock_gen.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="clock_gen.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="clock_gen.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="clock_gen.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="clock_gen.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_gen.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="clock_gen.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="clock_gen.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="clock_gen.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="clock_gen.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="clock_gen.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="clock_gen.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="clock_gen.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="clock_gen.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="clock_gen_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="clock_gen_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="clock_gen_isim_map.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="clock_gen_isim_map.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="clock_gen_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="clock_gen_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="clock_gen_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="clock_gen_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_gen_map.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="clock_gen_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="clock_gen_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="clock_gen_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="clock_gen_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="clock_gen_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_gen_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_gen_stx_map.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="clock_gen_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="clock_gen_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="clock_gen_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="clock_gen_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostMapSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/map/clock_gen_map.nlf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/map/clock_gen_map.sdf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/map/clock_gen_map.vhd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_clock_gen_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_clock_gen_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_clock_gen_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_clock_gen_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostMapSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1409336277" xil_pn:name="TRANEXT_compLibraries_FPGA" xil_pn:prop_ck="1321705353062746806" xil_pn:start_ts="1409336277">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336493" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1409336493">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409581264" xil_pn:in_ck="3703885378623392421" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1409581264">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../clock_gen.vhd"/>
+      <outfile xil_pn:name="../../clock_gen_fsm.vhd"/>
+      <outfile xil_pn:name="tb_clock_gen.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336265" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5972588533742694672" xil_pn:start_ts="1409336265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336265" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6997240813464894610" xil_pn:start_ts="1409336265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336265" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="216290454323919172" xil_pn:start_ts="1409336265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409581264" xil_pn:in_ck="3703885378623392421" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1409581264">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../clock_gen.vhd"/>
+      <outfile xil_pn:name="../../clock_gen_fsm.vhd"/>
+      <outfile xil_pn:name="tb_clock_gen.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1409581282" xil_pn:in_ck="3703885378623392421" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="330720956238074944" xil_pn:start_ts="1409581264">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="tb_clock_gen_beh.prj"/>
+      <outfile xil_pn:name="tb_clock_gen_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1409581282" xil_pn:in_ck="6855750903193977385" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3853341117591632141" xil_pn:start_ts="1409581282">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="tb_clock_gen_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1409319619" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1409319618">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409319619" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1064671188855302957" xil_pn:start_ts="1409319619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409319619" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="216290454323919172" xil_pn:start_ts="1409319619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409319619" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1409319619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409319619" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="30941677605875503" xil_pn:start_ts="1409319619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409319619" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-1970394750299821092" xil_pn:start_ts="1409319619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409319619" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8979651772721889202" xil_pn:start_ts="1409319619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336617" xil_pn:in_ck="-2563886358272320277" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7813701697217828445" xil_pn:start_ts="1409336603">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="clock_gen.lso"/>
+      <outfile xil_pn:name="clock_gen.ngc"/>
+      <outfile xil_pn:name="clock_gen.ngr"/>
+      <outfile xil_pn:name="clock_gen.prj"/>
+      <outfile xil_pn:name="clock_gen.stx"/>
+      <outfile xil_pn:name="clock_gen.syr"/>
+      <outfile xil_pn:name="clock_gen.xst"/>
+      <outfile xil_pn:name="clock_gen_stx_beh.prj"/>
+      <outfile xil_pn:name="clock_gen_stx_map.prj"/>
+      <outfile xil_pn:name="clock_gen_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1409330351" xil_pn:in_ck="4733667496342535313" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1473911278992435068" xil_pn:start_ts="1409330351">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336624" xil_pn:in_ck="7310568938608893372" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7118222524642957105" xil_pn:start_ts="1409336617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="clock_gen.bld"/>
+      <outfile xil_pn:name="clock_gen.ngd"/>
+      <outfile xil_pn:name="clock_gen_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336639" xil_pn:in_ck="7010690710928742237" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4970266387953126887" xil_pn:start_ts="1409336624">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="clock_gen.pcf"/>
+      <outfile xil_pn:name="clock_gen_map.map"/>
+      <outfile xil_pn:name="clock_gen_map.mrp"/>
+      <outfile xil_pn:name="clock_gen_map.ncd"/>
+      <outfile xil_pn:name="clock_gen_map.ngm"/>
+      <outfile xil_pn:name="clock_gen_map.xrpt"/>
+      <outfile xil_pn:name="clock_gen_summary.xml"/>
+      <outfile xil_pn:name="clock_gen_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336417" xil_pn:in_ck="1712959104046253334" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6937897011652631087" xil_pn:start_ts="1409336343">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="clock_gen.ncd"/>
+      <outfile xil_pn:name="clock_gen.pad"/>
+      <outfile xil_pn:name="clock_gen.par"/>
+      <outfile xil_pn:name="clock_gen.ptwx"/>
+      <outfile xil_pn:name="clock_gen.unroutes"/>
+      <outfile xil_pn:name="clock_gen.xpi"/>
+      <outfile xil_pn:name="clock_gen_pad.csv"/>
+      <outfile xil_pn:name="clock_gen_pad.txt"/>
+      <outfile xil_pn:name="clock_gen_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336417" xil_pn:in_ck="-8745615456419962791" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1409336408">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="clock_gen.twr"/>
+      <outfile xil_pn:name="clock_gen.twx"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336649" xil_pn:in_ck="5640932675561370725" xil_pn:name="TRAN_postMapSimModel" xil_pn:prop_ck="-8371086611477677711" xil_pn:start_ts="1409336639">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/map/clock_gen_map.nlf"/>
+      <outfile xil_pn:name="netgen/map/clock_gen_map.sdf"/>
+      <outfile xil_pn:name="netgen/map/clock_gen_map.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336649" xil_pn:in_ck="8191445894324376611" xil_pn:name="TRAN_copyPost-MapAbstractToPreSimulation" xil_pn:start_ts="1409336649">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="netgen/map/clock_gen_map.sdf"/>
+      <outfile xil_pn:name="netgen/map/clock_gen_map.vhd"/>
+      <outfile xil_pn:name="tb_clock_gen.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336686" xil_pn:in_ck="-7644231362530267847" xil_pn:name="TRAN_ISimulatePostMapModelRunFuse" xil_pn:prop_ck="-7626806985954620393" xil_pn:start_ts="1409336649">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="clock_gen_isim_map.exe"/>
+      <outfile xil_pn:name="clock_gen_map.prj"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1409336686" xil_pn:in_ck="-1460235067667089469" xil_pn:name="TRAN_ISimulatePostMapModel" xil_pn:prop_ck="3027600478798379789" xil_pn:start_ts="1409336686">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="clock_gen_isim_map.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+  </transforms>
+
+</generated_project>

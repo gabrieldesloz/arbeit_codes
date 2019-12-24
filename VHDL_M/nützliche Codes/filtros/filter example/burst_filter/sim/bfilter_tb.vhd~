@@ -1,0 +1,132 @@
+-------------------------------------------------------------------------------
+-- Title      : Testbench for design "bfilter"
+-- Project    : 
+-------------------------------------------------------------------------------
+-- File       : bfilter_tb.vhd
+-- Author     :   <cls@PEGASUS>
+-- Company    : 
+-- Created    : 2012-12-07
+-- Last update: 2012-12-11
+-- Platform   : 
+-- Standard   : VHDL'93/02
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2012 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2012-12-07  1.0      cls     Created
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+library work;
+use work.rl131_constants.all;
+
+
+
+-------------------------------------------------------------------------------
+
+entity bfilter_tb is
+
+end entity bfilter_tb;
+
+-------------------------------------------------------------------------------
+
+architecture bfilter_teste of bfilter_tb is
+
+  -- component ports
+  signal sysclk    : std_logic;
+  signal reset_n   : std_logic;
+  signal start     : std_logic;
+  signal ready     : std_logic;
+  signal d_ana_in  : std_logic_vector((N_CHANNELS_ANA*N_BITS_ADC - 1) downto 0);
+  signal d_ana_out : std_logic_vector((N_CHANNELS_ANA*N_BITS_ADC - 1) downto 0);
+
+  -- clock
+  signal Clk : std_logic := '1';
+
+  -- counter
+  signal counter : natural range 0 to 99;
+  signal counter_burst : natural range 0 to 7;
+  
+  -- flag
+  signal flag: std_logic;
+
+begin  -- architecture bfilter_teste
+
+  -- component instantiation
+  DUT : entity work.bfilter
+    port map (
+      sysclk    => sysclk,
+      reset_n   => reset_n,
+      start     => start,
+      ready     => ready,
+      d_ana_in  => d_ana_in,
+      d_ana_out => d_ana_out);
+
+  -- clock generation
+  Clk    <= not Clk after 10 ns;
+  sysclk <= clk;
+
+  -- waveform generation
+  WaveGen_Proc : process
+  begin
+    reset_n <= '0';
+    wait for 100 ns;
+    reset_n <= '1';
+
+    wait;
+  end process WaveGen_Proc;
+
+  process (sysclk, reset_n) is
+  begin  -- process
+    if reset_n = '0' then               -- asynchronous reset (active low)
+      d_ana_in <= (others => '0');
+      counter  <= 0;
+      counter_burst <= 0;
+      start    <= '0';
+      flag     <= '0';
+    elsif rising_edge(sysclk) then      -- rising clock edge
+      if counter = 99 then
+        counter  <= 0;
+        start    <= '1';
+        if flag = '1' then
+          d_ana_in <= (others => '0');
+          flag <= '0';
+          else
+            d_ana_in <= d_ana_in - '1';
+        end if;        
+        if counter_burst = 7 then
+          flag <= '1';
+         -- d_ana_in <= ( x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"0000" &  x"fbff" );
+          d_ana_in <= x"0000";
+          counter_burst <= 0;
+        else
+          counter_burst <= counter_burst + 1;  
+        end if;
+      else
+        counter  <= counter + 1;
+        start    <= '0';
+        d_ana_in <= d_ana_in;
+      end if;
+    end if;
+  end process;
+  
+
+
+
+end architecture bfilter_teste;
+
+-------------------------------------------------------------------------------
+
+configuration bfilter_tb_bfilter_teste_cfg of bfilter_tb is
+  for bfilter_teste
+  end for;
+end bfilter_tb_bfilter_teste_cfg;
+
+-------------------------------------------------------------------------------

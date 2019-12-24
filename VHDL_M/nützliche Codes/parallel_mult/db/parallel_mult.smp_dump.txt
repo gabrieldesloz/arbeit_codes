@@ -1,0 +1,9 @@
+
+State Machine - |parallel_mult|state_reg
+Name state_reg.DONE_ST state_reg.ADD_PARC_2 state_reg.ADD_PARC_1 state_reg.MULT_PARC state_reg.LOAD state_reg.IDLE 
+state_reg.IDLE 0 0 0 0 0 0 
+state_reg.LOAD 0 0 0 0 1 1 
+state_reg.MULT_PARC 0 0 0 1 0 1 
+state_reg.ADD_PARC_1 0 0 1 0 0 1 
+state_reg.ADD_PARC_2 0 1 0 0 0 1 
+state_reg.DONE_ST 1 0 0 0 0 1 

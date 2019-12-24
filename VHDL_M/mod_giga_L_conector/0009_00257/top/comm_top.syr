@@ -1,0 +1,1246 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: comm_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "comm_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "comm_top"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-tq144
+
+---- Source Options
+Top Module Name                    : comm_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : Rebuilt
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/my_types_pkg is now defined in a different file.  It was defined in "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd", and is now defined in "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd".
+Compiling vhdl file "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd" in Library work.
+Architecture behavioral of Entity ej_serial_master is up to date.
+Compiling vhdl file "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd" in Library work.
+Architecture arq of Entity packet_detect is up to date.
+Compiling vhdl file "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd" in Library work.
+Architecture arq of Entity mux is up to date.
+Compiling vhdl file "//smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/reset_generator.vhd" in Library work.
+Architecture rtl of Entity reset_generator is up to date.
+Compiling vhdl file "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd" in Library work.
+Package <my_types_pkg> compiled.
+Entity <ej_serial_slave> compiled.
+Entity <ej_serial_slave> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd" in Library work.
+Entity <comm_top> compiled.
+Entity <comm_top> (Architecture <arq>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <comm_top> in library <work> (architecture <arq>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <ARQ>).
+
+Analyzing hierarchy for entity <reset_generator> in library <work> (architecture <rtl>) with generics.
+	MAX = 100
+
+Analyzing hierarchy for entity <EJ_SERIAL_MASTER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <EJ_SERIAL_SLAVE> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <packet_detect> in library <work> (architecture <ARQ>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <comm_top> in library <work> (Architecture <arq>).
+WARNING:Xst:753 - "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd" line 113: Unconnected output port 'EATXD_to_uC_o' of component 'mux'.
+WARNING:Xst:753 - "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd" line 113: Unconnected output port 'EACK_to_uC_o' of component 'mux'.
+WARNING:Xst:753 - "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd" line 113: Unconnected output port 'EBCK_to_uC_o' of component 'mux'.
+WARNING:Xst:753 - "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd" line 113: Unconnected output port 'EBTXD_to_uC_o' of component 'mux'.
+    Set user-defined property "CLKDV_DIVIDE =  8.0000000000000000" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "CLKFX_DIVIDE =  5" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "CLKFX_MULTIPLY =  8" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "CLKIN_PERIOD =  26.6660000000000000" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_inst> in unit <comm_top>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_inst> in unit <comm_top>.
+Entity <comm_top> analyzed. Unit <comm_top> generated.
+
+Analyzing Entity <mux> in library <work> (Architecture <ARQ>).
+Entity <mux> analyzed. Unit <mux> generated.
+
+Analyzing Entity <packet_detect> in library <work> (Architecture <ARQ>).
+WARNING:Xst:819 - "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd" line 92: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <start_reg2>
+Entity <packet_detect> analyzed. Unit <packet_detect> generated.
+
+Analyzing generic Entity <reset_generator> in library <work> (Architecture <rtl>).
+	MAX = 100
+Entity <reset_generator> analyzed. Unit <reset_generator> generated.
+
+Analyzing Entity <EJ_SERIAL_MASTER> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd" line 146: Mux is complete : default of case is discarded
+Entity <EJ_SERIAL_MASTER> analyzed. Unit <EJ_SERIAL_MASTER> generated.
+
+Analyzing Entity <EJ_SERIAL_SLAVE> in library <work> (Architecture <Behavioral>).
+Entity <EJ_SERIAL_SLAVE> analyzed. Unit <EJ_SERIAL_SLAVE> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <reset_generator>.
+    Related source file is "//smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/reset_generator.vhd".
+INFO:Xst:1799 - State d1 is never reached in FSM <state_reg>.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | start_state                                    |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit register for signal <count_reg>.
+    Found 7-bit subtractor for signal <count_reg$addsub0000> created at line 50.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <reset_generator> synthesized.
+
+
+Synthesizing Unit <EJ_SERIAL_MASTER>.
+    Related source file is "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd".
+    Found finite state machine <FSM_1> for signal <ejs>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 13                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 13                                             |
+    | Clock              | clkz                      (falling_edge)       |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8x35-bit ROM for signal <ejapkt$mux0000> created at line 137.
+    Found 1-bit register for signal <SOP_o>.
+    Found 1-bit register for signal <EOP_o>.
+    Found 6-bit register for signal <bc>.
+    Found 1-bit register for signal <eja_ck>.
+    Found 1-bit register for signal <eja_tx>.
+    Found 35-bit register for signal <ejapkt>.
+    Found 6-bit adder for signal <ejs$add0000> created at line 182.
+    Found 6-bit comparator greatequal for signal <ejs$cmp_ge0000> created at line 184.
+    Found 1-bit register for signal <rxpara>.
+    Found 1-bit xor36 for signal <rxpara$xor0000> created at line 186.
+    Found 36-bit register for signal <rxsa>.
+    Found 3-bit register for signal <s_packet>.
+    Found 3-bit adder for signal <s_packet$addsub0000> created at line 220.
+    Found 32-bit register for signal <s_received_data_0>.
+    Found 32-bit register for signal <s_received_data_1>.
+    Found 32-bit register for signal <s_received_data_2>.
+    Found 32-bit register for signal <s_received_data_3>.
+    Found 32-bit register for signal <s_received_data_4>.
+    Found 32-bit register for signal <s_received_data_5>.
+    Found 32-bit register for signal <s_received_data_6>.
+    Found 32-bit register for signal <s_received_data_7>.
+    Found 36-bit register for signal <txsa>.
+    Found 1-bit xor35 for signal <txsa$xor0000> created at line 154.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred 377 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   2 Xor(s).
+Unit <EJ_SERIAL_MASTER> synthesized.
+
+
+Synthesizing Unit <packet_detect>.
+    Related source file is "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd".
+WARNING:Xst:1780 - Signal <start_reg2_pulse> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <not_reset> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <clear_start_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_2> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk                       (falling_edge)       |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | st_begin                                       |
+    | Power Up State     | st_begin                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <eop_reg1>.
+    Found 1-bit register for signal <eop_reg2>.
+    Found 1-bit register for signal <PACKET_OK_reg>.
+    Found 1-bit register for signal <sop_reg1>.
+    Found 1-bit register for signal <sop_reg2>.
+    Found 1-bit register for signal <start_reg1>.
+    Found 1-bit register for signal <start_reg2>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   7 D-type flip-flop(s).
+Unit <packet_detect> synthesized.
+
+
+Synthesizing Unit <mux>.
+    Related source file is "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd".
+WARNING:Xst:1780 - Signal <EJ_DATA_RX_o_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EJ_DATA_RX_o_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EBTXD_to_uC_o_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EBTXD_to_uC_o_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EBRX_o_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EBRX_o_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EBCK_to_uC_o_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EBCK_to_uC_o_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EATXD_to_uC_o_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EATXD_to_uC_o_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EARX_o_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EARX_o_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EACK_to_uC_o_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <EACK_to_uC_o_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <fsm_state_reg<0>>.
+    Found 1-bit register for signal <mux_i_reg_1>.
+    Found 1-bit register for signal <mux_i_reg_2>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <EJ_SERIAL_SLAVE>.
+    Related source file is "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd".
+WARNING:Xst:737 - Found 3-bit latch for signal <command>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <vdata>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8x35-bit ROM for signal <sys_status$mux0000> created at line 206.
+    Found 1-bit 36-to-1 multiplexer for signal <$varindex0000> created at line 173.
+    Found 6-bit up counter for signal <nrx>.
+    Found 1-bit xor36 for signal <rxpar>.
+    Found 36-bit register for signal <rxs>.
+    Found 256-bit register for signal <s_received_data>.
+    Found 3-bit register for signal <sc>.
+    Found 3-bit adder for signal <sc$addsub0000> created at line 203.
+    Found 1-bit register for signal <serend>.
+    Found 1-bit register for signal <serst>.
+    Found 35-bit register for signal <sys_status>.
+    Found 6-bit down counter for signal <ti>.
+    Found 1-bit register for signal <tx>.
+    Found 36-bit register for signal <txs>.
+    Found 1-bit xor35 for signal <txs$xor0000> created at line 111.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <s_received_data>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred 369 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+	inferred   2 Xor(s).
+Unit <EJ_SERIAL_SLAVE> synthesized.
+
+
+Synthesizing Unit <comm_top>.
+    Related source file is "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd".
+WARNING:Xst:646 - Signal <verify_ok1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <s_EARX_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <not_s_EARX_o> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <debug_o_mux> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <$add0000> created at line 308.
+    Found 1-bit register for signal <mux_i>.
+    Found 32-bit up counter for signal <time_counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <comm_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 8x35-bit ROM                                          : 2
+# Adders/Subtractors                                   : 5
+ 3-bit adder                                           : 2
+ 32-bit adder                                          : 1
+ 6-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+# Counters                                             : 3
+ 32-bit up counter                                     : 1
+ 6-bit down counter                                    : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 45
+ 1-bit register                                        : 19
+ 3-bit register                                        : 2
+ 32-bit register                                       : 16
+ 35-bit register                                       : 2
+ 36-bit register                                       : 4
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+# Latches                                              : 2
+ 3-bit latch                                           : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 6-bit comparator greatequal                           : 1
+# Multiplexers                                         : 1
+ 1-bit 36-to-1 multiplexer                             : 1
+# Xors                                                 : 4
+ 1-bit xor35                                           : 2
+ 1-bit xor36                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <mux_1/packet_detect_1/state_reg/FSM> on signal <state_reg[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ st_begin | 00
+ st_sop   | 01
+ st_eop   | 10
+----------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <EJ_SERIAL_MASTER_1/ejs/FSM> on signal <ejs[1:12]> with one-hot encoding.
+-----------------------
+ State | Encoding
+-----------------------
+ 0000  | 000000000001
+ 0001  | 000000000010
+ 0010  | 000000000100
+ 0011  | 000000001000
+ 0100  | 000000010000
+ 0101  | 000000100000
+ 0110  | 000001000000
+ 0111  | 000010000000
+ 1000  | 000100000000
+ 1001  | 001000000000
+ 1010  | 010000000000
+ 1011  | 100000000000
+-----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <reset_generator_1/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ start_state | 00
+ wait_state  | 01
+ done_state  | 11
+ d1          | unreached
+-------------------------
+WARNING:Xst:1426 - The value init of the FF/Latch FFd2 hinder the constant cleaning in the block FSM.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <EJ_SERIAL_MASTER>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_ejapkt_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <EJ_SERIAL_MASTER> synthesized (advanced).
+
+Synthesizing (advanced) Unit <EJ_SERIAL_SLAVE>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_sys_status_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <EJ_SERIAL_SLAVE> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# ROMs                                                 : 2
+ 8x35-bit ROM                                          : 2
+# Adders/Subtractors                                   : 5
+ 3-bit adder                                           : 2
+ 32-bit adder                                          : 1
+ 6-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+# Counters                                             : 3
+ 32-bit up counter                                     : 1
+ 6-bit down counter                                    : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 764
+ Flip-Flops                                            : 764
+# Latches                                              : 2
+ 3-bit latch                                           : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 6-bit comparator greatequal                           : 1
+# Multiplexers                                         : 1
+ 1-bit 36-to-1 multiplexer                             : 1
+# Xors                                                 : 4
+ 1-bit xor35                                           : 2
+ 1-bit xor36                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch FSM_FFd2 hinder the constant cleaning in the block FSM_0-parent.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1710 - FF/Latch <sys_status_27> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_26> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_25> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_24> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_19> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_18> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_17> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_16> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_11> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_10> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_9> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_8> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_3> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_2> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sys_status_1> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_27> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_26> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_25> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_24> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_19> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_18> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_17> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_16> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_11> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_10> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_9> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_8> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_3> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_2> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txs_1> (without init value) has a constant value of 0 in block <EJ_SERIAL_SLAVE>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <ejapkt_0> in Unit <EJ_SERIAL_MASTER> is equivalent to the following 3 FFs/Latches, which will be removed : <ejapkt_8> <ejapkt_16> <ejapkt_24> 
+INFO:Xst:2261 - The FF/Latch <ejapkt_1> in Unit <EJ_SERIAL_MASTER> is equivalent to the following 3 FFs/Latches, which will be removed : <ejapkt_9> <ejapkt_17> <ejapkt_25> 
+INFO:Xst:2261 - The FF/Latch <ejapkt_2> in Unit <EJ_SERIAL_MASTER> is equivalent to the following 3 FFs/Latches, which will be removed : <ejapkt_10> <ejapkt_18> <ejapkt_26> 
+INFO:Xst:2261 - The FF/Latch <ejapkt_3> in Unit <EJ_SERIAL_MASTER> is equivalent to the following 3 FFs/Latches, which will be removed : <ejapkt_11> <ejapkt_19> <ejapkt_27> 
+INFO:Xst:2261 - The FF/Latch <ejapkt_4> in Unit <EJ_SERIAL_MASTER> is equivalent to the following 3 FFs/Latches, which will be removed : <ejapkt_12> <ejapkt_20> <ejapkt_28> 
+INFO:Xst:2261 - The FF/Latch <ejapkt_5> in Unit <EJ_SERIAL_MASTER> is equivalent to the following 3 FFs/Latches, which will be removed : <ejapkt_13> <ejapkt_21> <ejapkt_29> 
+INFO:Xst:2261 - The FF/Latch <ejapkt_6> in Unit <EJ_SERIAL_MASTER> is equivalent to the following 3 FFs/Latches, which will be removed : <ejapkt_14> <ejapkt_22> <ejapkt_30> 
+INFO:Xst:2261 - The FF/Latch <ejapkt_7> in Unit <EJ_SERIAL_MASTER> is equivalent to the following 3 FFs/Latches, which will be removed : <ejapkt_15> <ejapkt_23> <ejapkt_31> 
+INFO:Xst:2261 - The FF/Latch <sys_status_4> in Unit <EJ_SERIAL_SLAVE> is equivalent to the following 15 FFs/Latches, which will be removed : <sys_status_5> <sys_status_6> <sys_status_7> <sys_status_12> <sys_status_13> <sys_status_14> <sys_status_15> <sys_status_20> <sys_status_21> <sys_status_22> <sys_status_23> <sys_status_28> <sys_status_29> <sys_status_30> <sys_status_31> 
+INFO:Xst:2261 - The FF/Latch <txs_4> in Unit <EJ_SERIAL_SLAVE> is equivalent to the following 15 FFs/Latches, which will be removed : <txs_5> <txs_6> <txs_7> <txs_12> <txs_13> <txs_14> <txs_15> <txs_20> <txs_21> <txs_22> <txs_23> <txs_28> <txs_29> <txs_30> <txs_31> 
+
+Optimizing unit <comm_top> ...
+
+Optimizing unit <reset_generator> ...
+
+Optimizing unit <EJ_SERIAL_MASTER> ...
+
+Optimizing unit <packet_detect> ...
+
+Optimizing unit <EJ_SERIAL_SLAVE> ...
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/vdata_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/command_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/command_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/command_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_7_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_6_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_5_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_3_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_2_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_4_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_1_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/s_received_data_0_0> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_35> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_34> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_33> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_32> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_31> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_30> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_29> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_28> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_27> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_26> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_25> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_24> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_23> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_22> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_21> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_20> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_19> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_18> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_17> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_16> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_15> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_14> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_13> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_12> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_11> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_10> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_9> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_8> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_7> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_6> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_5> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_4> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_3> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_2> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_1> of sequential type is unconnected in block <comm_top>.
+WARNING:Xst:2677 - Node <EJ_SERIAL_SLAVE_1/rxs_0> of sequential type is unconnected in block <comm_top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block comm_top, actual ratio is 19.
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <comm_top> :
+	Register(s) time_counter_15 has(ve) been backward balanced into : time_counter_15_BRB0 .
+	Register(s) time_counter_16 has(ve) been backward balanced into : time_counter_16_BRB0 .
+	Register(s) time_counter_17 has(ve) been backward balanced into : time_counter_17_BRB0 .
+	Register(s) time_counter_18 has(ve) been backward balanced into : time_counter_18_BRB0 .
+	Register(s) time_counter_19 has(ve) been backward balanced into : time_counter_19_BRB0 .
+	Register(s) time_counter_20 has(ve) been backward balanced into : time_counter_20_BRB0 .
+	Register(s) time_counter_21 has(ve) been backward balanced into : time_counter_21_BRB0 .
+	Register(s) time_counter_22 has(ve) been backward balanced into : time_counter_22_BRB0 .
+	Register(s) time_counter_23 has(ve) been backward balanced into : time_counter_23_BRB0 .
+	Register(s) time_counter_24 has(ve) been backward balanced into : time_counter_24_BRB0 .
+	Register(s) time_counter_25 has(ve) been backward balanced into : time_counter_25_BRB0 .
+	Register(s) time_counter_26 has(ve) been backward balanced into : time_counter_26_BRB0 .
+	Register(s) time_counter_27 has(ve) been backward balanced into : time_counter_27_BRB0 .
+	Register(s) time_counter_28 has(ve) been backward balanced into : time_counter_28_BRB0 time_counter_28_BRB1.
+	Register(s) time_counter_29 has(ve) been backward balanced into : time_counter_29_BRB0 .
+	Register(s) time_counter_30 has(ve) been backward balanced into : time_counter_30_BRB0 .
+	Register(s) time_counter_31 has(ve) been backward balanced into : time_counter_31_BRB0 .
+Unit <comm_top> processed.
+Replicating register mux_i to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 450
+ Flip-Flops                                            : 450
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : comm_top.ngr
+Top Level Output File Name         : comm_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 613
+#      GND                         : 2
+#      INV                         : 11
+#      LUT1                        : 62
+#      LUT2                        : 57
+#      LUT3                        : 28
+#      LUT3_D                      : 1
+#      LUT4                        : 208
+#      MUXCY                       : 134
+#      MUXF5                       : 42
+#      MUXF6                       : 1
+#      VCC                         : 3
+#      XORCY                       : 64
+# FlipFlops/Latches                : 451
+#      FD                          : 8
+#      FDC                         : 41
+#      FDC_1                       : 26
+#      FDCE                        : 4
+#      FDCE_1                      : 3
+#      FDE                         : 6
+#      FDE_1                       : 356
+#      FDP                         : 3
+#      FDP_1                       : 1
+#      FDS                         : 2
+#      OFDDRCPE                    : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 1
+#      IBUFG                       : 2
+#      OBUF                        : 7
+# DCMs                             : 1
+#      DCM                         : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200tq144-4 
+
+ Number of Slices:                      371  out of   1920    19%  
+ Number of Slice Flip Flops:            448  out of   3840    11%  
+ Number of 4 input LUTs:                367  out of   3840     9%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of     97    12%  
+    IOB Flip Flops:                       3
+ Number of GCLKs:                         4  out of      8    50%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_i                              | DCM_inst:CLKFX         | 423   |
+SYNC_CLK_serial_i                  | IBUFG+BUFG             | 22    |
+DATA_RX_serial_i                   | BUFGP                  | 7     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------+--------------------------------------+-------+
+Control Signal                                                     | Buffer(FF name)                      | Load  |
+-------------------------------------------------------------------+--------------------------------------+-------+
+reset(reset1_INV_0:O)                                              | NONE(EJ_SERIAL_MASTER_1/ejs_FSM_FFd1)| 64    |
+EJ_SERIAL_SLAVE_1/serend_or0000(EJ_SERIAL_SLAVE_1/serend_or00001:O)| NONE(EJ_SERIAL_SLAVE_1/nrx_0)        | 13    |
+N0(XST_GND:G)                                                      | NONE(OFDDRCPE2_inst)                 | 4     |
+EJ_SERIAL_SLAVE_1/serst_or0000(EJ_SERIAL_SLAVE_1/serst_or00001:O)  | NONE(EJ_SERIAL_SLAVE_1/serst)        | 1     |
+-------------------------------------------------------------------+--------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 23.860ns (Maximum Frequency: 41.911MHz)
+   Minimum input arrival time before clock: 4.353ns
+   Maximum output required time after clock: 13.733ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_i'
+  Clock period: 23.860ns (frequency: 41.911MHz)
+  Total number of paths / destination ports: 15525 / 773
+-------------------------------------------------------------------------
+Delay:               7.456ns (Levels of Logic = 3)
+  Source:            reset_generator_1/state_reg_FSM_FFd1 (FF)
+  Destination:       EJ_SERIAL_MASTER_1/s_received_data_5_31 (FF)
+  Source Clock:      CLK_i rising 1.6X
+  Destination Clock: CLK_i falling 1.6X
+
+  Data Path: reset_generator_1/state_reg_FSM_FFd1 to EJ_SERIAL_MASTER_1/s_received_data_5_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             61   0.720   2.087  state_reg_FSM_FFd1 (state_reg_FSM_FFd1)
+     end scope: 'reset_generator_1'
+     begin scope: 'EJ_SERIAL_MASTER_1'
+     LUT3_D:I2->O          7   0.551   1.092  s_received_data_0_and000011 (N7)
+     LUT4:I3->O           32   0.551   1.853  s_received_data_6_and00001 (s_received_data_6_and0000)
+     FDE_1:CE                  0.602          s_received_data_6_0
+    ----------------------------------------
+    Total                      7.456ns (2.424ns logic, 5.032ns route)
+                                       (32.5% logic, 67.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYNC_CLK_serial_i'
+  Clock period: 6.548ns (frequency: 152.718MHz)
+  Total number of paths / destination ports: 90 / 22
+-------------------------------------------------------------------------
+Delay:               6.548ns (Levels of Logic = 5)
+  Source:            EJ_SERIAL_SLAVE_1/ti_2 (FF)
+  Destination:       EJ_SERIAL_SLAVE_1/tx (FF)
+  Source Clock:      SYNC_CLK_serial_i falling
+  Destination Clock: SYNC_CLK_serial_i falling
+
+  Data Path: EJ_SERIAL_SLAVE_1/ti_2 to EJ_SERIAL_SLAVE_1/tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.720   1.261  ti_2 (ti_2)
+     LUT2:I1->O            3   0.551   0.000  Mmux__varindex0000_15 (Mmux__varindex0000_11)
+     MUXF5:I1->O           1   0.360   0.000  Mmux__varindex0000_11_f5 (Mmux__varindex0000_11_f5)
+     MUXF6:I0->O           1   0.342   1.140  Mmux__varindex0000_9_f6 (Mmux__varindex0000_9_f6)
+     LUT2:I0->O            1   0.551   0.869  ti<5>1 (ti<5>1)
+     LUT4:I2->O            1   0.551   0.000  ti<5>75 (_varindex0000)
+     FDE_1:D                   0.203          tx
+    ----------------------------------------
+    Total                      6.548ns (3.278ns logic, 3.270ns route)
+                                       (50.1% logic, 49.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_i'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.825ns (Levels of Logic = 2)
+  Source:            EATX_i (PAD)
+  Destination:       EJ_SERIAL_MASTER_1/rxsa_0 (FF)
+  Destination Clock: CLK_i falling 1.6X
+
+  Data Path: EATX_i to EJ_SERIAL_MASTER_1/rxsa_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.801  EATX_i_IBUF (DATA_TX_o_slave)
+     begin scope: 'EJ_SERIAL_MASTER_1'
+     FDE_1:D                   0.203          rxsa_0
+    ----------------------------------------
+    Total                      1.825ns (1.024ns logic, 0.801ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DATA_RX_serial_i'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              4.353ns (Levels of Logic = 3)
+  Source:            SYNC_CLK_serial_i (PAD)
+  Destination:       EJ_SERIAL_SLAVE_1/txs_35 (FF)
+  Destination Clock: DATA_RX_serial_i rising
+
+  Data Path: SYNC_CLK_serial_i to EJ_SERIAL_SLAVE_1/txs_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            3   1.222   0.975  SYNC_CLK_serial_i_IBUFG (SYNC_CLK_serial_i_IBUFG)
+     begin scope: 'EJ_SERIAL_SLAVE_1'
+     LUT3:I2->O            6   0.551   1.003  txs_and00001 (txs_and0000)
+     FDE:CE                    0.602          txs_0
+    ----------------------------------------
+    Total                      4.353ns (2.375ns logic, 1.978ns route)
+                                       (54.6% logic, 45.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_i'
+  Total number of paths / destination ports: 774 / 7
+-------------------------------------------------------------------------
+Offset:              13.733ns (Levels of Logic = 67)
+  Source:            EJ_SERIAL_MASTER_1/s_received_data_2_0 (FF)
+  Destination:       debug_o<2> (PAD)
+  Source Clock:      CLK_i falling 1.6X
+
+  Data Path: EJ_SERIAL_MASTER_1/s_received_data_2_0 to debug_o<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.720   1.140  s_received_data_2_0 (s_received_data_2_0)
+     end scope: 'EJ_SERIAL_MASTER_1'
+     LUT4:I0->O            1   0.551   0.000  verify_ok2_and0000_wg_lut<0> (verify_ok2_and0000_wg_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  verify_ok2_and0000_wg_cy<0> (verify_ok2_and0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<1> (verify_ok2_and0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<2> (verify_ok2_and0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<3> (verify_ok2_and0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<4> (verify_ok2_and0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<5> (verify_ok2_and0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<6> (verify_ok2_and0000_wg_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<7> (verify_ok2_and0000_wg_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<8> (verify_ok2_and0000_wg_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<9> (verify_ok2_and0000_wg_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<10> (verify_ok2_and0000_wg_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<11> (verify_ok2_and0000_wg_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<12> (verify_ok2_and0000_wg_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<13> (verify_ok2_and0000_wg_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<14> (verify_ok2_and0000_wg_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<15> (verify_ok2_and0000_wg_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<16> (verify_ok2_and0000_wg_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<17> (verify_ok2_and0000_wg_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<18> (verify_ok2_and0000_wg_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<19> (verify_ok2_and0000_wg_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<20> (verify_ok2_and0000_wg_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<21> (verify_ok2_and0000_wg_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<22> (verify_ok2_and0000_wg_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<23> (verify_ok2_and0000_wg_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<24> (verify_ok2_and0000_wg_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<25> (verify_ok2_and0000_wg_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<26> (verify_ok2_and0000_wg_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<27> (verify_ok2_and0000_wg_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<28> (verify_ok2_and0000_wg_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<29> (verify_ok2_and0000_wg_cy<29>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<30> (verify_ok2_and0000_wg_cy<30>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<31> (verify_ok2_and0000_wg_cy<31>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<32> (verify_ok2_and0000_wg_cy<32>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<33> (verify_ok2_and0000_wg_cy<33>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<34> (verify_ok2_and0000_wg_cy<34>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<35> (verify_ok2_and0000_wg_cy<35>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<36> (verify_ok2_and0000_wg_cy<36>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<37> (verify_ok2_and0000_wg_cy<37>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<38> (verify_ok2_and0000_wg_cy<38>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<39> (verify_ok2_and0000_wg_cy<39>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<40> (verify_ok2_and0000_wg_cy<40>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<41> (verify_ok2_and0000_wg_cy<41>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<42> (verify_ok2_and0000_wg_cy<42>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<43> (verify_ok2_and0000_wg_cy<43>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<44> (verify_ok2_and0000_wg_cy<44>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<45> (verify_ok2_and0000_wg_cy<45>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<46> (verify_ok2_and0000_wg_cy<46>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<47> (verify_ok2_and0000_wg_cy<47>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<48> (verify_ok2_and0000_wg_cy<48>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<49> (verify_ok2_and0000_wg_cy<49>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<50> (verify_ok2_and0000_wg_cy<50>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<51> (verify_ok2_and0000_wg_cy<51>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<52> (verify_ok2_and0000_wg_cy<52>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<53> (verify_ok2_and0000_wg_cy<53>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<54> (verify_ok2_and0000_wg_cy<54>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<55> (verify_ok2_and0000_wg_cy<55>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<56> (verify_ok2_and0000_wg_cy<56>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<57> (verify_ok2_and0000_wg_cy<57>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<58> (verify_ok2_and0000_wg_cy<58>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<59> (verify_ok2_and0000_wg_cy<59>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<60> (verify_ok2_and0000_wg_cy<60>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<61> (verify_ok2_and0000_wg_cy<61>)
+     MUXCY:CI->O           1   0.064   0.000  verify_ok2_and0000_wg_cy<62> (verify_ok2_and0000_wg_cy<62>)
+     MUXCY:CI->O           3   0.303   0.907  verify_ok2_and0000_wg_cy<63> (debug_o_0_OBUF)
+     OBUF:I->O                 5.644          debug_o_2_OBUF (debug_o<2>)
+    ----------------------------------------
+    Total                     13.733ns (11.686ns logic, 2.047ns route)
+                                       (85.1% logic, 14.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYNC_CLK_serial_i'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 2)
+  Source:            EJ_SERIAL_SLAVE_1/tx (FF)
+  Destination:       DATA_TX_serial_o (PAD)
+  Source Clock:      SYNC_CLK_serial_i falling
+
+  Data Path: EJ_SERIAL_SLAVE_1/tx to DATA_TX_serial_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.720   0.801  tx (tx)
+     end scope: 'EJ_SERIAL_SLAVE_1'
+     OBUF:I->O                 5.644          DATA_TX_serial_o_OBUF (DATA_TX_serial_o)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 29.43 secs
+ 
+--> 
+
+Total memory usage is 291544 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  388 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

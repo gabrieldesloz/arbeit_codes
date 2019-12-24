@@ -1,0 +1,3 @@
+vhdl work "RS232.vhd"
+vhdl work "I2C_A.vhd"
+vhdl work "I2C.vhd"

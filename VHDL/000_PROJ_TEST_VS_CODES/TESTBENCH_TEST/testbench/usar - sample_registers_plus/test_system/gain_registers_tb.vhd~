@@ -1,0 +1,521 @@
+-------------------------------------------------------------------------------
+-- Title      : 
+-- Project    : 
+-------------------------------------------------------------------------------
+-- File       : gain_registers_tb.vhd
+-- Author     : Lucas Groposo Silveira
+-- Company    : Reason Tecnologia S.A.
+-- Created    : 2012-09-22
+-- Last update: 2013-06-28
+-- Standard   : VHDL'87
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2012 Reason Tecnologia S.A.
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2012-09-22  1.0      lgs     Created
+-------------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+-------------------------------------------------------------------------------
+
+entity gain_registers_tb is
+  port (
+    data_output : out std_logic_vector(255 downto 0);
+    data_ready  : out std_logic
+    );   
+
+end gain_registers_tb;
+
+-------------------------------------------------------------------------------
+
+architecture gain_registers_tb_rtl of gain_registers_tb is
+
+  component gain_registers
+    port (
+      clk            : in  std_logic;
+      reset_n        : in  std_logic;
+      address        : in  std_logic_vector(4 downto 0);
+      byteenable     : in  std_logic_vector(1 downto 0);
+      writedata      : in  std_logic_vector(15 downto 0);
+      write          : in  std_logic;
+      chipselect     : in  std_logic;
+      sysclk         : in  std_logic;
+      data_input     : in  std_logic_vector(255 downto 0);
+      data_available : in  std_logic;
+      data_output    : out std_logic_vector(255 downto 0);
+      data_ready     : out std_logic);
+  end component;
+
+  -- component ports
+  signal clk            : std_logic;
+  signal reset_n        : std_logic;
+  signal address        : std_logic_vector(4 downto 0);
+  signal byteenable     : std_logic_vector(1 downto 0);
+  signal writedata      : std_logic_vector(15 downto 0);
+  signal write          : std_logic;
+  signal chipselect     : std_logic;
+  signal sysclk         : std_logic;
+  signal data_input     : std_logic_vector(255 downto 0);
+  signal data_available : std_logic;
+  signal data_output    : std_logic_vector(255 downto 0);
+  signal data_ready     : std_logic;
+
+  signal addr_avalon : std_logic_vector(4 downto 0) := "00000";
+  -- clock
+  signal Clock       : std_logic                    := '1';
+
+begin  -- gain_registers_tb_rtl
+
+  -- component instantiation
+  DUT : gain_registers
+    port map (
+      clk            => clk,
+      reset_n        => reset_n,
+      address        => address,
+      byteenable     => byteenable,
+      writedata      => writedata,
+      write          => write,
+      chipselect     => chipselect,
+      sysclk         => sysclk,
+      data_input     => data_input,
+      data_available => data_available,
+      data_output    => data_output,
+      data_ready     => data_ready);
+
+  -- clock generation
+  Clock  <= not Clock after 5 ns;
+  sysclk <= Clock;
+  clk    <= Clock;
+
+  -- waveform generation
+  WaveGen_Proc : process
+  begin
+    -- insert signal assignments here
+    reset_n    <= '0';
+    chipselect <= '0';
+    write      <= '0';
+    writedata  <= x"0000";
+    data_input <= x"00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC00CC";
+    data_available <= '0';
+    byteenable <= "00";
+    wait for 50 ns;
+    reset_n    <= '1';
+    wait for 50 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"8000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    writedata   <= x"0000";
+    address     <= addr_avalon;
+    chipselect  <= '1';
+    write       <= '1';
+    byteenable  <= "11";
+    wait for 10 ns;
+    addr_avalon <= addr_avalon + '1';
+    chipselect  <= '0';
+    write       <= '0';
+    byteenable  <= "00";
+    wait for 20 ns;
+
+    wait for 1 us;
+
+    data_available <= '1';
+    wait for 10 ns;
+    data_available <= '0';
+
+    wait;
+
+
+
+
+
+    wait until Clk = '1';
+  end process WaveGen_Proc;
+
+  
+
+end gain_registers_tb_rtl;
+
+-------------------------------------------------------------------------------
+
+configuration gain_registers_tb_gain_registers_tb_rtl_cfg of gain_registers_tb is
+  for gain_registers_tb_rtl
+  end for;
+end gain_registers_tb_gain_registers_tb_rtl_cfg;
+
+-------------------------------------------------------------------------------

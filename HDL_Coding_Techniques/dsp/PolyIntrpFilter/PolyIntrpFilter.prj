@@ -1,0 +1,10 @@
+vhdl work PolyIntrpFilterPkg.vhd
+vhdl work TestPkg.vhd
+vhdl work AddrGen.vhd
+vhdl work AddrDelay.vhd
+vhdl work SyncDelay.vhd
+vhdl work DataDelay.vhd
+vhdl work DelayLine.vhd
+vhdl work CoefRom.vhd
+vhdl work FilterStage.vhd
+vhdl work PolyIntrpFilter.vhd

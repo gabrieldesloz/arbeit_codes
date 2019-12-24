@@ -1,0 +1,6 @@
+V3 3
+FL //smkn33/s10169/vhdl/chipscope/chipscope_ila.vhd 2014/08/07.10:40:14 P.15xf
+EN work/chipscope_ila 1432225169 \
+      FL //smkn33/s10169/vhdl/chipscope/chipscope_ila.vhd PB ieee/std_logic_1164 1335251622
+AR work/chipscope_ila/chipscope_ila_a 1432225170 \
+      FL //smkn33/s10169/vhdl/chipscope/chipscope_ila.vhd EN work/chipscope_ila 1432225169

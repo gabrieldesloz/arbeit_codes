@@ -1,0 +1,677 @@
+   process(clkaq,reset,led_duration_rear) -- 56.25MHz
+--	variable flag_si : std_logic;
+   begin
+	  if reset='1' then
+	  
+		 -- Mean 16k
+			s_has_new <= '0';
+						
+		 sincout <= '0';	
+	    clrsinc<='0';
+		 
+	    clkb<='0';
+	    clkbb<='0';
+		 wena(0)<='0';
+		 wena2(0)<='0';
+		 wenab(0)<='0';
+		 wena2b(0)<='0';
+	    extclr<='0';
+		 extevent_flag<='0';
+		 ----------------------------------
+		 -- multiplier input multiplexer -- 
+		 ----------------------------------
+		 s_bkgnd_mult <= '0';
+		 
+		 s_ma_we <= "0";
+		 s_ma2_we <= "0";
+		 s_mab_we <= "0";
+		 s_ma2b_we <= "0";
+		 s_extclr_bckgnd_gain <= '0';
+		 s_extevent_bckgnd_gain_flag <= '0';
+		 ----------------------------------
+	    afec <= "0000000000000001";
+		 afeck2<='0';
+		 afeck0<='0';
+           CCD_CLK1<= '0';
+			  CCD_CLK2<= '0';
+			  CCD_CLK3<= '0';
+			  CCD_CLK4<= '0';
+			  CCD_SI1<= '0';
+			  CCD_SI2<= '0';
+			  CCD_SI3<= '0';
+			  CCD_SI4<= '0';
+		 flag_si<='0';	  
+		 proc<="111"; -- default addressing gain correctiondata
+		 multipmux<='0'; -- multiplier source is memory
+		 ledseq<="001";
+		 led_counter<="00";
+		 led_duration<=X"F0"; --led_duration_rear;
+		 ledout<="010";
+		 pix<=x"00";
+	    canincfifoline<='0';
+		 fifoline <= "000";
+--		 fifolinew <= "001";
+		 
+		s_bgnd_floor <= '0'; -- If there is a floor then store floor info for background
+		s_illum_floor <= '0';
+		
+	  elsif rising_edge(clkaq) then 
+-- defaults	  
+	    extclr<='0';
+	    clkb<='0';
+	    clkbb<='0';
+		 wena(0)<='0';
+		 wena2(0)<='0';
+		 wenab(0)<='0';
+		 wena2b(0)<='0';
+
+		----------------------------------
+		-- multiplier input multiplexer -- 
+		----------------------------------
+		s_ma_we <= "0";
+		s_ma2_we <= "0";
+		s_mab_we <= "0";
+		s_ma2b_we <= "0";
+		
+		s_extclr_bckgnd_gain <= '0';
+		----------------------------------
+
+		 wenaf_b(0)<='0';
+		 wenaf_r(0)<='0';
+		 wenaf_f(0)<='0';
+		 
+		 proc<="111"; -- default addressing gain correctiondata
+		 
+	    case afec is
+-- 0 ----------------------------------------------------------- ---------------------------------------
+		   when "0000000000000001" => afec <= "0000000000000010";
+			-- AFE
+			   afeck2<='1'; afeck0 <='0'; 
+			-- CCD
+           CCD_CLK1<= '1'; CCD_CLK2<= '1'; CCD_CLK3<= '1'; CCD_CLK4<= '1';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+         -- ALU
+				
+				----------------------------------
+				-- multiplier input multiplexer -- 
+				----------------------------------
+				s_bkgnd_mult <= '0';
+				----------------------------------
+			
+			  case led_counter is
+			    when "00" => proc<="100"; when "01" => proc<="101"; when "10" => proc<="110"; when others => proc<="111";
+			  end case;	 
+         -- front end memory
+		     wena(0)<='1';
+		     wena2(0)<='1';
+		     wenab(0)<='1';
+		     wena2b(0)<='1';
+
+         -- Line FIFO
+			  case led_counter is
+			    when "00" => wenaf_b(0)<='1'; 
+			    when "01" => wenaf_r(0)<='1'; 
+			    when "10" => wenaf_f(0)<='1'; 
+				 when others =>  wenaffl(0)<='0'; 
+			  end case;	 
+         -- board synch			
+			  sincout<='0';
+
+-- 1 ----------------------------------------------------------- --------------------------------------
+		   when "0000000000000010" => afec <= "0000000000000100";
+			-- AFE
+			   afeck2<='0'; afeck0 <='1'; 
+			-- CCD
+           CCD_CLK1<= '0'; CCD_CLK2<= '0'; CCD_CLK3<= '0'; CCD_CLK4<= '0';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+         -- ALU
+			  clkb<='1';  -- read B side of memory (IMAGE)
+			  clkbb<='1';
+			  case led_counter is
+			    when "00" => proc<="100"; when "01" => proc<="101"; when "10" => proc<="110"; when others => proc<="111";
+			  end case;	 
+         -- Line FIFO
+			if canincfifoline='1' then
+			  s_fifoline_last <= fifoline;
+ 			  fifoline <= fifoline + 1;
+			  fifolinew <= fifoline + 2;
+			  s_fifolinew_new <= fifoline + 3;
+			end if;  
+				
+-- 2 ----------------------------------------------------------- -----------------------------
+		   when "0000000000000100" => afec <= "0000000000001000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='1'; 
+			-- CCD
+           CCD_CLK1<= '0'; CCD_CLK2<= '0'; CCD_CLK3<= '0'; CCD_CLK4<= '0';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+         -- ALU
+			  case led_counter is
+			    when "00" => proc<="000"; when "01" => proc<="001"; when "10" => proc<="010"; when others => proc<="111";
+			  end case;	 
+			  -- move Image to ACC
+			  acc<=datab; --+ X"04A0"; -- add offset to handle with negative signals after FLOOR correction
+			  acc2<=datab2; --+ X"04A0";
+			  accb<=databb; --+ X"04A0";
+			  acc2b<=datab2b; --+ X"04A0";
+
+			-- Line FIFO
+			if canincfifoline='1' then
+			  canincfifoline<='0'; -- this will release the sorting state machine
+			end if;  
+			  
+         -- Illumination	
+			   if LED_duration>X"00" then
+               LED_duration<=LED_duration-1;		
+				else
+					LEDOUT <= "000"; -- turn OFF all lEDs
+				end if;
+				
+-- 3 ----------------------------------------------------------- --------------------------
+		   when "0000000000001000" => afec <= "0000000000010000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='0'; 
+			-- CCD
+           CCD_CLK1<= '0'; CCD_CLK2<= '0'; CCD_CLK3<= '0'; CCD_CLK4<= '0';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+         -- ALU
+			  clkb<='1';  -- read B side of memory (FLOOR)
+			  clkbb<='1';
+			  case led_counter is
+			    when "00" => proc<="000"; when "01" => proc<="001"; when "10" => proc<="010"; when others => proc<="111";
+			  end case;	 
+
+-- 4 ----------------------------------------------------------- ----------------------------------------
+		   when "0000000000010000" => afec <= "0000000000100000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='0'; 
+			   ccd1(13 downto 6)<=adc1; 
+				ccd1(15 downto 14)<="00";
+				ccd3(13 downto 6)<=adc2; 
+				ccd3(15 downto 14)<="00";
+			-- CCD
+           CCD_CLK1<= '0'; CCD_CLK2<= '0'; CCD_CLK3<= '0'; CCD_CLK4<= '0';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+         -- ALU
+			  -- select gain table according to illumination process
+			  case led_counter is
+			    when "00" => 
+									proc<="111"; 
+									
+									----------------------------------
+									-- multiplier input multiplexer -- 
+									----------------------------------
+									s_bkgnd_mult <= '1';
+									----------------------------------
+									
+				 when "01" => proc<="011"; 
+				 when "10" => proc<="111"; 
+				 when others => proc<="111";
+			  end case;	 
+			  
+				----------------------------------
+				-- multiplier input multiplexer -- 
+				----------------------------------
+				s_bkgnd_ma_gain <= s_ma_gain_mem_out;
+				s_bkgnd_ma2_gain <= s_ma2_gain_mem_out;
+				s_bkgnd_mab_gain <= s_mab_gain_mem_out;
+				s_bkgnd_ma2b_gain <= s_ma2b_gain_mem_out;
+				----------------------------------
+			
+			  -- subtract FLOOR from ACC
+				if (acc <= datab) then 	-- Tests if the raw image value (acc) is lower than floor value (datab) to avoid "underflow"
+					acc<=(others=>'0');	-- If the value is lower than floor value than set to 0
+				else
+					acc<=acc-datab;		-- Otherwise subtract floor value
+				end if;
+				
+				if (acc2 <= datab2) then
+					acc2<=(others=>'0');
+				else
+					acc2<=acc2-datab2;
+				end if;
+				
+				if (accb <= databb) then
+					accb<=(others=>'0');
+				else
+					accb<=accb-databb;
+				end if;
+				
+				if (acc2b <= datab2b) then
+					acc2b<=(others=>'0');
+				else
+					acc2b<=acc2b-datab2b;
+				end if;
+				
+			  multipmux<='0'; -- multiplier source is memory
+
+			  
+-- 5 ----------------------------------------------------------- -----------------------
+		   when "0000000000100000" => afec <= "0000000001000000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='1'; 
+			-- CCD
+           CCD_CLK1<= '0'; CCD_CLK2<= '0'; CCD_CLK3<= '0'; CCD_CLK4<= '0';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+         -- ALU
+			  -- select gain table according to illumination process
+			  case led_counter is
+			    when "00" => 
+									proc<="111"; 
+									
+									----------------------------------
+									-- multiplier input multiplexer -- 
+									----------------------------------
+									s_bkgnd_mult <= '1';
+									----------------------------------
+									
+				 when "01" => proc<="011"; 
+				 when "10" => proc<="111"; 
+				 when others => proc<="111";
+			  end case;
+
+			  clkb<='1';  -- read B side of memory (GAIN)
+			  clkbb<='1';
+
+-- 6 ----------------------------------------------------------- ------------------------
+		   when "0000000001000000" => afec <= "0000000010000000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='1'; 
+			   ccd1(5 downto 0)<=adc1(7 downto 2); 
+				ccd3(5 downto 0)<=adc2(7 downto 2); 
+			-- CCD
+           CCD_CLK1<= '0'; CCD_CLK2<= '0'; CCD_CLK3<= '0'; CCD_CLK4<= '0';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+			  
+			-- Mean 16k
+			
+--			if s_acc_valid(CONV_INTEGER(pix)) = '1' then		-- If the pixel value is valid (lower than trip level)						
+--				s_acc_in(63 downto 48) <= acc;					-- Gets acc value
+--			else												 			-- If the pixel value is not valid
+--				s_acc_in(63 downto 48) <= X"0000";				-- Sets the acc to X"0000" and the block will ignore such a low level value
+--			end if;
+--
+--			if s_acc2_valid(CONV_INTEGER(pix)) = '1' then	-- If the pixel value is valid (lower than trip level)						
+--				s_acc_in(47 downto 32) <= acc2;					-- Gets acc value
+--			else												 			-- If the pixel value is not valid
+--				s_acc_in(47 downto 32) <= X"0000";				-- Sets the acc to X"0000" and the block will ignore such a low level value
+--			end if;			
+--			
+--			if s_accb_valid(CONV_INTEGER(pix)) = '1' then	-- If the pixel value is valid (lower than trip level)						
+--				s_acc_in(31 downto 16) <= accb;					-- Gets acc value
+--			else												 			-- If the pixel value is not valid
+--				s_acc_in(31 downto 16) <= X"0000";				-- Sets the acc to X"0000" and the block will ignore such a low level value
+--			end if;
+--
+--			if s_acc2b_valid(CONV_INTEGER(pix)) = '1' then	-- If the pixel value is valid (lower than trip level)						
+--				s_acc_in(15 downto 0) <= acc2b;					-- Gets acc value
+--			else												 			-- If the pixel value is not valid
+--				s_acc_in(15 downto 0) <= X"0000";				-- Sets the acc to X"0000" and the block will ignore such a low level value
+--			end if;	
+			
+			s_acc_in <= (acc & acc2 & accb & acc2b);
+			  			  
+         -- ALU
+			   -- let the multiplication happen (latency)
+
+-- 7 ----------------------------------------------------------- ---------------------
+		   when "0000000010000000" => afec <= "0000000100000000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='0'; 
+			-- CCD
+           CCD_CLK1<= '1'; CCD_CLK2<= '1'; CCD_CLK3<= '1'; CCD_CLK4<= '1';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+			  
+			-- Mean 16k
+				if s_has_new = '1' then
+					s_is_transluc <= "0";
+					s_is_reflect <= "0";
+				else
+					if led_counter = "01" then
+						s_is_transluc <= "1";
+						s_is_reflect <= "0";
+					elsif led_counter = "10" then
+						s_is_transluc <= "0";
+						s_is_reflect <= "1";
+					else
+						s_is_transluc <= "0";
+						s_is_reflect <= "0";
+					end if;
+				end if;
+							  
+         -- ALU
+
+				----------------------------------
+				-- multiplier input multiplexer -- 
+				----------------------------------
+				s_bkgnd_mult <= '0';
+				----------------------------------
+			
+			   -- store multiplier result
+--				if led_counter/="00" then -- do not use result when reading background data (bckGnd is always multiplied by 1.0)
+				
+					if mp(31 downto 24) /= "00000000" then	-- Tests if the multiplication resulted an overflow (any bit above 23rd is 1)
+						acc <= X"FFFF";							-- If there is an overflow set the value to FFFF
+					else
+						acc<=mp(23 downto 8);					-- Else gets the multiplication value
+					end if;
+					
+					if mp2(31 downto 24) /= "00000000" then
+						acc2 <= X"FFFF";
+					else
+						acc2<=mp2(23 downto 8);
+					end if;
+					
+					if mpb(31 downto 24) /= "00000000" then
+						accb <= X"FFFF";
+					else
+						accb<=mpb(23 downto 8);
+					end if;
+					
+					if mp2b(31 downto 24) /= "00000000" then
+						acc2b <= X"FFFF";
+					else
+						acc2b<=mp2b(23 downto 8);
+					end if;
+					
+--				else	-- If it is the background illumination
+--					
+--					if (acc < ("00" & dottrigga & "000000")) then	-- If acc value is higher than shifted trip line
+--						s_acc_valid(CONV_INTEGER(pix)) <= '1';			-- Mark as valid pixel intensity
+--					else															-- If acc value is lower 
+--						s_acc_valid(CONV_INTEGER(pix)) <= '0';			-- Mark as unvalid pixel intensity
+--					end if;
+--					
+--					if (acc2 < ("00" & dottrigga & "000000")) then							
+--						s_acc2_valid(CONV_INTEGER(pix)) <= '1';	
+--					else														
+--						s_acc2_valid(CONV_INTEGER(pix)) <= '0';	
+--					end if;
+--					
+--					if (accb < ("00" & dottriggb & "000000")) then							
+--						s_accb_valid(CONV_INTEGER(pix)) <= '1';	
+--					else														
+--						s_accb_valid(CONV_INTEGER(pix)) <= '0';	
+--					end if;
+--					
+--					if (acc2b < ("00" & dottriggb & "000000")) then							
+--						s_acc2b_valid(CONV_INTEGER(pix)) <= '1';	
+--					else														
+--						s_acc2b_valid(CONV_INTEGER(pix)) <= '0';	
+--					end if;
+					
+--				end if;
+				
+         -- ext access
+			  if extevent_req='1' then
+			     extevent_flag<='1';
+			  end if;
+			  
+			 ----------------------------------
+			 -- multiplier input multiplexer -- 
+			 ----------------------------------
+			  if s_extevent_bckgnd_gain_req='1' then
+			     s_extevent_bckgnd_gain_flag<='1';
+			  end if;
+			 ----------------------------------
+				
+				
+				multipmux<='1'; -- next multiplier source is group_gain
+
+-- 8 ----------------------------------------------------------- ----------------------
+		   when "0000000100000000" => afec <= "0000001000000000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='0';
+			   ccd2(13 downto 6)<=adc1; 
+				ccd2(15 downto 14)<="00";
+				ccd4(13 downto 6)<=adc2; 
+				ccd4(15 downto 14)<="00";
+			-- CCD
+           CCD_CLK1<= '1'; CCD_CLK2<= '1'; CCD_CLK3<= '1'; CCD_CLK4<= '1';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+         -- ALU
+			   -- let multiplication happen (latency)
+
+-- 9 ----------------------------------------------------------- -------------------------
+		   when "0000001000000000" => afec <= "0000010000000000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='1'; 
+			-- CCD
+           CCD_CLK1<= '1'; CCD_CLK2<= '1'; CCD_CLK3<= '1'; CCD_CLK4<= '1';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+			  
+			-- MEAN
+				s_is_transluc <= "0";
+				s_is_reflect <= "0";
+			  
+         -- external access front-end
+			  clkb<='1';  -- read B side 
+			  clkbb<='1';
+		
+-- 10 ----------------------------------------------------------- -------------------------
+		   when "0000010000000000" => afec <= "0000100000000000";
+			-- AFE
+			   afeck2<='0'; afeck0 <='1'; 
+			   ccd2(5 downto 0)<=adc1(7 downto 2); 
+				ccd4(5 downto 0)<=adc2(7 downto 2); 
+			-- CCD
+            CCD_CLK1<= '1'; CCD_CLK2<= '1'; CCD_CLK3<= '1'; CCD_CLK4<= '1';
+			   if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				               else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			   end if;
+ 
+				   a<=mp(23 downto 8); 
+					a2<=mp2(23 downto 8);
+					ab<=mpb(23 downto 8);
+					a2b<=mp2b(23 downto 8);
+								  
+			 ----------------------------------
+			 -- multiplier input multiplexer -- 
+			 ----------------------------------
+			  if (s_extevent_bckgnd_gain_flag='1') then -- read, muxes are already set
+				     case s_bckgnd_mem_sel is
+					    when "00" => s_ma_we<="1";
+					    when "01" => s_ma2_we<="1";
+					    when "10" => s_mab_we<="1";
+					    when "11" => s_ma2b_we<="1";
+					    when others => 
+					  end case;
+			  else
+				-- ext access
+				  if (extevent_flag='1') and (exttype='0') then -- read, muxes are already set
+						  case extpart is
+							 when "00" => extdataread <= datab; 
+							 when "01" => extdataread <= datab2; 
+							 when "10" => extdataread <= databb;
+							 when "11" => extdataread <= datab2b; 
+							 when others => 
+						  end case;
+				  end if;
+				  
+				  if (extevent_flag='1') and (exttype='1') then -- read, muxes are already set
+						  case extpart is -- write enable, muxes are already set
+							 when "00" => wena(0)<='1';
+							 when "01" => wena2(0)<='1';
+							 when "10" => wenab(0)<='1';
+							 when "11" => wena2b(0)<='1';
+							 when others => 
+						  end case;
+				  end if;
+			  end if;
+			 ----------------------------------
+					
+
+         -- front end memory & illumination
+			  if flag_si='1'then flag_si<='0'; end if; -- finish CCD_SI pulse
+       
+--		   -- sinc generation
+			  if pix=X"FF" then
+             case LEDSEQ is
+	            when "100" => sincout<='1'; 
+	 	         when others => sincout<='0';
+	          end case;
+			  else
+             sincout<='0';			  
+			  end if;
+			
+			  
+
+-- 11 ----------------------------------------------------------- 
+		   when "0000100000000000" => afec <= "0000000000000001";
+			-- AFE
+			   afeck2<='0'; afeck0 <='0'; 
+			-- CCD
+           CCD_CLK1<= '1'; CCD_CLK2<= '1'; CCD_CLK3<= '1'; CCD_CLK4<= '1';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+			  
+         -- ext access
+			  if extevent_flag='1' then
+			     extevent_flag<='0';
+				  extclr<='1';
+			  end if;
+			  
+			 ----------------------------------
+			 -- multiplier input multiplexer -- 
+			 ----------------------------------
+			  if s_extevent_bckgnd_gain_flag = '1' then
+			     s_extevent_bckgnd_gain_flag <= '0';
+				  s_extclr_bckgnd_gain <= '1';
+			  end if;
+			 ----------------------------------
+			  
+         -- front end memory & illumination & FIFO
+								
+			  pix<=pix+1;
+
+			  if pix=X"FF" then
+			  
+				flag_si<='1'; -- start CCD_SI pulse once every 256 pixels
+				 
+             case LEDSEQ is
+	            when "001" => LEDSEQ<="010"; 
+					              LEDOUT <= "001"; 
+									  led_counter<="01"; -- illum front ON, store REAR
+									  
+									  s_illum_floor <= s_illum_floor_int; -- If there is a floor then store floor info for rear illumination
+									  s_bgnd_floor <= '0';
+									  
+									  LED_duration<=LED_duration_front;
+									  
+	            when "010" => LEDSEQ<="100"; 
+									  led_counter<="10"; -- illum bckgnd OFF, store FRONT
+									  
+									  s_illum_floor <= s_illum_floor_int; -- If there is a floor then store floor info for front illumination
+									  s_bgnd_floor <= '0';
+									  
+					              if (s_bgnd_off = '1') then
+										LEDOUT <= "000"; 
+									  else
+										LEDOUT <= "100"; 
+									  end if;
+									  
+									  LED_duration<=LED_duration_bckgnd;
+	            when "100" => LEDSEQ<="001"; 
+					              LEDOUT <= "010"; 
+									  
+									  led_counter<="00"; -- illum rear ON, store BackGnd
+									  
+									  s_bgnd_floor <= s_bgnd_floor_int; -- If there is a floor then store floor info for background
+									  s_illum_floor <= '0';
+									  
+									  LED_duration<=LED_duration_rear;
+									  sincout<='1';
+
+                             canincfifoline<='1';
+									  
+									 -- Mean 16k
+									  s_has_new <= (not(s_has_new));
+									  
+									  
+	 	         when others => LEDOUT <= "000"; led_counter<="00"; LEDSEQ<="001";
+	          end case;
+			  else
+             sincout<='0';			  
+			  end if;
+
+
+-- 12  -- phantom state for synch purposes ----------------------------------------------------------- 
+		   when "0001000000000000" => afec <= "0000000000000001";
+			-- AFE
+			   afeck2<='0'; afeck0 <='0'; 
+			-- CCD
+           CCD_CLK1<= '1'; CCD_CLK2<= '1'; CCD_CLK3<= '1'; CCD_CLK4<= '1';
+			  if flag_si='1' then CCD_SI1<='1'; CCD_SI2<='1'; CCD_SI3<='1'; CCD_SI4<='1';
+				              else CCD_SI1<='0'; CCD_SI2<='0'; CCD_SI3<='0'; CCD_SI4<='0';
+			  end if;
+			  
+         -- ext access
+			  if extevent_flag='1' then
+			     extevent_flag<='0';
+				  extclr<='1';
+			  end if;
+			  
+			 ----------------------------------
+			 -- multiplier input multiplexer -- 
+			 ----------------------------------
+			  if s_extevent_bckgnd_gain_flag = '1' then
+			     s_extevent_bckgnd_gain_flag <= '0';
+				  s_extclr_bckgnd_gain <= '1';
+			  end if;
+			 ----------------------------------
+			  
+         -- front end memory & illumination
+--			  if flag_si='1'then flag_si:='0'; end if; -- finish CCD_SI pulse
+								
+				-- synchronization -----------------------------	
+			   flag_si<='1'; -- start CCD_SI pulse once every 256 pixels
+								
+				pix<=X"00";
+	         LEDSEQ<="001"; 
+				LEDOUT <= "010"; 
+				led_counter<="00"; -- illum rear ON, store BackGnd
+				LED_duration<=LED_duration_rear;
+
+				s_bgnd_floor <= s_bgnd_floor_int; -- If there is a floor then store floor info for background
+				s_illum_floor <= '0';
+
+            canincfifoline<='1';
+									  
+				-- Mean 16k
+				s_has_new <= (not(s_has_new));
+            sincout<='0';
+
+
+		   when others => afec <= "0000000000000001";
+		 end case;
+		 
+	-- board synch	 
+		 clrsinc<='0';
+		 if sincin='1' then
+		  afec <= "0001000000000000"; -- synch phantom step
+		  clrsinc<='1';
+		 end if;
+		 
+     end if;	  
+   end process;	

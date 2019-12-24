@@ -1,0 +1,29 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "M:/vhdl/clocking mono/xilinx/clocking_test/tb_clock_gen_isim_beh.exe" -prj "M:/vhdl/clocking mono/xilinx/clocking_test/tb_clock_gen_beh.prj" "work.tb_clock_gen" 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "M:/vhdl/clocking mono/xilinx/clocking_test/../../clock_gen_fsm.vhd" into library work
+Parsing VHDL file "M:/vhdl/clocking mono/xilinx/clocking_test/../../clock_gen.vhd" into library work
+Parsing VHDL file "M:/vhdl/clocking mono/xilinx/clocking_test/tb_clock_gen.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package vcomponents
+Compiling package textio
+Compiling package numeric_std
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture dcm_clkgen_v of entity DCM_CLKGEN [\DCM_CLKGEN(true,"*",true,false,...]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture arq of entity clock_gen_fsm [clock_gen_fsm_default]
+Compiling architecture arq of entity clock_gen [clock_gen_default]
+Compiling architecture behavior of entity tb_clock_gen
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 17 VHDL Units
+Built simulation executable M:/vhdl/clocking mono/xilinx/clocking_test/tb_clock_gen_isim_beh.exe
+Fuse Memory Usage: 54744 KB
+Fuse CPU Usage: 1200 ms

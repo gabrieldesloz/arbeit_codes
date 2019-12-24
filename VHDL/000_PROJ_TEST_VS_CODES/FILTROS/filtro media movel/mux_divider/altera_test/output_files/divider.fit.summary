@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Aug 22 16:18:38 2013
+Quartus II 32-bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : divider
+Top-level Entity Name : divider_mux
+Family : Cyclone IV E
+Device : EP4CE75F23C7
+Timing Models : Final
+Total logic elements : 651 / 75,408 ( < 1 % )
+    Total combinational functions : 524 / 75,408 ( < 1 % )
+    Dedicated logic registers : 313 / 75,408 ( < 1 % )
+Total registers : 313
+Total pins : 196 / 293 ( 67 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,810,880 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 400 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

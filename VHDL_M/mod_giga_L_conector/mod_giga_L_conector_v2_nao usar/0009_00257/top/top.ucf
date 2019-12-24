@@ -1,0 +1,20 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CLK_i" LOC = P55;
+
+NET "EATX_i" LOC = P57; 		#IO2
+
+NET "EARX_o" LOC = P141; 		#IO3 sclk 
+ 
+NET "EBRX_o" LOC = P140; 		#IO4
+
+NET "clk_60MHz_o"  LOC = P128; 	#I06 
+
+NET "debug_o"  LOC = P137; 		#I012 
+
+
+
+
+
+

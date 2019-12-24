@@ -1,0 +1,16 @@
+# Output products list for <MEM_SYNC>
+MEM_SYNC.asy
+MEM_SYNC.gise
+MEM_SYNC.ngc
+MEM_SYNC.sym
+MEM_SYNC.v
+MEM_SYNC.veo
+MEM_SYNC.vhd
+MEM_SYNC.vho
+MEM_SYNC.xco
+MEM_SYNC.xise
+MEM_SYNC_flist.txt
+MEM_SYNC_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

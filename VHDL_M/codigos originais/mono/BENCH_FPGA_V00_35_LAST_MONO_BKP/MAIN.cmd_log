@@ -1,0 +1,838 @@
+xst -intstyle ise -ifn "F:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_44_rev06/MAIN.xst" -ofn "F:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_44_rev06/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+xst -intstyle ise -ifn "F:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_44_rev06/MAIN.xst" -ofn "F:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_44_rev06/MAIN.syr" 
+xst -intstyle ise -ifn "F:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_44_rev06/MAIN.xst" -ofn "F:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_44_rev06/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_V00_44_rev06/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_V00_44_rev06/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_53/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_53/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_53/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_53/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_55/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_56/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_56/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_56/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_56/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_57/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt on -ol high -xe n -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -xe n -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_58/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_63/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_63/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_63/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_63/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_64/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_64/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_64/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/FPGA_Board/FPGA_V00_64/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_70/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_72/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_73/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_73/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_73/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_73/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_73/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_73/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_73/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_73/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_73/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_19/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_20/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_21/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_22/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_78/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_78/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Nova pasta/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 "MAIN.ngc" MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.xst" -ofn "D:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_79/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/FPGA_Board/FPGA_V00_80_new/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.xst" -ofn "M:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_35_LAST/MAIN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -u -uc MAIN.ucf -p xc6slx25-ftg256-3 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal on -mt off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -mt 4 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 

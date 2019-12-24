@@ -1,0 +1,17 @@
+AR ej_serial_slave behavioral //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd sub00/vhpl12 1412172991
+PH my_types_pkg NULL //smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/EJ_SERIAL_MASTER_jiga.vhd sub00/vhpl02 1412181713
+EN packet_detect NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd sub00/vhpl05 1412172983
+EN ej_serial_slave NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd sub00/vhpl11 1412172990
+AR comm_top arq //smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/comm_top.vhd sub00/vhpl14 1412181717
+AR ej_serial_master behavioral //smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/EJ_SERIAL_MASTER_jiga.vhd sub00/vhpl04 1412181715
+AR pos_edge_moore moore_arch //smkn33/s10169/vhdl/mod_giga_L_conector/testing/pos_edge_moore.vhd sub00/vhpl01 1412172979
+AR packet_detect arq //smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd sub00/vhpl06 1412172984
+EN pos_edge_moore NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/pos_edge_moore.vhd sub00/vhpl00 1412172978
+EN ej_serial_master NULL //smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/EJ_SERIAL_MASTER_jiga.vhd sub00/vhpl03 1412181714
+AR mux arq //smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd sub00/vhpl08 1412172986
+AR reset_generator rtl //smkn33/s10169/vhdl/mod_giga_L_conector_v2/0009_00257/top/reset_generator.vhd sub00/vhpl10 1412181712
+EN clock_div NULL //smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/clock_div.vhd sub00/vhpl15 1412169781
+EN comm_top NULL //smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/comm_top.vhd sub00/vhpl13 1412181716
+EN mux NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd sub00/vhpl07 1412172985
+AR clock_div divide //smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/clock_div.vhd sub00/vhpl16 1412169782
+EN reset_generator NULL //smkn33/s10169/vhdl/mod_giga_L_conector_v2/0009_00257/top/reset_generator.vhd sub00/vhpl09 1412181711

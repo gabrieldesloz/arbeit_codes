@@ -1,0 +1,185 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+library work;
+use work.my_types_pkg.all;
+
+
+-------------------------------------------------------------------------------
+
+entity comm_tb is
+
+
+end comm_tb;
+
+-------------------------------------------------------------------------------
+
+architecture generic_tb_rtl of comm_tb is
+
+
+  -- component ports
+  -- clock
+  constant CLKi_PERIOD : time := 16.6666666 ns;	 -- 60 MHz
+
+  -- clock microcontrolador -- 9 MHz
+  constant CLOCK_UC_PERIOD : time := 111.1111111 ns;
+  
+  constant END_OF_TIMES: time := 50 ms;
+
+
+-- uut signals
+
+
+  signal DATA_RX_i	   : std_logic	 := '0';
+  signal SEND_DATA_i	   : input_array := (others => (others => '0'));
+  signal CLK_i		   : std_logic	 := '0';
+  signal RST_i		   : std_logic	 := '0';
+  signal RECEIVED_DATA_o   : input_array := (others => (others => '0'));
+  signal DATA_TX_o	   : std_logic	 := '0';
+  signal SYNC_CLK_o	   : std_logic	 := '0';
+  signal DATA_TX_o_slave   : std_logic	 := '0';
+  signal SEND_DATA_i_slave : input_array := (others => (others => '0'));
+  signal DATA_TX_o_mux: std_logic := '0';
+  signal DATA_RX_o_mux: std_logic := '0';
+  signal SYNC_CLK_o_mux: std_logic := '0';
+
+
+  -- other signals
+  signal clock_uc	  		: std_logic := '0';
+  signal clock_uc_delayed 	: std_logic := '0';
+  signal reset		  		: std_logic := '0';
+  signal mux_i        		: std_logic := '0';  
+  signal SOP_master, EOP_master	: std_logic := '0';
+
+
+
+begin
+
+
+  EJ_SERIAL_MASTER_1 : entity work.EJ_SERIAL_MASTER
+    port map (
+      DATA_RX_i	      => DATA_TX_o_slave,  
+      SEND_DATA_i     => SEND_DATA_i,	   
+      CLK_i	      => CLK_i,		 
+      RST_i	      => reset,		  
+      RECEIVED_DATA_o 	=> open,		   
+      DATA_TX_o	      	=> DATA_TX_o,	   
+      SYNC_CLK_o      	=> SYNC_CLK_o,
+	  SOP_o 			=> SOP_master,
+	  EOP_o 			=> EOP_master);	   
+
+
+	  
+  mux_1 : entity work.mux
+    port map (
+      CLK_60MHZ_i	=> CLK_i,	  
+      SYNC_CLK_i	=> SYNC_CLK_o,	  
+      reset			=> reset,	  
+      
+	  -- to serial slave
+	  EARX_o		=> SYNC_CLK_o_mux,	  -- ck
+      EBRX_o		=> DATA_TX_o_mux,	   -- tx
+      
+	  --- from serial slave
+      EATX_i		=> DATA_RX_o_mux,		 	
+	  
+	  EATXD_to_uC_o	=> open,	 
+      EACK_to_uC_o	=> open,	 
+      EBCK_to_uC_o	=> open,	  
+      EBTXD_to_uC_o	=> open,	  
+      -- serial
+      EJ_DATA_RX_o	=> DATA_TX_o_slave,	  -- o. data from slave
+      SCK_SERIAL_i	=> SYNC_CLK_o,   -- to slave 
+      EJ_DATA_TX_i	=> DATA_TX_o,	  -- to slave
+
+      ENABLE_EJECTORS_i => '1',		  
+      EACK_i		=> '0',		  	
+      EBCK_i		=> '0',		  	
+      EBTXD_i		=> '0',		 
+      mux_i		=> mux_i);	  		--  mux_i
+
+
+
+  -- clock generation
+  CLK_i		   <= not CLK_i		 after CLKi_PERIOD/2;
+  clock_uc	   <= not clock_uc	 after CLOCK_UC_PERIOD/2;
+  clock_uc_delayed <= transport clock_uc after 1 ms;
+
+  -- reset generation
+  reset_n_proc : process
+  begin
+    reset <= '1';
+    wait for 10*CLKi_PERIOD;
+    reset <= '0';
+    wait for END_OF_TIMES;
+  end process;
+
+-- ativa 2 palavras envio
+  word_changer_0 : process
+  begin
+    mux_i <= '0'; 
+	SEND_DATA_i <= (others => (others => '0'));
+    wait for 1 ms;
+    wait until clock_uc = '1';
+	mux_i <= '1'; -- start mux pulse
+	wait for CLOCK_UC_PERIOD;
+    mux_i <= '0'; -- stop mux 	
+	wait for CLOCK_UC_PERIOD;
+    SEND_DATA_i(0) <= x"AAAAAAAA";
+    SEND_DATA_i(1) <= x"BBBBBBBB";
+    SEND_DATA_i(2) <= x"CCCCCCCC";
+	SEND_DATA_i(3) <= x"DDDDDDDD";
+	SEND_DATA_i(4) <= x"EEEEEEEE";
+	SEND_DATA_i(5) <= x"FFFFFFFF";
+	SEND_DATA_i(6) <= x"F0F0F0F0";
+	SEND_DATA_i(7) <= x"00000000";	
+    -- this wait must last enough time to transmit all channels
+	wait for 200*CLOCK_UC_PERIOD;
+	SEND_DATA_i <= (others => (others => '0'));
+    wait for END_OF_TIMES;
+  end process;
+
+
+
+
+  EJ_SERIAL_SLAVE_1 : entity work.EJ_SERIAL_SLAVE
+    port map (
+      DATA_RX_i	      => DATA_TX_o_mux,	     -- [std_logic] 
+      SEND_DATA_i     => SEND_DATA_i_slave,  -- [input_array]
+      SYNC_CLK_i      => SYNC_CLK_o_mux,	     -- clock master serial
+      RST_i	      	  => reset,		     -- [std_logic]
+      RECEIVED_DATA_o => open,		     -- [input_array]
+      DATA_TX_o	      => DATA_RX_o_mux);   -- [std_logic] DATA_TX_o_slave
+
+
+
+
+  -- ativa 2 palavras envio
+  word_changer_1 : process
+  begin
+    -- takes a little longer to start - simulate delay between sending and receiving	   
+   	SEND_DATA_i_slave <= (others => (others => '0'));
+    wait for 3 ms;
+    wait until clock_uc_delayed = '1';
+	wait for 2*CLOCK_UC_PERIOD;
+    SEND_DATA_i_slave(0) <= x"AAAAAAAA";
+    SEND_DATA_i_slave(1) <= x"BBBBBBBB";
+    SEND_DATA_i_slave(2) <= x"CCCCCCCC";
+	SEND_DATA_i_slave(3) <= x"DDDDDDDD";
+	SEND_DATA_i_slave(4) <= x"EEEEEEEE";
+	SEND_DATA_i_slave(5) <= x"FFFFFFFF";
+	SEND_DATA_i_slave(6) <= x"F0F0F0F0";
+	SEND_DATA_i_slave(7) <= x"00000000";	
+    -- this wait must last enough time to transmit all channels
+	wait for 200*CLOCK_UC_PERIOD;
+	SEND_DATA_i_slave <= (others => (others => '0'));
+    wait for END_OF_TIMES;
+  end process;
+
+end generic_tb_rtl;
+
+
+
+-- LocalWords:	microcontrolador ativa envio

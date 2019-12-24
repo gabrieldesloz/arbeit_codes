@@ -1,0 +1,45 @@
+Active-HDL 9.3.2745.4995  2015-06-29 11:14:32
+
+Elaboration top modules:
+Architecture                  behavior(tb_clock_gen)
+
+
+-----------------------------------------------------------------------------------------------------
+Entity        | Architecture | Library       | Info | Compiler Version         | Compilation Options
+-----------------------------------------------------------------------------------------------------
+tb_clock_gen  | behavior     | clocking_mono |      | 9.3.2745.4995  (Windows) | -O3
+clock_gen     | arq          | clocking_mono |      | 9.3.2745.4995  (Windows) | -O3
+dcm_clkgen    | dcm_clkgen_v | unisim        |      | 9.3.2745.4995  (Windows) | -vendor xilinx -93
+bufg          | bufg_v       | unisim        |      | 9.3.2745.4995  (Windows) | -vendor xilinx -93
+clock_gen_fsm | arq          | clocking_mono |      | 9.3.2745.4995  (Windows) | -O3
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+VHDL Package                 | Library       | Info | Compiler Version         | Compilation Options
+-----------------------------------------------------------------------------------------------------
+standard                     | std           |      |                          | 
+TEXTIO                       | std           |      | 9.3.2745.4995  (Windows) |  -2008
+std_logic_1164               | ieee          |      | 9.3.2745.4995  (Windows) |  -2008
+VCOMPONENTS                  | unisim        |      | 9.3.2745.4995  (Windows) | -vendor xilinx -93
+NUMERIC_STD                  | ieee          |      | 9.3.2745.4995  (Windows) |  -2008
+VITAL_Timing                 | ieee          |      | 9.3.2745.4995  (Windows) | 
+std_logic_arith              | ieee          |      | 9.3.2745.4995  (Windows) | 
+STD_LOGIC_UNSIGNED           | ieee          |      | 9.3.2745.4995  (Windows) | 
+VITAL_Primitives             | ieee          |      | 9.3.2745.4995  (Windows) | 
+VPKG                         | unisim        |      | 9.3.2745.4995  (Windows) | -vendor xilinx -93
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+Library                      | Comment
+-----------------------------------------------------------------------------------------------------
+clocking_mono                | None
+ieee                         | Standard IEEE packages library
+std                          | Standard VHDL library
+unisim                       | XILINX ISE 14.7, UNISIM VHDL LIBRARY
+-----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+tb_clock_gen tb_clock_gen behavior
+
+
+The performance of simulation is reduced. Version Student Edition

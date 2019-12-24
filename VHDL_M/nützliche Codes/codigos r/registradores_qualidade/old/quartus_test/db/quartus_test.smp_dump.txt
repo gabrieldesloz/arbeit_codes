@@ -1,0 +1,7 @@
+
+State Machine - |adder_ovf|state_reg
+Name state_reg.CHECK state_reg.SUM_2 state_reg.SUM_1 state_reg.IDLE 
+state_reg.IDLE 0 0 0 0 
+state_reg.SUM_1 0 0 1 1 
+state_reg.SUM_2 0 1 0 1 
+state_reg.CHECK 1 0 0 1 

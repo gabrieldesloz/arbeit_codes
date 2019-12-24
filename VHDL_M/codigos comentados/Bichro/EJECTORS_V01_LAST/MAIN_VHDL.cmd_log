@@ -1,0 +1,416 @@
+xst -intstyle ise -ifn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.xst" -ofn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.xst" -ofn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.xst" -ofn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.xst" -ofn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.xst" -ofn "F:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V04/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V06/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V06/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V06/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V06/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V06/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V06/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V06/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V06/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V07/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V07/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V07/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V07/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V07/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V07/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V09/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.xst" -ofn "C:/SANMAK_DESIGNS/FPGA/Ejector_Board/EJECTORS_V010/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V015/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V017/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.xst" -ofn "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V021/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.xst" -ofn "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.syr" 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.xst" -ofn "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.xst" -ofn "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.xst" -ofn "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8+B/Ejector_Board/EJECTORS_V023/MAIN_VHDL.xst" -ofn "M:/Projetos/VHDL/L8+B/Ejector_Board/EJECTORS_V023/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 
+xst -intstyle ise -ifn "M:/Projetos/VHDL/L8+B/Ejector_Board/EJECTORS_V023/MAIN_VHDL.xst" -ofn "M:/Projetos/VHDL/L8+B/Ejector_Board/EJECTORS_V023/MAIN_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc main.ucf -p xc3s200-tq144-5 MAIN_VHDL.ngc MAIN_VHDL.ngd  
+map -intstyle ise -p xc3s200-tq144-5 -cm area -ir off -pr off -c 100 -o MAIN_VHDL_map.ncd MAIN_VHDL.ngd MAIN_VHDL.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_VHDL_map.ncd MAIN_VHDL.ncd MAIN_VHDL.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf -ucf main.ucf 
+bitgen -intstyle ise -f MAIN_VHDL.ut MAIN_VHDL.ncd 

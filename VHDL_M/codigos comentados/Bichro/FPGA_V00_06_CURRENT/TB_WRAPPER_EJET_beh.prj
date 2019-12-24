@@ -1,0 +1,7 @@
+vhdl work "ipcore_dir/MEM_DEF_CNT_DIST.vhd"
+vhdl work "ipcore_dir/EJ_SEL_MEM.vhd"
+vhdl work "EJ_CLEAR_COUNT.vhd"
+vhdl work "MEM_CTRL.vhd"
+vhdl work "CH_X_EJET_TIMER.vhd"
+vhdl work "WRAPPER_EJET.vhd"
+vhdl work "TB_WRAPPER_EJET.vhd"

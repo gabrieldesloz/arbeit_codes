@@ -1,0 +1,52 @@
+Running: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/TB_WRAPPER_TOP_isim_beh.exe -prj M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/TB_WRAPPER_TOP_beh.prj work.TB_WRAPPER_TOP 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/ipcore_dir/MEM_DEF_CNT_DIST.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/ipcore_dir/EJ_SEL_MEM.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/EJ_CLEAR_COUNT.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MEM_CTRL.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/IN_BUFF.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/CH_X_EJET_TIMER.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/WRAPPER_EJET.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MEM_SYNC.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/ALL_IN_BUFF.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/WRAPPER.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/MEM_CTRL_DELAY.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/WRAPPER_TOP.vhd" into library work
+Parsing VHDL file "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/TB_WRAPPER_TOP.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity IN_BUFF [in_buff_default]
+Compiling architecture behavioral of entity ALL_IN_BUFF [all_in_buff_default]
+Compiling package textio
+Compiling architecture behavioral of entity dist_mem_gen_v6_1 [\dist_mem_gen_v6_1("spartan6",6,...]
+Compiling architecture ej_sel_mem_a of entity EJ_SEL_MEM [ej_sel_mem_default]
+Compiling architecture behavioral of entity dist_mem_gen_v6_1 [\dist_mem_gen_v6_1("spartan6",6,...]
+Compiling architecture mem_def_cnt_dist_a of entity MEM_DEF_CNT_DIST [mem_def_cnt_dist_default]
+Compiling architecture behavioral of entity EJ_CLEAR_COUNT [ej_clear_count_default]
+Compiling architecture behavioral of entity MEM_CTRL [mem_ctrl_default]
+Compiling architecture behavioral of entity CH_X_EJET_TIMER [ch_x_ejet_timer_default]
+Compiling architecture behavioral of entity WRAPPER_EJET [wrapper_ejet_default]
+Compiling architecture behavioral of entity WRAPPER [wrapper_default]
+Compiling package std_logic_textio
+Compiling architecture output_stage_behavioral of entity BLK_MEM_GEN_V4_3_output_stage [\BLK_MEM_GEN_V4_3_output_stage("...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity BLK_MEM_GEN_V4_3_softecc_output_reg_stage [\BLK_MEM_GEN_V4_3_softecc_output...]
+Compiling architecture mem_module_behavioral of entity BLK_MEM_GEN_V4_3_mem_module [\BLK_MEM_GEN_V4_3_mem_module("bl...]
+Compiling architecture behavioral of entity BLK_MEM_GEN_V4_3 [\BLK_MEM_GEN_V4_3("blk_mem_gen_v...]
+Compiling architecture mem_sync_a of entity MEM_SYNC [mem_sync_default]
+Compiling architecture behavioral of entity MEM_CTRL_DELTA [mem_ctrl_delta_default]
+Compiling architecture behavioral of entity WRAPPER_TOP [wrapper_top_default]
+Compiling architecture behavior of entity tb_wrapper_top
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 44 VHDL Units
+Built simulation executable M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/TB_WRAPPER_TOP_isim_beh.exe
+Fuse Memory Usage: 41720 KB
+Fuse CPU Usage: 1247 ms

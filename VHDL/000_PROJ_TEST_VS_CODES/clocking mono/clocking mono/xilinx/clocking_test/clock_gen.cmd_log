@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.xst" -ofn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.syr" 
+xst -intstyle ise -ifn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.xst" -ofn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.syr" 
+xst -intstyle ise -ifn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.xst" -ofn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx25-ftg256-3 "clock_gen.ngc" clock_gen.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o clock_gen_map.ncd clock_gen.ngd clock_gen.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx25-ftg256-3 "clock_gen.ngc" clock_gen.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o clock_gen_map.ncd clock_gen.ngd clock_gen.pcf 
+xst -intstyle ise -ifn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.xst" -ofn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock_gen.ucf -p xc6slx25-ftg256-3 "clock_gen.ngc" clock_gen.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock_gen.ucf -p xc6slx25-ftg256-3 "clock_gen.ngc" clock_gen.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock_gen.ucf -p xc6slx25-ftg256-3 "clock_gen.ngc" clock_gen.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock_gen.ucf -p xc6slx25-ftg256-3 "clock_gen.ngc" clock_gen.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o clock_gen_map.ncd clock_gen.ngd clock_gen.pcf 
+par -w -intstyle ise -ol high -mt off clock_gen_map.ncd clock_gen.ncd clock_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml clock_gen.twx clock_gen.ncd -o clock_gen.twr clock_gen.pcf -ucf clock_gen.ucf 
+xst -intstyle ise -ifn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.xst" -ofn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock_gen.ucf -p xc6slx25-ftg256-3 "clock_gen.ngc" clock_gen.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o clock_gen_map.ncd clock_gen.ngd clock_gen.pcf 
+par -w -intstyle ise -ol high -mt off clock_gen_map.ncd clock_gen.ncd clock_gen.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml clock_gen.twx clock_gen.ncd -o clock_gen.twr clock_gen.pcf -ucf clock_gen.ucf 
+netgen -intstyle ise -s 3  -pcf clock_gen.pcf -rpw 100 -tpw 0 -ar Structure -tm clock_gen -w -dir netgen/map -ofmt vhdl -sim clock_gen_map.ncd clock_gen_map.vhd 
+xst -intstyle ise -ifn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.xst" -ofn "M:/vhdl/clocking mono/xilinx/clocking_test/clock_gen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc clock_gen.ucf -p xc6slx25-ftg256-3 "clock_gen.ngc" clock_gen.ngd  
+map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o clock_gen_map.ncd clock_gen.ngd clock_gen.pcf 
+netgen -intstyle ise -s 3  -pcf clock_gen.pcf -rpw 100 -tpw 0 -ar Structure -tm clock_gen -w -dir netgen/map -ofmt vhdl -sim clock_gen_map.ncd clock_gen_map.vhd 

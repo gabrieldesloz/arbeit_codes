@@ -1,0 +1,4 @@
+vhdl work "../../Mono/BENCH_FPGA_V00_35_LAST/ipcore_dir/MEM_DEF_CNT_DIST.vhd"
+vhdl work "../../Mono/BENCH_FPGA_V00_35_LAST/ipcore_dir/EJ_SEL_MEM.vhd"
+vhdl work "../../Mono/BENCH_FPGA_V00_35_LAST/EJ_CLEAR_COUNT.vhd"
+vhdl work "../../Mono/BENCH_FPGA_V00_35_LAST/MEM_CTRL.vhd"

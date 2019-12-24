@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Dec 11 16:11:34 2012
+Quartus II 32-bit Version : 11.1 Build 173 11/01/2011 SJ Full Version
+Revision Name : bfilter
+Top-level Entity Name : bfilter
+Family : Cyclone III
+Device : EP3C120F780C8
+Timing Models : Final
+Total logic elements : 559 / 119,088 ( < 1 % )
+    Total combinational functions : 318 / 119,088 ( < 1 % )
+    Dedicated logic registers : 302 / 119,088 ( < 1 % )
+Total registers : 302
+Total pins : 516 / 532 ( 97 % )
+Total virtual pins : 0
+Total memory bits : 512 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 576 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

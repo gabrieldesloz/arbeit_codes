@@ -1,0 +1,7 @@
+--invertendo a ordem dos bits
+  process(radicand_reg)
+  begin
+    for i in radicand_reg'range loop
+      q(q'left - i) <= radicand_reg(i);
+    end loop
+  end process

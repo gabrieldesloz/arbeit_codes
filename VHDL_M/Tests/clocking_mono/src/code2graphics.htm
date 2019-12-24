@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>Code2Graphics generation results</TITLE>
+<STYLE>
+.Err	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.Warn	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.Info	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Sccss  {color:'#009600';cursor:hand;text-decoration:underline;}
+.ErrH	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.WarnH	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.InfoH	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Err1	{color:'#FF0000';}
+.Warn1	{color:'#0000FF';}
+.Info1	{color:'#000000';}
+.Sccss1 {color:'#009600';}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="C:\Aldec\Active-HDL Student Edition\\Flows\Res\default.bmp">
+<FONT FACE="Serif">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>Code2Graphics generation results</H2>
+
+Created on Wed 2014-10-08 at 10:03:29
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>CODE2GRAPHICS SETTINGS:</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>Multipage block diagrams generation: DISABLED</SPAN><BR>
+<SPAN class=Info1>Hierarchical state diagrams generation: DISABLED</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>INTERMEDIATE FILES GENERATION:</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:\Users\s10169\AppData\Local\Temp\clocking_mono\clocking_mono.erf ...</SPAN><BR>
+<SPAN class=Info1>File: M:\codigos originais\mono\BENCH_FPGA_V00_35_LAST_MONO_BKP\MAIN.vhd</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;MAIN&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;Behavioral&quot; of Entity &quot;MAIN&quot;</SPAN><BR>
+<SPAN class=Info1>Incorrect order of units detected.</SPAN><BR>
+<SPAN class=Info1>Automatic reorder and incremental recompilation of required units in progress.</SPAN><BR>
+<SPAN class=Info1>File: M:\codigos originais\mono\BENCH_FPGA_V00_35_LAST_MONO_BKP\MAIN.vhd</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;MAIN&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;Behavioral&quot; of Entity &quot;MAIN&quot;</SPAN><BR>
+<SPAN class=Info1>Compile Architecture &quot;Behavioral&quot; of Entity &quot;MAIN&quot;</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Actual is not a globally static expression.</SPAN><BR>
+<SPAN class=Err1>Checking failure 16 Errors 0 Warnings&nbsp;Analysis time :&nbsp;0.5 [s]</SPAN><BR>
+<SPAN class=Err1>Error during analyzing.</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+</tt>
+</FONT>
+</BODY>
+
+</HTML>

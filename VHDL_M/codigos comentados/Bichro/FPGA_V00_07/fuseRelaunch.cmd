@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/TB_WRAPPER_TOP_isim_beh.exe" -prj "M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/TB_WRAPPER_TOP_beh.prj" "work.TB_WRAPPER_TOP" 

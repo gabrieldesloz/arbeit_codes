@@ -1,0 +1,1 @@
+ -w -cvi -2002  -s "M:/vhdl/Tests/clocking_mono/hdl_assist/library.cfg"  -work clocking_mono  -e 100  "M:/vhdl/clocking mono/clock_gen_ccd_ctrl_fsm.vhd"

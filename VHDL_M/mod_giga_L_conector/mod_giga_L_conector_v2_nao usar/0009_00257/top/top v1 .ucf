@@ -1,0 +1,23 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CLK_i" LOC = P55;
+
+NET SYNC_CLK_serial_i LOC = P56; #IO1 GCLK
+ 
+NET "EATX_i" LOC = P57; #IO2
+
+NET "EARX_o" LOC = P59; #IO3 sclk 
+ 
+NET "EBRX_o" LOC = P60; #IO4
+
+#NET "DATA_RX_serial_i" CLOCK_DEDICATED_ROUTE = FALSE; #IO5  
+
+NET "DATA_TX_serial_o"  LOC = P70; #I08
+
+NET "clk_60MHz_o"  LOC = P68; #I06 -- 
+
+
+
+
+

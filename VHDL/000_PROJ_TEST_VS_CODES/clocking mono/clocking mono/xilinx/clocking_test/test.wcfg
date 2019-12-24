@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="M:/vhdl/clocking mono/xilinx/clocking_test/tb_clock_gen_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_clock_gen" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/tb_clock_gen/dcmrst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dcmrst_i</obj_property>
+      <obj_property name="ObjectShortName">dcmrst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/clk37mux_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk37mux_i</obj_property>
+      <obj_property name="ObjectShortName">clk37mux_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/clkaq_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkaq_o</obj_property>
+      <obj_property name="ObjectShortName">clkaq_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/clk2x_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk2x_o</obj_property>
+      <obj_property name="ObjectShortName">clk2x_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/clkx_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkx_o</obj_property>
+      <obj_property name="ObjectShortName">clkx_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/clkz_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkz_o</obj_property>
+      <obj_property name="ObjectShortName">clkz_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/c1us_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c1us_o</obj_property>
+      <obj_property name="ObjectShortName">c1us_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/adc1_sclk_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc1_sclk_o</obj_property>
+      <obj_property name="ObjectShortName">adc1_sclk_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/adc2_sclk_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc2_sclk_o</obj_property>
+      <obj_property name="ObjectShortName">adc2_sclk_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/clka_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clka_o</obj_property>
+      <obj_property name="ObjectShortName">clka_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/clkab_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkab_o</obj_property>
+      <obj_property name="ObjectShortName">clkab_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/clk37mux_i_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk37mux_i_period</obj_property>
+      <obj_property name="ObjectShortName">clk37mux_i_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/clkaq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkaq</obj_property>
+      <obj_property name="ObjectShortName">clkaq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/sincin_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sincin_i</obj_property>
+      <obj_property name="ObjectShortName">sincin_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/clrsinc_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clrsinc_o</obj_property>
+      <obj_property name="ObjectShortName">clrsinc_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/ccd_clk1_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccd_clk1_o</obj_property>
+      <obj_property name="ObjectShortName">ccd_clk1_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/ccd_clk2_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccd_clk2_o</obj_property>
+      <obj_property name="ObjectShortName">ccd_clk2_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/ccd_clk3_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccd_clk3_o</obj_property>
+      <obj_property name="ObjectShortName">ccd_clk3_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/ccd_clk4_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccd_clk4_o</obj_property>
+      <obj_property name="ObjectShortName">ccd_clk4_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/afeck2_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">afeck2_o</obj_property>
+      <obj_property name="ObjectShortName">afeck2_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/afeck0_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">afeck0_o</obj_property>
+      <obj_property name="ObjectShortName">afeck0_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/afec" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">afec[15:0]</obj_property>
+      <obj_property name="ObjectShortName">afec[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/afeck2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">afeck2</obj_property>
+      <obj_property name="ObjectShortName">afeck2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/afeck0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">afeck0</obj_property>
+      <obj_property name="ObjectShortName">afeck0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/ccd_clk1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccd_clk1</obj_property>
+      <obj_property name="ObjectShortName">ccd_clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/ccd_clk2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccd_clk2</obj_property>
+      <obj_property name="ObjectShortName">ccd_clk2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/ccd_clk3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccd_clk3</obj_property>
+      <obj_property name="ObjectShortName">ccd_clk3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/ccd_clk4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ccd_clk4</obj_property>
+      <obj_property name="ObjectShortName">ccd_clk4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/clrsinc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clrsinc</obj_property>
+      <obj_property name="ObjectShortName">clrsinc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_gen/uut/clock_gen_fsm_1/sincin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sincin</obj_property>
+      <obj_property name="ObjectShortName">sincin</obj_property>
+   </wvobject>
+</wave_config>

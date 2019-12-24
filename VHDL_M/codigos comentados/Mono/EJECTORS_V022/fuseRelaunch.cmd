@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TB_MANUAL_TEJET_isim_beh.exe" -prj "M:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V022/TB_MANUAL_TEJET_beh.prj" "work.TB_MANUAL_TEJET" 

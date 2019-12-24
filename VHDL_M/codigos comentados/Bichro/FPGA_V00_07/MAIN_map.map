@@ -1,0 +1,789 @@
+Release 14.1 Map P.15xf (nt64)
+Xilinx Map Application Log File for Design 'MAIN'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx25-ftg256-3 -w -logic_opt off -ol
+high -t 2 -xt 1 -r off -global_opt speed -equivalent_register_removal off -mt
+off -ir off -pr off -lc off -power off -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+Target Device  : xc6slx25
+Target Package : ftg256
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Tue Jun 03 11:09:47 2014
+
+Running global optimization...
+Mapping design into LUTs...
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC2_OEB detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal L_RX detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC2_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_OEB detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+WARNING:MapLib:23 - Short on signal ADC1_CLK1 detected.
+Running directed packing...
+WARNING:Pack:2549 - The register "s_writing_sram_7" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_7
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_10.
+WARNING:Pack:2549 - The register "s_writing_sram_6" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_6
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_11.
+WARNING:Pack:2549 - The register "s_writing_sram_5" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_5
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_12.
+WARNING:Pack:2549 - The register "s_writing_sram_4" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_4
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_13.
+WARNING:Pack:2549 - The register "s_writing_sram_3" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_3
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_14.
+WARNING:Pack:2549 - The register "s_writing_sram_2" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_2
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_15.
+WARNING:Pack:2549 - The register "s_writing_sram_17" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_17
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_0.
+WARNING:Pack:2549 - The register "s_writing_sram_16" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_16
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_1.
+WARNING:Pack:2549 - The register "s_writing_sram_15" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_15
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_2.
+WARNING:Pack:2549 - The register "s_writing_sram_14" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_14
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_3.
+WARNING:Pack:2549 - The register "s_writing_sram_13" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_13
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_4.
+WARNING:Pack:2549 - The register "s_writing_sram_12" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_12
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_5.
+WARNING:Pack:2549 - The register "s_writing_sram_11" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_11
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_6.
+WARNING:Pack:2549 - The register "s_writing_sram_10" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_10
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_7.
+WARNING:Pack:2549 - The register "s_writing_sram_9" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_9
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_8.
+WARNING:Pack:2549 - The register "s_writing_sram_8" has the property IOB=TRUE,
+   but was not packed into the OLOGIC component. The register s_writing_sram_8
+   can not use TFF because the clock signal does not agree with register
+   s_sram_input_data_9.
+Running delay-based LUT packing...
+Updating timing models...
+WARNING:Timing:3159 - The DCM, DCM_CLKGEN_inst, has the attribute DFS_OSCILLATOR_MODE not set to PHASE_FREQ_LOCK. No phase relationship
+   exists between the input clock and CLKFX or CLKFX180 outputs of this DCM. Data paths between these clock domains must be constrained
+   using FROM/TO constraints.
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 5 mins 7 secs 
+Total CPU  time at the beginning of Placer: 5 mins 5 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:e22cb67f) REAL time: 5 mins 10 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:1206 - This design contains a global buffer instance, <BUFG_1u>,
+   driving the net, <ADC2_SCLK_OBUF>, that is driving the following (first 30)
+   non-clock load pins off chip.
+   < PIN: ADC1_SCLK.O; >
+   < PIN: ADC2_SCLK.O; >
+   This design practice, in Spartan-6, can lead to an unroutable situation due
+   to limitations in the global routing. If the design does route there may be
+   excessive delay or skew on this net. It is recommended to use a Clock
+   Forwarding technique to create a reliable and repeatable low skew solution:
+   instantiate an ODDR2 component; tie the .D0 pin to Logic1; tie the .D1 pin to
+   Logic0; tie the clock net to be forwarded to .C0; tie the inverted clock to
+   .C1. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was
+   applied on COMP.PIN <BUFG_1u.O> allowing your design to continue. This
+   constraint disables all clock placer rules related to the specified COMP.PIN.
+WARNING:Place:1137 - This design is not guaranteed to be routable! This design
+   contains a global buffer instance, <BUFG_1u>, driving the net,
+   <ADC2_SCLK_OBUF>, that is driving the following (first 30) non-clock load
+   pins.
+   < PIN: lut11028_351.A4; >
+   < PIN: ADC1_SCLK.O; >
+   < PIN: ADC2_SCLK.O; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. Please pay extra attention to the timing and routing of this path to
+   ensure the design goals are met. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <BUFG_1u.O> allowing
+   your design to continue. This constraint disables all clock placer rules
+   related to the specified COMP.PIN.
+Phase 2.7  Design Feasibility Check (Checksum:e22cb67f) REAL time: 5 mins 11 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:e22cb67f) REAL time: 5 mins 11 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+
+......
+WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
+   that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
+   IOB component <RSINC2> is placed at site <E11>. The corresponding BUFG
+   component <TEST_2_OBUF_BUFG> is placed at site <BUFGMUX_X2Y9>. There is only
+   a select set of IOBs that can use the fast path to the Clocker buffer, and
+   they are not being used. You may want to analyze why this problem exists and
+   correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE
+   constraint was applied on COMP.PIN <RSINC2.PAD> allowing your design to
+   continue. This constraint disables all clock placer rules related to the
+   specified COMP.PIN. The use of this override is highly discouraged as it may
+   lead to very poor timing results. It is recommended that this error condition
+   be corrected in the design.
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:700a5793) REAL time: 5 mins 18 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:700a5793) REAL time: 5 mins 18 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:700a5793) REAL time: 5 mins 18 secs 
+
+Phase 7.3  Local Placement Optimization
+Phase 7.3  Local Placement Optimization (Checksum:700a5793) REAL time: 5 mins 18 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:700a5793) REAL time: 5 mins 18 secs 
+
+Phase 9.8  Global Placement
+........................
+.............................................
+..................................................................................
+..........................................................................
+............
+Phase 9.8  Global Placement (Checksum:f6492eb4) REAL time: 1 hrs 10 mins 20 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:f6492eb4) REAL time: 1 hrs 10 mins 20 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:9c473a26) REAL time: 1 hrs 11 mins 13 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:9c473a26) REAL time: 1 hrs 11 mins 14 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:db07193c) REAL time: 1 hrs 11 mins 14 secs 
+
+Total REAL time to Placer completion: 1 hrs 11 mins 23 secs 
+Total CPU  time to Placer completion: 1 hrs 11 mins 16 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net chopvalve is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11960_564 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut21631_3502 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut21690_3507 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut30542_6837 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11114_391 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11898_551 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11445_458 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut30724_6911 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11974_567 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11122_395 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11497_470 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11768_521 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11306_429 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11859_542 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11355_438 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11106_387 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11102_385 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11794_527 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   reset_s_release_line_inc_counter_AND_733_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11118_393 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net s_reading_sram_int is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11110_389 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11535_478 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11522_475 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11484_467 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11924_557 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11471_464 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11911_554 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11458_461 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11885_548 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11432_455 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11872_545 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11419_452 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11406_449 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11846_539 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11833_536 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11820_533 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11807_530 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11393_446 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11380_443 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11367_440 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11269_422 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11257_420 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11342_435 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11244_417 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11146_399 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11330_433 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11232_415 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11134_397 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut36588_8220 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11318_431 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11220_413 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11208_411 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11293_426 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11195_408 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11781_524 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11281_424 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11183_406 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11670_503 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11171_404 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11756_519 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11657_500 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11159_402 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11743_516 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11645_498 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11547_480 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11731_514 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11633_496 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11509_472 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11719_512 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11621_494 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11706_509 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11608_491 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11694_507 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11596_489 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11682_505 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11584_487 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11572_485 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11560_483 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11094_381 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11937_560 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11970_565 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11950_563 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut30524_6833 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut30533_6835 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11098_383 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut30515_6831 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut30551_6839 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut30745_6915 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram4_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram1_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram2_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram3_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram1_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram2_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram3_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram4_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_CNT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram5_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM_DEF_OUT/BU2/U0/gen_sdp_r
+   am.sdpram_inst/Mram_ram5_RAMD_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram1_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram2_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram4_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram3_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_FORMAT/i_EJ_TIMER/i_WRAPPER_EJET/i_MEM_CTRL/i_MEM1/BU2/U0/gen_sdp_ram.sdpr
+   am_inst/Mram_ram5_RAMD_O> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   LED2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EN_BACK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_SI1_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_SI2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_SI3_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_SI4_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_CLK1_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_CLK2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_CLK3_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   CCD_CLK4_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EJA_CK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EJB_CK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EJA_TX_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   EJB_TX_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC1_CLK2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC2_CLK2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC1_SCLK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC2_SCLK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TSINC1_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TSINC2_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FLEDA_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FLEDB_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FLEDD_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC1_SLOAD_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<10>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<11>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FLEDc_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<12>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<13>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<14>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<15>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<16>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<17>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC1_CLK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC2_CLK_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   ADC2_SLOAD_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   LED1_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<0>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<1>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<2>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<3>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<4>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<5>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<6>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<7>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<8>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   MADDR<9>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   RLEDA_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   RLEDB_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   RLEDC_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   RLEDD_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp MCS_PULLUP
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp MOE_PULLUP
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   FPGA_BUSYCOM_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp MWR_PULLUP
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<0>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<1>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<2>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<3>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<4>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<5>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<6>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<10>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<7>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<11>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<8>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<12>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<9>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<13>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<14>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   TEST<15>_PULLUP is set but the tri state is not configured. 
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  227
+Slice Logic Utilization:
+  Number of Slice Registers:                 7,476 out of  30,064   24%
+    Number used as Flip Flops:               7,398
+    Number used as Latches:                     78
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      7,085 out of  15,032   47%
+    Number used as logic:                    5,723 out of  15,032   38%
+      Number using O6 output only:           3,955
+      Number using O5 output only:             319
+      Number using O5 and O6:                1,449
+      Number used as ROM:                        0
+    Number used as Memory:                     326 out of   3,664    8%
+      Number used as Dual Port RAM:            238
+        Number using O6 output only:           206
+        Number using O5 output only:             0
+        Number using O5 and O6:                 32
+      Number used as Single Port RAM:           84
+        Number using O6 output only:            84
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:             4
+        Number using O6 output only:             3
+        Number using O5 output only:             0
+        Number using O5 and O6:                  1
+    Number used exclusively as route-thrus:  1,036
+      Number with same-slice register load:  1,009
+      Number with same-slice carry load:        27
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 3,582 out of   3,758   95%
+  Nummber of MUXCYs used:                      740 out of   7,516    9%
+  Number of LUT Flip Flop pairs used:        8,236
+    Number with an unused Flip Flop:         2,393 out of   8,236   29%
+    Number with an unused LUT:               1,151 out of   8,236   13%
+    Number of fully used LUT-FF pairs:       4,692 out of   8,236   56%
+    Number of unique control sets:             546
+    Number of slice register sites lost
+      to control set restrictions:           2,869 out of  30,064    9%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       162 out of     186   87%
+    Number of LOCed IOBs:                      162 out of     162  100%
+    IOB Flip Flops:                            115
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        44 out of      52   84%
+  Number of RAMB8BWERs:                         16 out of     104   15%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       8 out of      16   50%
+    Number used as BUFGs:                        8
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
+    Number used as DCMs:                         0
+    Number used as DCM_CLKGENs:                  1
+  Number of ILOGIC2/ISERDES2s:                  20 out of     272    7%
+    Number used as ILOGIC2s:                    20
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     272    0%
+  Number of OLOGIC2/OSERDES2s:                  77 out of     272   28%
+    Number used as OLOGIC2s:                    77
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     160    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            4 out of      38   10%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.29
+
+Peak Memory Usage:  657 MB
+Total REAL time to MAP completion:  1 hrs 11 mins 34 secs 
+Total CPU time to MAP completion:   1 hrs 11 mins 26 secs 
+
+Mapping completed.
+See MAP report file "MAIN_map.mrp" for details.

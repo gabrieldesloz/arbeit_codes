@@ -1,0 +1,84 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to M:/Projetos/VHDL/L8+B/FPGA_Board/FPGA_V00_06_CURRENT/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: WRAPPER_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\EJ_CLEAR_COUNT.vhd" into library work
+Parsing entity <EJ_CLEAR_COUNT>.
+Parsing architecture <Behavioral> of entity <ej_clear_count>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\MEM_CTRL.vhd" into library work
+Parsing entity <MEM_CTRL>.
+Parsing architecture <Behavioral> of entity <mem_ctrl>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\IN_BUFF.vhd" into library work
+Parsing entity <IN_BUFF>.
+Parsing architecture <Behavioral> of entity <in_buff>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\CH_X_EJET_TIMER.vhd" into library work
+Parsing entity <CH_X_EJET_TIMER>.
+Parsing architecture <Behavioral> of entity <ch_x_ejet_timer>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\WRAPPER_EJET.vhd" into library work
+Parsing entity <WRAPPER_EJET>.
+Parsing architecture <Behavioral> of entity <wrapper_ejet>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\MEM_SYNC.vhd" into library work
+Parsing entity <MEM_SYNC>.
+Parsing architecture <MEM_SYNC_a> of entity <mem_sync>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\ALL_IN_BUFF.vhd" into library work
+Parsing entity <ALL_IN_BUFF>.
+Parsing architecture <Behavioral> of entity <all_in_buff>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\WRAPPER.vhd" into library work
+Parsing entity <WRAPPER>.
+Parsing architecture <Behavioral> of entity <wrapper>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\MEM_CTRL_DELAY.vhd" into library work
+Parsing entity <MEM_CTRL_DELTA>.
+Parsing architecture <Behavioral> of entity <mem_ctrl_delta>.
+Parsing VHDL file "\\smkn33\s10067\Projetos\VHDL\L8+B\FPGA_Board\FPGA_V00_06_CURRENT\WRAPPER_TOP.vhd" into library work
+Parsing entity <WRAPPER_TOP>.
+Parsing architecture <Behavioral> of entity <wrapper_top>.
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.30 secs
+ 
+--> 
+
+Total memory usage is 184132 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

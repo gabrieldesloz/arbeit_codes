@@ -1,0 +1,39 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CLK_i" LOC = P55;
+
+
+#leds
+#NET "q_vector[0]" LOC = P141;
+#NET "q_vector[1]" LOC = P140;
+#NET "q_vector[2]" LOC = P137;
+#NET "q_vector[3]" LOC = P135;
+#NET "q_vector[4]" LOC = P132;
+#NET "q_vector[5]" LOC = P131;
+#NET "q_vector[6]" LOC = P130;
+#NET "q_vector[7]" LOC = P129;
+#NET "q_vector[8]" LOC = P128;
+#NET "q_vector[9]" LOC = P127;
+#NET "q_vector[10]" LOC = P125;
+#NET "q_vector[11]" LOC = P124;
+#NET "q_vector[12]" LOC = P123;
+#NET "q_vector[13]" LOC = P122;
+#NET "q_vector[14]" LOC = P119;
+#NET "q_vector[15]" LOC = P118;
+#NET "q_vector[16]" LOC = P116;
+#NET "q_vector[17]" LOC = P113;
+#NET "q_vector[18]" LOC = P112;
+#NET "q_vector[19]" LOC = P108;
+#NET "q_vector[20]" LOC = P107;
+#NET "q_vector[21]" LOC = P105;
+#NET "q_vector[22]" LOC = P104;
+#NET "q_vector[23]" LOC = P103;
+#NET "q_vector[24]" LOC = P102;
+#NET "q_vector[25]" LOC = P100;
+#NET "q_vector[26]" LOC = P99;
+#NET "q_vector[27]" LOC = P98;
+#NET "q_vector[28]" LOC = P97;
+#NET "q_vector[29]" LOC = P96;
+#NET "q_vector[30]" LOC = P95;
+#NET "q_vector[31]" LOC = P93;

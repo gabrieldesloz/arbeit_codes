@@ -1,0 +1,5 @@
+vhdl work "D:\Projetos\VHDL\L8\Ejector_Board\EJECTORS_V016\ipcore_dir\MEM_512x64.vhd"
+vhdl work "D:\Projetos\VHDL\L8\Ejector_Board\EJECTORS_V016\ipcore_dir\MEM_32x32.vhd"
+vhdl work "D:\Projetos\VHDL\L8\Ejector_Board\EJECTORS_V016\VALVE_FAIL.vhd"
+vhdl work "D:\Projetos\VHDL\L8\Ejector_Board\EJECTORS_V016\FAIL_MEM_CONTROL.vhd"
+vhdl work "D:\Projetos\VHDL\L8\Ejector_Board\EJECTORS_V016\WRAPPER_VALVE_FAIL.vhd"

@@ -1,0 +1,29 @@
+Command line:
+   TB_WRAPPER_EJET_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64297
+
+Mon Feb 25 11:42:40 2013
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 509.002 Meg
+
+ Total Signals          : 383
+ Total Nets             : 5317
+ Total Signal Drivers   : 292
+ Total Blocks           : 123
+ Total Primitive Blocks : 111
+ Total Processes        : 227
+ Total Traceable Variables  : 221
+ Total Scalar Nets and Variables : 6120
+Total Line Count : 809
+
+ Total Simulation Time: 8.95446 sec
+
+ Current Memory Usage: 509.002 Meg
+
+Mon Feb 25 11:45:17 2013
+

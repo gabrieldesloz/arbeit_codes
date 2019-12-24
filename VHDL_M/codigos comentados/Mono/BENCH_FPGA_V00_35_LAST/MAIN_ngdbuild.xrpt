@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt64" product="ISE" version="14.1">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="NgdBuild" timeStamp="Fri Aug 08 15:49:44 2014">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="Path"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.1\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.1\ISE_DS\ISE\lib\nt64;C:\Xilinx\Vivado\2012.1\bin;C:\Xilinx\14.1\ISE_DS\PlanAhead\bin;C:\Xilinx\14.1\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.1\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.1\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\arm\nt64\bin;C:\Xilinx\14.1\ISE_DS\common\bin\nt64;C:\Xilinx\14.1\ISE_DS\common\lib\nt64;C:\Program Files (x86)\CollabNet;C:\Program Files (x86)\Embarcadero\RAD Studio\11.0\bin;C:\Users\Public\Documents\RAD Studio\11.0\Bpl;C:\Program Files (x86)\Embarcadero\RAD Studio\11.0\bin64;C:\Users\Public\Documents\RAD Studio\11.0\Bpl\Win64;C:\orant\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\orant\jdk\bin;C:\Program Files (x86)\d.velop\d.3 view"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="PATHEXT"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\PlanAhead"/>
+        </row>
+        <row stringID="row" value="6">
+          <item stringID="variable" value="XILINX_VIVADO"/>
+          <item stringID="value" value="C:\Xilinx\Vivado\2012.1"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
+      </item>
+      <item stringID="User_EnvHost" value="SMKP08"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Intel(R) Xeon(R) CPU           E5630  @ 2.53GHz"/>
+          <item stringID="speed" value="2533 MHz"/>
+        </row>
+      </table>
+    </section>
+    <task stringID="NGDBUILD_OPTION_SUMMARY">
+      <section stringID="NGDBUILD_OPTION_SUMMARY">
+        <item DEFAULT="false" label="-u" stringID="NGDBUILD_allow_unexpanded" value="true"/>
+        <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
+        <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
+        <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc6slx25-ftg256-3"/>
+        <item DEFAULT="None" label="-sd" stringID="NGDBUILD_search_path" value="ipcore_dir"/>
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="MAIN.ucf"/>
+      </section>
+    </task>
+    <task stringID="NGDBUILD_REPORT">
+      <section stringID="NGDBUILD_DESIGN_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="10"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="1"/>
+      </section>
+      <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="7"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_DCM_CLKGEN" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_DSP48A1" value="4"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="92"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="691"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="663"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE_1" value="149"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC_1" value="31"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="3755"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE_1" value="245"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDP" value="127"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="261"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE_1" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDP_1" value="4"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="108"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDRE" value="215"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDS" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDSE" value="11"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD_1" value="139"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="42"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="31"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="62"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IOBUF" value="34"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LDC" value="78"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="342"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="1071"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="1034"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="657"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="1189"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="2359"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="624"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="153"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF8" value="52"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="80"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAM128X1D" value="40"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAM16X1D" value="64"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAM256X1S" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAM64M" value="15"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAM64X1D" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAMB16BWER" value="46"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAMB8BWER" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_SRLC16E" value="5"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="39"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="629"/>
+      </section>
+      <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="7"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_DCM_CLKGEN" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_DSP48A1" value="4"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="92"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="691"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="663"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE_1" value="149"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC_1" value="31"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="3755"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE_1" value="245"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDP" value="127"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="261"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE_1" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDP_1" value="4"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="108"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDRE" value="215"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDS" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDSE" value="11"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD_1" value="139"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="73"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="81"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="62"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LDC" value="78"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="342"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="1071"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="1034"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="657"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="1189"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="2359"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="624"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="153"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF8" value="52"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="80"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUFT" value="34"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_PULLDOWN" value="4"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_PULLUP" value="154"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAM256X1S" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAM64M" value="15"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAMB16BWER" value="46"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAMB8BWER" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_SRLC16E" value="5"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_TS_TIMESPEC" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="70"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="629"/>
+      </section>
+      <section stringID="NGDBUILD_CORE_SUMMARY">
+        <item COUNT="1" stringID="NGDBUILD_CORE" value="blk_mem_gen_v4_1, Xilinx CORE Generator 13.1"/>
+        <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
+          <section stringID="NGDBUILD_CORE_INSTANCES">
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="EJ_SEL_MEM">
+              <item stringID="NGDBUILD_CORE_INFO" type="dist_mem_gen_v6_1" value="EJ_SEL_MEM"/>
+              <item c_addr_width="6" c_default_data="0" c_depth="64" c_has_clk="1" c_has_d="1" c_has_dpo="1" c_has_dpra="1" c_has_i_ce="0" c_has_qdpo="0" c_has_qdpo_ce="0" c_has_qdpo_clk="0" c_has_qdpo_rst="0" c_has_qdpo_srst="0" c_has_qspo="0" c_has_qspo_ce="0" c_has_qspo_rst="0" c_has_qspo_srst="0" c_has_spo="0" c_has_spra="0" c_has_we="1" c_mem_init_file="no_coe_file_loaded" c_mem_type="4" c_pipeline_stages="0" c_qce_joined="0" c_qualify_we="0" c_read_mif="0" c_reg_a_d_inputs="0" c_reg_dpra_input="0" c_sync_enable="1" c_width="16" stringID="NGDBUILD_CORE_PARAMETERS" value="EJ_SEL_MEM"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="M2Kx16">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v4_1" value="M2Kx16"/>
+              <item c_addra_width="11" c_addrb_width="11" c_algorithm="1" c_byte_size="9" c_common_clk="0" c_default_data="0100" c_disable_warn_bhv_coll="1" c_disable_warn_bhv_range="1" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_init_file_name="no_coe_file_loaded" c_inita_val="0" c_initb_val="0" c_load_init_file="0" c_mem_type="1" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="2048" c_read_depth_b="2048" c_read_width_a="16" c_read_width_b="16" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="1" c_use_ecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="2048" c_write_depth_b="2048" c_write_mode_a="READ_FIRST" c_write_mode_b="READ_FIRST" c_write_width_a="16" c_write_width_b="16" component_name="M2Kx16" stringID="NGDBUILD_CORE_PARAMETERS" value="M2Kx16"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="MEM_256x16">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v6_3" value="MEM_256x16"/>
+              <item c_addra_width="8" c_addrb_width="8" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="1" c_default_data="0100" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="spartan6" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file_name="no_coe_file_loaded" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="0" c_mem_type="1" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="256" c_read_depth_b="256" c_read_width_a="16" c_read_width_b="16" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="1" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="256" c_write_depth_b="256" c_write_mode_a="READ_FIRST" c_write_mode_b="READ_FIRST" c_write_width_a="16" c_write_width_b="16" c_xdevicefamily="spartan6" stringID="NGDBUILD_CORE_PARAMETERS" value="MEM_256x16"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="MEM_256x64">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v6_2" value="MEM_256x64"/>
+              <item c_addra_width="8" c_addrb_width="8" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="1" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_family="spartan6" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file_name="no_coe_file_loaded" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="0" c_mem_type="1" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="256" c_read_depth_b="256" c_read_width_a="64" c_read_width_b="64" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="256" c_write_depth_b="256" c_write_mode_a="READ_FIRST" c_write_mode_b="READ_FIRST" c_write_width_a="64" c_write_width_b="64" c_xdevicefamily="spartan6" stringID="NGDBUILD_CORE_PARAMETERS" value="MEM_256x64"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="MEM_512x44">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v6_1" value="MEM_512x44"/>
+              <item c_addra_width="9" c_addrb_width="9" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="1" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_family="spartan6" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file_name="no_coe_file_loaded" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="0" c_mem_type="1" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="512" c_read_depth_b="512" c_read_width_a="44" c_read_width_b="44" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="512" c_write_depth_b="512" c_write_mode_a="READ_FIRST" c_write_mode_b="READ_FIRST" c_write_width_a="44" c_write_width_b="44" c_xdevicefamily="spartan6" stringID="NGDBUILD_CORE_PARAMETERS" value="MEM_512x44"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="MEM_DEF_CNT_DIST">
+              <item stringID="NGDBUILD_CORE_INFO" type="dist_mem_gen_v6_1" value="MEM_DEF_CNT_DIST"/>
+              <item c_addr_width="6" c_default_data="0" c_depth="64" c_has_clk="1" c_has_d="1" c_has_dpo="0" c_has_dpra="1" c_has_i_ce="0" c_has_qdpo="1" c_has_qdpo_ce="0" c_has_qdpo_clk="1" c_has_qdpo_rst="1" c_has_qdpo_srst="0" c_has_qspo="0" c_has_qspo_ce="0" c_has_qspo_rst="0" c_has_qspo_srst="0" c_has_spo="0" c_has_spra="0" c_has_we="1" c_mem_init_file="no_coe_file_loaded" c_mem_type="4" c_pipeline_stages="0" c_qce_joined="0" c_qualify_we="0" c_read_mif="0" c_reg_a_d_inputs="0" c_reg_dpra_input="0" c_sync_enable="1" c_width="16" stringID="NGDBUILD_CORE_PARAMETERS" value="MEM_DEF_CNT_DIST"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="MEM_SYNC">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v4_3" value="MEM_SYNC"/>
+              <item c_addra_width="9" c_addrb_width="9" c_algorithm="1" c_byte_size="9" c_common_clk="1" c_default_data="0" c_disable_warn_bhv_coll="1" c_disable_warn_bhv_range="1" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file_name="no_coe_file_loaded" c_inita_val="0" c_initb_val="0" c_load_init_file="0" c_mem_type="1" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="512" c_read_depth_b="512" c_read_width_a="32" c_read_width_b="32" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="NONE" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="512" c_write_depth_b="512" c_write_mode_a="READ_FIRST" c_write_mode_b="READ_FIRST" c_write_width_a="32" c_write_width_b="32" component_name="MEM_SYNC" stringID="NGDBUILD_CORE_PARAMETERS" value="MEM_SYNC"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="mem256x8">
+              <item stringID="NGDBUILD_CORE_INFO" type="dist_mem_gen_v5_1" value="mem256x8"/>
+              <item c_addr_width="8" c_default_data="0" c_depth="256" c_has_clk="1" c_has_d="1" c_has_dpo="0" c_has_dpra="0" c_has_i_ce="0" c_has_qdpo="0" c_has_qdpo_ce="0" c_has_qdpo_clk="0" c_has_qdpo_rst="0" c_has_qdpo_srst="0" c_has_qspo="1" c_has_qspo_ce="0" c_has_qspo_rst="0" c_has_qspo_srst="0" c_has_spo="0" c_has_spra="0" c_has_we="1" c_mem_init_file="no_coe_file_loaded" c_mem_type="1" c_pipeline_stages="0" c_qce_joined="0" c_qualify_we="0" c_read_mif="0" c_reg_a_d_inputs="0" c_reg_dpra_input="0" c_sync_enable="1" c_width="8" stringID="NGDBUILD_CORE_PARAMETERS" value="mem256x8"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="mult16">
+              <item stringID="NGDBUILD_CORE_INFO" type="mult_gen_v11_2" value="mult16"/>
+              <item c_a_type="1" c_a_width="16" c_b_type="1" c_b_value="10000001" c_b_width="16" c_ccm_imp="0" c_ce_overrides_sclr="0" c_has_ce="1" c_has_sclr="0" c_has_zero_detect="0" c_latency="1" c_mult_type="1" c_optimize_goal="1" c_out_high="31" c_out_low="0" c_round_output="0" c_round_pt="0" component_name="mult16" stringID="NGDBUILD_CORE_PARAMETERS" value="mult16"/>
+            </scope>
+          </section>
+        </section>
+      </section>
+    </task>
+  </application>
+
+</document>

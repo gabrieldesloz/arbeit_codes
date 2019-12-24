@@ -1,0 +1,16 @@
+# Output products list for <MEM_DEF_CNT>
+MEM_DEF_CNT.asy
+MEM_DEF_CNT.gise
+MEM_DEF_CNT.ngc
+MEM_DEF_CNT.sym
+MEM_DEF_CNT.v
+MEM_DEF_CNT.veo
+MEM_DEF_CNT.vhd
+MEM_DEF_CNT.vho
+MEM_DEF_CNT.xco
+MEM_DEF_CNT.xise
+MEM_DEF_CNT_flist.txt
+MEM_DEF_CNT_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

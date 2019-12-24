@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=M:\vhdl\mod_giga_L_conector\0009_00257\top\comm_top.ncd
+OUTFILE=M:\vhdl\mod_giga_L_conector\0009_00257\top\comm_top.bit
+FAMILY=Spartan3
+PART=xc3s200-4tq144
+WORKINGDIR=M:\vhdl\mod_giga_L_conector\0009_00257\top
+LICENSE=WebPack
+USER_INFO=205418984_0_0_513

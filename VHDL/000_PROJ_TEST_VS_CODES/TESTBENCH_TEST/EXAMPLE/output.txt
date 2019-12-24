@@ -1,0 +1,13 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf02s          [2 M]
+FF
+prom
+C:/Users/S10169/Desktop/Valvulas Matrix/CODIGOS/L8_BI_EJECTORS_V01_LAST
+
+MCS
+No
+e
+
+MCS
+No

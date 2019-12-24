@@ -1,0 +1,28 @@
+chipscope_block: block  
+
+		signal  CLK_c1: 	std_logic;		
+		signal  CONTROL0: 	std_logic_vector(35 downto 0);			
+		signal  DATA_1:  	std_logic_vector(75 downto 0);
+		signal 	TRIG0_1:  	std_logic_vector(1 downto 0);
+		
+	begin
+		
+		CLK_c1 		<= s_clk_60MHz; -- clock
+		DATA_1 		<= TEST_FED_OUT_reg & R_COMP & s_R_TEST_reg; -- 76 -- data		
+		TRIG0_1 	<= '0' & s_en_100kHz; -- trigger
+	
+	c0: entity work.chipscope_icon 
+	  port map(
+		CONTROL0 => CONTROL0		
+		);
+
+	c1: entity  work.chipscope_ila 
+	port map (
+		CONTROL 	=> CONTROL0,
+		CLK 		=> CLK_c1,
+		DATA 		=> DATA_1,
+		TRIG0 		=> TRIG0_1
+		);
+	
+end block;	
+	

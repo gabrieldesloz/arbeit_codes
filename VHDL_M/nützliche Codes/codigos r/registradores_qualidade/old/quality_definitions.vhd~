@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+-- Title      : Reason Tecnologia S.A. - Merging Unit - MU320
+-- Project    : MU320
+-------------------------------------------------------------------------------
+-- File       : quality.vhd
+-- Author     : 
+-- Company    : Reason Tecnologia S.A.
+-- Created    : 2012-08-07
+-- Last update: 2013-12-13
+-- Standard   : VHDL'87
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2012 Reason Tecnologia S.A.
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2012-08-07  1.0              Created
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+ 
+package quality_definitions IS
+
+
+  
+      
+end quality_definitions

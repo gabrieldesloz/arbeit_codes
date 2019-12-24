@@ -1,0 +1,2 @@
+vhdl isim_temp "MAIN_RESET.vhd"
+vhdl isim_temp "TB_MAIN_RESET.vhd"

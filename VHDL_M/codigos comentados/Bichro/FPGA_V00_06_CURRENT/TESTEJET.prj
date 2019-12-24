@@ -1,0 +1,2 @@
+vhdl work "TESTEJET.vhd"
+vhdl work "ipcore_dir/clkblock/example_design/clkblock_exdes.vhd"

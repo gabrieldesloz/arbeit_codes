@@ -1,0 +1,16 @@
+Fitter Status : Failed - Thu Jul 04 11:22:41 2013
+Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Full Version
+Revision Name : quartus_test
+Top-level Entity Name : phase_sum
+Family : Cyclone IV E
+Device : EP4CE40F23C7
+Timing Models : Final
+Total logic elements : 150 / 39,600 ( < 1 % )
+    Total combinational functions : 36 / 39,600 ( < 1 % )
+    Dedicated logic registers : 131 / 39,600 ( < 1 % )
+Total registers : 131
+Total pins : 330 / 329 ( 100 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,161,216 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 232 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

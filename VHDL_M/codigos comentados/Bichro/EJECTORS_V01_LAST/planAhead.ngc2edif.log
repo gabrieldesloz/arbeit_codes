@@ -1,0 +1,34 @@
+Release 14.1 - ngc2edif P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design MAIN_VHDL.ngc ...
+WARNING:NetListWriters:298 - No output is written to MAIN_VHDL.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_s_cutoff_times_cmp_gt0000_lut<5
+   : 0> on block MAIN_VHDL is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   i_LIMITER_WRAPPER/i_COUNT_CHOPPER/COUNT_o_mux0003<30 : 0> on block MAIN_VHDL
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Maddsub_COUNT_o_share0000_lut<30 : 0> on
+   block MAIN_VHDL is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mcompar_s_max_count_cmp_ge0000_lut<5 : 1>
+   on block MAIN_VHDL is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   i_LIMITER_WRAPPER/i_COUNT_CHOPPER/Mcompar_s_min_count_cmp_le0000_lut<9 : 0>
+   on block MAIN_VHDL is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   i_TUNE_PLAYER/i_INT_TUNE_PLAYER/s_cmd_state<6 : 4> on block MAIN_VHDL is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus s_valve_state<31 : 1> on block MAIN_VHDL
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file MAIN_VHDL.edif ...
+ngc2edif: Total memory usage is 81224 kilobytes
+

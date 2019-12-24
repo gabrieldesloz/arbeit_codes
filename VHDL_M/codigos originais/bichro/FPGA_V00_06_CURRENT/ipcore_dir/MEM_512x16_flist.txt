@@ -1,0 +1,25 @@
+# Output products list for <MEM_512x16>
+MEM_512x16.asy
+MEM_512x16.gise
+MEM_512x16.ngc
+MEM_512x16.sym
+MEM_512x16.vhd
+MEM_512x16.vho
+MEM_512x16.xco
+MEM_512x16.xise
+MEM_512x16_flist.txt
+MEM_512x16_ste\example_design\MEM_512x16_top.ucf
+MEM_512x16_ste\example_design\MEM_512x16_top.vhd
+MEM_512x16_ste\example_design\MEM_512x16_top.xdc
+MEM_512x16_ste\example_design\bmg_wrapper.vhd
+MEM_512x16_ste\implement\implement.sh
+MEM_512x16_ste\implement\planAhead_rdn.bat
+MEM_512x16_ste\implement\planAhead_rdn.sh
+MEM_512x16_ste\implement\planAhead_rdn.tcl
+MEM_512x16_ste\implement\xst.prj
+MEM_512x16_ste\implement\xst.scr
+MEM_512x16_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+summary.log

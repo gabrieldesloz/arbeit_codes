@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/comm_top.vhd</arg>&quot; line <arg fmt="%d" index="2">148</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RECEIVED_DATA_o</arg>&apos; of component &apos;<arg fmt="%s" index="4">EJ_SERIAL_MASTER</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/comm_top.vhd</arg>&quot; line <arg fmt="%d" index="2">148</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">SOP_o</arg>&apos; of component &apos;<arg fmt="%s" index="4">EJ_SERIAL_MASTER</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">//smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/comm_top.vhd</arg>&quot; line <arg fmt="%d" index="2">148</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">EOP_o</arg>&apos; of component &apos;<arg fmt="%s" index="4">EJ_SERIAL_MASTER</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">//smkn33/s10169/vhdl/mod_giga_L_conector_v2/testing/EJ_SERIAL_MASTER_jiga.vhd</arg>&quot; line <arg fmt="%d" index="2">146</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">d1</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state_reg</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">s_EARX_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">not_s_EARX_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">mux_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">SYNC_CLK_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">SOP_master</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">SEND_DATA_i_slave</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">RECEIVED_DATA_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">EOP_master</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">DATA_TX_o_slave</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">DATA_TX_o</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FFd2</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">FSM</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3034" delta="old" >In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="1">Mrom_ejapkt_mux0000</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">FSM_FFd2</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">FSM_0-parent</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ejapkt_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EJ_SERIAL_MASTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ejapkt_8&gt; &lt;ejapkt_16&gt; &lt;ejapkt_24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ejapkt_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EJ_SERIAL_MASTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ejapkt_9&gt; &lt;ejapkt_17&gt; &lt;ejapkt_25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ejapkt_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EJ_SERIAL_MASTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ejapkt_10&gt; &lt;ejapkt_18&gt; &lt;ejapkt_26&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ejapkt_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EJ_SERIAL_MASTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ejapkt_11&gt; &lt;ejapkt_19&gt; &lt;ejapkt_27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ejapkt_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EJ_SERIAL_MASTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ejapkt_12&gt; &lt;ejapkt_20&gt; &lt;ejapkt_28&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ejapkt_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EJ_SERIAL_MASTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ejapkt_13&gt; &lt;ejapkt_21&gt; &lt;ejapkt_29&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ejapkt_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EJ_SERIAL_MASTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ejapkt_14&gt; &lt;ejapkt_22&gt; &lt;ejapkt_30&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">ejapkt_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EJ_SERIAL_MASTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ejapkt_15&gt; &lt;ejapkt_23&gt; &lt;ejapkt_31&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/SOP_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/EOP_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxpara</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_7_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_5_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_4_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_6_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_3_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/s_received_data_0_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_35</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_34</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EJ_SERIAL_MASTER_1/rxsa_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">comm_top</arg>&gt;.
+</msg>
+
+</messages>
+

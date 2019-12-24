@@ -1,0 +1,2 @@
+vhdl work "FLOOR_GEN.vhd"
+vhdl work "TB_FLOOR_GEN.vhd"

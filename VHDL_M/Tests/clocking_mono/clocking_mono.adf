@@ -1,0 +1,95 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=clocking_mono
+
+[Library]
+clocking_mono=.\clocking_mono\clocking_mono.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=MV_XST145_SYNTH_IMPL
+RUN_MODE_SYNTH=1
+IMPL_TOOL=<none>
+CSYNTH_TOOL=<none>
+PHYSSYNTH_TOOL=<none>
+FLOWTOOLS=IMPL_WITH_SYNTH
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+FAMILY=Xilinx14x Automotive_Spartan6
+fileopenfolder=\\Smkn33\s10169\projetos\VHDL\JIGA_TESTES_V_V00\Test_Rig\FPGA_1\TEST_RIG_FPGA_1_V12
+PCBINTERFACE_STATUS=ERRORS
+FUNC_LIB=clocking_mono
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+clocking_mono=.
+Active_lib=SPARTAN6
+xilinxun=SPARTAN6
+UnlinkedDesignLibrary=SPARTAN6
+DESIGNS=SPARTAN6
+
+[IMPLEMENTATION]
+UCF=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=tb_clock_gen|behavior|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Folders]
+Name3=Makefiles
+Directory3=M:\vhdl\Tests\clocking_mono\
+Extension3=mak
+Name4=Memory
+Directory4=M:\vhdl\Tests\clocking_mono\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=M:\vhdl\Tests\clocking_mono\
+Extension5=dll
+Name6=PDF
+Directory6=M:\vhdl\Tests\clocking_mono\
+Extension6=pdf
+Name7=HTML
+Directory7=M:\vhdl\Tests\clocking_mono\
+Extension7=
+
+[Files]
+/..\..\..\clocking mono\clock_gen_ccd_ctrl_fsm.vhd=-1
+/..\..\..\clocking mono\clock_gen.vhd=-1
+/..\..\..\clocking mono\tb_clock_gen.vhd=-1
+/waveform.asdb=-1
+/waveform.awc=-1
+
+[Files.Data]
+.\..\..\clocking mono\clock_gen_ccd_ctrl_fsm.vhd=VHDL Source Code
+.\..\..\clocking mono\clock_gen.vhd=VHDL Source Code
+.\..\..\clocking mono\tb_clock_gen.vhd=VHDL Source Code
+.\src\waveform.asdb=Accelerated Waveform File
+.\src\waveform.awc=Accelerated Waveform Configuration
+

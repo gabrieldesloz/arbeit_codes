@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Fri Oct 03 11:17:36 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DATA_RX_serial_i" LOCATE = SITE "P13" LEVEL 1;
+PIN DATA_RX_serial_i_pin<0> = BEL "DATA_RX_serial_i" PINNAME PAD;
+PIN "DATA_RX_serial_i_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "CLK_i" LOCATE = SITE "P55" LEVEL 1;
+COMP "DATA_TX_serial_o" LOCATE = SITE "P10" LEVEL 1;
+COMP "debug_o<0>" LOCATE = SITE "P131" LEVEL 1;
+COMP "debug_o<1>" LOCATE = SITE "P132" LEVEL 1;
+COMP "debug_o<2>" LOCATE = SITE "P135" LEVEL 1;
+COMP "debug_o<3>" LOCATE = SITE "P137" LEVEL 1;
+COMP "clk_60MHz_o" LOCATE = SITE "P128" LEVEL 1;
+COMP "EARX_o" LOCATE = SITE "P141" LEVEL 1;
+COMP "EATX_i" LOCATE = SITE "P57" LEVEL 1;
+COMP "EBRX_o" LOCATE = SITE "P140" LEVEL 1;
+COMP "SYNC_CLK_serial_i" LOCATE = SITE "P8" LEVEL 1;
+PIN SYNC_CLK_serial_i_pin<0> = BEL "SYNC_CLK_serial_i" PINNAME PAD;
+PIN "SYNC_CLK_serial_i_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "SYNC_CLK_serial_i_IBUFG" BEL "EJ_SERIAL_SLAVE_1/BUFG_1sc.GCLKMUX"
+        USELOCALCONNECT;
+NET "DATA_RX_serial_i_BUFGP/IBUFG" BEL "DATA_RX_serial_i_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,15 @@
+  process(clk, reset_n)
+  begin
+    if (reset_n = '0') then
+      out_register <= (others => '0');
+    elsif (rising_edge(clk)) then
+      if (enable = '1') then
+        for i in 0 to (N_CHANNELS_ANA - 1) loop
+          for j in 0 to 3 loop
+            out_register(i)(j) <= out_settings(i*4 + j);
+          end loop;
+        end loop;
+      end if;
+    end if;
+  end process;
+

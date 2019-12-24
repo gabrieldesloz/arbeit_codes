@@ -1,0 +1,18 @@
+C:/Users/gdl/Desktop/mux_divider/reset_generator.vhd {1 {vcom -work work -2002 -explicit C:/Users/gdl/Desktop/mux_divider/reset_generator.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reset_generator
+-- Compiling architecture rtl of reset_generator
+
+} {} {}} C:/Users/gdl/Desktop/mux_divider/divider.vhd {1 {vcom -work work -2002 -explicit C:/Users/gdl/Desktop/mux_divider/divider.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity divider
+-- Compiling architecture rd_RTL of divider
+
+} {} {}}

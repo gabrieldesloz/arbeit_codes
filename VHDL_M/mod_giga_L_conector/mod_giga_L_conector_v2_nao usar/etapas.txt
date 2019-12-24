@@ -1,0 +1,23 @@
+comunicação uc_interface --> serial (envio do comando)
+	32 ejetoras --> decodificador 32 -> 16 ??
+		especificação de inicio e fim?			
+		testar envio de uma palavra na posição 1, OK		
+		reescrever codigo para o envio em todas as posições (master), OK
+		
+		
+		testar comunicação serial prototipo
+			reset em hardware
+			maquina de estados com passos
+			rearranjar saidas
+			arquivo ucf - entrada/saida clock 
+			IO_1 GCLK1
+			
+		testar envio através do microcontrolador (joe) com debug
+			está escrevendo a palavra?
+			está enviando através da serial?	
+					
+		
+		implementar mux
+		testar mux
+		Command 0x000C
+		Documantação

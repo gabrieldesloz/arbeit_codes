@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/s10169/Desktop/VHDL/testes/testes/MEM_CTRL.xst" -ofn "C:/Users/s10169/Desktop/VHDL/testes/testes/MEM_CTRL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx25-ftg256-3 MEM_CTRL.ngc MEM_CTRL.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx25-ftg256-3 MEM_CTRL.ngc MEM_CTRL.ngd  
+xst -intstyle ise -ifn "C:/Users/s10169/Desktop/VHDL/testes/testes/MEM_CTRL.xst" -ofn "C:/Users/s10169/Desktop/VHDL/testes/testes/MEM_CTRL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx25-ftg256-3 MEM_CTRL.ngc MEM_CTRL.ngd  
+xst -intstyle ise -ifn "C:/Users/s10169/Desktop/VHDL/testes/testes/MEM_CTRL.xst" -ofn "C:/Users/s10169/Desktop/VHDL/testes/testes/MEM_CTRL.syr" 

@@ -1,0 +1,32 @@
+Release 14.1 Map P.15xf (nt64)
+Xilinx Mapping Report File for Design 'chipscope_ila'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off
+-c 100 -o chipscope_ila_map.ncd chipscope_ila.ngd chipscope_ila.pcf 
+Target Device  : xc3s200
+Target Package : tq144
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Thu May 21 13:19:46 2015
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Map:116 - The design is empty.  No processing will be done.
+ERROR:Map:52 - Problem encountered processing RPMs. 
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s200' is a WebPack part.

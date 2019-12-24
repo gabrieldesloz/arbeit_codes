@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">dataA</arg>&gt; in unit &lt;<arg fmt="%s" index="2">I2C</arg>&gt; has a constant value of <arg fmt="%s" index="3">10010000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">dataB</arg>&gt; in unit &lt;<arg fmt="%s" index="2">I2C</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">ti2c</arg>&gt; in unit &lt;<arg fmt="%s" index="2">I2C</arg>&gt; has a constant value of <arg fmt="%s" index="3">11</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">rxbin&lt;0&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="2734" delta="unknown" >Property &quot;<arg fmt="%s" index="1">use_dsp48</arg>&quot; is not applicable for this technology.
+</msg>
+
+<msg type="warning" file="Xst" num="2734" delta="unknown" >Property &quot;<arg fmt="%s" index="1">use_dsp48</arg>&quot; is not applicable for this technology.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">101001</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">101000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">101010</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">101011</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">101100</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">101101</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">101110</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">101111</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">110000</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">110001</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">110010</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="unknown" >State <arg fmt="%s" index="1">110011</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">m</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2734" delta="unknown" >Property &quot;<arg fmt="%s" index="1">use_dsp48</arg>&quot; is not applicable for this technology.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">TXgo</arg>&gt; is used but never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">TXDATA</arg>&gt; is used but never assigned. Tied to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">TXbusy</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">clk2x</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">RXDATA</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">dataRB</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">dataWA</arg>&gt; is used but never assigned. Tied to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">dataWB</arg>&gt; is used but never assigned. Tied to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2506" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">I2C_A</arg>&gt; : In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="2">Mrom_DATAA_mux0000</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">notx</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rxbin_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rxbin_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rxbin_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rxbin_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rxbin_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rxbin_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rxbin_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rxbin_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXrdy</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXDATA_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXDATA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXDATA_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXDATA_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXDATA_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXDATA_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXDATA_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">RXDATA_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">rs232cmp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DATARB_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i2c_comp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DATARB_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i2c_comp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DATARB_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i2c_comp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DATARB_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i2c_comp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DATARB_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i2c_comp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DATARB_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i2c_comp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DATARB_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i2c_comp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DATARB_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i2c_comp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">notx</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">RS232</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">i2c_comp/DATARB_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">i2c_comp/DATARB_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">i2c_comp/DATARB_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">i2c_comp/DATARB_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">i2c_comp/DATARB_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">i2c_comp/DATARB_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">i2c_comp/DATARB_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">i2c_comp/DATARB_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rcc_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rcc_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rcc_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rcc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXDATA_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXDATA_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXDATA_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXDATA_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXDATA_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXDATA_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXDATA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXDATA_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/RXrdy</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rxbin_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rxbin_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rxbin_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rxbin_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rxbin_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rxbin_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/waitbyte</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rxbin_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/rxbin_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/stfall</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">rs232cmp/tsrx</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">I2C</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="unknown" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

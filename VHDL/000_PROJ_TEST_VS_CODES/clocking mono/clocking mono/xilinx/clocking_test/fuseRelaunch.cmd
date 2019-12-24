@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "M:/vhdl/clocking mono/xilinx/clocking_test/tb_clock_gen_isim_beh.exe" -prj "M:/vhdl/clocking mono/xilinx/clocking_test/tb_clock_gen_beh.prj" "work.tb_clock_gen" 

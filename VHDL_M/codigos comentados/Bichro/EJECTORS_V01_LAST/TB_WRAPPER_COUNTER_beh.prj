@@ -1,0 +1,6 @@
+vhdl work "ipcore_dir/MEM_512x64.vhd"
+vhdl work "ipcore_dir/MEM_32x32.vhd"
+vhdl work "COUNT_MEM_CONTROL.vhd"
+vhdl work "COUNT_CHOPPER.vhd"
+vhdl work "WRAPPER_COUNTER.vhd"
+vhdl work "TB_WRAPPER_COUNTER.vhd"

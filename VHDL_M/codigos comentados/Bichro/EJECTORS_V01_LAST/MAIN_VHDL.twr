@@ -1,0 +1,144 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml MAIN_VHDL.twx MAIN_VHDL.ncd -o MAIN_VHDL.twr MAIN_VHDL.pcf
+-ucf main.ucf
+
+Design file:              MAIN_VHDL.ncd
+Physical constraint file: MAIN_VHDL.pcf
+Device,package,speed:     xc3s200,tq144,-5 (PRODUCTION 1.39 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CX
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+resetin     |    6.738(R)|   -3.015(R)|cxc               |   0.000|
+            |    5.972(F)|   -1.849(F)|cxc               |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock RX
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+resetin     |    5.156(R)|   -0.174(R)|RX_IBUF           |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CX to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+PROTOTYPE_o<6>|    8.464(F)|cxc               |   0.000|
+TX            |    8.357(F)|cxc               |   0.000|
+eval<0>       |   10.554(F)|cxc               |   0.000|
+eval<2>       |   10.830(F)|cxc               |   0.000|
+eval<4>       |   10.757(F)|cxc               |   0.000|
+eval<5>       |   10.829(F)|cxc               |   0.000|
+eval<6>       |   11.929(F)|cxc               |   0.000|
+eval<7>       |   11.009(F)|cxc               |   0.000|
+eval<8>       |   11.619(F)|cxc               |   0.000|
+eval<9>       |   11.520(F)|cxc               |   0.000|
+eval<10>      |   11.134(F)|cxc               |   0.000|
+eval<11>      |   11.129(F)|cxc               |   0.000|
+eval<13>      |   10.763(F)|cxc               |   0.000|
+eval<15>      |   10.737(F)|cxc               |   0.000|
+eval<17>      |   11.284(F)|cxc               |   0.000|
+eval<19>      |   11.856(F)|cxc               |   0.000|
+eval<20>      |   11.075(F)|cxc               |   0.000|
+eval<21>      |   12.106(F)|cxc               |   0.000|
+eval<22>      |   11.335(F)|cxc               |   0.000|
+eval<23>      |   12.107(F)|cxc               |   0.000|
+eval<24>      |   10.877(F)|cxc               |   0.000|
+eval<25>      |   11.204(F)|cxc               |   0.000|
+eval<26>      |   11.442(F)|cxc               |   0.000|
+eval<27>      |   11.659(F)|cxc               |   0.000|
+eval<28>      |   11.432(F)|cxc               |   0.000|
+eval<30>      |   11.143(F)|cxc               |   0.000|
+--------------+------------+------------------+--------+
+
+Clock clk37 to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+PROTOTYPE_o<7>|   12.756(R)|clk2x             |   0.000|
+--------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CX
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CX             |    6.615|         |    3.340|    5.945|
+RX             |    6.200|    0.938|    6.157|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RX
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CX             |    4.034|    5.593|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk37
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk37          |    5.295|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sens<0>        |PROTOTYPE_o<2> |    8.532|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Nov 06 11:25:40 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 158 MB
+
+
+

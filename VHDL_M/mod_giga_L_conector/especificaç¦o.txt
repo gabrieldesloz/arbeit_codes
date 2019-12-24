@@ -1,0 +1,44 @@
+o que fazer e como fazer na jiga			
+	fazer saida função ejetoras
+		multiplexar uma saída pq não há outra
+		cc7, cc10, conectados,  cc21: desconectado
+		cc7: conecta sort board 
+			EACK, EATXD, EARXD, 
+		cc10 conecta sort board b
+			EBCK, EBTXD, EBRXD, 
+		modificar na jiga
+
+	adicionar outros testes, adquirir da ejetoria
+	teste adc
+	ganhos
+	calibração
+	como testar adc
+		modulo pronto e inserir na jiga (placa ejetora)
+	
+verificar comandos de recebimento e envio na jiga (fpga 1)
+	
+	
+	
+	
+fpga board
+	adc9822 (aquisição e controle 	ccd) out  (pq controle adc???)
+	CCD (controle), out, simples
+	Illumination interface (8 saidas) - simples
+	ejector --- simples
+	sync --- simples
+	flash interface --- nada
+	comunicação com a jiga (in)
+	
+jiga
+	free ios (8) inout
+	comunicação entre fpgas (SERIAL COMMAND, serial etc)
+	Illumination Board (4 saidas LEDA...) out, ativaçao uC, barramento único
+	ejector serial (4 IN, 2 OUT) simples, in out uC
+	CCD, 12 sinais de controle para 4 CCDs, IN, lidos pelo uC
+	interboard (2 IN, 2 OUT)  - simples - uC
+	IO Board Test Signals -- testes diversos, ativação e teste simples através do uc, lidos e escritos pelo UC
+	
+
+ejetoras
+		interface serial ativar as ejetoras	
+

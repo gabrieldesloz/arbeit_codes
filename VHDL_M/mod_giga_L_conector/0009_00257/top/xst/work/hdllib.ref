@@ -1,0 +1,13 @@
+AR ej_serial_slave behavioral //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd sub00/vhpl10 1412345801
+PH my_types_pkg NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd sub00/vhpl00 1412345799
+EN packet_detect NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd sub00/vhpl03 1412345793
+EN ej_serial_slave NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd sub00/vhpl09 1412345800
+AR comm_top arq //smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd sub00/vhpl12 1412345803
+AR ej_serial_master behavioral //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd sub00/vhpl02 1412345792
+AR packet_detect arq //smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd sub00/vhpl04 1412345794
+EN ej_serial_master NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd sub00/vhpl01 1412345791
+AR mux arq //smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd sub00/vhpl06 1412345796
+AR reset_generator rtl //smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/reset_generator.vhd sub00/vhpl08 1412345798
+EN comm_top NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd sub00/vhpl11 1412345802
+EN mux NULL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd sub00/vhpl05 1412345795
+EN reset_generator NULL //smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/reset_generator.vhd sub00/vhpl07 1412345797

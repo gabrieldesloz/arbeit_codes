@@ -1,0 +1,228 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: MAIN.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MAIN.prj"
+Ignore Synthesis Constraint File   : YES
+
+---- Target Parameters
+Output File Name                   : "MAIN"
+Output Format                      : NGC
+Target Device                      : xc6slx25-3-ftg256
+
+---- Source Options
+Top Module Name                    : MAIN
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : Yes
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Optimize Instantiated Primitives   : YES
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : NO
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 0
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : No
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\teste.vhd" into library work
+Parsing entity <teste>.
+Parsing architecture <teste_a> of entity <teste>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\MEM_DEF_CNT_DIST.vhd" into library work
+Parsing entity <MEM_DEF_CNT_DIST>.
+Parsing architecture <MEM_DEF_CNT_DIST_a> of entity <mem_def_cnt_dist>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\EJ_SEL_MEM.vhd" into library work
+Parsing entity <EJ_SEL_MEM>.
+Parsing architecture <EJ_SEL_MEM_a> of entity <ej_sel_mem>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\EJ_CLEAR_COUNT.vhd" into library work
+Parsing entity <EJ_CLEAR_COUNT>.
+Parsing architecture <Behavioral> of entity <ej_clear_count>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MEM_CTRL.vhd" into library work
+Parsing entity <MEM_CTRL>.
+Parsing architecture <Behavioral> of entity <mem_ctrl>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\IN_BUFF.vhd" into library work
+Parsing entity <IN_BUFF>.
+Parsing architecture <Behavioral> of entity <in_buff>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\CH_X_EJET_TIMER.vhd" into library work
+Parsing entity <CH_X_EJET_TIMER>.
+Parsing architecture <Behavioral> of entity <ch_x_ejet_timer>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\WRAPPER_EJET.vhd" into library work
+Parsing entity <WRAPPER_EJET>.
+Parsing architecture <Behavioral> of entity <wrapper_ejet>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MEM_SYNC.vhd" into library work
+Parsing entity <MEM_SYNC>.
+Parsing architecture <MEM_SYNC_a> of entity <mem_sync>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ALL_IN_BUFF.vhd" into library work
+Parsing entity <ALL_IN_BUFF>.
+Parsing architecture <Behavioral> of entity <all_in_buff>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\WRAPPER.vhd" into library work
+Parsing entity <WRAPPER>.
+Parsing architecture <Behavioral> of entity <wrapper>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MEM_CTRL_DELAY.vhd" into library work
+Parsing entity <MEM_CTRL_DELTA>.
+Parsing architecture <Behavioral> of entity <mem_ctrl_delta>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\MEM_512x44.vhd" into library work
+Parsing entity <MEM_512x44>.
+Parsing architecture <MEM_512x44_a> of entity <mem_512x44>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\MEM_256x64.vhd" into library work
+Parsing entity <MEM_256x64>.
+Parsing architecture <MEM_256x64_a> of entity <mem_256x64>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\mem256x8.vhd" into library work
+Parsing entity <mem256x8>.
+Parsing architecture <mem256x8_a> of entity <mem256x8>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\WRAPPER_TOP.vhd" into library work
+Parsing entity <WRAPPER_TOP>.
+Parsing architecture <Behavioral> of entity <wrapper_top>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\TESTEJET.vhd" into library work
+Parsing entity <TESTEJET>.
+Parsing architecture <Behavioral> of entity <testejet>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\SORT_CASE.vhd" into library work
+Parsing entity <SORT_CASE>.
+Parsing architecture <Behavioral> of entity <sort_case>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\PSEUDO_RANDOM_TEST.vhd" into library work
+Parsing entity <PSEUDO_RANDOM_TEST>.
+Parsing architecture <Behavioral> of entity <pseudo_random_test>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\memdef.vhd" into library work
+Parsing entity <memdef>.
+Parsing architecture <Behavioral> of entity <memdef>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" into library work
+Parsing entity <MEAN_16K>.
+Parsing architecture <Behavioral> of entity <mean_16k>.
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" Line 194: Actual for formal port addrb is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" Line 211: Actual for formal port addrb is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" Line 226: Actual for formal port addrb is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MEAN_32.vhd" Line 243: Actual for formal port addrb is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN_RESET.vhd" into library work
+Parsing entity <MAIN_RESET>.
+Parsing architecture <Behavioral> of entity <main_reset>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\mult16.vhd" into library work
+Parsing entity <mult16>.
+Parsing architecture <mult16_a> of entity <mult16>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\MEM_256x16.vhd" into library work
+Parsing entity <MEM_256x16>.
+Parsing architecture <MEM_256x16_a> of entity <mem_256x16>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\ipcore_dir\M2Kx16.vhd" into library work
+Parsing entity <M2Kx16>.
+Parsing architecture <M2Kx16_a> of entity <m2kx16>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\FLOOR_GEN.vhd" into library work
+Parsing entity <FLOOR_GEN>.
+Parsing architecture <Behavioral> of entity <floor_gen>.
+Parsing VHDL file "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" into library work
+Parsing entity <MAIN>.
+Parsing architecture <Behavioral> of entity <main>.
+ERROR:HDLCompiler:69 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2324: <ks_sram_wr_addr> is not declared.
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2359: Actual for formal port reset_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 2371: Actual for formal port reset_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4979: Actual for formal port has_grain_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4985: Actual for formal port a_elipse2_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4986: Actual for formal port a_elipse3_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4987: Actual for formal port a_elipse4_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4988: Actual for formal port a_elipse5_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4989: Actual for formal port a_elipse6_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4990: Actual for formal port a_elipse7_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4993: Actual for formal port b_elipse2_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4994: Actual for formal port b_elipse3_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4995: Actual for formal port b_elipse4_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4996: Actual for formal port b_elipse5_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4997: Actual for formal port b_elipse6_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4998: Actual for formal port b_elipse7_i is neither a static name nor a globally static expression
+ERROR:HDLCompiler:432 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 4912: Formal <ch_in10_i> has no actual or default value.
+INFO:HDLCompiler:1408 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 533. ch_in10_i is declared here
+INFO:HDLCompiler:1408 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 534. ch_in11_i is declared here
+INFO:HDLCompiler:1408 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 535. ch_in12_i is declared here
+INFO:HDLCompiler:1408 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 536. ch_in13_i is declared here
+ERROR:HDLCompiler:854 - "C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd" Line 121: Unit <behavioral> ignored due to previous errors.
+VHDL file C:\Users\s10169\Desktop\VHDL\Mono\BENCH_FPGA_V00_35_LAST\MAIN.vhd ignored due to errors
+--> 
+
+Total memory usage is 220860 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Wed Oct 01 14:25:45 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "EARX_o" LOCATE = SITE "P141" LEVEL 1;
+COMP "EATX_i" LOCATE = SITE "P57" LEVEL 1;
+COMP "debug_o" LOCATE = SITE "P137" LEVEL 1;
+COMP "EBRX_o" LOCATE = SITE "P140" LEVEL 1;
+COMP "CLK_i" LOCATE = SITE "P55" LEVEL 1;
+COMP "clk_60MHz_o" LOCATE = SITE "P128" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,45 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/ipcore_dir/MEM_32x32.vhd" in Library work.
+Architecture mem_32x32_a of Entity mem_32x32 is up to date.
+Compiling vhdl file "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/VALVE_FAIL.vhd" in Library work.
+Entity <valve_fail> compiled.
+Entity <valve_fail> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/FAIL_MEM_CONTROL.vhd" in Library work.
+Entity <fail_mem_control> compiled.
+Entity <fail_mem_control> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/WRAPPER_VALVE_FAIL.vhd" in Library work.
+Entity <wrapper_valve_fail> compiled.
+Entity <wrapper_valve_fail> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/ipcore_dir/MEM_512x64.vhd" in Library work.
+Architecture mem_512x64_a of Entity mem_512x64 is up to date.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+
+Total memory usage is 209792 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

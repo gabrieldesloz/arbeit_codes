@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="mu320">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mu320|synchronization:synchronization_2|adpll_soc:adpll_soc_inst2|dco_soc:dco_inst|lpm_add_sub:U1" CBX_FILE_NAME="add_sub_lte.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mu320|synchronization:synchronization_2|adpll_soc:adpll_soc_inst|dco_soc:dco_inst|lpm_add_sub:U1" CBX_FILE_NAME="add_sub_lte.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

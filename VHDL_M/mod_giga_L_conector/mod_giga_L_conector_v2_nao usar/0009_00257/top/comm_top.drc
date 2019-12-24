@@ -1,0 +1,11 @@
+Release 14.1 Drc P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed Oct 01 14:27:02 2014
+
+drc -z comm_top.ncd comm_top.pcf
+
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp DCM_inst, consult the
+   device Interactive Data Sheet.
+DRC detected 0 errors and 0 warnings.

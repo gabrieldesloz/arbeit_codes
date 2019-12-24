@@ -1,0 +1,1 @@
+-w -s "M:\vhdl\Tests\clocking_mono\library.cfg"  -j "M:\vhdl\Tests\clocking_mono\projlib.cfg"  -d "M:\vhdl\Tests\clocking_mono\compile"   -work clocking_mono  -O3 -e 100 -o -2002 "M:\vhdl\clocking mono\clock_gen_ccd_ctrl_fsm.vhd" "M:\vhdl\clocking mono\clock_gen.vhd" "M:\vhdl\clocking mono\tb_clock_gen.vhd"

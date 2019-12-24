@@ -1,0 +1,10 @@
+vhdl work Accum.vhd
+vhdl work AddrDelay.vhd
+vhdl work AddrGen.vhd
+vhdl work CoefRom.vhd
+vhdl work DataDelay.vhd
+vhdl work DelayLine.vhd
+vhdl work FilterStage.vhd
+vhdl work PolyDecFilterPkg.vhd
+vhdl work PolyDecFilter.vhd
+vhdl work SyncDelay.vhd

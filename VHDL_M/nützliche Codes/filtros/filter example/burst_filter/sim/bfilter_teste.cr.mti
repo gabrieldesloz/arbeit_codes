@@ -1,0 +1,46 @@
+S:/gateware/rt131_comentado/rtl/vhdl/burst_filter/bfilter_data_ram.vhd {1 {vcom -work work -2002 -explicit S:/gateware/rt131_comentado/rtl/vhdl/burst_filter/bfilter_data_ram.vhd
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity bfilter_data_ram
+-- Compiling architecture bfilter_data_ram_rtl of bfilter_data_ram
+
+} {} {}} S:/gateware/rt131_comentado/rtl/vhdl/burst_filter/bfilter.vhd {1 {vcom -work work -2002 -explicit {S:\gateware\rt131_comentado\rtl\vhdl\burst_filter\bfilter.vhd}
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_signed
+-- Loading package rl131_constants
+-- Compiling entity bfilter
+-- Compiling architecture bfilter_rtl of bfilter
+-- Loading package numeric_std
+-- Loading package std_logic_unsigned
+-- Loading entity bfilter_data_ram
+
+} {} {}} S:/gateware/rt131_comentado/rtl/vhdl/burst_filter/sim/bfilter_tb.vhd {0 {vcom -work work -2002 -explicit {S:\gateware\rt131_comentado\rtl\vhdl\burst_filter\sim\bfilter_tb.vhd}
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package rl131_constants
+-- Compiling entity bfilter_tb
+-- Compiling architecture bfilter_teste of bfilter_tb
+-- Loading package std_logic_signed
+-- Loading entity bfilter
+** Error: S:\gateware\rt131_comentado\rtl\vhdl\burst_filter\sim\bfilter_tb.vhd(89): (vcom-1136) Unknown identifier "to_signed".
+** Error: S:\gateware\rt131_comentado\rtl\vhdl\burst_filter\sim\bfilter_tb.vhd(89): Type conversion (to std_logic_vector) can not have aggregate operand.
+** Error: S:\gateware\rt131_comentado\rtl\vhdl\burst_filter\sim\bfilter_tb.vhd(111): VHDL Compiler exiting
+
+} {12.0 15.0} {}} S:/gateware/rt131_comentado/rtl/vhdl/rl131_constants.vhd {1 {vcom -work work -2002 -explicit {S:\gateware\rt131_comentado\rtl\vhdl\rl131_constants.vhd}
+Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling package rl131_constants
+
+} {} {}}

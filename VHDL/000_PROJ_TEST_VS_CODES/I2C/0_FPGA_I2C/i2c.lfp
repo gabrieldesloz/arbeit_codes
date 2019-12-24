@@ -1,0 +1,15 @@
+# begin LFP file C:\SANMAK\0_FPGA_I2C\i2c.lfp
+designfile I2C.vhd
+parttype xc3s200-4-ft256
+bus_delimiter 0;
+set_busdelim_onsave 1;
+IO_GROUP "LEDS" IO_GROUP="I2C" ;
+INST "I2C" COLOR=15  ;
+NET "LEDS<7>" IO_GROUP="LEDS"  ;
+NET "LEDS<6>" IO_GROUP="LEDS"  ;
+NET "LEDS<5>" IO_GROUP="LEDS"  ;
+NET "LEDS<4>" IO_GROUP="LEDS"  ;
+NET "LEDS<3>" IO_GROUP="LEDS"  ;
+NET "LEDS<2>" IO_GROUP="LEDS"  ;
+NET "LEDS<1>" IO_GROUP="LEDS"  ;
+NET "LEDS<0>" IO_GROUP="LEDS"  ;

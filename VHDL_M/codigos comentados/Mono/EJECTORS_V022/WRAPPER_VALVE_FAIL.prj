@@ -1,0 +1,5 @@
+vhdl work "ipcore_dir/MEM_512x64.vhd"
+vhdl work "ipcore_dir/MEM_32x32.vhd"
+vhdl work "VALVE_FAIL.vhd"
+vhdl work "FAIL_MEM_CONTROL.vhd"
+vhdl work "WRAPPER_VALVE_FAIL.vhd"

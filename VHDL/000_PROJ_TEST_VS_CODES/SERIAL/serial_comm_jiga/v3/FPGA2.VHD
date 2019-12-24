@@ -1,0 +1,139 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+
+library UNISIM;
+use UNISIM.VComponents.all;
+
+entity FPGA2 is
+
+  port(
+-- fpga comm
+    FPGA2_TX2 : out std_logic;
+    FPGA2_RX2 : in  std_logic;
+
+-- system signals
+    CLK_60MHz_i   : in std_logic;
+    CLK_EN_1MHz_i : in std_logic;
+    RST_i         : in std_logic;
+
+-- testes
+    FRONT_LED_A_i : in std_logic;
+    FRONT_LED_B_i : in std_logic;
+    FRONT_LED_C_i : in std_logic;
+    FRONT_LED_D_i : in std_logic;
+
+    REAR_LED_A_i : in std_logic;
+    REAR_LED_B_i : in std_logic;
+    REAR_LED_C_i : in std_logic;
+    REAR_LED_D_i : in std_logic;
+
+    V_BCKGND_i : in std_logic;
+
+    R2R1_o : out std_logic_vector (7 downto 0);
+    R2R2_o : out std_logic_vector (7 downto 0);
+    R2R3_o : out std_logic_vector (7 downto 0);
+    R2R4_o : out std_logic_vector (7 downto 0);
+
+    EJET_i : in std_logic_vector (31 downto 0);
+
+    EJECTOR_COM_TEST_i : in std_logic;
+    EJECTOR_COM_TEST_o : out std_logic
+    );
+
+end entity;
+
+
+architecture arq of FPGA2 is
+  
+  signal s_send    : std_logic;
+  signal s_sent    : std_logic;
+  signal s_ready   : std_logic;
+  signal s_fail    : std_logic;
+  signal s_tx_data : std_logic_vector(7 downto 0);
+  signal s_rx_data : std_logic_vector(7 downto 0);
+
+begin
+
+
+
+  i_SERIAL_COMMUNICATION : entity work.SERIAL_COMMUNICATION_fpga_2
+    port map(
+      RX_i => FPGA2_RX2,
+
+      TX_DATA_i => s_tx_data,
+      SEND_i    => s_send,
+
+      CLK_60MHz_i   => CLK_60MHz_i,
+      CLK_EN_1MHz_i => CLK_EN_1MHz_i,
+      RST_i         => RST_i,
+
+      TX_o => FPGA2_TX2,
+
+      SENT_o    => s_sent,
+      FAIL_o    => s_fail,
+      READY_o   => s_ready,
+      RX_DATA_o => s_rx_data
+      );
+
+
+  i_SERIAL_COMMANDS : entity work.SERIAL_COMMANDS_fpga_2
+    port map(
+                                        -------------------------------------------------------------------------
+                                        ---------------------------- System signals -----------------------------
+                                        -------------------------------------------------------------------------
+      CLK_60MHZ_i => CLK_60MHz_i,
+      EN_CLK_i    => CLK_EN_1MHz_i,
+
+      RESET_i       => RST_i,
+                                        -------------------------------------------------------------------------
+                                        ------------------------- Serial block signals --------------------------
+                                        -------------------------------------------------------------------------
+                                        -- Serial data (from serial communication block)
+      SERIAL_DATA_i => s_rx_data,
+      SERIAL_DATA_o => s_tx_data,
+
+                                        -- Control signals from Serial communication block 
+      PACKET_SENT_i  => s_sent,
+      PACKET_FAIL_i  => s_fail,
+      PACKET_READY_i => s_ready,
+
+      SEND_PACKET_o => s_send,
+                                        -------------------------------------------------------------------------
+                                        ---------------------- Sorting board test signals -----------------------
+                                        -------------------------------------------------------------------------                               
+                                        -- Front Illumination signals
+      FRONT_LED_A_i => FRONT_LED_A_i,
+      FRONT_LED_B_i => FRONT_LED_B_i,
+      FRONT_LED_C_i => FRONT_LED_C_i,
+      FRONT_LED_D_i => FRONT_LED_D_i,
+
+                                        -- Rear Illumination signals
+      REAR_LED_A_i => REAR_LED_A_i,
+      REAR_LED_B_i => REAR_LED_B_i,
+      REAR_LED_C_i => REAR_LED_C_i,
+      REAR_LED_D_i => REAR_LED_D_i,
+
+                                        -- Background Illumination signals
+      V_BCKGND_i => V_BCKGND_i,
+
+                                        -- R2R Digital-to-Analog outputs to Sorting board CCD inputs
+      R2R1_o => R2R1_o,
+      R2R2_o => R2R2_o,
+      R2R3_o => R2R3_o,
+      R2R4_o => R2R4_o,
+                                        -------------------------------------------------------------------------
+                                        ---------------------- Sorting board test signals -----------------------
+                                        -------------------------------------------------------------------------               
+                                        -- Ejector board
+      EJET_i => EJET_i,
+
+                                        -- Ejector board communication test
+      EJECTOR_COM_TEST_i => EJECTOR_COM_TEST_i,
+      EJECTOR_COM_TEST_o => EJECTOR_COM_TEST_o
+      );
+
+end architecture;

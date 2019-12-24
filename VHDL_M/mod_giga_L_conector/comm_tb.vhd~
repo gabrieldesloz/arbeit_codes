@@ -1,0 +1,187 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.definitions.all;
+
+
+-- teste envio da palavra de status das ejetoras
+--txs
+--ti
+--serst
+--sys_status
+--cx
+
+
+-------------------------------------------------------------------------------
+
+entity comm_tb is
+
+
+end comm_tb;
+
+-------------------------------------------------------------------------------
+
+architecture generic_tb_rtl of comm_tb is
+
+
+  -- component ports
+  -- clock
+  constant CLKZ_PERIOD	 : time := 53 ns;   -- 18.75 MHz
+  -- clock interface microcontrolador
+  constant REQPAC_PERIOD : time := 107 ns;  -- 9.375 MHz
+
+
+-- uut signals
+  signal clkz		: std_logic := '0';
+  signal reqpac_clk	: std_logic := '1';
+  signal reset		: std_logic := '0';
+  signal EJA_CK, EJA_TX : std_logic := '0';
+  signal EJA_RX		: std_logic := '0';
+  signal EJB_CK, EJB_TX : std_logic := '0';
+  signal EJB_RX		: std_logic := '0';
+
+  signal wcom_i			  : std_logic_vector (2 downto 0)  := "101";
+  signal wejt_i			  : std_logic_vector (31 downto 0) := x"A000000A";
+  signal ejatxdata_i, ejbtxdata_i : std_logic_vector (31 downto 0) := x"F000000F";
+  signal ejdt0_o, ejdt1_o	  : ejtype			   := (others => (others => '0'));
+  signal rqpaca			  : std_logic			   := '0';
+  signal rqpacb			  : std_logic			   := '0';
+
+
+  -- word sender signals
+  signal start_send_a : std_logic := '0';
+  signal word_sender  : std_logic := '0';
+
+  
+begin
+
+  serial_sender_eject_1 : entity work.serial_sender_eject
+    port map (
+      clkz_i  => clkz,
+      reset_i => reset,
+      EJA_CK  => EJA_CK,
+      EJA_TX  => EJA_TX,
+      EJA_RX  => EJA_RX, -- recebimento do status da ejetora A
+      EJB_CK  => EJB_CK,
+      EJB_TX  => EJB_TX,
+      EJB_RX  => EJB_RX,
+      ejdt0_o => ejdt0_o,
+      ejdt1_o => ejdt1_o,
+
+      wcom_i	  => wcom_i,
+      wejt_i	  => wejt_i,
+      ejatxdata_i => ejatxdata_i,
+      ejbtxdata_i => ejbtxdata_i,
+      rqpaca_i	  => rqpaca,		-- request a packet
+      rqpacb_i	  => rqpacb);
+
+
+  -- clock generation
+  clkz	     <= not clkz       after CLKZ_PERIOD/2;
+  reqpac_clk <= not reqpac_clk after REQPAC_PERIOD/2;
+
+
+  -- reset generation
+  reset_n_proc : process
+  begin
+    reset <= '1';
+    wait for 10*CLKZ_PERIOD;
+    reset <= '0';
+    wait for 50_000 ms;
+  end process;
+
+
+  reqpacAB_proc : process
+  begin
+    wait until reqpac_clk = '1';
+    rqpaca <= '0';
+    rqpacb <= '0'; 
+    wait for 30*REQPAC_PERIOD;
+    rqpaca <= '1';
+    rqpacb <= '1';
+    wait for 50*REQPAC_PERIOD;
+    rqpaca <= '0';
+    rqpacb <= '0';
+	wait for 2 ms;
+  end process;
+
+
+  serial_receiver_eject_1 : entity work.serial_receiver_eject
+    port map (
+	cx	   => EJA_CK,
+	rx	   => EJA_TX,
+	tx	   => EJA_RX,
+	reset	   => reset,
+	sys_status_i => "111" & x"0000000F", 
+	vdata_o   => open,
+	command_o => open);
+
+
+
+  
+  word_sender_block : block is
+
+    -- word constant
+    constant test_word : std_logic_vector(31 downto 0) := x"700000AA"; -- bit de paridade vai ser preenchido
+    
+  begin	 -- block word_sender_block
+
+    SEND_DATA : process(EJA_CK, reset)
+      variable word_test_1    : std_logic_vector(test_word'range)	:= test_word;
+      variable state_counter  : natural range 0 to 10			:= 0;
+      variable letter_counter : natural range 1 to (word_test_1'length) := 1;
+    begin
+      
+      if reset = '1' then
+	start_send_a   <= '0';
+	state_counter  := 0;
+	letter_counter := 1;
+	word_sender    <= '0';
+	
+      elsif rising_edge(EJA_CK) then
+	-- default
+	word_sender    <= word_test_1(word_test_1'high);
+	start_send_a   <= start_send_a;
+	state_counter  := state_counter;
+	letter_counter := letter_counter;
+
+	case state_counter is
+	  when 0 =>			-- begin
+	    start_send_a   <= '0';
+	    letter_counter := 1;
+	    state_counter  := state_counter + 1;
+
+	  when 1 =>			-- load
+	    
+	    word_test_1	  := test_word;
+	    state_counter := state_counter + 1;
+
+	  when 2 =>			-- OP
+	    --transmit and shift left
+	    start_send_a   <= '1';
+	    word_test_1	   := word_test_1(word_test_1'high-1 downto 0) & '0';
+	    letter_counter := letter_counter + 1;
+	    if letter_counter = word_test_1'length then
+	      state_counter := state_counter + 1;
+	    end if;
+
+	  when 3 =>			-- END
+	    
+	    state_counter := 0;
+
+	  when others => null;
+			 
+	end case;
+      end if;
+    end process SEND_DATA;
+
+  end block word_sender_block;
+
+
+
+
+
+end generic_tb_rtl;
+
+

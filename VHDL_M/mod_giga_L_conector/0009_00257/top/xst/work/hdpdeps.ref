@@ -1,0 +1,54 @@
+V3 29
+FL //smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/reset_generator.vhd 2014/08/06.13:58:41 P.15xf
+EN work/reset_generator 1412345797 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/reset_generator.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/reset_generator/rtl 1412345798 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/0009_00257/top/reset_generator.vhd \
+      EN work/reset_generator 1412345797
+FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd 2014/10/03.11:16:15 P.15xf
+EN work/comm_top 1412345802 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629 PH work/my_types_pkg 1412345799
+AR work/comm_top/ARQ 1412345803 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/comm_top.vhd \
+      EN work/comm_top 1412345802 CP OFDDRCPE CP work/mux CP DCM CP BUFG \
+      CP work/reset_generator CP work/EJ_SERIAL_MASTER CP work/EJ_SERIAL_SLAVE
+FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd 2014/09/26.14:10:43 P.15xf
+PH work/my_types_pkg 1412345799 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd \
+      PB ieee/std_logic_1164 1335251622
+EN work/EJ_SERIAL_MASTER 1412345791 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 PH work/my_types_pkg 1412345799
+AR work/EJ_SERIAL_MASTER/Behavioral 1412345792 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_MASTER_jiga.vhd \
+      EN work/EJ_SERIAL_MASTER 1412345791
+FL "//smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora - v2 .vhd" 2014/10/03.10:08:44 P.15xf
+FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd 2014/10/03.11:15:30 P.15xf
+EN work/EJ_SERIAL_SLAVE 1412345800 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 PH work/my_types_pkg 1412345799 \
+      LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/EJ_SERIAL_SLAVE/Behavioral 1412345801 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/EJ_SERIAL_SLAVE_ejetora.vhd \
+      EN work/EJ_SERIAL_SLAVE 1412345800 CP BUFG
+FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd 2014/10/02.11:34:15 P.15xf
+EN work/mux 1412345795 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/mux/ARQ 1412345796 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/mux.vhd EN work/mux 1412345795 \
+      CP work/packet_detect
+FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd 2014/10/02.13:03:57 P.15xf
+EN work/packet_detect 1412345793 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/packet_detect/ARQ 1412345794 \
+      FL //smkn33/s10169/vhdl/mod_giga_L_conector/testing/packet_detect.vhd \
+      EN work/packet_detect 1412345793

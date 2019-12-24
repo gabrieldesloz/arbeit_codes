@@ -1,0 +1,76 @@
+
+"formato "
+|validity (4)|   overflow (1)   |  OutOfRange (1)  | badReference (1) | Oscillatory (1) | failure (1) | oldData (1) | inconsistent (1)  | source (2) | test (1) | operatorBlocked (1)
+    14,13,12,11       10              9                  8                  7                 6           5               4                 3,2               1        
+
+linux terá que carregar as configurações da qualidade no inicio
+A qualidade de ser good, invalid, reserved, failure
+
+
+
+Pio linux com badReference e failure
+8 registradores com 32 bits para cada placa (-> Pio Linux)
+--("OR" OFFSET e  Ganho no Gain Registers) E (valor in Gain registers > abs(29458)) --> overflow --> invalid
+-antes Sample Adjust: (Valor de tensão maior que 10938) OR (Valor de corrente maior que 4320) --> outOfRange --> Questionable
+(valor in Gain registers > abs(29458)) OR (overflow phase sum)
+ítem b: valor de pico (*sqrt(2))
+modo overflow dento do componente phase_sum 
+  
+Modulo Quality
+entrada dos vetores de cada etapa setam flags que serão verificadas pela maquina de estados
+Maquina de estados que aceitará  os as requisições data_ready de cada módulo
+cada estado fará uma verificação
+
+
+Registrador/memoria de acesso comum a 8 registradores de 32 bits
+linux precisa ler/escrever nestes registradores
+gateware precisa escrever nestes registradores 
+junção através de um "or" - fora do componente
+ver o que significa cada posição de bit - ok 
+será "empacotado" em cada SV um vetor de 32 bits com a informação de qualidade
+a interface enviara um wait request para não haver escrita nem leitura simultaneamente
+memoria dual ram
+estabelecer um controlador ...:
+não pode ler durante a escrita em um mesmo endereço
+entradas e saídas
+
+
+
+Módulos
+
+módulo interface
+módulo interface_control
+		sinal waitrequest
+módulo ""or""
+módulo fsm
+modulo_exit_proc
+quality_insert (antigo modulo quality)
+
+
+
+top - entradas/saidas (para cada placa, sinal)
+     data_out( --> vetor qualidade para modulo quality_insert ) - vetor 32 bits
+
+	entradas/saidas fsm
+		extDataReady
+		outGainRegister
+		inGainRegister
+		offset(gain_register)
+		gain(gain_register)
+		phaseSumreg
+		DataReady
+
+
+	entradas saidas modulo "or"
+		saidas fsm
+		entradas registrador linux
+
+
+	saidas
+
+----------------------------------------------	
+	
+	
+	
+
+

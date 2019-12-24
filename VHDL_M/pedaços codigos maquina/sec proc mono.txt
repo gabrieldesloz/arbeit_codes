@@ -1,0 +1,857 @@
+process(clkaq,reset,canincfifoline,s_triggenda,s_triggendb, s_ext_mux) -- 56.25MHz
+   begin
+	  if (reset='1') or (canincfifoline='1') then
+	    sortst<="0000000000000000000000000001";
+	    flagea<=X"00000000";
+	    flageb<=X"00000000";
+	    flagxa<=X"00000000";
+	    flagxb<=X"00000000";			
+
+		 pox<=(others=>'0');
+		 clkbd<='0';
+	    extclrd<='0';
+	    clrellia<='0';
+	    clrellib<='0';
+		 ellclka<='0';
+		 ellclkb<='0';
+       clkbellip<='0';
+	    inx<="000";
+	    extclrf<='0';
+		 extclrag <= '0';
+       extevent_flagf<='0';
+		 wdefena<='0';
+		 wdefenb<='0';
+		 ejeta<="00000";
+		 nejeta<="00000";
+		 ejetb<="00000";
+		 nejetb<="00000";
+		 clkbf<='0';
+		 trigmema<=X"00000000";
+		 trigmemb<=X"00000000";
+
+		---------------------------------------------------------------------
+		--------------------- SRAM interface controller ---------------------
+		---------------------------------------------------------------------
+		if reset = '1' then
+			s_reading_sram_active <= '0';
+			s_sram_read <= '0';
+			s_sram_written <= '0';
+			s_writing_sram_active <= '0';
+			s_sram_line <= (others => '0');
+			s_release_line_inc_counter <= '0';
+
+		---------------------------------------------------------------------
+		-------------------- Multiple ejection supressor --------------------
+		---------------------------------------------------------------------
+		  s_has_grain_A <= (others=>'0');
+		  s_has_grain_B <= (others=>'0');
+		  s_was_trigmema <= '0';
+		  s_was_trigmemb <= '0';
+		  
+		---------------------------------------------------------------------
+		end if;
+
+		shot_1a<="000";
+		shot_2a<="000";
+		shot_3a<="000";
+		shot_4a<="000";
+		shot_5a<="000";
+		shot_6a<="000";
+		shot_7a<="000";
+		shot_1b<="000";
+		shot_2b<="000";
+		shot_3b<="000";
+		shot_4b<="000";
+		shot_5b<="000";
+		shot_6b<="000";
+		shot_7b<="000";
+		
+      inside_ellip_r_Am<='0';
+		inside_ellip_r_Bm<='0';
+		inside_ellip_Am<='0';
+		inside_ellip_Bm<='0';
+		rcont_bg_set_Am<='0';
+		rcont_bg_set_Bm<='0';
+		
+		 
+-- Auto-Grab Table
+
+		s_cansum <= '0';
+		
+	  elsif rising_edge(clkaq) then -- this will run for 256*12*3 clock cycles
+-- defaults	  
+			
+	    extclrd<='0';
+       wendota(0)<='0';
+       wendotb(0)<='0';
+	    clrellia<='0';
+	    clrellib<='0';
+		 ellclka<='0';
+		 ellclkb<='0';
+       clkbellip<='0';
+	    extclrf<='0';
+		 extclrag <= '0';
+		 wdefena<='0';
+		 wdefenb<='0';
+		 clkbf<='0';
+		 clkbd<='0';
+		 debadd<='0'; 
+		 
+		---------------------------------------------------------------------
+		--------------------- SRAM interface controller ---------------------
+		---------------------------------------------------------------------
+		s_sram_read <= '0'; 		-- Assures this flag will be active for only 1 cycle
+		s_sram_written <= '0';
+		
+		LED2 <= not(s_writing_sram);
+		---------------------------------------------------------------------
+		 
+-- the CASE -----------------------------		 
+      case sortst is
+--  1 ----------------------------------------------------------------------------------------	step 3 at main machine		  
+		  when "0000000000000000000000000001" => sortst<="0000000000000000000000000010";
+			  if (trigga='1') or (triggar='1') then 
+					trigmema(CONV_INTEGER(ejeta))<='1'; 
+			  end if;
+			  
+			  if (triggb='1') or (triggbr='1') then 
+					trigmemb(CONV_INTEGER(ejetb))<='1'; 
+			  end if;
+
+            oldflagxa <= flagxa(CONV_INTEGER(ejeta));
+            oldflagxb <= flagxb(CONV_INTEGER(ejetb));
+				
+		      inx<="001";
+         	ejeta <= tabejeta(CONV_INTEGER(pox)); -- get ejector number according to pixel
+				nejeta <= tabejeta(CONV_INTEGER(npox));
+				ejetb <= tabejetb(CONV_INTEGER(pox)); -- get ejector number according to pixel
+				nejetb <= tabejetb(CONV_INTEGER(npox));
+				
+         -- Line FIFO sorting read
+			   clkbf<='1';  -- read B side of FIFO
+				
+			-- Async Auto-Gain external access control
+			  if exteventag_req='1' then exteventag_flag<='1'; end if;
+			  
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram = '1' then													-- If writing on the SRAM memory
+				MWR <= '0';																		-- Set write to '0' (NOT logic)
+				MCS <= '0';																		-- Wake memory
+				MOE <= '1';  																	-- Disable outputs ('Z')
+				s_sram_sector <= "000";														-- Set first sector to be recorded
+				s_sram_input_data <= s_ramdata_0;										-- Set first word to be written on the memory
+				if pox = "00000000" then													-- Only if the current pixel is pixel 0
+					s_writing_sram_active <= '1';											-- Flag to assure the FPGA will set all the flags and start the writing
+				end if;
+																									-- process here
+			else
+				MOE <= '0';  																	-- Enable outputs ('Z')
+				MWR <= '1';																		-- Set write to '0' (NOT logic)
+				s_sram_rd_addr <= s_sram_int_rd_addr;									--	Get reading address from X"F1" command
+				if s_reading_sram = '1' then												-- If interface is reading
+					MCS <= '0';																	-- Set Output enable to '0', memory enabled (NOT logic)
+					s_reading_sram_active <= '1';											-- Flag to assure the FPGA will set all the flags and start the reading
+																									-- process here
+				else																				-- If not reading or writing
+					MCS <= '1';																	-- Set Output enable to '1', memory disabled (NOT logic)
+				end if;
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+								
+--  2 ---------------------------------------------------------------------------------------- read POX indexed data			  
+		  when "0000000000000000000000000010" => sortst<="0000000000000000000000000100";
+
+            reflecta<= data_raf(15 downto 8); -- Front CCD, reflectance (Front illumination) CHUTE A (rear camera is 7 downto 0)
+	         transluca<= data_rar(15 downto 8); -- Front CCD, translucence (Rear illumination)
+            reflectb<= data_rbf(15 downto 8); -- Front CCD, reflectance (Front illumination) CHUTE B
+	         translucb<= data_rbr(15 downto 8); -- Front CCD, translucence (Rear illumination)
+				
+            reflectar<= data_raf_camrear(7 downto 0); -- Front CCD, reflectance (Front illumination) CHUTE A (rear camera is 7 downto 0)
+	         translucar<= data_rar(7 downto 0); -- Front CCD, translucence (Rear illumination)
+            reflectbr<= data_rbf_camrear(7 downto 0); -- Front CCD, reflectance (Front illumination) CHUTE B
+	         translucbr<= data_rbr(7 downto 0); -- Front CCD, translucence (Rear illumination)
+
+				if conf(6) = '1' then
+					bkgndfa<=data_rab(15 downto 8); -- front ccd 
+					bkgndfar<=data_rab_rear(7 downto 0); -- front ccd 
+				else
+					bkgndfa<=X"7F";
+					bkgndfar<=X"7F";
+				end if;
+				
+				if conf(7) = '1' then
+					bkgndfb<=data_rbb(15 downto 8); -- front ccd
+					bkgndfbr<=data_rbb_rear(7 downto 0); -- front ccd
+				else
+					bkgndfb<=X"7F";
+					bkgndfbr<=X"7F";
+				end if;
+				
+				
+--  3 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000000000000100" => sortst<="0000000000000000000000001000";
+		  
+			---------------------------------------------------------------------
+			-------------------- Multiple ejection supressor --------------------
+			---------------------------------------------------------------------
+			  if (trigga='1') or (triggar='1') then 
+					s_has_grain_A(CONV_INTEGER(ejeta)) <= '1';
+			  end if;
+			  
+			  if (triggb='1') or (triggbr='1') then 
+					s_has_grain_B(CONV_INTEGER(ejetb)) <= '1';
+			  end if;
+			---------------------------------------------------------------------
+		  
+			-- Async Auto-Gain external access control
+			if exteventag_flag='1' then
+				case s_ext_mux is
+				
+				-- Gain
+					when "000" => extdatareadag <= s_illum_a(63 downto 48);	-- Side A, Front Cam, Reflectance ACC 
+					when "001" => extdatareadag <= s_illum_a(31 downto 16);	-- Side A, Front Cam, Transluscence ACC
+					when "010" => extdatareadag <= s_illum_a(47 downto 32);	-- Side A, Rear Cam, Reflectance ACC2
+					when "011" => extdatareadag <= s_illum_a(15 downto 0);	-- Side A, Rear Cam, Transluscence ACC2
+					when "100" => extdatareadag <= s_illum_b(63 downto 48);	-- Side B, Front Cam, Reflectance ACCB
+					when "101" => extdatareadag <= s_illum_b(31 downto 16);	-- Side B, Front Cam, Transluscence ACCB
+					when "110" => extdatareadag <= s_illum_b(47 downto 32);	-- Side B, Rear Cam, Reflectance ACC2B
+					when "111" => extdatareadag <= s_illum_b(15 downto 0); 	-- Side B, Rear Cam, Transluscence ACC2B
+
+					when others =>
+				end case;
+			end if;
+				
+        entriga <= (trigga or (trigmema(CONV_INTEGER(ejeta)))) and s_en_ej_a and (not s_floor);
+	     entrigb <= (triggb or (trigmemb(CONV_INTEGER(ejetb)))) and s_en_ej_b and (not s_floor);
+		  
+        entrigar <= (triggar or (trigmema(CONV_INTEGER(ejeta)))) and s_en_ej_a and (not s_floor);
+	     entrigbr <= (triggbr or (trigmemb(CONV_INTEGER(ejetb)))) and s_en_ej_b and (not s_floor);
+				
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then					-- If writing on the SRAM memory
+				s_sram_sector <= "001";								-- Set second sector to be recorded
+				if (((trigga = '1') or (triggar = '1')) and (s_grab_a_or_b = '0')) or 
+					(((triggb = '1') or (triggbr = '1')) and (s_grab_a_or_b = '1')) then -- If there is a presence detected
+					s_release_line_inc_counter <= '1';			-- Release line incrementation
+				end if;
+			else
+				if s_reading_sram_active = '1' then				-- Flag that assures the FPGA is reading everything correct	
+					s_sram_output_data <= MDATA;					-- Read memory output data
+					s_sram_read <= '1';								-- Clear s_reading_sram flag (command X"F1")
+					s_reading_sram_active <= '0';					-- Set reading active flag to '0'
+				end if;
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+				
+--  4 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000000000001000" => sortst<="0000000000000000000000010000";
+           clkbd<='0';
+			  
+			 -- Mean 16K
+			  s_cansum <= s_has_new;
+				
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_input_data <= s_ramdata_1;		-- Set second word to be written on the memory
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			  
+----------------------------------------------------------------------------------------------
+--  5 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000000000010000" => sortst<="0000000000000000000000100000";
+         -- handle clearing of defect counter structure at last pixel of current ejector
+			
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			s_was_trigmema <= trigmema(CONV_INTEGER(ejeta)) or trigga or triggar;
+			s_was_trigmemb <= trigmemb(CONV_INTEGER(ejetb)) or triggb or triggbr;
+			---------------------------------------------------------------------
+
+			  if (((ejeta/=nejeta) and (s_triggenda='1')) or (pox = pixenda)) then --pox>pixstarta) then --and (pox<pixenda) then -- means it is the last pixel of the current ejector
+				  
+				  trigmema(CONV_INTEGER(ejeta))<='0';	-- is the last pixel of the channel so reset trigger memory
+			     if (trigmema(CONV_INTEGER(ejeta))='0' and (entriga='0' and entrigar='0')) or (oldflagxa='0' and entriga='0') or (oldflagxa='0' and entrigar='0') then 
+				     flagea(CONV_INTEGER(ejeta))<='1'; -- must clear the defect counter
+				  else
+					  flagea(CONV_INTEGER(ejeta))<='0'; -- still have a trigger so keep counter counting
+				  end if;	  
+			  end if;
+			  
+			  if (((ejetb/=nejetb) and (s_triggendb='1')) or (pox = pixendb)) then --(pox>pixstartb) then -- and (pox<pixendb) then -- means it is the last pixel of the current ejector
+			  
+				  trigmemb(CONV_INTEGER(ejetb))<='0';	-- is the last pixel of the channel so reset trigger memory
+			     if (trigmemb(CONV_INTEGER(ejetb))='0') or (oldflagxb='0' and entrigb='0') or (oldflagxb='0' and entrigbr='0') then 
+				     flageb(CONV_INTEGER(ejetb))<='1'; -- must clear the defect counter
+				  else
+					  flageb(CONV_INTEGER(ejetb))<='0'; -- still have a trigger so keep counter counting
+				  end if;	  
+			  end if;
+				
+--------------
+           clkbellip<='1'; -- read ellipse with INX 
+				
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_sector <= "010";						-- Set third sector to be recorded
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+				
+--  6 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000000000100000" => sortst<="0000000000000000000001000000";
+         -- sorting tree -------------------------------------------------------------------------------------------		
+			
+		  if (sort_case_a(6 downto 5)/="00") and (sort_case_a(4)='0') and (sort_case_a(3 downto 2)/="00") then flagxa(CONV_INTEGER(ejeta))<='1'; end if;
+		  if (sort_case_b(6 downto 5)/="00") and (sort_case_b(4)='0') and (sort_case_b(3 downto 2)/="00") then flagxb(CONV_INTEGER(ejetb))<='1'; end if;
+
+		  shot_1a <= s_SHOT_X_A;
+		  wconta <= s_WCONTA;
+
+        shot_1b <= s_SHOT_X_B;
+		  wcontb <= s_WCONTB;
+		  
+			  
+		     wdefena<='1'; wdefenb<='1';
+			  
+			 -- Mean 16K
+			  s_cansum <= '0';
+			  
+			-- ellipse memory ext access
+			  if extellia='1' then ellclka<='1'; clrellia<='1'; end if;
+			  if extellib='1' then ellclkb<='1'; clrellib<='1'; end if;
+--			-- dot memory
+           clkbd<='0';
+				
+-- debug	information -----------------------------------------------		  
+			  deb_trans<=rconta;
+			  deb_refle<= flagea(CONV_INTEGER(ejeta)) & "00" & ejeta;
+			  deb_reflec<=reflecta;
+			  deb_y1<=ellipay1;
+			  deb_y2<=ellipay2;
+			  inside_ellip_r_Am<=inside_ellip_r_A;
+			  inside_ellip_r_Bm<=inside_ellip_r_B;
+			  inside_ellip_Am<=inside_ellip_A;
+			  inside_ellip_Bm<=inside_ellip_B;
+			  rcont_bg_set_Am <= rcont_bg_set_A;
+			  rcont_bg_set_Bm <= rcont_bg_set_B;
+			  
+			  deb_transb<=rcontb;
+			  deb_refleb<= flageb(CONV_INTEGER(ejetb)) & "00" & ejetb;
+			  deb_reflecb<=reflectb;
+			  deb_y1b<=ellipby1;
+			  deb_y2b<=ellipby2;
+				
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_input_data <= s_ramdata_2;		-- Set third word to be written on the memory
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			
+--  7 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000000001000000" => sortst<="0000000000000000000010000000";
+			  inx<="010";
+				
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_sector <= "011";						-- Set fourth sector to be recorded
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			
+----------------------------------------------------------------------------------------------
+--  8 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000000010000000" => sortst<="0000000000000000000100000000";
+           clkbellip<='1'; -- read ellipse with INX (combinatorial logic is now comparing values)
+			  
+			  -- dot trigger
+			  if trigga='1'   then dotfla<='1';  dotconta<=dotconta+1; else dotfla<='0'; end if;
+			  if triggb='1'   then dotflb<='1';  dotcontb<=dotcontb+1; else dotflb<='0'; end if;
+			  if triggar='1'  then dotflra<='1';  dotcontra<=dotcontra+1; else dotflra<='0'; end if;
+			  if triggbr='1'  then dotflrb<='1';  dotcontrb<=dotcontrb+1; else dotflrb<='0'; end if;
+			  if extra(0)='1' then dotfla<='1'; dotconta<=dotconta+1; end if; -- force write to clear the dot memory
+			  if extra(0)='1' then dotflra<='1'; dotcontra<=dotcontra+1; end if; -- force write to clear the dot memory
+			  if extra(1)='1' then dotflb<='1'; dotcontb<=dotcontb+1; end if;
+			  if extra(1)='1' then dotflrb<='1'; dotcontrb<=dotcontrb+1; end if;
+
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_input_data <= s_ramdata_3;		-- Set fourth word to be written on the memory
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+
+--  9 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000000100000000" => sortst<="0000000000000000001000000000";
+         -- sorting tree -------------------------------------------------------------------------------------------		  
+		  if (sort_case_a(6 downto 5)/="00") and (sort_case_a(4)='0') and (sort_case_a(3 downto 2)/="00") then flagxa(CONV_INTEGER(ejeta))<='1'; end if;
+		  if (sort_case_b(6 downto 5)/="00") and (sort_case_b(4)='0') and (sort_case_b(3 downto 2)/="00") then flagxb(CONV_INTEGER(ejetb))<='1'; end if;
+
+		  shot_2a <= s_SHOT_X_A;
+		  wconta <= s_WCONTA;
+
+        shot_2b <= s_SHOT_X_B;
+		  wcontb <= s_WCONTB;
+			  
+		     wdefena<='1'; wdefenb<='1';
+			-- DOT memory rear
+			  addrdotwa<="000"&dotcontra;
+			  addrdotwb<="000"&dotcontrb; 
+			  if extra(0)='1' then  data_dwa<=X"FFFE"; else data_dwa<=translucar & reflectar; end if;
+			  if extra(1)='1' then  data_dwb<=X"FFFE"; else data_dwb<=translucbr & reflectbr; end if;
+			-- ellipse memory ext access
+			  if extellia='1' then ellclka<='1'; clrellia<='1'; end if;
+			  if extellib='1' then ellclkb<='1'; clrellib<='1'; end if;
+			  
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_sector <= "100";						-- Set fifth sector to be recorded
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+
+-- 10 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000001000000000" => sortst<="0000000000000000010000000000";
+			  inx<="011";
+			-- DOT memory
+			  if dotflra='1' then wendota(0)<='1'; end if;
+			  if dotflrb='1' then wendotb(0)<='1'; end if;
+				
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_input_data <= s_ramdata_4;		-- Set fifth word to be written on the memory
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+				
+----------------------------------------------------------------------------------------------
+-- 11 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000010000000000" => sortst<="0000000000000000100000000000";
+           clkbellip<='1'; -- read ellipse with INX (combinatorial logic is now comparing values)
+			-- DOT memory front
+			  addrdotwa<="001"&dotconta;
+			  addrdotwb<="001"&dotcontb;
+			  if extra(0)='1' then  data_dwa<=X"FFFE"; else data_dwa<=transluca & reflecta; end if;
+			  if extra(1)='1' then  data_dwb<=X"FFFE"; else data_dwb<=translucb & reflectb; end if;
+
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_sector <= "101";						-- Set sixth sector to be recorded
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+
+-- 12 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000000100000000000" => sortst<="0000000000000001000000000000";
+         -- sorting tree -------------------------------------------------------------------------------------------		  
+		  if (sort_case_a(6 downto 5)/="00") and (sort_case_a(4)='0') and (sort_case_a(3 downto 2)/="00") then flagxa(CONV_INTEGER(ejeta))<='1'; end if;
+		  if (sort_case_b(6 downto 5)/="00") and (sort_case_b(4)='0') and (sort_case_b(3 downto 2)/="00") then flagxb(CONV_INTEGER(ejetb))<='1'; end if;
+
+		  shot_3a <= s_SHOT_X_A;
+		  wconta <= s_WCONTA;
+
+        shot_3b <= s_SHOT_X_B;
+		  wcontb <= s_WCONTB;
+			  
+		     wdefena<='1'; wdefenb<='1';
+			-- DOT memory
+			  if dotfla='1' then wendota(0)<='1'; end if;
+			  if dotflb='1' then wendotb(0)<='1'; end if;
+			-- ellipse memory ext access
+			  if extellia='1' then ellclka<='1'; clrellia<='1'; end if;
+			  if extellib='1' then ellclkb<='1'; clrellib<='1'; end if;	
+			  
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_input_data <= s_ramdata_5;		-- Set sixth word to be written on the memory
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+
+-- 13 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000001000000000000" => sortst<="0000000000000010000000000000";
+			  inx<="100";
+
+-- debug
+			   
+			  if extra(0)='1' then addrdotwa<="010"& pox; else addrdotwa<="010"&deb_reflec; end if;
+			  if extra(0)='1' then data_dwa<=X"0000"; else data_dwa<=deb_y1 & deb_y2; end if;
+
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_sector <= "110";						-- Set seventh sector to be recorded
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+-- 14 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000010000000000000" => sortst<="0000000000000100000000000000";
+           clkbellip<='1'; -- read ellipse with INX (combinatorial logic is now comparing values)
+-- debug
+			  if dotfla='1' then wendota(0)<='1'; end if;
+			  
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_input_data <= s_ramdata_6;		-- Set seventh word to be written on the memory
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			  
+-- 15 ----------------------------------------------------------------------------------------			  
+		  when "0000000000000100000000000000" => sortst<="0000000000001000000000000000";
+         -- sorting tree -------------------------------------------------------------------------------------------		  
+		  if (sort_case_a(6 downto 5)/="00") and (sort_case_a(4)='0') and (sort_case_a(3 downto 2)/="00") then flagxa(CONV_INTEGER(ejeta))<='1'; end if;
+		  if (sort_case_b(6 downto 5)/="00") and (sort_case_b(4)='0') and (sort_case_b(3 downto 2)/="00") then flagxb(CONV_INTEGER(ejetb))<='1'; end if;
+
+		  shot_4a <= s_SHOT_X_A;
+		  wconta <= s_WCONTA;
+
+        shot_4b <= s_SHOT_X_B;
+		  wcontb <= s_WCONTB;
+		  
+		     wdefena<='1'; wdefenb<='1';
+			  
+-- debug
+			  if extra(0)='1' then addrdotwa<="011"& pox; else addrdotwa<="011"&dotconta; end if;
+			  if extra(0)='1' then data_dwa<=X"0000"; else data_dwa<=deb_trans & deb_refle; end if;
+
+			-- ellipse memory ext access
+			  if extellia='1' then ellclka<='1'; clrellia<='1'; end if;
+			  if extellib='1' then ellclkb<='1'; clrellib<='1'; end if;
+			  
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_sector <= "111";						-- Set eighth sector to be recorded
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			  
+-- 16 ----------------------------------------------------------------------------------------			  
+		  when "0000000000001000000000000000" => sortst<="0000000000010000000000000000";
+			  inx<="101";
+			  
+-- debug
+			  if dotfla='1' then wendota(0)<='1'; end if;
+				
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if s_writing_sram_active = '1' then			-- If writing on the SRAM memory
+				s_sram_input_data <= s_ramdata_7;		-- Set eighth word to be written on the memory
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+				
+----------------------------------------------------------------------------------------------
+-- 17 ----------------------------------------------------------------------------------------			  
+		  when "0000000000010000000000000000" => sortst<="0000000000100000000000000000";
+           clkbellip<='1'; -- read ellipse with INX (combinatorial logic is now comparing values)
+				
+-- debug
+			   
+			  if extra(0)='1' then addrdotwa<="110"& pox; else addrdotwa<="110"&deb_reflecb; end if; -- save side B data on DOT_A area for debug
+			  if extra(0)='1' then data_dwa<=X"0000"; else data_dwa<=deb_y1b & deb_y2b; end if;
+
+								
+-- 18 ----------------------------------------------------------------------------------------			  
+		  when "0000000000100000000000000000" => sortst<="0000000001000000000000000000";
+-- debug
+			  if dotflb='1' then wendota(0)<='1'; end if;
+         -- sorting tree -------------------------------------------------------------------------------------------		  
+		  if (sort_case_a(6 downto 5)/="00") and (sort_case_a(4)='0') and (sort_case_a(3 downto 2)/="00") then flagxa(CONV_INTEGER(ejeta))<='1'; end if;
+		  if (sort_case_b(6 downto 5)/="00") and (sort_case_b(4)='0') and (sort_case_b(3 downto 2)/="00") then flagxb(CONV_INTEGER(ejetb))<='1'; end if;
+
+		  shot_5a <= s_SHOT_X_A;
+		  wconta <= s_WCONTA;
+
+        shot_5b <= s_SHOT_X_B;
+		  wcontb <= s_WCONTB;
+
+		     wdefena<='1'; wdefenb<='1';
+
+			-- ellipse memory ext access
+			  if extellia='1' then ellclka<='1'; clrellia<='1'; end if;
+			  if extellib='1' then ellclkb<='1'; clrellib<='1'; end if;
+
+-- 19 ----------------------------------------------------------------------------------------			  
+		  when "0000000001000000000000000000" => sortst<="0000000010000000000000000000";
+			  inx<="110";
+-- debug
+			  if extra(0)='1' then addrdotwa<="111"& pox; else addrdotwa<="111"&dotcontb; end if; -- save side B data on DOT_A area for debug
+			  if extra(0)='1' then data_dwa<=X"0000"; else data_dwa<=deb_transb & deb_refleb; end if;
+
+----------------------------------------------------------------------------------------------
+-- 20 ----------------------------------------------------------------------------------------			  
+		  when "0000000010000000000000000000" => sortst<="0000000100000000000000000000";
+           clkbellip<='1'; -- read ellipse with INX (combinatorial logic is now comparing values)
+-- debug
+			  if dotflb='1' then wendota(0)<='1'; end if;
+
+-- 21 ----------------------------------------------------------------------------------------			  
+		  when "0000000100000000000000000000" => sortst<="0000001000000000000000000000";
+         -- sorting tree -------------------------------------------------------------------------------------------		  
+		  if (sort_case_a(6 downto 5)/="00") and (sort_case_a(4)='0') and (sort_case_a(3 downto 2)/="00") then flagxa(CONV_INTEGER(ejeta))<='1'; end if;
+		  if (sort_case_b(6 downto 5)/="00") and (sort_case_b(4)='0') and (sort_case_b(3 downto 2)/="00") then flagxb(CONV_INTEGER(ejetb))<='1'; end if;
+
+		  shot_6a <= s_SHOT_X_A;
+		  wconta <= s_WCONTA;
+
+        shot_6b <= s_SHOT_X_B;
+		  wcontb <= s_WCONTB;
+
+		     wdefena<='1'; wdefenb<='1';
+			  
+			-- ellipse memory ext access
+			  if extellia='1' then ellclka<='1'; clrellia<='1'; end if;
+			  if extellib='1' then ellclkb<='1'; clrellib<='1'; end if;
+				
+-- 22 ----------------------------------------------------------------------------------------			  
+		  when "0000001000000000000000000000" => sortst<="0000010000000000000000000000";
+			  inx<="111";
+			  
+         -- FIFO ext access -- peak v2
+			  if extevent_reqf='1' then extevent_flagf<='1'; end if; -- peak v2
+			  
+         -- DOT memory				
+			  if extevent_reqd='1' then extevent_flagd<='1'; end if; -- this flag is tested at main machine
+			  
+----------------------------------------------------------------------------------------------
+-- 23 ----------------------------------------------------------------------------------------			  
+		  when "0000010000000000000000000000" => sortst<="0000100000000000000000000000";
+           clkbellip<='1'; -- read ellipse with INX (combinatorial logic is now comparing values)
+
+-- 24 ----------------------------------------------------------------------------------------			  
+		  when "0000100000000000000000000000" => sortst<="0001000000000000000000000000";
+         -- sorting tree -------------------------------------------------------------------------------------------		  
+		  if (sort_case_a(6 downto 5)/="00") and (sort_case_a(4)='0') and (sort_case_a(3 downto 2)/="00") then flagxa(CONV_INTEGER(ejeta))<='1'; end if;
+		  if (sort_case_b(6 downto 5)/="00") and (sort_case_b(4)='0') and (sort_case_b(3 downto 2)/="00") then flagxb(CONV_INTEGER(ejetb))<='1'; end if;
+
+		  shot_7a <= s_SHOT_X_A;
+		  wconta <= s_WCONTA;
+
+        shot_7b <= s_SHOT_X_B;
+		  wcontb <= s_WCONTB;
+
+		     wdefena<='1'; wdefenb<='1';
+			  
+         -- Line FIFO ext access read -- peak v2
+			  clkbf<='1';  -- read B side of FIFO 
+			  
+			-- DOT memory
+			  clkbd<='1';
+			  
+			-- ellipse memory ext access
+			  if extellia='1' then ellclka<='1'; clrellia<='1'; end if;
+			  if extellib='1' then ellclkb<='1'; clrellib<='1'; end if;
+			  
+-- 25 ----------------------------------------------------------------------------------------			  
+		  when "0001000000000000000000000000" => sortst<="0010000000000000000000000000";
+			  inx<="000";
+			  
+			  sorta(CONV_INTEGER(ejeta))<= shot_1a or shot_2a or shot_3a or shot_4a or shot_5a or shot_6a or shot_7a;
+			  sortb(CONV_INTEGER(ejetb))<= shot_1b or shot_2b or shot_3b or shot_4b or shot_5b or shot_6b or shot_7b;
+				
+         -- FIFO ext access -- peak v2
+			  if extevent_flagf='1' then
+--					if conf(3) = '1' then -- o jumper era usado para verificar a media
+						  case extpartf is
+							 when "000" => extdatareadf <= data_rab(15 downto 8) & data_rab_rear(7 downto 0); -- background chute A
+							 when "001" => extdatareadf <= data_rar; -- rear chute A
+							 when "010" => extdatareadf <= data_raf(15 downto 8) & data_raf_camrear(7 downto 0); -- front chute A
+							 when "011" => extdatareadf <= X"0505"; -- never accessed.. just in case it reads this cosntant 
+							 when "100" => extdatareadf <= data_rbb(15 downto 8) & data_rbb_rear(7 downto 0); -- background chute B
+							 when "101" => extdatareadf <= data_rbr; -- rear chute B
+							 when "110" => extdatareadf <= data_rbf(15 downto 8) & data_rbf_camrear(7 downto 0); -- front chute B
+							 when "111" => extdatareadf <= X"1234"; -- never accessed.. just in case it reads this cosntant 
+							 when others => 
+						  end case;
+--					else
+--						  case extpartf is
+--							 when "000" => extdatareadf <= data_rab(15 downto 8) & data_rab_rear(7 downto 0); -- background chute A
+--							 when "001" => extdatareadf <= s_illum_a(29 downto 22) & s_illum_a(13 downto 6); -- rear chute A
+--							 when "010" => extdatareadf <= s_illum_a(61 downto 54) & s_illum_a(45 downto 38); -- front chute A
+--							 when "011" => extdatareadf <= X"0505"; -- never accessed.. just in case it reads this cosntant 
+--							 when "100" => extdatareadf <= data_rbb(15 downto 8) & data_rbb_rear(7 downto 0); -- background chute B
+--							 when "101" => extdatareadf <= s_illum_b(29 downto 22) & s_illum_b(13 downto 6); -- rear chute B
+--							 when "110" => extdatareadf <= s_illum_b(61 downto 54) & s_illum_b(45 downto 38); -- front chute B
+--							 when "111" => extdatareadf <= X"1234"; -- never accessed.. just in case it reads this cosntant 
+--							 when others => 
+--						  end case;
+--					end if;
+					  
+			  end if;
+			  
+			-- DOT memory
+			  if extevent_flagd='1' then
+			     if extpart(0)='0' then
+						extdatareadot <= data_dra;
+				  else 
+						extdatareadot <= data_drb;
+				  end if;
+			  end if;
+			  
+			---------------------------------------------------------------------
+			--------------------- SRAM interface controller ---------------------
+			---------------------------------------------------------------------
+			if (s_grab_a_or_b = '0') then
+			
+			  s_ramdata_0 <= bkgndfa & bkgndfar;--triggar & trigga & s_probe(2 downto 1) & ejatxdata(0) & s_was_trigmema &
+--			  s_has_grain_A(CONV_INTEGER(ejeta)) & ((trigga or (trigmema(CONV_INTEGER(ejeta)))) and s_en_ej_a and (not floor) AND (not extfloor));
+			  s_ramdata_1 <= reflecta & reflectar;--ejeta & rcont_bg_set_Am & inside_ellip_Am & inside_ellip_r_Am;
+			  s_ramdata_2 <= transluca & translucar;--is_there_a_hit & deb_trans(4 downto 0) & flagea(CONV_INTEGER(ejeta)) & flagxa(CONV_INTEGER(ejeta));
+			  s_ramdata_3 <= s_last_pox & '0' & s_sram_line;
+			  s_ramdata_4 <= s_last_pox & '0' & s_sram_line;
+			  s_ramdata_5 <= s_last_pox & '0' & s_sram_line;
+			  s_ramdata_6 <= s_last_pox & '0' & s_sram_line;
+			  s_ramdata_7 <= s_last_pox & '0' & s_sram_line;
+			  
+			else
+			
+			  s_ramdata_0 <= bkgndfb & bkgndfbr;--triggar & trigga & s_probe(2 downto 1) & ejatxdata(0) & s_was_trigmema &
+--			  s_has_grain_A(CONV_INTEGER(ejeta)) & ((trigga or (trigmema(CONV_INTEGER(ejeta)))) and s_en_ej_a and (not floor) AND (not extfloor));
+			  s_ramdata_1 <= reflectb & reflectbr;--ejeta & rcont_bg_set_Am & inside_ellip_Am & inside_ellip_r_Am;
+			  s_ramdata_2 <= translucb & translucbr;--is_there_a_hit & deb_trans(4 downto 0) & flagea(CONV_INTEGER(ejeta)) & flagxa(CONV_INTEGER(ejeta));
+			  s_ramdata_3 <= s_last_pox & '0' & s_sram_line;
+			  s_ramdata_4 <= s_last_pox & '0' & s_sram_line;
+			  s_ramdata_5 <= s_last_pox & '0' & s_sram_line;
+			  s_ramdata_6 <= s_last_pox & '0' & s_sram_line;
+			  s_ramdata_7 <= s_last_pox & '0' & s_sram_line;
+			  
+			end if;
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			---------------------------------------------------------------------
+			  
+----------------------------------------------------------------------------------------------
+-- 26 ----------------------------------------------------------------------------------------			  
+		  when "0010000000000000000000000000" => sortst<="0100000000000000000000000000";
+						
+			if pox=X"FE" then 
+				sortst<="1000000000000000000000000000"; 
+						
+				---------------------------------------------------------------------
+				--------------------- SRAM interface controller ---------------------
+				---------------------------------------------------------------------
+				if s_writing_sram_active = '1' then					-- If writing on the SRAM memory
+					if s_sram_line = "1111111" then					-- Test if all 128 lines were written
+						s_sram_line <= "0000000";						-- Set line to 0 again
+						s_writing_sram_active <= '0';					-- Set writing flag to 0
+						s_sram_written <= '1';							-- Clear latch
+						MOE <= '0';  										-- Enable outputs
+						MWR <= '1';											-- Set write to '0' (NOT logic)
+						MCS <= '1';											-- Set Output enable to '0', memory disabled (NOT logic)
+						s_release_line_inc_counter <= '0';			-- Set flag that indicates if there was a presence to '0'
+					else														-- If did not reach all 128 lines written
+						if s_release_line_inc_counter = '1' then	-- If flag indicating there was a presence is active
+							s_sram_line <= s_sram_line + '1';		-- Increase line being written
+						end if;
+					end if;
+				end if;
+				---------------------------------------------------------------------
+				---------------------------------------------------------------------
+				---------------------------------------------------------------------
+						
+			  end if; 
+				
+
+-- 27 ----------------------------------------------------------------------------------------			  
+		  when "0100000000000000000000000000" => sortst<="0000000000000000000000000001";
+		     pox <= pox+1;
+			  -- do this now because next loop ejet=nejet
+			  
+			  if ((ejeta/=nejeta) or (pox = pixenda)) then 
+					flagea(CONV_INTEGER(ejeta))<='0'; 
+					flagxa(CONV_INTEGER(ejeta))<='0'; 
+					sorta(CONV_INTEGER(ejeta))<="000"; 
+					
+				---------------------------------------------------------------------
+				-------------------- Multiple ejection supressor --------------------
+				---------------------------------------------------------------------
+					s_has_grain_A(CONV_INTEGER(ejeta)) <= s_was_trigmema;
+				---------------------------------------------------------------------
+					
+			  end if;
+			  
+			  if ((ejetb/=nejetb) or (pox = pixendb)) then 
+					flageb(CONV_INTEGER(ejetb))<='0'; 
+					flagxb(CONV_INTEGER(ejetb))<='0'; 
+					sortb(CONV_INTEGER(ejetb))<="000"; 
+					
+				---------------------------------------------------------------------
+				-------------------- Multiple ejection supressor --------------------
+				---------------------------------------------------------------------
+					s_has_grain_B(CONV_INTEGER(ejetb)) <= s_was_trigmemb;
+				---------------------------------------------------------------------
+					
+			  end if;
+			  
+			  if s_triggenda='0' then sorta(CONV_INTEGER(ejeta))<="000"; end if;
+			  if s_triggendb='0' then sortb(CONV_INTEGER(ejetb))<="000"; end if;
+		  			  
+			-- Async Auto-Gain external access control
+			  if exteventag_flag='1' then exteventag_flag<='0'; extclrag<='1'; end if;
+					  
+         -- FIFO ext access -- peak v2
+			  if extevent_flagf='1' then extevent_flagf<='0'; extclrf<='1'; end if;
+			  
+			-- DOT memory
+			  if extevent_flagd='1' then extevent_flagd<='0'; extclrd<='1'; end if;
+			  
+-- 28 ----------------------------------------------------------------------------------------			  
+		  when "1000000000000000000000000000" => sortst<="1000000000000000000000000000";
+		  pox<=(others=>'0');
+		  
+		  -- stays here nicelly till new life begins
+		  
+		  when others => sortst<="0000000000000000000000000001";
+	   end case;
+     end if;
+	end process;  

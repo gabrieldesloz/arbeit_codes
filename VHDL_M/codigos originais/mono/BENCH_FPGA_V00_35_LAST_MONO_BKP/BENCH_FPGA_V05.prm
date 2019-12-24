@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_05//BENCH_FPGA_V05 -s 4096 -u 0000 D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/main.bit -spi 
+
+PROM D:\Projetos\VHDL\L8\BENCH_FPGA\BENCH_FPGA_V00_05\BENCH_FPGA_V05.prm map: Tue Aug 28 14:07:33 2012
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 3462f322
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    000c:3f09     Aug 28 14:05:35 2012 D:/Projetos/VHDL/L8/BENCH_FPGA/BENCH_FPGA_V00_05/main.bit

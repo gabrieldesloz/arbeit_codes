@@ -1,0 +1,105 @@
+-------------------------------------------------------------------------------
+-- Title      : Testbench for design "full_adder"
+-- Project    : 
+-------------------------------------------------------------------------------
+-- File       : full_adder_tb.vhd
+-- Author     :   <gdl@IXION>
+-- Company    : 
+-- Created    : 2013-12-18
+-- Last update: 2013-12-18
+-- Platform   : 
+-- Standard   : VHDL'93/02
+-------------------------------------------------------------------------------
+-- Description:
+-- teste 1 : soma com sinais iguais que estourem o overflow
+-- teste 2 : soma com sinais diferentes que estourem o overflow
+-- teste 3 : soma normal com sinais iguais
+-- teste 4 : soma normal com sinais diferentes
+-- teste 5 : soma com sinais diferentes que resulte em zero
+-- repetição dos testes com sinal de "ci"
+-------------------------------------------------------------------------------
+-- Copyright (c) 2013 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2013-12-18  1.0      gdl	Created
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-------------------------------------------------------------------------------
+
+entity full_adder_tb is
+
+end entity full_adder_tb;
+
+-------------------------------------------------------------------------------
+
+architecture arch of full_adder_tb is
+
+  -- component generics
+  -- 1 bit de sinal
+  constant WIDTH : natural := 4;
+  
+
+  -- component ports
+  signal a, b                       : std_logic_vector(WIDTH-1 downto 0) := (others => '0');
+  signal sum                        : std_logic_vector(WIDTH-1 downto 0) := (others => '0');
+  signal cin                        : std_logic := '0';
+  signal cout, zero, overflow, sign : std_logic := '0';
+
+  -- clock
+  signal Clk : std_logic := '1';
+
+begin  -- architecture arch
+
+  -- component instantiation
+  DUT: entity work.full_adder
+    generic map (
+      WIDTH => WIDTH)
+    port map (
+      a        => a,
+      b        => b,
+      cin      => cin,
+      cout     => open,
+      sum      => open,
+      zero     => open,
+      overflow => open,
+      sign     => open);
+
+  -- clock generation
+  Clk <= not Clk after 10 ns;
+
+  -- waveform generation
+  WaveGen_Proc: process
+  begin
+    wait until clk = '1';
+    -- teste 1
+    a <= std_logic_vector(to_signed(-2,WIDTH));
+    b <= std_logic_vector(to_signed(-2,WIDTH));
+    cin <= '0';
+    
+
+    wait for 40 ns;
+    wait until clk = '1';
+   -- teste 2 
+
+
+    wait for 1 ms; 
+  
+  end process WaveGen_Proc;
+
+  
+
+end architecture arch;
+
+-------------------------------------------------------------------------------
+
+configuration full_adder_tb_arch_cfg of full_adder_tb is
+  for arch
+  end for;
+end full_adder_tb_arch_cfg;
+
+-------------------------------------------------------------------------------

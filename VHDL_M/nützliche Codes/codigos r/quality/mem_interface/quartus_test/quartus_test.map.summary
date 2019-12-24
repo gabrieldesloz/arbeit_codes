@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Feb 24 15:20:24 2014
+Quartus II 32-bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : quartus_test
+Top-level Entity Name : gate_soft_interface
+Family : Cyclone IV E
+Total logic elements : 694
+    Total combinational functions : 690
+    Dedicated logic registers : 294
+Total registers : 294
+Total pins : 588
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

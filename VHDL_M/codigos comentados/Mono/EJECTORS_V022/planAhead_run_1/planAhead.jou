@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.1 (64-bit)
+# Build 179419 by xbuild on Thu Apr 26 11:43:29 MDT 2012
+# Start of session at: Mon Oct 22 15:25:36 2012
+# Process ID: 4772
+# Log file: D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/planAhead_run_1/planAhead.log
+# Journal file: D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Projetos/VHDL/L8/Ejector_Board/EJECTORS_V016/pa.fromNetlist.tcl
+exit

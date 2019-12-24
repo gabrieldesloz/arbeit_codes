@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+
+
+package l_definitions is
+	
+	-- SELECTION BOARD
+	constant OVERUSAGE_MAX		: std_logic_vector(15 downto 0):= "0000011111010000"; -- 2000 ejections max -- mem_ctrl.vhd
+	constant c_ACIONA_EJ   		: STD_LOGIC_VECTOR(9 downto 0) := "0011111010";	-- 850us ejectors activation time - always change IHM when changing this constant -- see Calc_dwell.xlsx  -- CH_X_EJET_TIMER.vhd
+	--constant c_ACIONA_EJ   		: STD_LOGIC_VECTOR(9 downto 0) := "0110111001";	-- 1.5ms ejectors activation time - always change IHM when changing this constant -- see Calc_dwell.xlsx  -- CH_X_EJET_TIMER.vhd
+	--constant c_ACIONA_EJ   		: STD_LOGIC_VECTOR(9 downto 0) := "0100100110";	-- 1ms ejectors activation time - always change IHM when changing this constant -- see Calc_dwell.xlsx  -- CH_X_EJET_TIMER.vhd
+	constant MAX_ACTIVE_VALVES	: std_logic_vector(5 downto 0) := "001000"; -- 8 "simultaneously" active valves -- CH_X_EJET_TIMER.vhd
+
+	--constant TEJET_ACTIVE_TIME	: std_logic_vector(10 downto 0):= "01111101000"; -- 1000 - 1 ms 
+	--constant TEJET_ACTIVE_TIME	: std_logic_vector(10 downto 0):= "00111110100"; -- 500 - 500 us 
+	--constant TEJET_ACTIVE_TIME	: std_logic_vector(10 downto 0):= "01101010010"; -- 850 - 850 us 
+	constant TEJET_ACTIVE_TIME	: std_logic_vector(10 downto 0):= "00110010000"; -- 400 - 400 us 
+	constant TEJET_PWM_HIGH		: std_logic_vector(8 downto 0) := "010001100"; -- 140 us
+	constant TEJET_PWM_LOW		: std_logic_vector(8 downto 0) := "000100011"; -- 35 us
+	constant TEJET_PERIOD		: integer range 0 to 65535 := 6666; -- 150 Hz
+	--constant TEJET_PERIOD		: integer range 0 to 65535 := 3333; -- 150 Hz
+	constant TEJET_BEFORE_PWM_BITS: natural := 6;
+	constant TEJET_BEFORE_PWM   : integer range 0 to TEJET_BEFORE_PWM_BITS-1 := 32;
+	-- EJECTOR BOARD
+	-- valve fail verification
+    constant ACTIVATION_COUNT	: std_logic_vector(12 downto 0) :=	"0000011011100";  -- 220 x 3.2 us -> 704 us -- minimum activation time
+	constant FEEDBACK_COUNT		: std_logic_vector(14 downto 0) :=  "000000000001000"; -- 8 x 3.2 us -> 26 us
+	constant TOTAL_CURRENT_MAX  : std_logic_vector(10 downto 0) :=   "01101000000"; -- 895
+	
+	
+	
+end package;
+
+	
+	
+	
+
