@@ -2,7 +2,7 @@
 -- Unsigned 8-bit Adder
 --
 -- Download: ftp://ftp.xilinx.com/pub/documentation/misc/xstug_examples.zip
--- File: HDL_Coding_Techniques/adders/adders_1.vhd
+-- File: HDL_Coding_Techniques/adders/adders_1.vhdB
 --
 library ieee;
 use ieee.std_logic_1164.all;
